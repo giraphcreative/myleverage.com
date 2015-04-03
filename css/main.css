@@ -262,6 +262,8 @@ header {
             width: 16.66%; }
             header nav ul.nav-menu > li:nth-child(5) ul.sub-menu, header nav ul.nav-menu > li:nth-child(10) ul.sub-menu {
               left: 0; }
+            header nav ul.nav-menu > li:nth-child(3) ul.sub-menu {
+              left: 0; }
             header nav ul.nav-menu > li:nth-child(6) a {
               border-left: 1px solid white; } }
         header nav ul.nav-menu > li a {
