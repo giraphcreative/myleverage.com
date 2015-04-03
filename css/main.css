@@ -264,7 +264,7 @@ header {
               left: 0; }
             header nav ul.nav-menu > li:nth-child(3) ul.sub-menu {
               left: 0; }
-            header nav ul.nav-menu > li:nth-child(6) a {
+            header nav ul.nav-menu > li:nth-child(4) a, header nav ul.nav-menu > li:nth-child(6) a {
               border-left: 1px solid white; } }
         header nav ul.nav-menu > li a {
           display: block;

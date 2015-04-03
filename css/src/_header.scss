@@ -78,7 +78,7 @@ header {
 
 					&:nth-child( 3 ) { ul.sub-menu { left: 0; } }
 
-					&:nth-child( 6 ) { a { border-left: 1px solid white; } }
+					&:nth-child( 4 ), &:nth-child( 6 ) { a { border-left: 1px solid white; } }
 				}
 
 				a {
