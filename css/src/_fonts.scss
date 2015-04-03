@@ -1,0 +1,68 @@
+
+
+@font-face {
+	font-family: 'Avenir';
+	src: url('fonts/avenir.eot?#iefix') format('embedded-opentype'),  url('fonts/avenir.otf')  format('opentype'),
+	     url('fonts/avenir.woff') format('woff'), url('fonts/avenir.ttf')  format('truetype'), url('fonts/avenir.svg#avenir') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Avenir Italic';
+	src: url('fonts/avenir-it.eot?#iefix') format('embedded-opentype'),  url('fonts/avenir-it.otf')  format('opentype'),
+	     url('fonts/avenir-it.woff') format('woff'), url('fonts/avenir-it.ttf')  format('truetype'), url('fonts/avenir-It.svg#avenir-it') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Avenir Demi Italic';
+	src: url('fonts/avenir-demi-it.eot?#iefix') format('embedded-opentype'),  url('fonts/avenir-demi-it.otf')  format('opentype'),
+	     url('fonts/avenir-demi-it.woff') format('woff'), url('fonts/avenir-demi-it.ttf')  format('truetype'), url('fonts/avenir-demi-it.svg#avenir-demi-it') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+@font-face {
+	font-family: 'Avenir Demi';
+	src: url('fonts/avenir-demi.eot?#iefix') format('embedded-opentype'),  url('fonts/avenir-demi.otf')  format('opentype'),
+	     url('fonts/avenir-demi.woff') format('woff'), url('fonts/avenir-demi.ttf')  format('truetype'), url('fonts/avenir-demi.svg#avenir-demi') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+
+
+@mixin font-title {
+	font-family: "Avenir Demi", sans-serif;
+}
+
+@mixin font {
+	font-family: "Avenir", sans-serif;
+	font-weight: normal;
+}
+
+@mixin font-medium {
+	font-family: "Avenir Demi", sans-serif;
+	font-weight: normal;
+}
+
+@mixin font-bold {
+	font-family: "Avenir Demi", sans-serif;
+	font-weight: normal;
+}
+
+@mixin font-italic {
+	font-family: "Avenir Italic", sans-serif;
+	font-weight: normal;
+}
+
+@mixin font-bold-italic {
+	font-family: "Avenir Demi Italic", sans-serif;
+	font-weight: normal;
+}
+

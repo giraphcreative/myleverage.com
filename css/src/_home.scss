@@ -1,0 +1,105 @@
+
+
+$icon-width: 70px;
+
+
+.home-thirds {
+	padding: 10px 20px;
+	@include clearfix;
+
+	.third {
+		margin: 30px 0;
+		padding: 0 0 95px;
+		position: relative;
+		
+		&.events {
+			background-color: lighten( $navy, 50% );
+			h2, button { background-color: $navy; }
+			h2:before { background-image: url(../img/icon-events.png); }
+		}
+		
+		&.news {
+			background-color: lighten( $orange, 35% );
+			h2, button { background-color: $orange; }
+			h2:before { background-image: url(../img/icon-news.png); }
+		}
+		
+		&.tweets {
+			background-color: lighten( $lime, 40% );
+			h2, button { background: $lime; }
+			h2:before { background-image: url(../img/icon-tweets.png); }
+		}
+
+		@include respond-to( 768px ) {
+			float: left;
+			width: 31%;
+			margin-right: 2%;
+			padding-bottom: 125px;
+			min-height: 580px;
+
+			&.tweets {
+				width: 33%;
+				margin-right: 0;
+			}
+		}
+
+		@include respond-to( 1024px ) {
+			min-height: 520px;
+		}
+
+		h2 {
+			@include font;
+			position: relative;
+			font-size: 1.3em;
+			padding: 30px 15px 20px;
+			color: white;
+			text-transform: uppercase;
+			border-bottom: 3px solid white;
+
+			&:before {
+				content: "";
+				position: absolute;
+				top: 50%;
+				right: 10px;
+				margin-top: - ( $icon-width / 2 );
+				width: $icon-width;
+				height: $icon-width;
+				background: center center no-repeat;
+			}
+
+			span {
+				display: block;
+				margin-right: 30px;
+				border-bottom: 1px solid white;
+			}
+		}
+
+		h4 {
+			font-size: 1.3em;
+			line-height: 1.3em;
+		}
+
+		.third-content {
+			padding: 10px 15px;
+		}
+
+		button {
+			display: block;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			width: 100%;
+			padding: 10px 25px 10px 10px;
+			border: 0;
+			background: $grey;
+			text-align: center;
+			font-size: 15px;
+			text-transform: uppercase;
+			color: white;
+			cursor: pointer;
+			border-top: 3px solid white;
+		}
+	}
+}
+

@@ -1,0 +1,193 @@
+
+@import "../lib/mathsass/dist/math";
+
+// responsive mixin
+@mixin respond-to( $breakpoint ) {
+    @media only screen and (min-width: $breakpoint) { @content; }
+}
+
+
+// Clearfix mixin
+@mixin clearfix {
+	zoom: 1;
+
+	&:before, &:after { 
+		content: ""; 
+		display: table;
+	}
+
+	&, &:before, &:after { clear: both; }
+}
+
+
+.clearfix, .group {
+	@include clearfix;
+}
+
+
+@mixin wrap( $max-width ) {
+	max-width: $max-width;
+	margin: 0 auto;
+}
+
+
+@mixin wrap-main {
+	@include wrap( 1220px );
+}
+
+
+// a vertical hexagon with a background image.
+@mixin hexagon( $size: 300px, $borderColor: rgba(0,0,0,0.8), $borderWidth: 4px ) {
+	$scaleFactor: tan(30deg); /*this smushes a square into a 60deg/120deg rhombus*/
+	$inverseScale: 1/$scaleFactor;
+	$sideLength: $size/sqrt(3);
+	$totalHeight: $sideLength + $size;
+	$scaledBorderWidth: $borderWidth/$scaleFactor;
+	$border: solid #{$borderWidth} #fff;
+	$scaledBorder: solid #{$scaledBorderWidth} #fff;
+
+	position: relative;
+	width: $size;
+	height: $sideLength;
+	margin-top: $size/3;
+	margin-bottom: $size/3;
+	background-size: $totalHeight auto;
+	background-position: center center;
+	border-left: $border;
+	border-right: $border;
+
+	.hex1,
+	.hex2 {
+		position: absolute;
+		overflow: hidden;
+		width: $size/sqrt(2);
+		height: $size/sqrt(2);
+		left: $sideLength/4 - $borderWidth;
+		background: inherit;
+		transform: scaleY(#{$scaleFactor}) rotate(-45deg);
+
+		&:after {
+			/*counter rotate and un-scale the bg image*/
+			content: "";
+			position: absolute;
+			left: -($sideLength/4);
+			width: $size;
+			height: $size/sqrt(2);
+			top: 0;
+			background: inherit;
+
+			transform: rotate(45deg) scaleY(#{$inverseScale});
+		}
+	}
+
+	.hex1 {
+		top: - $size/sqrt(2)/2;
+		border-top: $scaledBorder;
+		border-right: $scaledBorder;
+
+		&:after {
+			background-position: center 17%; 
+			margin-top: -$scaledBorderWidth;
+		}
+	}
+
+	.hex2 {
+		bottom: -$size/sqrt(2)/2;
+		border-left: $scaledBorder;
+		border-bottom: $scaledBorder;
+
+		&:after {
+			background-position: center 83%;
+			margin-left: - $scaledBorderWidth; /*that pesky single pixel correction again*/
+		}
+	}
+
+	/*cover up the box shadows */
+	&:after {
+		content: "";
+		position: absolute;
+		top: $borderWidth/sqrt(2);
+		bottom: 0;
+		left: 0;
+		right: 0;
+		height: $sideLength - 2*$borderWidth/sqrt(2);
+		background: inherit;
+	}
+}
+
+
+// a generic colored hexagon mixin
+@mixin hex ($size, $color, $direction: vertical, $margin: true) {
+	$height: 0;
+	$width: 0;
+
+	@if $direction == vertical {
+		$width: $size;
+		$height: round($size * (30 / 52));
+	}
+	@else {
+		$height: $size;
+		$width: round($size * (30 / 52));
+	}
+
+	$half-width: round($width / 2);
+	$half-height: round($height / 2);
+
+	width: $width;
+	height: $height;
+	position: relative;
+	background-color: $color;
+
+	@if $margin == true {
+		@if $direction == vertical {
+			margin-top: $half-height;
+			margin-bottom: $half-height;
+		}
+		@else {
+			margin-left: $half-width;
+			margin-right: $half-width;
+		}
+	}
+
+	&:before, &:after {
+		content: "";
+		width: 0;
+		height: 0;
+		position: absolute;
+
+		@if $direction == vertical {
+			left: 0;
+			border-left: $half-width solid transparent;
+			border-right: $half-width solid transparent;
+		}
+		@else {
+			top: 0;
+			border-top: $half-height solid transparent;
+			border-bottom: $half-height solid transparent;
+		}
+	}
+
+	@if $direction == vertical {
+		&:before {
+			border-bottom: $half-height solid $color;
+			top: -$half-height;
+		}
+
+		&:after {
+			bottom: -$half-height;
+			border-top: $half-height solid $color;
+		}
+	}
+	@else {
+		&:before {
+			border-right: $half-width solid $color;
+			left: -$half-width;
+		}
+
+		&:after {
+			right: -$half-width;
+			border-left: $half-width solid $color;
+		}
+	}
+}
+

@@ -1,0 +1,52 @@
+
+
+.large-title {
+	padding: 20px;	
+	@include respond-to( 768px ) { padding: 40px; }
+	@include respond-to( 900px ) { padding: 60px; }
+
+	.wrap {
+		position: relative;
+	}	
+
+	.large-title-icon {
+		@include hexagon( 60px, white, 3px );
+		position: absolute;
+		right: 0;
+		top: 50%;
+		margin-top: -17px;		
+
+		@include respond-to( 768px ) { 
+			@include hexagon( 90px, white, 3px );
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -23px;		
+		}
+
+		@include respond-to( 900px ) { 
+			@include hexagon( 120px, white, 3px );
+			position: absolute;
+			right: 0;
+			top: 50%;
+			margin-top: -37px;		
+		}
+	}
+
+	.large-title-text {
+		margin-right: 30px;
+
+		h1 {
+			color: white;
+			line-height: 1.1em;
+			font-size: 20px;
+			border-bottom: 3px solid white;
+			text-transform: uppercase;
+
+			@include respond-to( 480px ) { font-size: 30px; }
+			@include respond-to( 768px ) { font-size: 40px; }
+			@include respond-to( 900px ) { font-size: 50px; }
+		}
+	}
+}
+

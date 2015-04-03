@@ -1,0 +1,288 @@
+
+
+$menu-bp: 1024px;
+
+header {
+	padding: 30px 0 0;
+
+	.logo {
+		margin-right: 60px;
+		padding: 20px 0 5px 10px;
+		max-width: 450px;
+
+		@include respond-to( 768px ) {
+			padding: 30px 0 10px 20px;
+		}
+	}
+
+	nav {
+		position: relative;
+		background: $grey;
+
+		button {
+			position: absolute;
+			right: 5px;
+			top: -50px;
+			width: 40px;
+			height: 40px;
+			border: 0;
+			padding: 0;
+			background: white;
+			color: black;
+			background: url(../img/icon-menu.png) center center no-repeat;
+
+			@include respond-to( 600px ) {
+				display: none;
+			}
+		}
+
+		ul.nav-menu {
+			display: none;
+			background: $grey;
+			position: relative;
+			z-index: 1000;
+			text-align: center;
+			box-shadow: inset 0px 15px 22px -10px rgba(100, 100, 100, 0.3);
+			border-bottom: 1px solid white;
+			@include clearfix;
+			
+			@include respond-to( 600px ) {
+				display: block;
+			}
+
+			& > li:nth-child( 1 ) { background: $navy; }
+			& > li:nth-child( 10 ) { background: $green; font-style: italic; }
+
+			& > li {
+				box-shadow: inset 0px 15px 22px -10px rgba(100, 100, 100, 0.3);
+
+				@include respond-to( 600px ) {
+					box-shadow: none;
+					position: relative;
+					float: left;
+					width: 20%;
+
+					&:nth-child( 5 ), &:nth-child( 10 ) { ul.sub-menu { left: -100%; } }
+
+					&:nth-child( 1 ), &:nth-child( 6 ) { a { border-left: 0; } }
+				}
+
+				@include respond-to( $menu-bp ) {
+					width: 9.5%;
+
+					&:nth-child( 4 ), &:nth-child( 5 ) { width: 12%; }
+
+					&:nth-child( 5 ), &:nth-child( 10 ) {
+						ul.sub-menu {
+							left: 0;
+						}
+					}
+
+					&:nth-child( 6 ) { a { border-left: 1px solid white; } }
+				}
+
+				a {
+					display: block;
+					@include font;
+					padding: 14px 2px;
+					font-size: 12px;
+					line-height: 15px;
+					width: 100%;
+					color: white;
+					text-decoration: none;
+					text-transform: uppercase;
+					text-align: center;
+
+					@include respond-to( 600px ) {
+						padding: 10px;
+						height: 50px;
+						border-left: 1px solid white;
+						border-top: 1px solid white;
+						text-align: left;
+						font-size: 10px;
+					}
+
+					@include respond-to( $menu-bp ) {
+						height: 50px;
+						margin-top: -1px;
+					}
+				}
+
+				&:hover, &.open {
+					a {
+						background: $navy;
+					}
+
+					ul.sub-menu {
+						display: block;
+					}
+				}
+
+				ul.sub-menu {
+					display: none;
+					border: 1px solid white;
+					border-left: 0;
+					border-top: 0;
+					margin-bottom: 3px;
+
+					@include respond-to( 600px ) {
+						position: absolute;
+						left: 0;
+						top: 50px;
+						width: 201%;
+						z-index: 10;
+						background: $navy;
+						@include clearfix;
+					}
+
+					li {
+						box-shadow: inset 0px 5px 12px -10px rgba(100, 100, 100, 0.69);
+						position: relative;
+
+						@include respond-to( 600px ) {
+							float: none;
+							display: block;
+							width: auto;
+						}
+
+						a {
+							padding: 7px 5px;
+							display: block;
+							height: auto;
+							width: 100%;
+							border-top: 1px solid white;
+
+							@include respond-to( $menu-bp ) {
+								padding: 8px 12px;
+
+								&:hover {
+									background: lighten( $navy, 2% );
+								}
+							}
+						}
+
+						ul.sub-menu {
+							display: none;
+							left: 100%;
+							top: 1px;
+							width: 100%;
+							border-left: 1px solid white;
+						}
+
+						&:hover, &.open {
+							ul.sub-menu {
+								display: block;
+							}
+						}
+					}
+				}
+				
+				@include respond-to( 600px ) {
+					&:nth-child( 4 ) > ul.sub-menu, &:nth-child( 5 ) > ul.sub-menu, &:nth-child( 9 ) > ul.sub-menu, &:nth-child( 10 ) > ul.sub-menu {
+						left: -100%;
+
+						& > li > ul.sub-menu {
+							top: 0;
+							left: -100%;
+							margin-left: 1px;
+						}
+					}
+				}
+
+				
+				@include respond-to( $menu-bp ) {
+					&:nth-child( 4 ) > ul.sub-menu, &:nth-child( 5 ) > ul.sub-menu {
+						left: 0;
+
+						& > li > ul.sub-menu {
+							top: 1px;
+							left: 100%;
+							margin-left: 0;
+							border-left: 0;
+						}
+					}
+
+					&:nth-child( 9 ) > ul.sub-menu {
+						& > li > ul.sub-menu {
+							left: -100%;
+						}
+					}
+
+					&:nth-child( 10 ) > ul.sub-menu {
+						left: -100%;
+
+						& > li > ul.sub-menu {
+							left: -100%;
+						}
+					}
+				}
+
+			}
+
+			& > li:nth-child( 2 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $yellow; &:hover { background: lighten( $yellow, 5% ); } } }
+			& > li:nth-child( 3 ), & > li:nth-child( 7 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $sky; &:hover { background: lighten( $sky, 5% ); } } }
+			& > li:nth-child( 4 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $grey-dark; &:hover { background: lighten( $grey-dark, 5% ); } } }
+			& > li:nth-child( 5 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $lime; &:hover { background: lighten( $lime, 5% ); } } }
+			& > li:nth-child( 6 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $orange; &:hover { background: lighten( $orange, 5% ); } } }
+			& > li:nth-child( 8 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $grey; &:hover { background: lighten( $grey, 5% ); } } }
+			& > li:nth-child( 9 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $teal; &:hover { background: lighten( $teal, 5% ); } } }
+			& > li:nth-child( 10 ) { & > ul.sub-menu, & > ul.sub-menu a, &:hover a, &.open a { background: $forest; &:hover { background: lighten( $forest, 5% ); } } }
+		}
+	}
+
+	.search {
+		position: relative;
+		padding: 10px;
+
+		input[type=text] {
+			display: block;
+			right: 26px;
+			left: 0;
+			width: 100%;
+			border: 2px solid $grey;
+			background: white;
+			padding: 0 25px 0 15px;
+			font-size: 15px;
+			line-height: 28px;
+			text-align: center;
+		}
+
+		input[type=submit] {
+			position: absolute;
+			top: 50%;
+			right: 20px;
+			bottom: 0;
+			width: 50px;
+			height: 50px;
+			border: 0;
+			background: url(../img/icon-small-search.png) center center no-repeat;
+			text-indent: -400px;
+			cursor: pointer;
+			margin-top: -25px;
+		}
+
+		@include respond-to( 768px ) {
+			position: absolute;
+			top: 80px;
+			left: 50%;
+			margin-left: 150px;
+		}
+
+		@include respond-to( $menu-bp ) {
+			margin-left: 250px;
+		}
+
+		@include respond-to( 1220px ) {
+			margin-left: 320px;
+		}
+	}
+
+	@include respond-to( 768px ) {
+		position: relative;
+
+		.wrap {
+			position: relative;
+		}
+	}
+}
+
