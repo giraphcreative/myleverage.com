@@ -62,15 +62,13 @@ header {
 					float: left;
 					width: 33.33%;
 
-					&:nth-child( 5 ), &:nth-child( 10 ) { ul.sub-menu { left: -100%; } }
+					&:nth-child( 3 ), &:nth-child( 6 ) { ul.sub-menu { left: -100%; } }
 
-					&:nth-child( 1 ), &:nth-child( 6 ) { a { border-left: 0; } }
+					&:nth-child( 1 ), &:nth-child( 4 ) { a { border-left: 0; } }
 				}
 
 				@include respond-to( $menu-bp ) {
 					width: 16.66%;
-
-					&:nth-child( 4 ), &:nth-child( 5 ) { width: 12%; }
 
 					&:nth-child( 5 ), &:nth-child( 10 ) {
 						ul.sub-menu {
