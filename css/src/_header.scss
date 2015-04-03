@@ -254,16 +254,7 @@ header {
 		@include respond-to( 768px ) {
 			position: absolute;
 			top: 80px;
-			left: 50%;
-			margin-left: 150px;
-		}
-
-		@include respond-to( $menu-bp ) {
-			margin-left: 250px;
-		}
-
-		@include respond-to( 1220px ) {
-			margin-left: 320px;
+			right: 30px;
 		}
 	}
 

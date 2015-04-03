@@ -417,14 +417,7 @@ header {
       header .search {
         position: absolute;
         top: 80px;
-        left: 50%;
-        margin-left: 150px; } }
-    @media only screen and (min-width: 1024px) {
-      header .search {
-        margin-left: 250px; } }
-    @media only screen and (min-width: 1220px) {
-      header .search {
-        margin-left: 320px; } }
+        right: 30px; } }
   @media only screen and (min-width: 768px) {
     header {
       position: relative; }
