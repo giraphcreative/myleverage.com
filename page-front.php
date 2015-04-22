@@ -70,10 +70,30 @@ get_header();
 			<div class="third tweets">
 				<h2><span>Tweets</span></h2>
 				<div class="third-content">
+				<?php
+				include( 'library/tweet-php/TweetPHP.php' );
+				$upload_dir = wp_upload_dir();
+				$twitter_feed = new TweetPHP(array(
+					'consumer_key'              => 'rI2mcCD7tUMLKiSYdbea91bv3',
+					'consumer_secret'           => 'w2bmylGVQ2BGGlQb9CFJoI9xqQ3gacjie4UbiCp8wqoP0e7y4V',
+					'access_token'              => '29196496-zk653NF1sbj3mJR54Lkxcv4zmTSvm2GRTrJRf1mUA',
+					'access_token_secret'       => 'QeXhPPB9xYMUAHwhnAsN2BiyIi88G3YR4UFe4aWuDJyyB',
+					'cache_file'            	=> $upload_dir['basedir'] . '/cache/twitter-home.txt', 
+					'cache_file_raw'        	=> $upload_dir['basedir'] . '/cache/twitter-home-array.txt', 
+					'twitter_screen_name'       => 'MY_LEVERAGE',
+					'tweets_to_retrieve'     	=> 3, // Number of tweets to display
+					'tweets_to_display'     	=> 5, // Number of tweets to display
+				));
+				$feed = $twitter_feed->get_tweet_array();
+				foreach ( $feed as $item ) {
+					?>
 					<article>
-						<h4><a href="#">Looking for new ideas? Need a new income source?</a></h4>
-						<p>Use our CU Match Up Tool to find the best partners to help you increase non-interest income, help with collections, save on operating expenses and more!</p>
+						<p><?php print make_clickable( $item['text'] ) ?>
+						<div class="date"><a href="https://twitter.com/<?php print $twitter ?>/status/<?php print $item['id'] ?>"><?php print date( "n/j/Y @ g:ia", strtotime( $item['created_at'] ) ); ?></a></div></p>
 					</article>
+					<?php
+				}
+				?>
 				</div>
 				<button class="home-third-button cu-match"><span>Find Your Match</span></button>
 				<div class="clearfix"></div>
