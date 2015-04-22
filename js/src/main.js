@@ -7,7 +7,7 @@ jQuery(document).ready(function($){
 	var menu = $( 'header nav' ),
 		menu_toggle = menu.find( 'button.menu-toggle' ),
 		menu_ul = menu.find( '.nav-menu' ),
-		fluid_images = $( '.content-area img' );
+		fluid_images = $( '.content-area img, .site-content img' );
 
 
 	// remove height and width from images inside
