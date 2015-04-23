@@ -60,13 +60,13 @@ header {
 					box-shadow: none;
 					position: relative;
 					float: left;
-					width: 33.33%;
+					width: 25%;
 
 					&:nth-child( 1 ), &:nth-child( 4 ) { a { border-left: 0; } }
 				}
 
 				@include respond-to( $menu-bp ) {
-					width: 16.66%;
+					width: 14.2857143%;
 
 					&:nth-child( 4 ), &:nth-child( 6 ) { a { border-left: 1px solid white; } }
 				}

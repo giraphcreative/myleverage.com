@@ -18,9 +18,9 @@
 		<div class="wrap">
 			<div class="column first">
 				<h3>Connect With Us</h3>
-				<p>22 Inverness Cntr Pky, #200<br>
+				<p class="address">22 Inverness Cntr Pky, #200<br>
 					Birmingham, Alabama</p>
-				<p>3692 Coolidge Court<br>
+				<p class="address">3692 Coolidge Court<br>
 					Tallahassee, Florida 32311</p>
 				<p><a href="tel:8662310545">866.231.0545</a></p>
 				<div class="social">
@@ -38,10 +38,12 @@
 			</div>
 			<div class="column">
 				<h3>Sign Up For News</h3>
-				<form action="#" method="post">
-					<input type="text" name="email" value="">
-					<input type="submit" name="submit" value="Subscribe">
-				</form>
+				<div class="subscribe">
+					<form action="/" method="post">
+						<input type="text" name="email" value="">
+						<input type="submit" name="submit" value="Subscribe">
+					</form>
+				</div>
 			</div>
 		</div>
 	</footer><!-- #colophon -->

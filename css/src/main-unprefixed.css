@@ -251,12 +251,12 @@ header {
             box-shadow: none;
             position: relative;
             float: left;
-            width: 33.33%; }
+            width: 25%; }
             header nav ul.nav-menu > li:nth-child(1) a, header nav ul.nav-menu > li:nth-child(4) a {
               border-left: 0; } }
         @media only screen and (min-width: 1024px) {
           header nav ul.nav-menu > li {
-            width: 16.66%; }
+            width: 14.2857143%; }
             header nav ul.nav-menu > li:nth-child(4) a, header nav ul.nav-menu > li:nth-child(6) a {
               border-left: 1px solid white; } }
         header nav ul.nav-menu > li a {
@@ -1154,6 +1154,11 @@ footer {
       footer .column.first {
         width: 40%;
         border-left: 0; } }
+  @media only screen and (min-width: 1220px) {
+    footer .column .address {
+      float: left;
+      width: 50%;
+      padding: 20px 0; } }
   footer h3 {
     font-family: "Avenir", sans-serif;
     font-weight: normal;
@@ -1176,6 +1181,31 @@ footer {
     text-align: center; }
     footer .social img {
       max-width: 16.66%; }
+  footer .subscribe {
+    position: relative;
+    padding: 10px 0; }
+    footer .subscribe input[type=text] {
+      display: block;
+      right: 26px;
+      left: 0;
+      width: 100%;
+      border: 2px solid #939598;
+      background: white;
+      padding: 0 25px 0 15px;
+      font-size: 15px;
+      line-height: 28px; }
+    footer .subscribe input[type=submit] {
+      position: absolute;
+      top: 50%;
+      right: 10px;
+      bottom: 0;
+      width: 50px;
+      height: 50px;
+      border: 0;
+      background: url(../img/icon-subscribe.png) center center no-repeat;
+      text-indent: -400px;
+      cursor: pointer;
+      margin-top: -25px; }
 
 .home-thirds {
   padding: 10px 20px;

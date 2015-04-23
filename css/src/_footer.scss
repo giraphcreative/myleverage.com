@@ -24,6 +24,14 @@ footer {
 				border-left: 0;
 			}
 		}
+
+		@include respond-to( 1220px ) {
+			.address {
+				float: left;
+				width: 50%;
+				padding: 20px 0;
+			}
+		}
 	}
 	
 	h3 {
@@ -57,6 +65,37 @@ footer {
 
 		img {
 			max-width: 16.66%;
+		}
+	}
+
+	.subscribe {
+		position: relative;
+		padding: 10px 0;
+
+		input[type=text] {
+			display: block;
+			right: 26px;
+			left: 0;
+			width: 100%;
+			border: 2px solid $grey;
+			background: white;
+			padding: 0 25px 0 15px;
+			font-size: 15px;
+			line-height: 28px;
+		}
+
+		input[type=submit] {
+			position: absolute;
+			top: 50%;
+			right: 10px;
+			bottom: 0;
+			width: 50px;
+			height: 50px;
+			border: 0;
+			background: url(../img/icon-subscribe.png) center center no-repeat;
+			text-indent: -400px;
+			cursor: pointer;
+			margin-top: -25px;
 		}
 	}
 }
