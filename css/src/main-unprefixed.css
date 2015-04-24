@@ -1122,15 +1122,78 @@ img.alignleft {
       background-color: #e1e2e3; }
 
 .sidebar .widget {
-  padding: 5px 0;
+  padding: 10px 0;
+  margin-bottom: 20px;
   font-size: 15px; }
-  .sidebar .widget h4 {
-    font-family: "Avenir Demi", sans-serif;
-    font-weight: normal;
-    color: #2C5871;
-    padding: 15px 0 7px;
-    font-size: 20px;
-    font-style: normal; }
+  .sidebar .widget .widget-title {
+    position: relative;
+    padding: 10px 15px 10px 10px;
+    background-color: #2C5871; }
+    .sidebar .widget .widget-title h4 {
+      font-family: "Avenir", sans-serif;
+      font-weight: normal;
+      color: white;
+      border-bottom: 4px solid white;
+      text-transform: uppercase;
+      font-size: 1.1em; }
+    .sidebar .widget .widget-title:before {
+      content: '';
+      position: absolute;
+      width: 44px;
+      height: 44px;
+      margin-top: -22px;
+      right: 5px;
+      top: 50%;
+      background: center center no-repeat;
+      background-size: contain; }
+  .sidebar .widget.widget_nav_menu .widget-title:before {
+    background-image: url(../img/icon-pointer.png); }
+  .sidebar .widget.widget_nav_menu ul li a {
+    display: block;
+    padding: 5px 10px 3px;
+    border-bottom: 1px solid #c7c8ca;
+    text-transform: uppercase;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    color: #47494b;
+    font-size: .9em;
+    text-decoration: none; }
+    .sidebar .widget.widget_nav_menu ul li a:hover {
+      background-color: #939598;
+      color: white; }
+  .sidebar .widget.widget_lscu_connect_widget .widget-title:before {
+    background-image: url(../img/icon-connect.png); }
+  .sidebar .widget.widget_lscu_connect_widget .contact {
+    clear: left;
+    padding: 10px 0; }
+    .sidebar .widget.widget_lscu_connect_widget .contact img {
+      width: 25%;
+      float: left;
+      margin: 5px 15px 10px;
+      border: 1px solid #939598; }
+  .sidebar .widget.widget_text .widget-title:before {
+    background-image: url(../img/icon-text-widget.png);
+    margin-top: -24px; }
+  .sidebar .widget.widget_text .textwidget {
+    padding: 15px; }
+  .sidebar .widget.tribe-events-list-widget .widget-title:before {
+    background-image: url(../img/icon-events-small.png); }
+  .sidebar .widget.tribe-events-list-widget ol {
+    padding: 10px; }
+    .sidebar .widget.tribe-events-list-widget ol li {
+      padding: 10px 0;
+      margin-bottom: 0; }
+      .sidebar .widget.tribe-events-list-widget ol li h4 {
+        font-size: 1.2em; }
+  .sidebar .widget.tribe-events-list-widget p.tribe-events-widget-link {
+    text-align: center;
+    padding: 10px; }
+  .sidebar .widget.leverage .widget-title {
+    background-color: #007940; }
+    .sidebar .widget.leverage .widget-title h4 {
+      font-family: "Avenir Italic", sans-serif;
+      font-weight: normal; }
+    .sidebar .widget.leverage .widget-title:before {
+      background-image: url(../img/icon-leverage.png); }
 
 footer {
   background-color: #007940;
