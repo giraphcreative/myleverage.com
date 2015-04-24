@@ -151,26 +151,6 @@ function page_metaboxes( $meta_boxes ) {
 
 
 
-    // left column metabox
-    $left_metabox = new_cmb2_box( array(
-        'id' => 'left_metabox',
-        'title' => 'Left Column',
-        'object_types' => array( 'page', 'product' ), // post type
-        'context' => 'normal',
-        'priority' => 'high',
-        'show_names' => false, // Show field names on the left
-    ));
-
-    $left_metabox->add_field( array(
-        'name' => 'Left Column Content',
-        'description' => 'Enter text or ads for the left column.',
-        'id'   => CMB_PREFIX . 'left_content',
-        'type' => 'wysiwyg',
-        'options' => array( 'textarea_rows' => 7 )
-    ) );
-
-
-
     // accordion metabox
     $accordion_metabox = new_cmb2_box( array(
         'id' => 'accordion_metabox',
