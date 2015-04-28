@@ -8,7 +8,7 @@ get_header();
 
 	<?php the_showcase(); ?>
 	<div id="content" class="wrap group content-two-column" role="main">
-		<div class="quarter">
+		<div class="quarter sidebar">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-generic') ) : ?><!-- no sidebar --><?php endif; ?>
 		</div>
 		<div class="three-quarter">
