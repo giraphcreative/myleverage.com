@@ -354,37 +354,29 @@ header {
             header nav ul.nav-menu > li:nth-child(10) > ul.sub-menu > li > ul.sub-menu {
               left: -100%; } }
       header nav ul.nav-menu > li:nth-child(2) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(2) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(2):hover a, header nav ul.nav-menu > li:nth-child(2).open a {
-        background: #D3D627; }
-        header nav ul.nav-menu > li:nth-child(2) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(2) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(2):hover a:hover, header nav ul.nav-menu > li:nth-child(2).open a:hover {
-          background: #d9db3b; }
-      header nav ul.nav-menu > li:nth-child(3) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(3) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(3):hover a, header nav ul.nav-menu > li:nth-child(3).open a, header nav ul.nav-menu > li:nth-child(7) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(7) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(7):hover a, header nav ul.nav-menu > li:nth-child(7).open a {
-        background: #A7DAE9; }
-        header nav ul.nav-menu > li:nth-child(3) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(3) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(3):hover a:hover, header nav ul.nav-menu > li:nth-child(3).open a:hover, header nav ul.nav-menu > li:nth-child(7) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(7) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(7):hover a:hover, header nav ul.nav-menu > li:nth-child(7).open a:hover {
-          background: #bbe3ee; }
-      header nav ul.nav-menu > li:nth-child(4) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(4) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(4):hover a, header nav ul.nav-menu > li:nth-child(4).open a {
-        background: #47494b; }
-        header nav ul.nav-menu > li:nth-child(4) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(4) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(4):hover a:hover, header nav ul.nav-menu > li:nth-child(4).open a:hover {
-          background: #545558; }
-      header nav ul.nav-menu > li:nth-child(5) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(5) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(5):hover a, header nav ul.nav-menu > li:nth-child(5).open a {
-        background: #7DB241; }
-        header nav ul.nav-menu > li:nth-child(5) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(5) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(5):hover a:hover, header nav ul.nav-menu > li:nth-child(5).open a:hover {
-          background: #8abe4e; }
-      header nav ul.nav-menu > li:nth-child(6) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(6) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(6):hover a, header nav ul.nav-menu > li:nth-child(6).open a {
         background: #F99B1F; }
-        header nav ul.nav-menu > li:nth-child(6) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(6) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(6):hover a:hover, header nav ul.nav-menu > li:nth-child(6).open a:hover {
+        header nav ul.nav-menu > li:nth-child(2) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(2) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(2):hover a:hover, header nav ul.nav-menu > li:nth-child(2).open a:hover {
           background: #faa638; }
-      header nav ul.nav-menu > li:nth-child(8) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(8) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(8):hover a, header nav ul.nav-menu > li:nth-child(8).open a {
+      header nav ul.nav-menu > li:nth-child(3) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(3) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(3):hover a, header nav ul.nav-menu > li:nth-child(3).open a {
         background: #939598; }
-        header nav ul.nav-menu > li:nth-child(8) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(8) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(8):hover a:hover, header nav ul.nav-menu > li:nth-child(8).open a:hover {
+        header nav ul.nav-menu > li:nth-child(3) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(3) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(3):hover a:hover, header nav ul.nav-menu > li:nth-child(3).open a:hover {
           background: #a0a2a4; }
-      header nav ul.nav-menu > li:nth-child(9) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(9) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(9):hover a, header nav ul.nav-menu > li:nth-child(9).open a {
+      header nav ul.nav-menu > li:nth-child(4) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(4) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(4):hover a, header nav ul.nav-menu > li:nth-child(4).open a {
         background: #15B0BF; }
-        header nav ul.nav-menu > li:nth-child(9) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(9) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(9):hover a:hover, header nav ul.nav-menu > li:nth-child(9).open a:hover {
+        header nav ul.nav-menu > li:nth-child(4) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(4) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(4):hover a:hover, header nav ul.nav-menu > li:nth-child(4).open a:hover {
           background: #18c5d6; }
-      header nav ul.nav-menu > li:nth-child(10) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(10) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(10):hover a, header nav ul.nav-menu > li:nth-child(10).open a {
-        background: #007940; }
-        header nav ul.nav-menu > li:nth-child(10) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(10) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(10):hover a:hover, header nav ul.nav-menu > li:nth-child(10).open a:hover {
-          background: #00934d; }
+      header nav ul.nav-menu > li:nth-child(5) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(5) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(5):hover a, header nav ul.nav-menu > li:nth-child(5).open a {
+        background: #D3D627; }
+        header nav ul.nav-menu > li:nth-child(5) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(5) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(5):hover a:hover, header nav ul.nav-menu > li:nth-child(5).open a:hover {
+          background: #d9db3b; }
+      header nav ul.nav-menu > li:nth-child(6) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(6) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(6):hover a, header nav ul.nav-menu > li:nth-child(6).open a {
+        background: #017A40; }
+        header nav ul.nav-menu > li:nth-child(6) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(6) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(6):hover a:hover, header nav ul.nav-menu > li:nth-child(6).open a:hover {
+          background: #01934d; }
+      header nav ul.nav-menu > li:nth-child(7) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(7) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(7):hover a, header nav ul.nav-menu > li:nth-child(7).open a {
+        background: #7DB241; }
+        header nav ul.nav-menu > li:nth-child(7) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(7) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(7):hover a:hover, header nav ul.nav-menu > li:nth-child(7).open a:hover {
+          background: #8abe4e; }
   header .search {
     position: relative;
     padding: 10px; }

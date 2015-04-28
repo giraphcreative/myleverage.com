@@ -208,14 +208,12 @@ header {
 
 			}
 
-			& > li:nth-child( 2 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $yellow; &:hover { background: lighten( $yellow, 5% ); } } }
-			& > li:nth-child( 3 ), & > li:nth-child( 7 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $sky; &:hover { background: lighten( $sky, 5% ); } } }
-			& > li:nth-child( 4 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $grey-dark; &:hover { background: lighten( $grey-dark, 5% ); } } }
-			& > li:nth-child( 5 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $lime; &:hover { background: lighten( $lime, 5% ); } } }
-			& > li:nth-child( 6 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $orange; &:hover { background: lighten( $orange, 5% ); } } }
-			& > li:nth-child( 8 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $grey; &:hover { background: lighten( $grey, 5% ); } } }
-			& > li:nth-child( 9 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $teal; &:hover { background: lighten( $teal, 5% ); } } }
-			& > li:nth-child( 10 ) { & > ul.sub-menu, & > ul.sub-menu a, &:hover a, &.open a { background: $forest; &:hover { background: lighten( $forest, 5% ); } } }
+			& > li:nth-child( 2 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $orange; &:hover { background: lighten( $orange, 5% ); } } }
+			& > li:nth-child( 3 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $grey; &:hover { background: lighten( $grey, 5% ); } } }
+			& > li:nth-child( 4 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $teal; &:hover { background: lighten( $teal, 5% ); } } }
+			& > li:nth-child( 5 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $yellow; &:hover { background: lighten( $yellow, 5% ); } } }
+			& > li:nth-child( 6 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $green; &:hover { background: lighten( $green, 5% ); } } }
+			& > li:nth-child( 7 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $lime; &:hover { background: lighten( $lime, 5% ); } } }
 		}
 	}
 
