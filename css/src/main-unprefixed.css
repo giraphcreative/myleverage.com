@@ -239,8 +239,6 @@ header {
       @media only screen and (min-width: 600px) {
         header nav ul.nav-menu {
           display: block; } }
-      header nav ul.nav-menu > li:nth-child(1) {
-        background: #2C5871; }
       header nav ul.nav-menu > li:nth-child(10) {
         background: #017A40;
         font-style: italic; }
@@ -713,61 +711,6 @@ header {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0; }
 
-.hexagon {
-  /*this smushes a square into a 60deg/120deg rhombus*/
-  position: relative;
-  width: 300px;
-  height: 173.2050807569px;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  background-size: 473.2050807569px auto;
-  background-position: center center;
-  border-left: solid 4px #fff;
-  border-right: solid 4px #fff;
-  /*cover up the box shadows */ }
-  .hexagon .hex1, .hexagon .hex2 {
-    position: absolute;
-    overflow: hidden;
-    width: 212.132034356px;
-    height: 212.132034356px;
-    left: 39.3012701892px;
-    background: inherit;
-    transform: scaleY(0.5773502692) rotate(-45deg); }
-    .hexagon .hex1:after, .hexagon .hex2:after {
-      /*counter rotate and un-scale the bg image*/
-      content: "";
-      position: absolute;
-      left: -43.3012701892px;
-      width: 300px;
-      height: 212.132034356px;
-      top: 0;
-      background: inherit;
-      transform: rotate(45deg) scaleY(1.7320508076); }
-  .hexagon .hex1 {
-    top: -106.066017178px;
-    border-top: solid 6.9282032303px #fff;
-    border-right: solid 6.9282032303px #fff; }
-    .hexagon .hex1:after {
-      background-position: center 17%;
-      margin-top: -6.9282032303px; }
-  .hexagon .hex2 {
-    bottom: -106.066017178px;
-    border-left: solid 6.9282032303px #fff;
-    border-bottom: solid 6.9282032303px #fff; }
-    .hexagon .hex2:after {
-      background-position: center 83%;
-      margin-left: -6.9282032303px;
-      /*that pesky single pixel correction again*/ }
-  .hexagon:after {
-    content: "";
-    position: absolute;
-    top: 2.8284271247px;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    height: 167.5482265074px;
-    background: inherit; }
-
 .thumb-showcase a:hover {
   text-decoration: none;
   opacity: 0.8; }
@@ -812,123 +755,15 @@ header {
       .thumb-showcase .thumb-list .thumb {
         width: 19%; } }
     .thumb-showcase .thumb-list .thumb .thumb-icon {
-      /*this smushes a square into a 60deg/120deg rhombus*/
-      position: relative;
-      width: 50px;
-      height: 28.8675134595px;
-      margin-top: 16.6666666667px;
-      margin-bottom: 16.6666666667px;
-      background-size: 78.8675134595px auto;
-      background-position: center center;
-      border-left: solid 4px #fff;
-      border-right: solid 4px #fff;
-      /*cover up the box shadows */
       float: left;
-      margin-top: 25px;
-      margin-right: 10px;
-      margin-left: 10px;
+      width: 20%;
+      margin: 10px;
       z-index: 1; }
-      .thumb-showcase .thumb-list .thumb .thumb-icon .hex1, .thumb-showcase .thumb-list .thumb .thumb-icon .hex2 {
-        position: absolute;
-        overflow: hidden;
-        width: 35.3553390593px;
-        height: 35.3553390593px;
-        left: 3.2168783649px;
-        background: inherit;
-        transform: scaleY(0.5773502692) rotate(-45deg); }
-        .thumb-showcase .thumb-list .thumb .thumb-icon .hex1:after, .thumb-showcase .thumb-list .thumb .thumb-icon .hex2:after {
-          /*counter rotate and un-scale the bg image*/
-          content: "";
-          position: absolute;
-          left: -7.2168783649px;
-          width: 50px;
-          height: 35.3553390593px;
-          top: 0;
-          background: inherit;
-          transform: rotate(45deg) scaleY(1.7320508076); }
-      .thumb-showcase .thumb-list .thumb .thumb-icon .hex1 {
-        top: -17.6776695297px;
-        border-top: solid 6.9282032303px #fff;
-        border-right: solid 6.9282032303px #fff; }
-        .thumb-showcase .thumb-list .thumb .thumb-icon .hex1:after {
-          background-position: center 17%;
-          margin-top: -6.9282032303px; }
-      .thumb-showcase .thumb-list .thumb .thumb-icon .hex2 {
-        bottom: -17.6776695297px;
-        border-left: solid 6.9282032303px #fff;
-        border-bottom: solid 6.9282032303px #fff; }
-        .thumb-showcase .thumb-list .thumb .thumb-icon .hex2:after {
-          background-position: center 83%;
-          margin-left: -6.9282032303px;
-          /*that pesky single pixel correction again*/ }
-      .thumb-showcase .thumb-list .thumb .thumb-icon:after {
-        content: "";
-        position: absolute;
-        top: 2.8284271247px;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        height: 23.21065921px;
-        background: inherit; }
       @media only screen and (min-width: 500px) {
         .thumb-showcase .thumb-list .thumb .thumb-icon {
-          /*this smushes a square into a 60deg/120deg rhombus*/
-          position: relative;
-          width: 175px;
-          height: 101.0362971082px;
-          margin-top: 58.3333333333px;
-          margin-bottom: 58.3333333333px;
-          background-size: 276.0362971082px auto;
-          background-position: center center;
-          border-left: solid 4px #fff;
-          border-right: solid 4px #fff;
-          /*cover up the box shadows */
-          float: none;
-          margin-top: 60px;
-          margin-left: auto;
-          margin-right: auto; }
-          .thumb-showcase .thumb-list .thumb .thumb-icon .hex1, .thumb-showcase .thumb-list .thumb .thumb-icon .hex2 {
-            position: absolute;
-            overflow: hidden;
-            width: 123.7436867076px;
-            height: 123.7436867076px;
-            left: 21.259074277px;
-            background: inherit;
-            transform: scaleY(0.5773502692) rotate(-45deg); }
-            .thumb-showcase .thumb-list .thumb .thumb-icon .hex1:after, .thumb-showcase .thumb-list .thumb .thumb-icon .hex2:after {
-              /*counter rotate and un-scale the bg image*/
-              content: "";
-              position: absolute;
-              left: -25.259074277px;
-              width: 175px;
-              height: 123.7436867076px;
-              top: 0;
-              background: inherit;
-              transform: rotate(45deg) scaleY(1.7320508076); }
-          .thumb-showcase .thumb-list .thumb .thumb-icon .hex1 {
-            top: -61.8718433538px;
-            border-top: solid 6.9282032303px #fff;
-            border-right: solid 6.9282032303px #fff; }
-            .thumb-showcase .thumb-list .thumb .thumb-icon .hex1:after {
-              background-position: center 17%;
-              margin-top: -6.9282032303px; }
-          .thumb-showcase .thumb-list .thumb .thumb-icon .hex2 {
-            bottom: -61.8718433538px;
-            border-left: solid 6.9282032303px #fff;
-            border-bottom: solid 6.9282032303px #fff; }
-            .thumb-showcase .thumb-list .thumb .thumb-icon .hex2:after {
-              background-position: center 83%;
-              margin-left: -6.9282032303px;
-              /*that pesky single pixel correction again*/ }
-          .thumb-showcase .thumb-list .thumb .thumb-icon:after {
-            content: "";
-            position: absolute;
-            top: 2.8284271247px;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            height: 95.3794428587px;
-            background: inherit; } }
+          width: auto;
+          margin: 0;
+          float: none; } }
     .thumb-showcase .thumb-list .thumb .thumb-text {
       background: white;
       padding: 10px 5px;
@@ -957,7 +792,6 @@ header {
         border: 3px solid #47494b; }
       @media only screen and (min-width: 500px) {
         .thumb-showcase .thumb-list .thumb .thumb-text {
-          margin-top: -40px;
           position: relative;
           z-index: 100;
           min-height: 100px; } }
