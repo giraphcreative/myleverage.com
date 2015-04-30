@@ -62,9 +62,8 @@ function the_thumb_showcase() {
 
     foreach ( $thumbs as $thumb ) {
         ?><a href="<?php print $thumb['link'] ?>"><div class="thumb">
-				<div class="thumb-icon" style="background-image: url(<?php print p_image_resize( $thumb['image'], 300, 300, true ) ?>);">
-					<div class="hex1"></div>
-					<div class="hex2"></div>
+				<div class="thumb-icon">
+					<img src="<?php print $thumb['image']; ?>">
 				</div>
 				<div class="thumb-text <?php print $thumb['color'] ?>">
 					<h3><?php print $thumb['title'] ?></h3>
