@@ -7,7 +7,9 @@ jQuery(document).ready(function($){
 	var menu = $( 'header nav' ),
 		menu_toggle = menu.find( 'button.menu-toggle' ),
 		menu_ul = menu.find( '.nav-menu' ),
-		fluid_images = $( '.content-area img, .site-content img' );
+		fluid_images = $( '.content-area img, .site-content img' ),
+		sidebar = $( '.sidebar' ),
+		large_title = $( '.large-title' );
 
 
 	// remove height and width from images inside
@@ -36,13 +38,28 @@ jQuery(document).ready(function($){
 
 	});
 
-	// 
+
+	// accordion
 	$( '.accordion-box-title' ).click(function(){
 		$( this ).parent( '.accordion-box' ).children( '.accordion-box-content' ).slideToggle( 600 );
+		$( this ).toggleClass( 'open' );
 	});
+
 
 	// fluid width videos that maintain aspect ratio
 	$( '.content' ).fitVids();
+	
+
+	// sidebar title background colors.
+	if ( sidebar && large_title ) {
+		sidebar.find( '.widget:not(.leverage) .widget-title' ).css( 'background-color', large_title.css( 'background-color' ) );
+	}
+
+
+	// button links (using the data-url attribute)
+	$( 'button[data-url]' ).click(function(){
+		window.location.href = $( this ).attr( 'data-url' );
+	});
 	
 });
 
