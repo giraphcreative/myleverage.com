@@ -20,7 +20,7 @@
 
 </head>
 <body <?php body_class(); ?>>
-
+s
 <header>
 
 	<div class="logo">
@@ -36,8 +36,13 @@
 		<!--</div>-->
 	</nav>
 
-	<div class="search">
-		<?php get_search_form(); ?>
+	<div class="aux">
+		<div class="search">
+			<?php get_search_form(); ?>
+		</div>
+		<p class="account-links">
+			<?php account_toolbox() ?>
+		</p>
 	</div>
 
 </header>

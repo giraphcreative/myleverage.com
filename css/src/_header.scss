@@ -5,6 +5,14 @@ $menu-bp: 1024px;
 header {
 	padding: 30px 0 0;
 
+	@include respond-to( 768px ) {
+		position: relative;
+
+		.wrap {
+			position: relative;
+		}
+	}
+
 	.logo {
 		margin-right: 60px;
 		padding: 20px 0 5px 10px;
@@ -217,49 +225,76 @@ header {
 		}
 	}
 
-	.search {
+	.aux {
 		position: relative;
-		padding: 10px;
-
-		input[type=text] {
-			display: block;
-			right: 26px;
-			left: 0;
-			width: 100%;
-			border: 2px solid $grey;
-			background: white;
-			padding: 0 25px 0 15px;
-			font-size: 15px;
-			line-height: 28px;
-			text-align: center;
-		}
-
-		input[type=submit] {
-			position: absolute;
-			top: 50%;
-			right: 20px;
-			bottom: 0;
-			width: 50px;
-			height: 50px;
-			border: 0;
-			background: url(../img/icon-small-search.png) center center no-repeat;
-			text-indent: -400px;
-			cursor: pointer;
-			margin-top: -25px;
-		}
 
 		@include respond-to( 768px ) {
 			position: absolute;
 			top: 80px;
-			right: 30px;
+			right: 40px;
+			width: 280px;
 		}
-	}
 
-	@include respond-to( 768px ) {
-		position: relative;
-
-		.wrap {
+		.search {
 			position: relative;
+			padding: 10px 0;
+
+			@include respond-to( 768px ) {
+				padding: 0;
+			}
+
+			form {
+				margin: 0;
+			}
+
+			input[type=text] {
+				display: block;
+				right: 0;
+				left: 0;
+				width: 100%;
+				border: 2px solid $grey;
+				border-left: 0;
+				border-right: 0;
+				background: white;
+				padding: 0 25px 0 15px;
+				font-size: 15px;
+				line-height: 28px;
+
+				@include respond-to( 768px ) {
+					border: 2px solid $grey;
+				}
+			}
+
+			input[type=submit] {
+				position: absolute;
+				top: 50%;
+				right: 10px;
+				bottom: 0;
+				width: 50px;
+				height: 50px;
+				border: 0;
+				background: url(../img/icon-small-search.png) center center no-repeat;
+				text-indent: -400px;
+				cursor: pointer;
+				margin-top: -25px;
+			}
+		}
+
+		p.account-links {
+			display: none;
+
+			@include respond-to( 768px ) {
+				display: block;
+				padding: 15px 0 0 0;
+				font-size: .85em;
+				text-align: center;
+				color: $grey;
+
+				span {
+					color: lighten( $grey, 20% );
+					padding: 6px;
+				}
+			}
 		}
 	}
 }
