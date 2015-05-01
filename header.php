@@ -20,7 +20,7 @@
 
 </head>
 <body <?php body_class(); ?>>
-s
+
 <header>
 
 	<div class="logo">
