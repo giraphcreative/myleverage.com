@@ -928,8 +928,8 @@ img.alignleft {
         content: '';
         background: url(../img/icon-accordion-arrow.png) center center no-repeat;
         background-size: contain;
-        -webkit-transition: -webkit-transform 400ms ease-in-out;
-                transition: transform 400ms ease-in-out; }
+        -webkit-transition: -webkit-transform 600ms ease-in-out;
+                transition: transform 600ms ease-in-out; }
         @media only screen and (min-width: 768px) {
           .accordion .accordion-box .accordion-box-title h4:before {
             width: 60px;
@@ -1035,6 +1035,29 @@ img.alignleft {
       font-weight: normal; }
     .sidebar .widget.leverage .widget-title:before {
       background-image: url(../img/icon-leverage.png); }
+  .sidebar .widget.cat-post-widget .widget-title:before {
+    background-image: url(../img/icon-connect.png); }
+  .sidebar .widget.cat-post-widget ul {
+    padding: 10px; }
+
+.widget_multi_twitter .tweet {
+  padding: 10px; }
+  .widget_multi_twitter .tweet .twitter-avatar {
+    float: left;
+    margin: 0 5% 10px 0;
+    width: 20%; }
+  .widget_multi_twitter .tweet .tweet-userName {
+    float: left;
+    width: 75%;
+    color: #797b7f;
+    font-family: "Avenir Demi", sans-serif;
+    font-weight: normal; }
+  .widget_multi_twitter .tweet .tweet-time {
+    font-size: .8em;
+    line-height: 1em;
+    color: #adafb1; }
+  .widget_multi_twitter .tweet .tweet-message {
+    font-size: .9em; }
 
 footer {
   background-color: #007940;

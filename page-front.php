@@ -63,31 +63,7 @@ get_header();
 			<div class="third tweets">
 				<h2><span>Tweets</span></h2>
 				<div class="third-content">
-				<?php
-				include( 'library/tweet-php/TweetPHP.php' );
-				$upload_dir = wp_upload_dir();
-				$twitter_feed = new TweetPHP(array(
-					'consumer_key'              => 'rI2mcCD7tUMLKiSYdbea91bv3',
-					'consumer_secret'           => 'w2bmylGVQ2BGGlQb9CFJoI9xqQ3gacjie4UbiCp8wqoP0e7y4V',
-					'access_token'              => '29196496-zk653NF1sbj3mJR54Lkxcv4zmTSvm2GRTrJRf1mUA',
-					'access_token_secret'       => 'QeXhPPB9xYMUAHwhnAsN2BiyIi88G3YR4UFe4aWuDJyyB',
-					'cache_file'            	=> $upload_dir['basedir'] . '/cache/twitter-home.txt', 
-					'cache_file_raw'        	=> $upload_dir['basedir'] . '/cache/twitter-home-array.txt', 
-					'twitter_screen_name'       => 'MY_LEVERAGE',
-					'tweets_to_retrieve'     	=> 5, // Number of tweets to display
-					'tweets_to_display'     	=> 5, // Number of tweets to display
-				));
-				$feed = $twitter_feed->get_tweet_array();
-				foreach ( $feed as $item ) {
-					?>
-					<article>
-						<p><?php print make_clickable( $item['text'] ) ?>
-						<div class="date"><a href="https://twitter.com/<?php print $twitter ?>/status/<?php print $item['id'] ?>"><?php print date( "n/j/Y @ g:ia", strtotime( $item['created_at'] ) ); ?></a></div></p>
-					</article>
-					<?php
-				}
-				?>
-				</div>
+				<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('home-events')) : ?>[twitter widget]<?php endif; ?>
 				<button class="home-third-button twitter" data-url="https://twitter.com/leagueofsecus"><span>Read More Tweets</span></button>
 				<div class="clearfix"></div>
 			</div>

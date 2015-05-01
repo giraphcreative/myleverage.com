@@ -39,7 +39,7 @@
 					content: '';
 					background: url(../img/icon-accordion-arrow.png) center center no-repeat;
 					background-size: contain;
-					transition: transform 400ms ease-in-out;
+					transition: transform 600ms ease-in-out;
 
 					@include respond-to( 768px ) {
 						width: 60px;

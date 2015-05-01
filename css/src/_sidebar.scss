@@ -122,7 +122,47 @@
 				}
 			}
 		}
+
+		&.cat-post-widget {
+			.widget-title:before {
+				background-image: url(../img/icon-connect.png);
+			}
+
+			ul {
+				padding: 10px;
+			}
+		}
 	}
 
+}
+
+
+.widget_multi_twitter {
+	.tweet {
+		padding: 10px;
+
+		.twitter-avatar {
+			float: left;
+			margin: 0 5% 10px 0;
+			width: 20%;
+		}
+
+		.tweet-userName {
+			float: left;
+			width: 75%;
+			color: darken( $grey, 10% );
+			@include font-bold;
+		}
+
+		.tweet-time {
+			font-size: .8em;
+			line-height: 1em;
+			color: lighten( $grey, 10% );
+		}
+
+		.tweet-message {
+			font-size: .9em;
+		}
+	}
 }
 
