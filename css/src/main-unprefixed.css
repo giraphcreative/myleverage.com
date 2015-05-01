@@ -1154,6 +1154,8 @@ footer {
         background-image: url(../img/icon-tweets.png); }
       .home-thirds .third.tweets .third-content {
         padding-top: 15px; }
+      .home-thirds .third.tweets .widget-title {
+        display: none; }
     .home-thirds .third h2 {
       font-family: "Avenir", sans-serif;
       font-weight: normal;
