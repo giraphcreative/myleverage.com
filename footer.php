@@ -19,7 +19,7 @@
 			<div class="column first">
 				<h3>Connect With Us</h3>
 				<p class="address">22 Inverness Cntr Pky, #200<br>
-					Birmingham, Alabama</p>
+					Birmingham, Alabama 35242</p>
 				<p class="address">3692 Coolidge Court<br>
 					Tallahassee, Florida 32311</p>
 				<p><a href="tel:8662310545">866.231.0545</a></p>
