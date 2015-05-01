@@ -1100,10 +1100,19 @@ footer {
     clear: both; }
   .home-thirds .third {
     margin: 30px 0;
-    padding: 0 0 95px;
-    position: relative; }
+    padding: 0; }
+    @media only screen and (min-width: 768px) {
+      .home-thirds .third {
+        float: left;
+        width: 31%;
+        margin-right: 2%; }
+        .home-thirds .third.tweets {
+          width: 33%;
+          margin-right: 0; } }
     .home-thirds .third.events {
       background-color: #b8d4e4; }
+      .home-thirds .third.events .tribe-events-widget-link {
+        display: none; }
       .home-thirds .third.events h2, .home-thirds .third.events button {
         background-color: #2C5871; }
       .home-thirds .third.events h2:before {
@@ -1120,19 +1129,8 @@ footer {
         background: #7DB241; }
       .home-thirds .third.tweets h2:before {
         background-image: url(../img/icon-tweets.png); }
-    @media only screen and (min-width: 768px) {
-      .home-thirds .third {
-        float: left;
-        width: 31%;
-        margin-right: 2%;
-        padding-bottom: 125px;
-        min-height: 580px; }
-        .home-thirds .third.tweets {
-          width: 33%;
-          margin-right: 0; } }
-    @media only screen and (min-width: 1024px) {
-      .home-thirds .third {
-        min-height: 520px; } }
+      .home-thirds .third.tweets .third-content {
+        padding-top: 15px; }
     .home-thirds .third h2 {
       font-family: "Avenir", sans-serif;
       font-weight: normal;
@@ -1156,16 +1154,15 @@ footer {
         margin-right: 30px;
         border-bottom: 1px solid white; }
     .home-thirds .third h4 {
-      font-size: 1.3em;
-      line-height: 1.3em; }
+      font-size: 1.2em;
+      line-height: 1.3em;
+      padding-top: 15px; }
     .home-thirds .third .third-content {
-      padding: 10px 15px; }
+      padding: 10px 15px;
+      height: 500px;
+      overflow: auto; }
     .home-thirds .third button {
       display: block;
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
       width: 100%;
       padding: 10px 25px 10px 10px;
       border: 0;

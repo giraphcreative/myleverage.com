@@ -9,11 +9,22 @@ $icon-width: 70px;
 
 	.third {
 		margin: 30px 0;
-		padding: 0 0 95px;
-		position: relative;
+		padding: 0;
+
+		@include respond-to( 768px ) {
+			float: left;
+			width: 31%;
+			margin-right: 2%;
+
+			&.tweets {
+				width: 33%;
+				margin-right: 0;
+			}
+		}
 		
 		&.events {
 			background-color: lighten( $navy, 50% );
+			.tribe-events-widget-link { display: none; }
 			h2, button { background-color: $navy; }
 			h2:before { background-image: url(../img/icon-events.png); }
 		}
@@ -28,23 +39,7 @@ $icon-width: 70px;
 			background-color: lighten( $lime, 40% );
 			h2, button { background: $lime; }
 			h2:before { background-image: url(../img/icon-tweets.png); }
-		}
-
-		@include respond-to( 768px ) {
-			float: left;
-			width: 31%;
-			margin-right: 2%;
-			padding-bottom: 125px;
-			min-height: 580px;
-
-			&.tweets {
-				width: 33%;
-				margin-right: 0;
-			}
-		}
-
-		@include respond-to( 1024px ) {
-			min-height: 520px;
+			.third-content { padding-top: 15px; }
 		}
 
 		h2 {
@@ -75,20 +70,19 @@ $icon-width: 70px;
 		}
 
 		h4 {
-			font-size: 1.3em;
+			font-size: 1.2em;
 			line-height: 1.3em;
+			padding-top: 15px;
 		}
 
 		.third-content {
 			padding: 10px 15px;
+			height: 500px;
+			overflow: auto;
 		}
 
 		button {
 			display: block;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			right: 0;
 			width: 100%;
 			padding: 10px 25px 10px 10px;
 			border: 0;
