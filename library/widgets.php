@@ -27,6 +27,14 @@ if ( function_exists('register_sidebar') ) {
         'before_title' => '<h4>',
         'after_title' => '</h4>',
     ));
+ 	register_sidebar(array(
+		'name'=> 'Homepage Twitter Feed',
+		'id' => 'home-twitter',
+        'before_widget' => '<div class="widget">',
+        'after_widget' => '</div>',
+        'before_title' => '<h4>',
+        'after_title' => '</h4>',
+    ));
 }
 
 
