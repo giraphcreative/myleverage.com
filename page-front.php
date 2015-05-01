@@ -64,6 +64,7 @@ get_header();
 				<h2><span>Tweets</span></h2>
 				<div class="third-content">
 				<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('home-twitter')) : ?>[twitter widget]<?php endif; ?>
+				</div>
 				<button class="home-third-button twitter" data-url="https://twitter.com/leagueofsecus"><span>Read More Tweets</span></button>
 				<div class="clearfix"></div>
 			</div>
