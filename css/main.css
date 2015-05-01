@@ -1088,12 +1088,8 @@ img.alignleft {
 .widget_multi_twitter .tweet {
   padding: 10px; }
   .widget_multi_twitter .tweet .twitter-avatar {
-    float: left;
-    margin: 0 5% 10px 0;
-    width: 20%; }
+    display: none; }
   .widget_multi_twitter .tweet .tweet-userName {
-    float: left;
-    width: 75%;
     color: #797b7f;
     font-family: "Avenir Demi", sans-serif;
     font-weight: normal; }
