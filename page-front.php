@@ -29,16 +29,9 @@ get_header();
 			<div class="third events">
 				<h2><span>Events</span></h2>
 				<div class="third-content">
-					<article class="first">
-						<h4><a href="#">An Event Title</a></h4>
-						<p>January 3, 2015  3:00P - 4:00PM</p>
-					</article>
-					<article>
-						<h4><a href="#">An Event Title</a></h4>
-						<p>January 3, 2015  3:00P - 4:00PM</p>
-					</article>
+				<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('home-events')) : ?>[events widget]<?php endif; ?>
 				</div>
-				<button class="home-third-button link-events"><span>All Link Events</span></button>
+				<button class="home-third-button link-events" data-url="/events/month"><span>All Events</span></button>
 				<div class="clearfix"></div>
 			</div>
 
@@ -63,7 +56,7 @@ get_header();
 					wp_reset_query();
 					?>
 				</div>
-				<button class="home-third-button link-news"><span>All Link News</span></button>
+				<button class="home-third-button link-news" data-url="/press"><span>All News</span></button>
 				<div class="clearfix"></div>
 			</div>
 
@@ -81,7 +74,7 @@ get_header();
 					'cache_file'            	=> $upload_dir['basedir'] . '/cache/twitter-home.txt', 
 					'cache_file_raw'        	=> $upload_dir['basedir'] . '/cache/twitter-home-array.txt', 
 					'twitter_screen_name'       => 'MY_LEVERAGE',
-					'tweets_to_retrieve'     	=> 3, // Number of tweets to display
+					'tweets_to_retrieve'     	=> 5, // Number of tweets to display
 					'tweets_to_display'     	=> 5, // Number of tweets to display
 				));
 				$feed = $twitter_feed->get_tweet_array();
@@ -95,7 +88,7 @@ get_header();
 				}
 				?>
 				</div>
-				<button class="home-third-button cu-match"><span>Find Your Match</span></button>
+				<button class="home-third-button twitter" data-url="https://twitter.com/leagueofsecus"><span>Read More Tweets</span></button>
 				<div class="clearfix"></div>
 			</div>
 
