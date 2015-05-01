@@ -183,7 +183,16 @@ p {
   padding: 8px 0; }
 
 strong {
-  font-weight: bold; }
+  font-family: "Avenir Demi", sans-serif;
+  font-weight: normal; }
+
+em {
+  font-family: "Avenir Italic", sans-serif;
+  font-weight: normal; }
+
+em strong, strong em {
+  font-family: "Avenir Demi Italic", sans-serif;
+  font-weight: normal; }
 
 a {
   color: #2C5871;
@@ -195,6 +204,18 @@ a {
 input, textarea {
   font-family: "Avenir", sans-serif;
   font-weight: normal; }
+
+.content-style ol, .half ol, .two-third ol, .three-quarter ol, .accordion .accordion-box .accordion-box-content ol, .content-style ul, .half ul, .two-third ul, .three-quarter ul, .accordion .accordion-box .accordion-box-content ul {
+  padding: 5px 0 5px 35px; }
+  .content-style ol li, .half ol li, .two-third ol li, .three-quarter ol li, .accordion .accordion-box .accordion-box-content ol li, .content-style ul li, .half ul li, .two-third ul li, .three-quarter ul li, .accordion .accordion-box .accordion-box-content ul li {
+    padding: 3px 0; }
+.content-style ul, .half ul, .two-third ul, .three-quarter ul, .accordion .accordion-box .accordion-box-content ul {
+  list-style-type: disc; }
+.content-style ol, .half ol, .two-third ol, .three-quarter ol, .accordion .accordion-box .accordion-box-content ol {
+  list-style-type: decimal; }
+.content-style h1, .half h1, .two-third h1, .three-quarter h1, .accordion .accordion-box .accordion-box-content h1, .content-style h2, .half h2, .two-third h2, .three-quarter h2, .accordion .accordion-box .accordion-box-content h2, .content-style h3, .half h3, .two-third h3, .three-quarter h3, .accordion .accordion-box .accordion-box-content h3, .content-style h4, .half h4, .two-third h4, .three-quarter h4, .accordion .accordion-box .accordion-box-content h4, .content-style h5, .half h5, .two-third h5, .three-quarter h5, .accordion .accordion-box .accordion-box-content h5, .content-style h6, .half h6, .two-third h6, .three-quarter h6, .accordion .accordion-box .accordion-box-content h6 {
+  color: #2C5871;
+  padding: 6px 0; }
 
 header {
   padding: 30px 0 0; }

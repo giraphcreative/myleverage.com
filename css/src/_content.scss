@@ -37,6 +37,10 @@ body {
 	margin: 15px 0;
 }
 
+.half, .two-third, .three-quarter {
+	@extend .content-style;
+}
+
 
 .quarter, .third, .half, .two-third, .three-quarter {
 	padding: 20px;
