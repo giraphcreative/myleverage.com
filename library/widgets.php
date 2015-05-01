@@ -22,18 +22,18 @@ if ( function_exists('register_sidebar') ) {
  	register_sidebar(array(
 		'name'=> 'Homepage Events',
 		'id' => 'home-events',
-        'before_widget' => '<div class="widget">',
+        'before_widget' => '<div class="widget %2$s">',
         'after_widget' => '</div>',
-        'before_title' => '<h4>',
-        'after_title' => '</h4>',
+        'before_title' => '<div class="widget-title"><h4>',
+        'after_title' => '</h4></div>',
     ));
  	register_sidebar(array(
 		'name'=> 'Homepage Twitter Feed',
 		'id' => 'home-twitter',
-        'before_widget' => '<div class="widget">',
+        'before_widget' => '<div class="widget %2$s">',
         'after_widget' => '</div>',
-        'before_title' => '<h4>',
-        'after_title' => '</h4>',
+        'before_title' => '<div class="widget-title"><h4>',
+        'after_title' => '</h4></div>',
     ));
 }
 
