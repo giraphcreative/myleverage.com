@@ -20,6 +20,7 @@ include( "library/metabox.php" );
 
 // include widget library
 include( "library/widgets.php" );
+include( "library/login.php" );
 
 
 // include quote metaboxes/functions
