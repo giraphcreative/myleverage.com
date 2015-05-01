@@ -900,37 +900,16 @@ img.alignleft {
   padding: 0 20px; }
 
 .accordion {
-  padding: 30px 0 6px;
-  padding-bottom: 6px; }
-  .accordion.no-icons {
-    padding-top: 0;
-    margin: 0; }
-    .accordion.no-icons .accordion-box-title h4 {
-      padding: 30px 20px; }
-  .accordion .accordion-box-title {
+  padding: 30px 0 6px; }
+  .accordion .accordion-box .accordion-box-title {
     position: relative;
-    background: url(../img/bg-stripes.png) center center no-repeat;
     background-size: cover;
-    cursor: pointer; }
-    .accordion .accordion-box-title .wrap {
-      position: relative; }
-    .accordion .accordion-box-title span.accordion-box-title-icon {
-      position: absolute;
-      top: 50%;
-      left: 20px;
-      margin-top: -20px;
-      width: 40px;
-      height: 40px;
-      border-radius: 50%;
-      border: 2px solid white;
-      padding: 4px; }
-      @media only screen and (min-width: 1024px) {
-        .accordion .accordion-box-title span.accordion-box-title-icon {
-          left: 15px;
-          margin-top: -30px;
-          width: 60px;
-          height: 60px; } }
-    .accordion .accordion-box-title h4 {
+    cursor: pointer;
+    padding: 10px 40px 15px 15px; }
+    @media only screen and (min-width: 768px) {
+      .accordion .accordion-box .accordion-box-title {
+        padding: 15px 60px 25px 15px; } }
+    .accordion .accordion-box .accordion-box-title h4 {
       font-family: "Avenir Demi", sans-serif;
       font-weight: normal;
       font-size: 18px;
@@ -938,14 +917,32 @@ img.alignleft {
       font-style: normal;
       color: white;
       text-transform: uppercase;
-      padding: 20px 0 20px 80px; }
-      @media only screen and (min-width: 1024px) {
-        .accordion .accordion-box-title h4 {
-          padding: 30px 20px 30px 100px; } }
-  .accordion .accordion-box-content {
+      padding: 10px 10px 5px;
+      border-bottom: 4px solid white; }
+      .accordion .accordion-box .accordion-box-title h4:before {
+        position: absolute;
+        right: 10px;
+        bottom: 10px;
+        width: 40px;
+        height: 40px;
+        content: '';
+        background: url(../img/icon-accordion-arrow.png) center center no-repeat;
+        background-size: contain;
+        -webkit-transition: -webkit-transform 400ms ease-in-out;
+                transition: transform 400ms ease-in-out; }
+        @media only screen and (min-width: 768px) {
+          .accordion .accordion-box .accordion-box-title h4:before {
+            width: 60px;
+            height: 60px;
+            bottom: 10px; } }
+    .accordion .accordion-box .accordion-box-title.open h4:before {
+      -webkit-transform: rotate(180deg);
+          -ms-transform: rotate(180deg);
+              transform: rotate(180deg); }
+  .accordion .accordion-box .accordion-box-content {
     display: none;
     padding: 20px; }
-    .accordion .accordion-box-content .wrap {
+    .accordion .accordion-box .accordion-box-content .wrap {
       max-width: 1180px; }
   .accordion .accordion-box.open .accordion-box-content {
     display: block; }
