@@ -381,6 +381,10 @@ header {
             left: -100%; }
             header nav ul.nav-menu > li:nth-child(10) > ul.sub-menu > li > ul.sub-menu {
               left: -100%; } }
+      header nav ul.nav-menu > li:nth-child(1) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(1) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(1):hover a, header nav ul.nav-menu > li:nth-child(1).open a {
+        background: #007940; }
+        header nav ul.nav-menu > li:nth-child(1) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(1) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(1):hover a:hover, header nav ul.nav-menu > li:nth-child(1).open a:hover {
+          background: #00934d; }
       header nav ul.nav-menu > li:nth-child(2) > ul.sub-menu, header nav ul.nav-menu > li:nth-child(2) > ul.sub-menu a, header nav ul.nav-menu > li:nth-child(2):hover a, header nav ul.nav-menu > li:nth-child(2).open a {
         background: #F99B1F; }
         header nav ul.nav-menu > li:nth-child(2) > ul.sub-menu:hover, header nav ul.nav-menu > li:nth-child(2) > ul.sub-menu a:hover, header nav ul.nav-menu > li:nth-child(2):hover a:hover, header nav ul.nav-menu > li:nth-child(2).open a:hover {

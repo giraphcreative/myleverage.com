@@ -222,6 +222,7 @@ header {
 
 			}
 
+			& > li:nth-child( 1 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $forest; &:hover { background: lighten( $forest, 5% ); } } }
 			& > li:nth-child( 2 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $orange; &:hover { background: lighten( $orange, 5% ); } } }
 			& > li:nth-child( 3 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $grey; &:hover { background: lighten( $grey, 5% ); } } }
 			& > li:nth-child( 4 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a { background: $teal; &:hover { background: lighten( $teal, 5% ); } } }
