@@ -58,7 +58,13 @@ header {
 				display: block;
 			}
 
-			& > li:nth-child( 10 ) { background: $green; font-style: italic; }
+			& > li:nth-child( 10 ) { 
+				background: $green;
+				 
+				& > a {
+					font-style: italic; 
+				}
+			}
 
 			& > li {
 				box-shadow: inset 0px 15px 22px -10px rgba(100, 100, 100, 0.3);

@@ -65,7 +65,7 @@ class lscu_connect_widget extends WP_Widget {
 		echo $args['before_widget'];
 
 		// before and after widget arguments are defined by themes
-		echo $args['before_title'] . "Connect With Us" . $args['after_title'];
+		echo $args['before_title'] . "Connect" . $args['after_title'];
 
 		$counter = 1;
 		while ( $counter <= $this->number_contacts ) {
@@ -77,9 +77,11 @@ class lscu_connect_widget extends WP_Widget {
 			<div class="contact">
 				<?php if ( !empty( $instance[ 'image' . $counter ] ) ) { ?><img src="<?php print $instance[ 'image' . $counter ] ?>"><?php } ?>
 				<p><?php 
+				print ( !empty( $instance[ 'email' . $counter ] ) ? '<a href="mailto:' . $instance[ 'email' . $counter ] . '">' : '' );
 				print ( !empty( $instance[ 'name' . $counter ] ) ? '<strong>' . $instance[ 'name' . $counter ] . '</strong><br>' : '' ); 
+				print ( !empty( $instance[ 'email' . $counter ] ) ?  '</a><br>' : '' );
 				print ( !empty( $instance[ 'title' . $counter ] ) ? $instance[ 'title' . $counter ] . '<br>' : '' ); 
-				print ( !empty( $instance[ 'email' . $counter ] ) ? '<a href="mailto:' . $instance[ 'email' . $counter ] . '">' . $instance[ 'email' . $counter ] . '</a><br>' : '' );
+				//print ( !empty( $instance[ 'email' . $counter ] ) ? '<a href="mailto:' . $instance[ 'email' . $counter ] . '">' . $instance[ 'email' . $counter ] . '</a><br>' : '' );
 				print ( !empty( $instance[ 'phone' . $counter ] ) ? '<a href="tel:' . $instance[ 'phone' . $counter ] . '">' . $instance[ 'phone' . $counter ] . '</a><br>' : '' );
 				?></p>
 			</div>
