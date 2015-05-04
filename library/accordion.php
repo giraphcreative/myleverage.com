@@ -25,6 +25,7 @@ function the_accordion() {
 				$color = ( isset( $box["color"] ) ? $box["color"] : 'teal' );
 				$state = ( isset( $box["state"] ) ? $box["state"] : 'closed' );
 				$content = ( isset( $box["content"] ) ? $box["content"] : '' );
+				$content = apply_filters( 'the_content', $content );
 
 				?>
 			<div class="accordion-box<?php print ( $state == 'open' ? ' open' : '' ); ?> bg-<?php print $color ?>">
