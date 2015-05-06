@@ -1,38 +1,55 @@
 <?php
-/*
-Home/catch-all template
-*/
+/**
+ * The template for displaying Archive pages
+ */
 
-get_header(); ?>
+get_header(); 
 
-	<?php the_large_title(); ?>
-
-	<?php the_showcase(); ?>
-	
-	<div id="content" class="wrap groupcontent-two-column" role="main">
-		<div class="quarter">
-			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-generic') ) : ?><!-- no sidebar --><?php endif; ?>
+?>
+	<div class="large-title bg-<?php print !empty( $category_info['color'] ) ? $category_info['color'] : 'teal'; ?>">
+		<div class="wrap">
+			<?php if ( !empty( $category_info['icon'] ) ) { ?>
+			<div class="large-title-icon bg-<?php print !empty( $category_info['color'] ) ? $category_info['color'] : 'teal'; ?>">
+				<img src="<?php print $category_info['icon'] ?>">
+			</div>
+			<?php } ?>
+			<div class="large-title-text">
+				<h1><?php single_cat_title(); ?></h1>
+			</div>
 		</div>
-		<div class="three-quarter">
-			<?php
-			if ( is_search() ) {
-				?><h1>Search Results for <span>'<?php print $_REQUEST["s"]; ?>'</span></h1><?php
-			}
+	</div>
 
-			while ( have_posts() ) : the_post();
-				?>
-				<div class="entry-content">
-					<h3><a href="<?php the_permalink() ?>"><?php the_title(); ?></a></h3>
+	<div class="wrap group content-two-column" role="main">
+		<div class="quarter sidebar">
+			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('blog-sidebar')) : ?>[events widget]<?php endif; ?>
+		</div>
+		<div class="three-quarter post-list">
+
+			<?php if ( have_posts() ) : 
+			
+				// Start the Loop.
+				while ( have_posts() ) : the_post(); 
+					?>
+					<article>
+					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
 					<?php the_excerpt(); ?>
-				</div>
-				<?php
-			endwhile;
+					</article>
+					<?php
+				endwhile;
 
-			if ( !has_partner_or_product_accordion() ) {
-				the_accordion();
-			}
+			else :
+				// If no content, include the "No posts found" template.
+				get_template_part( 'content', 'none' );
+
+			endif;
 			?>
-		<?php if ( has_cmb_value( 'left_content' ) ) { ?></div><?php } ?>
-	</div><!-- #content -->
 
-<?php get_footer(); ?>
+		</div>	
+	</div><!-- #primary -->
+
+
+<?php
+
+get_footer();
+
+?>
