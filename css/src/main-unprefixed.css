@@ -1083,13 +1083,18 @@ img.alignleft {
   .widget_multi_twitter .tweet .twitter-avatar {
     display: none; }
   .widget_multi_twitter .tweet .tweet-userName {
-    color: #797b7f;
     font-family: "Avenir Demi", sans-serif;
-    font-weight: normal; }
+    font-weight: normal;
+    float: left;
+    color: #797b7f;
+    padding: 4px 0;
+    line-height: 25px; }
   .widget_multi_twitter .tweet .tweet-time {
+    float: right;
     font-size: .8em;
-    line-height: 1em;
-    color: #adafb1; }
+    line-height: 25px;
+    color: #adafb1;
+    padding: 4px 0; }
   .widget_multi_twitter .tweet .tweet-message {
     font-size: .9em; }
 

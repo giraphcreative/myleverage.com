@@ -192,14 +192,19 @@
 		}
 
 		.tweet-userName {
-			color: darken( $grey, 10% );
 			@include font-bold;
+			float: left;
+			color: darken( $grey, 10% );
+			padding: 4px 0;
+			line-height: 25px;
 		}
 
 		.tweet-time {
+			float: right;
 			font-size: .8em;
-			line-height: 1em;
+			line-height: 25px;
 			color: lighten( $grey, 10% );
+			padding: 4px 0;
 		}
 
 		.tweet-message {
