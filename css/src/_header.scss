@@ -214,13 +214,8 @@ header {
 
 			}
 
-			& > li:nth-child( 1 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a, &.current-menu-item > a, &.current-menu-ancestor > a { background: $forest; &:hover { background: lighten( $forest, 5% ); } } }
-			& > li:nth-child( 2 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a, &.current-menu-item > a, &.current-menu-ancestor > a { background: $orange; &:hover { background: lighten( $orange, 5% ); } } }
-			& > li:nth-child( 3 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a, &.current-menu-item > a, &.current-menu-ancestor > a { background: $grey; &:hover { background: lighten( $grey, 5% ); } } }
-			& > li:nth-child( 4 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a, &.current-menu-item > a, &.current-menu-ancestor > a { background: $teal; &:hover { background: lighten( $teal, 5% ); } } }
-			& > li:nth-child( 5 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a, &.current-menu-item > a, &.current-menu-ancestor > a { background: $yellow; &:hover { background: lighten( $yellow, 5% ); } } }
-			& > li:nth-child( 6 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a, &.current-menu-item > a, &.current-menu-ancestor > a { background: $green; &:hover { background: lighten( $green, 5% ); } } }
-			& > li:nth-child( 7 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a, &.current-menu-item > a, &.current-menu-ancestor > a { background: $lime; &:hover { background: lighten( $lime, 5% ); } } }
+			& > li:nth-child( 1 ), & > li:nth-child( 2 ), & > li:nth-child( 3 ), & > li:nth-child( 4 ), & > li:nth-child( 6 ), & > li:nth-child( 7 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a, &.current-menu-item > a, &.current-menu-ancestor > a { background: $forest; &:hover { background: lighten( $forest, 5% ); } } }
+			& > li:nth-child( 5 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a, &.current-menu-item > a, &.current-menu-ancestor > a { background: $red; &:hover { background: lighten( $red, 5% ); } } }
 		}
 	}
 
