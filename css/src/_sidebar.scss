@@ -48,10 +48,56 @@
 						color: $grey-dark;
 						font-size: .9em;
 						text-decoration: none;
+						position: relative;
 	
 						&:hover {
 							background-color: $grey;
 							color: white;
+						}
+					}
+
+					&.menu-item-has-children {
+						& > ul {
+							display: none;
+						}
+
+					 	& > a:before {
+							content: "";
+							position: absolute;
+							right: 0;
+							top: 50%;
+							margin-top: -10px;
+							height: 20px;
+							width: 20px;
+							background: url(../img/icon-arrow-down-small.png) center center no-repeat;
+							background-size: contain;
+							transition: transform 500ms ease-in-out;
+						}
+					}
+
+					&.menu-item-has-children.open {
+						& > ul {
+							display: block;
+						}
+
+						& > a:before {
+							transform: rotate( 180deg );
+						}
+					}
+
+					ul {
+						li {
+							a {
+								padding: 5px 10px 3px 25px;
+							}
+
+							ul {
+								li {
+									a {
+										padding: 5px 10px 3px 40px;
+									}
+								}
+							}
 						}
 					}
 				}

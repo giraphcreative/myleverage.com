@@ -10,6 +10,7 @@ jQuery(document).ready(function($){
 		fluid_images = $( '.content-area img, .site-content img' ),
 		sidebar = $( '.sidebar' ),
 		large_title = $( '.large-title' ),
+		left_menu = $( '.sidebar .menu' ),
 		twitter_widget = $( '.widget_multi_twitter' );
 
 
@@ -37,6 +38,19 @@ jQuery(document).ready(function($){
 			}
 		});
 
+	});
+
+
+	// left menu toggling.
+	left_menu.find( 'li.menu-item-has-children > a' ).click(function( event ){
+		var menu_item = $( this ).parent( 'li' );
+		event.preventDefault();
+		if ( !menu_item.hasClass( 'open' ) ) {
+			event.preventDefault();
+			menu_item.addClass( 'open' );
+		} else {
+			location.href = $( this ).attr( 'href' );
+		}
 	});
 
 
