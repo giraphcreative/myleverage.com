@@ -38,23 +38,7 @@ get_header();
 			<div class="third news">
 				<h2><span>News</span></h2>
 				<div class="third-content">
-					<?php
-					query_posts( 'posts_per_page=3' );
-					if ( have_posts() ) {
-						$num = 1;
-						while ( have_posts() ) {
-							the_post();
-							?>
-					<article<?php print ( $num == 1 ? ' class="first"' : '' ); ?>>
-						<h4><a href="<?php the_permalink() ?>"><?php the_title() ?></a></h4>
-						<?php the_excerpt() ?>
-					</article>
-							<?php
-							$num++;
-						} // end while
-					} // end if
-					wp_reset_query();
-					?>
+				<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('home-news')) : ?>[news widget]<?php endif; ?>
 				</div>
 				<button class="home-third-button link-news" data-url="/press"><span>All News</span></button>
 				<div class="clearfix"></div>
