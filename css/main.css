@@ -43,6 +43,12 @@
 .bg-forest-light {
   background-color: #009f54; }
 
+.bg-red {
+  background-color: #e22627; }
+
+.bg-red-light {
+  background-color: #e74849; }
+
 .bg-grey-light {
   background-color: #939598; }
 
@@ -75,6 +81,9 @@
 
 .text-yellow {
   color: #D3D627; }
+
+.text-red {
+  color: #e22627; }
 
 .text-grey-light {
   color: #939598; }
