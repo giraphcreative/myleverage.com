@@ -38,12 +38,7 @@
 			</div>
 			<div class="column">
 				<h3>Sign Up For News</h3>
-				<div class="subscribe">
-					<form action="/" method="post">
-						<input type="text" name="email" value="">
-						<input type="submit" name="submit" value="Subscribe">
-					</form>
-				</div>
+				<?php do_shortcodes( '[snippet slug="subscribe" /]' ); ?>
 			</div>
 		</div>
 	</footer><!-- #colophon -->
