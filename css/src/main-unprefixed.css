@@ -1179,6 +1179,15 @@ footer {
         background-color: #F99B1F; }
       .home-thirds .third.news h2:before {
         background-image: url(../img/icon-news.png); }
+      .home-thirds .third.news .widget-title {
+        display: none; }
+      .home-thirds .third.news li {
+        padding: 7px 0; }
+        .home-thirds .third.news li .rsswidget {
+          font-family: "Avenir Demi", sans-serif;
+          font-weight: normal;
+          font-size: 1.2em;
+          padding-bottom: 10px; }
     .home-thirds .third.tweets {
       background-color: #e0eed1; }
       .home-thirds .third.tweets h2, .home-thirds .third.tweets button {

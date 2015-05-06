@@ -33,6 +33,16 @@ $icon-width: 70px;
 			background-color: lighten( $orange, 35% );
 			h2, button { background-color: $orange; }
 			h2:before { background-image: url(../img/icon-news.png); }
+			.widget-title { display: none; }
+			li { 
+				padding: 7px 0;
+
+				.rsswidget {
+					@include font-bold;
+					font-size: 1.2em;
+					padding-bottom: 10px;
+				}
+			}
 		}
 		
 		&.tweets {
