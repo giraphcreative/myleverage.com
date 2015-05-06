@@ -79,6 +79,7 @@
 
 		&.bg-teal .accordion-box-content, &.bg-teal-light .accordion-box-content, &.bg-teal-lighter .accordion-box-content, &.bg-teal-lightest .accordion-box-content { background-color: lighten( $teal, 55% ); }
 		&.bg-navy .accordion-box-content, &.bg-navy-light .accordion-box-content { background-color: lighten( $navy, 65% ); }
+		&.bg-red .accordion-box-content, &.bg-red-light .accordion-box-content { background-color: lighten( $red, 65% ); }
 		&.bg-lime .accordion-box-content, &.bg-lime-light .accordion-box-content { background-color: lighten( $lime, 50% ); }
 		&.bg-forest .accordion-box-content, &.bg-forest-light .accordion-box-content { background-color: lighten( $forest, 70% ); }
 		&.bg-orange .accordion-box-content, &.bg-orange-light .accordion-box-content { background-color: lighten( $orange, 30% ); }

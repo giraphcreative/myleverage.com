@@ -967,6 +967,8 @@ img.alignleft {
       background-color: #effcfd; }
     .accordion .accordion-box.bg-navy .accordion-box-content, .accordion .accordion-box.bg-navy-light .accordion-box-content {
       background-color: #f0f6f9; }
+    .accordion .accordion-box.bg-red .accordion-box-content, .accordion .accordion-box.bg-red-light .accordion-box-content {
+      background-color: white; }
     .accordion .accordion-box.bg-lime .accordion-box-content, .accordion .accordion-box.bg-lime-light .accordion-box-content {
       background-color: #f9fcf6; }
     .accordion .accordion-box.bg-forest .accordion-box-content, .accordion .accordion-box.bg-forest-light .accordion-box-content {
