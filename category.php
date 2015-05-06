@@ -1,58 +1,60 @@
 <?php
 /**
- * The template for displaying Category pages
- *
- * @link http://codex.wordpress.org/Template_Hierarchy
- *
- * @package WordPress
- * @subpackage Twenty_Fourteen
- * @since Twenty Fourteen 1.0
+ * The template for displaying Archive pages
  */
 
-get_header(); ?>
+get_header(); 
 
-	<section id="primary" class="content-area">
-		<div id="content" class="site-content" role="main">
+$taxonomy = 'category';
+$term_id = get_queried_object_id();
+$term = get_queried_object();
+$category_info = Taxonomy_MetaData::get( $taxonomy, $term_id );
 
-			<?php if ( have_posts() ) : ?>
+?>
+	<div class="large-title bg-<?php print !empty( $category_info['color'] ) ? $category_info['color'] : 'teal'; ?>">
+		<div class="wrap">
+			<?php if ( !empty( $category_info['icon'] ) ) { ?>
+			<div class="large-title-icon bg-<?php print !empty( $category_info['color'] ) ? $category_info['color'] : 'teal'; ?>">
+				<img src="<?php print $category_info['icon'] ?>">
+			</div>
+			<?php } ?>
+			<div class="large-title-text">
+				<h1><?php single_cat_title(); ?></h1>
+			</div>
+		</div>
+	</div>
 
-			<header class="archive-header">
-				<h1 class="archive-title"><?php printf( __( 'Category Archives: %s', 'twentyfourteen' ), single_cat_title( '', false ) ); ?></h1>
+	<div class="wrap group content-two-column" role="main">
+		<div class="quarter sidebar">
+			<?php print !empty( $term->description ) ? apply_filters( 'the_content', $term->description ) : " "; ?>
+		</div>
+		<div class="three-quarter post-list">
 
-				<?php
-					// Show an optional term description.
-					$term_description = term_description();
-					if ( ! empty( $term_description ) ) :
-						printf( '<div class="taxonomy-description">%s</div>', $term_description );
-					endif;
-				?>
-			</header><!-- .archive-header -->
+			<?php if ( have_posts() ) : 
+			
+				// Start the Loop.
+				while ( have_posts() ) : the_post(); 
+					?>
+					<article>
+					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+					<?php the_excerpt(); ?>
+					</article>
+					<?php
+				endwhile;
 
-			<?php
-					// Start the Loop.
-					while ( have_posts() ) : the_post();
+			else :
+				// If no content, include the "No posts found" template.
+				get_template_part( 'content', 'none' );
 
-					/*
-					 * Include the post format-specific template for the content. If you want to
-					 * use this in a child theme, then include a file called called content-___.php
-					 * (where ___ is the post format) and that will be used instead.
-					 */
-					get_template_part( 'content', get_post_format() );
-
-					endwhile;
-					// Previous/next page navigation.
-					twentyfourteen_paging_nav();
-
-				else :
-					// If no content, include the "No posts found" template.
-					get_template_part( 'content', 'none' );
-
-				endif;
+			endif;
 			?>
-		</div><!-- #content -->
-	</section><!-- #primary -->
+
+		</div>	
+	</div><!-- #primary -->
+
 
 <?php
-get_sidebar( 'content' );
-get_sidebar();
+
 get_footer();
+
+?>

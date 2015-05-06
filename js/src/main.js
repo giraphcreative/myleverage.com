@@ -9,7 +9,8 @@ jQuery(document).ready(function($){
 		menu_ul = menu.find( '.nav-menu' ),
 		fluid_images = $( '.content-area img, .site-content img' ),
 		sidebar = $( '.sidebar' ),
-		large_title = $( '.large-title' );
+		large_title = $( '.large-title' ),
+		twitter_widget = $( '.widget_multi_twitter' );
 
 
 	// remove height and width from images inside
