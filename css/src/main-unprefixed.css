@@ -218,7 +218,7 @@ input, textarea {
   padding: 5px 0 5px 35px; }
   .content-style ol li, .half ol li, .two-third ol li, .three-quarter ol li, .accordion .accordion-box .accordion-box-content ol li, .content-style ul li, .half ul li, .two-third ul li, .three-quarter ul li, .accordion .accordion-box .accordion-box-content ul li {
     padding: 3px 0; }
-  .content-style ol .gform_fields, .half ol .gform_fields, .two-third ol .gform_fields, .three-quarter ol .gform_fields, .accordion .accordion-box .accordion-box-content ol .gform_fields, .content-style ul .gform_fields, .half ul .gform_fields, .two-third ul .gform_fields, .three-quarter ul .gform_fields, .accordion .accordion-box .accordion-box-content ul .gform_fields {
+  .content-style ol.gform_fields, .half ol.gform_fields, .two-third ol.gform_fields, .three-quarter ol.gform_fields, .accordion .accordion-box .accordion-box-content ol.gform_fields, .content-style ul.gform_fields, .half ul.gform_fields, .two-third ul.gform_fields, .three-quarter ul.gform_fields, .accordion .accordion-box .accordion-box-content ul.gform_fields {
     padding: 5px 0; }
 .content-style ul, .half ul, .two-third ul, .three-quarter ul, .accordion .accordion-box .accordion-box-content ul {
   list-style-type: disc; }
