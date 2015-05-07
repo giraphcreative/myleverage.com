@@ -1,0 +1,9 @@
+
+
+.gform_confirmation_message {
+	background: lighten( $green, 35% );
+	border: 3px solid $green;
+	color: $green;
+	@include font-bold;
+}
+
