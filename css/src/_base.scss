@@ -110,5 +110,12 @@ input, textarea {
 		padding: 0;
 		margin: 25px 0;
 	}
+
+	button, input[type=submit], input[type=reset] {
+		padding: 6px 12px;
+		background: $grey;
+		color: white;
+		@include font-bold;
+	}
 }
 

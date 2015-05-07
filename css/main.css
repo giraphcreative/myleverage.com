@@ -242,6 +242,12 @@ input, textarea {
   border-bottom: 1px solid #d4d5d6;
   padding: 0;
   margin: 25px 0; }
+.content-style button, .half button, .two-third button, .three-quarter button, .accordion .accordion-box .accordion-box-content button, .content-style input[type=submit], .half input[type=submit], .two-third input[type=submit], .three-quarter input[type=submit], .accordion .accordion-box .accordion-box-content input[type=submit], .content-style input[type=reset], .half input[type=reset], .two-third input[type=reset], .three-quarter input[type=reset], .accordion .accordion-box .accordion-box-content input[type=reset] {
+  padding: 6px 12px;
+  background: #939598;
+  color: white;
+  font-family: "Avenir Demi", sans-serif;
+  font-weight: normal; }
 
 header {
   padding: 30px 0 0; }
