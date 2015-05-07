@@ -227,7 +227,7 @@ input, textarea {
   list-style-type: decimal; }
 .content-style h1, .half h1, .two-third h1, .three-quarter h1, .accordion .accordion-box .accordion-box-content h1, .content-style h2, .half h2, .two-third h2, .three-quarter h2, .accordion .accordion-box .accordion-box-content h2, .content-style h3, .half h3, .two-third h3, .three-quarter h3, .accordion .accordion-box .accordion-box-content h3, .content-style h4, .half h4, .two-third h4, .three-quarter h4, .accordion .accordion-box .accordion-box-content h4, .content-style h5, .half h5, .two-third h5, .three-quarter h5, .accordion .accordion-box .accordion-box-content h5, .content-style h6, .half h6, .two-third h6, .three-quarter h6, .accordion .accordion-box .accordion-box-content h6 {
   color: #007940;
-  padding: 8px 0 5px; }
+  padding: 10px 0 5px; }
 .content-style blockquote, .half blockquote, .two-third blockquote, .three-quarter blockquote, .accordion .accordion-box .accordion-box-content blockquote {
   padding: 10px 25px;
   font-family: "Avenir Italic", sans-serif;
