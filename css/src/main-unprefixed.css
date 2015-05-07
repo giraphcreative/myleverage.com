@@ -997,7 +997,8 @@ img.alignleft {
   border: 3px solid #017A40;
   color: #017A40;
   font-family: "Avenir Demi", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  padding: 5px 8px; }
 
 .sidebar .widget {
   padding: 10px 0;
