@@ -174,7 +174,7 @@ h1 {
   font-size: 2.5em; }
 
 h2 {
-  font-size: 2.2em; }
+  font-size: 2.1em; }
 
 h3 {
   font-size: 1.9em; }
@@ -227,7 +227,21 @@ input, textarea {
   list-style-type: decimal; }
 .content-style h1, .half h1, .two-third h1, .three-quarter h1, .accordion .accordion-box .accordion-box-content h1, .content-style h2, .half h2, .two-third h2, .three-quarter h2, .accordion .accordion-box .accordion-box-content h2, .content-style h3, .half h3, .two-third h3, .three-quarter h3, .accordion .accordion-box .accordion-box-content h3, .content-style h4, .half h4, .two-third h4, .three-quarter h4, .accordion .accordion-box .accordion-box-content h4, .content-style h5, .half h5, .two-third h5, .three-quarter h5, .accordion .accordion-box .accordion-box-content h5, .content-style h6, .half h6, .two-third h6, .three-quarter h6, .accordion .accordion-box .accordion-box-content h6 {
   color: #007940;
-  padding: 6px 0; }
+  padding: 8px 0 5px; }
+.content-style blockquote, .half blockquote, .two-third blockquote, .three-quarter blockquote, .accordion .accordion-box .accordion-box-content blockquote {
+  padding: 10px 25px;
+  font-family: "Avenir Italic", sans-serif;
+  font-weight: normal;
+  font-size: 1.2em;
+  line-height: 1.5em;
+  color: #939598;
+  border-left: 3px solid #d4d5d6;
+  margin: 10px 0 10px 20px; }
+.content-style hr, .half hr, .two-third hr, .three-quarter hr, .accordion .accordion-box .accordion-box-content hr {
+  border: 0;
+  border-bottom: 1px solid #d4d5d6;
+  padding: 0;
+  margin: 25px 0; }
 
 header {
   padding: 30px 0 0; }
@@ -883,10 +897,6 @@ body {
 .wrap {
   max-width: 1220px;
   margin: 0 auto; }
-
-.content h1, .content h2, .content h3, .content h4, .content h5, .content h6 {
-  color: #007940;
-  padding: 6px 0; }
 
 .content-narrow {
   padding: 40px 20px;
