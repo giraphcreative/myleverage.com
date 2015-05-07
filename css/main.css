@@ -243,11 +243,14 @@ input, textarea {
   padding: 0;
   margin: 25px 0; }
 .content-style button, .half button, .two-third button, .three-quarter button, .accordion .accordion-box .accordion-box-content button, .content-style input[type=submit], .half input[type=submit], .two-third input[type=submit], .three-quarter input[type=submit], .accordion .accordion-box .accordion-box-content input[type=submit], .content-style input[type=reset], .half input[type=reset], .two-third input[type=reset], .three-quarter input[type=reset], .accordion .accordion-box .accordion-box-content input[type=reset] {
-  padding: 6px 12px;
-  background: #939598;
+  padding: 9px 45px 6px 12px;
+  background: #007940 url(../img/icon-button-arrow.png) right center no-repeat;
   color: white;
   font-family: "Avenir Demi", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  border: 3px solid white;
+  box-shadow: 4px 4px 10px #d4d5d6;
+  border-radius: 10px; }
 
 header {
   padding: 30px 0 0; }
