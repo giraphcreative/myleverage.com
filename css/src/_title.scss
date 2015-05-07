@@ -1,9 +1,9 @@
 
 
 .large-title {
-	padding: 20px;	
-	@include respond-to( 768px ) { padding: 40px; }
-	@include respond-to( 900px ) { padding: 60px; }
+	padding: 30px 20px;
+	@include respond-to( 768px ) { padding: 40px 20px; }
+	@include respond-to( 900px ) { padding: 80px 20px; }
 
 	.wrap {
 		position: relative;
@@ -13,23 +13,18 @@
 		@include hexagon( 60px, white, 3px );
 		position: absolute;
 		right: 0;
-		top: 50%;
-		margin-top: -17px;		
+		bottom: -20px;
 
 		@include respond-to( 768px ) { 
 			@include hexagon( 90px, white, 3px );
 			position: absolute;
-			right: 0;
-			top: 50%;
-			margin-top: -23px;		
+			bottom: -30px;
 		}
 
 		@include respond-to( 900px ) { 
 			@include hexagon( 120px, white, 3px );
 			position: absolute;
-			right: 0;
-			top: 50%;
-			margin-top: -37px;		
+			bottom: -40px;
 		}
 	}
 
@@ -42,10 +37,19 @@
 			font-size: 20px;
 			border-bottom: 3px solid white;
 			text-transform: uppercase;
+			padding-right: 30px;
+			margin-bottom: -10px;
 
-			@include respond-to( 480px ) { font-size: 30px; }
-			@include respond-to( 768px ) { font-size: 40px; }
-			@include respond-to( 900px ) { font-size: 50px; }
+			@include respond-to( 768px ) {
+				font-size: 35px;
+				padding-right: 80px;
+			}
+
+			@include respond-to( 900px ) {
+				font-size: 45px;
+				padding-right: 120px;
+				margin-bottom: -20px;
+			}
 		}
 	}
 }
