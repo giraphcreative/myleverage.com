@@ -84,5 +84,9 @@ jQuery(document).ready(function($){
 		window.location.href = $( this ).attr( 'data-url' );
 	});
 	
+	
+	// creep on links
+	$("a").creep();
+
 });
 
