@@ -121,12 +121,14 @@ function page_metaboxes( $meta_boxes ) {
         'name' => 'Title',
         'id'   => 'title',
         'type' => 'text',
+        'sanitization_cb' => false
     ) );
 
     $thumb_showcase_metabox->add_group_field( $thumb_showcase_metabox_group, array(
         'name' => 'Subtitle',
         'id'   => 'subtitle',
         'type' => 'text',
+        'sanitization_cb' => false
     ) );
 
     $thumb_showcase_metabox->add_group_field( $thumb_showcase_metabox_group, array(
