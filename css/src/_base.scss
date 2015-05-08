@@ -117,7 +117,7 @@ input, textarea {
 		color: white;
 		@include font-bold;
 		border: 3px solid white;
-		box-shadow: 4px 4px 10px lighten( $grey, 25% );
+		box-shadow: 4px 4px 10px lighten( $grey, 15% );
 		border-radius: 10px;
 	}
 }
