@@ -86,7 +86,7 @@ jQuery(document).ready(function($){
 	
 	
 	// creep on links
-	$("a").creep();
+	$(".wrap a").creep();
 
 });
 
