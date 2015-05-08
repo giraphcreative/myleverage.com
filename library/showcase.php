@@ -82,7 +82,7 @@ function the_thumb_showcase() {
 			<button class="thumb-nav next">Next</button>
 		</div>
 	</div>
-	<?php
+		<?php
 	}
 }
 
