@@ -61,17 +61,7 @@ get_header();
 
 	<div class="partner-showcase">
 		<div class="partner-list">
-			<a href="#"><img src="/wp-content/themes/leverage/img/partner-complysight.png"></a>
-			<a href="#"><img src="/wp-content/themes/leverage/img/partner-cuna.png"></a>
-			<a href="#"><img src="/wp-content/themes/leverage/img/partner-cuscal.png"></a>
-			<a href="#"><img src="/wp-content/themes/leverage/img/partner-cuss.png"></a>
-			<a href="#"><img src="/wp-content/themes/leverage/img/partner-cuvm.png"></a>
-			<a href="#"><img src="/wp-content/themes/leverage/img/partner-hrx.png"></a>
-			<a href="#"><img src="/wp-content/themes/leverage/img/partner-landrum.png"></a>
-			<a href="#"><img src="/wp-content/themes/leverage/img/partner-leverage-cs.png"></a>
-			<a href="#"><img src="/wp-content/themes/leverage/img/partner-office-max.png"></a>
-			<a href="#"><img src="/wp-content/themes/leverage/img/partner-omnia.png"></a>
-			<a href="#"><img src="/wp-content/themes/leverage/img/partner-sscu.png"></a>
+			<a href="#"><img src="/wp-content/themes/leverage/img/partner-complysight.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-cuna.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-cuscal.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-cuss.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-cuvm.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-hrx.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-landrum.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-leverage-cs.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-office-max.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-omnia.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-sscu.png"></a>
 		</div>
 		<button class="partner-nav previous">Previous</button>
 		<button class="partner-nav next">Next</button>
