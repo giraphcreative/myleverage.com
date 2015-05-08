@@ -12,17 +12,7 @@ get_header();
 
 	<div class="wrap group">
 
-		<?php if ( has_cmb_value( 'thumb_showcase' ) ) { ?>
-		<div class="thumb-showcase">
-			<div class="thumbs">
-				<div class="thumb-list">
-					<?php the_thumb_showcase(); ?>
-				</div>
-				<button class="thumb-nav previous">Previous</button>
-				<button class="thumb-nav next">Next</button>
-			</div>
-		</div>
-		<?php } ?>
+		<?php the_thumb_showcase(); ?>
 
 		<div class="home-thirds">
 

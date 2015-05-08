@@ -59,9 +59,14 @@ function the_showcase() {
 function the_thumb_showcase() {
 
 	$thumbs = get_cmb_value( 'thumb_showcase' );
-
-    foreach ( $thumbs as $thumb ) {
-        ?><a href="<?php print $thumb['link'] ?>"><div class="thumb">
+	if ( has_cmb_value( 'thumb_showcase' ) ) {
+		?>
+	<div class="thumb-showcase">
+		<div class="thumbs">
+			<div class="thumb-list">
+		<?php
+	   	foreach ( $thumbs as $thumb ) {
+	        ?><a href="<?php print $thumb['link'] ?>"><div class="thumb">
 				<div class="thumb-icon">
 					<img src="<?php print $thumb['image']; ?>">
 				</div>
@@ -70,8 +75,15 @@ function the_thumb_showcase() {
 					<p><?php print $thumb['subtitle'] ?></p>
 				</div>
 			</div></a><?php
-    }
-
+	    }
+	    ?>
+			</div>
+			<button class="thumb-nav previous">Previous</button>
+			<button class="thumb-nav next">Next</button>
+		</div>
+	</div>
+	<?php
+	}
 }
 
 
