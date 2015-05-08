@@ -29,7 +29,19 @@ get_header();
 			<div class="third events">
 				<h2><span>Events</span></h2>
 				<div class="third-content">
+				<!-- 
 				<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('home-events')) : ?>[events widget]<?php endif; ?>
+				-->
+				<?php
+				global $wpdb;
+
+				$events = $wpdb->get_results( "SELECT * FROM `lscu_posts` `posts` LEFT JOIN `lscu_term_relationships` `termrel` ON posts.ID = termrel.object_id LEFT JOIN `lscu_term_taxonomy` `termtax` ON termtax.taxonomy_term_id = termrel.term_taxonomy_id WHERE posts.post_type='tribe_events' AND posts.post_status='publish' AND termtax.term_id = 115;" );
+
+				print_r( $events );
+
+				print $wpdb->print_error();
+
+				?>
 				</div>
 				<button class="home-third-button link-events" data-url="/events/month"><span>All Events</span></button>
 				<div class="clearfix"></div>
