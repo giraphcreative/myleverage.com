@@ -59,7 +59,7 @@ function the_showcase() {
 function the_thumb_showcase() {
 
 	$thumbs = get_cmb_value( 'thumb_showcase' );
-	if ( has_cmb_value( 'thumb_showcase' ) ) {
+	if ( !empty( $thumbs[0]['title'] ) ) {
 		?>
 	<div class="thumb-showcase">
 		<div class="thumbs">
