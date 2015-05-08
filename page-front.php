@@ -80,7 +80,28 @@ get_header();
 
 	<div class="partner-showcase">
 		<div class="partner-list">
-			<a href="#"><img src="/wp-content/themes/leverage/img/partner-complysight.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-cuna.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-cuscal.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-cuss.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-cuvm.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-hrx.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-landrum.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-leverage-cs.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-office-max.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-omnia.png"></a><a href="#"><img src="/wp-content/themes/leverage/img/partner-sscu.png"></a>
+			<a href="http://www.co-opfs.org/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-coop.png"></a>
+			<a href="http://www.criflendingsolutions.com/crif-select/Pages/CRIF-select.aspx" target="_blank"><img src="/wp-content/themes/leverage/img/partner-crif.png"></a>
+			<a href="/cu-audit-compliance-group/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-cuacg.png"></a>
+			<a href="http://www.lovemycreditunion.org/credit-union-auto-club-discount" target="_blank"><img src="/wp-content/themes/leverage/img/partner-cuac.png"></a>
+			<a href="https://www.cunamutual.com/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-cuna-mutual.png"></a>
+			<a href="http://cu.homeloancu.com/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-cumm.png"></a>
+			<a href="http://www.cusc-al.com/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-cuscal.png"></a>
+			<a href="http://www.cusolutionsgroup.com/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-cusg.png"></a>
+			<a href="http://www.diebold.com/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-diebold.png"></a>
+			<a href="https://dingguard.firstclose.com/User/UserLogin" target="_blank"><img src="/wp-content/themes/leverage/img/partner-ding.png"></a>
+			<a href="http://www.geassetmanager.com/fleetadvantage/people.asp" target="_blank"><img src="/wp-content/themes/leverage/img/partner-ge.png"></a>
+			<a href="http://lscu.coop/compliance/infosight/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-infosight.png"></a>
+			<a href="http://www.jmfa.com/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-jmfa.png"></a>
+			<a href="http://www.landrumprofessional.com/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-landrum.png"></a>
+			<a href="http://www.lovemycreditunion.org/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-lmcur.png"></a>
+			<a href="http://www.nada.com/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-nada.png"></a>
+			<a href="https://business.officedepot.com/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-office-max.png"></a>
+			<a href="http://www.lovemycreditunion.org/sprint-credit-union-member-discount" target="_blank"><img src="/wp-content/themes/leverage/img/partner-sprint.png"></a>
+			<a href="http://verafin.com/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-verafin.png"></a>
+			<a href="http://www.veri-tax.com/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-veritax.png"></a>
+			<a href="http://www.viningsparks.com/" target="_blank"><img src="/wp-content/themes/leverage/img/partner-vining.png"></a>
+			<a href="http://us.dealertrack.com/content/dealertrack/en/vehicle-title-management.html" target="_blank"><img src="/wp-content/themes/leverage/img/partner-vintek.png"></a>
 		</div>
 		<button class="partner-nav previous">Previous</button>
 		<button class="partner-nav next">Next</button>
