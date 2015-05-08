@@ -35,11 +35,11 @@ get_header();
 				<?php
 				global $wpdb;
 
-				$events = $wpdb->get_results( "SELECT * FROM `lscu_posts` `posts` LEFT JOIN `lscu_term_relationships` `termrel` ON posts.ID = termrel.object_id LEFT JOIN `lscu_term_taxonomy` `termtax` ON termtax.taxonomy_term_id = termrel.term_taxonomy_id WHERE posts.post_type='tribe_events' AND posts.post_status='publish' AND termtax.term_id = 115;" );
+				$wpdb->show_errors();
+
+				$events = $wpdb->get_results( "SELECT * FROM `lscu_posts` `posts` LEFT JOIN `lscu_term_relationships` `termrel` ON posts.ID = termrel.object_id LEFT JOIN `lscu_term_taxonomy` `termtax` ON termtax.term_taxonomy_id = termrel.term_taxonomy_id WHERE posts.post_type='tribe_events' AND posts.post_status='publish' AND termtax.term_id = 115;" );
 
 				print_r( $events );
-
-				print $wpdb->print_error();
 
 				?>
 				</div>
