@@ -704,10 +704,10 @@ header {
         display: table; }
       .showcase .slide a, .showcase .slide a:before, .showcase .slide a:after {
         clear: both; }
-      .showcase .slide a > img {
-        width: 100%;
-        height: auto !important;
-        display: block; }
+    .showcase .slide > img, .showcase .slide a > img {
+      width: 100%;
+      height: auto !important;
+      display: block; }
     .showcase .slide .slide-content {
       position: absolute;
       top: 10%;
