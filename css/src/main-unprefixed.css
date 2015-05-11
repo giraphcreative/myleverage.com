@@ -992,6 +992,8 @@ img.alignleft {
       background-color: #dffff0; }
     .accordion .accordion-box.bg-orange .accordion-box-content, .accordion .accordion-box.bg-orange-light .accordion-box-content {
       background-color: #fddeb4; }
+    .accordion .accordion-box.bg-yellow .accordion-box-content, .accordion .accordion-box.bg-yellow-light .accordion-box-content {
+      background-color: #f6f7d2; }
     .accordion .accordion-box.bg-grey-light .accordion-box-content, .accordion .accordion-box.bg-grey-dark .accordion-box-content, .accordion .accordion-box.bg-grey-light-light .accordion-box-content, .accordion .accordion-box.bg-grey-dark-light .accordion-box-content {
       background-color: #e1e2e3; }
 
