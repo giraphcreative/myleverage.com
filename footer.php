@@ -8,13 +8,17 @@
  * @subpackage Twenty_Twelve
  * @since Twenty Twelve 1.0
  */
+
+$color = get_cmb_value( 'large-title-color' );
+if ( empty( $color ) ) $color = 'forest';
+
 ?>	
 	
 	</div>
 
 </section>
 
-<footer class="footer">
+<footer class="footer bg-<?php print $color ?>">
 	<div class="wrap">
 		<div class="column first">
 			<h3>Connect With Us</h3>
