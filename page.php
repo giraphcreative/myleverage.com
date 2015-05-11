@@ -2,6 +2,9 @@
 
 get_header();
 
+$color = get_cmb_value( 'large-title-color' );
+if ( empty( $color ) ) $color = 'forest';
+
 ?>
 
 	<?php the_large_title(); ?>
@@ -10,7 +13,7 @@ get_header();
 
 	<?php the_thumb_showcase(); ?>
 
-	<div id="content" class="wrap group content-two-column" role="main">
+	<div id="content" class="wrap group content-two-column <?php print $color ?>" role="main">
 		<div class="quarter sidebar">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-generic') ) : ?><!-- no sidebar --><?php endif; ?>
 		</div>
