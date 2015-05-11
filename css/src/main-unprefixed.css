@@ -1241,7 +1241,8 @@ footer {
     font-size: 1.6em;
     line-height: 1.2em;
     padding-top: 20px;
-    text-align: center; }
+    text-align: center;
+    color: white; }
     @media only screen and (min-width: 768px) {
       footer h3 {
         text-align: inherit; } }

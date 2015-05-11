@@ -41,6 +41,7 @@ footer {
 		line-height: 1.2em;
 		padding-top: 20px;
 		text-align: center;
+		color: white;
 
 		@include respond-to( 768px ) {
 			text-align: inherit;
