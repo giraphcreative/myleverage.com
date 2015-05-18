@@ -225,7 +225,7 @@ header {
 			position: absolute;
 			top: 80px;
 			right: 40px;
-			width: 280px;
+			width: 340px;
 		}
 
 		.search {
@@ -287,6 +287,17 @@ header {
 					color: lighten( $grey, 20% );
 					padding: 6px;
 				}
+			}
+
+			.account-button {
+				padding: 9px 45px 6px 12px;
+				background: $forest url(../img/icon-button-arrow.png) right center no-repeat;
+				color: white;
+				@include font-bold;
+				border: 3px solid white;
+				box-shadow: 4px 4px 10px lighten( $grey, 15% );
+				border-radius: 10px;
+				margin-left: 20px;
 			}
 		}
 	}

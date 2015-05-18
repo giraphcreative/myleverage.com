@@ -444,7 +444,7 @@ header {
         position: absolute;
         top: 80px;
         right: 40px;
-        width: 280px; } }
+        width: 340px; } }
     header .aux .search {
       position: relative;
       padding: 10px 0; }
@@ -492,6 +492,16 @@ header {
           header .aux p.account-links span {
             color: #c7c8ca;
             padding: 6px; } }
+      header .aux p.account-links .account-button {
+        padding: 9px 45px 6px 12px;
+        background: #007940 url(../img/icon-button-arrow.png) right center no-repeat;
+        color: white;
+        font-family: "Avenir Demi", sans-serif;
+        font-weight: normal;
+        border: 3px solid white;
+        box-shadow: 4px 4px 10px #babbbd;
+        border-radius: 10px;
+        margin-left: 20px; }
 
 .large-title {
   padding: 30px 20px; }

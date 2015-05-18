@@ -15,11 +15,11 @@ function account_toolbox() {
 
 	if ( is_user_logged_in() ) { 
 		?>
-		Welcome, <?php print ( !empty( $current_user->user_firstname ) ? $current_user->user_firstname : $current_user->user_login ); ?> <span>|</span> <a href="/faq">Help</a> <span>|</span> <a href="/account">My Account</a>
+		Welcome, <?php print ( !empty( $current_user->user_firstname ) ? $current_user->user_firstname : $current_user->user_login ); ?> <span>|</span> <a href="/faq">Help</a> <a href="/account" class='account-button'>My Account</a>
 		<?php 
 	} else { 
 		?>
-		<a href="/faq">Help</a> <span>|</span> <a href="/wp-login.php">Log In</a>
+		<a href="/faq">Help</a> <a href="/wp-login.php" class='account-button'>Log In</a>
 		<?php 
 	}
 }
