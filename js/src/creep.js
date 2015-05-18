@@ -29,11 +29,12 @@
 				// bind to click event
 				elem.click(function( event ) {
 					
-					var href = elem.attr("href"),
-						href_trimmed = href.replace( "#", "" );
+					var href = elem.attr("href");
 
 					// only do this if it's an anchor link
-					if ( href.match( "#" ) && href !== "#" && !href.match( "http" ) ) {
+					if ( href && href.match( "#" ) && href !== "#" && !href.match( "http" ) ) {
+
+						var href_trimmed = href.replace( "#", "" );
 
 						// prevent default click propagation
 						event.preventDefault();
@@ -71,11 +72,11 @@
 				// bind to click event
 				elem.click(function( event ) {
 
-					var href = elem.attr("href"),
-						href_trimmed = href.replace( "#", "" );
+					var href = elem.attr("href");
 
 					// only do this if it's an anchor link
-					if ( href.match( "#" ) && href !== "#" && !href.match( "http" ) ) {
+					if ( href && href.match( "#" ) && href !== "#" && !href.match( "http" ) ) {
+						var href_trimmed = href.replace( "#", "" );
 
 						// prevent default click propagation
 						event.preventDefault();
