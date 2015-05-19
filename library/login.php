@@ -51,7 +51,7 @@ function lscu_signon( $user, $username, $password ) {
 function infosight_authenticate() {
 
 	// let's redirect to infosight's login endpoint so that it can authenticate us on there as well.
-    header( "Location: http://fl.leagueinfosight.com/Security__Login_6169.htm?testsite=yes&email=" . $_POST['log'] . "&password=" . $_POST['pwd'] . "&action=login&return_to=" . $_POST['redirect_to'] );
+    header( "Location: http://fl.leagueinfosight.com/Security__Login_6169.htm?testsite=yes&email=" . $_POST['log'] . "&password=" . urlencode( $_POST['pwd'] ) . "&action=login&return_to=" . urlencode( $_POST['redirect_to'] ) );
     exit;
 
 }
