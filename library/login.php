@@ -19,7 +19,7 @@ function account_toolbox() {
 		<?php 
 	} else { 
 		?>
-		<!--<a href="/faq">Help</a>--> <a href="/wp-login.php?redirect_to=<?php print $_SERVER['REQUEST_URI'] ?>" class='account-button'>Log In</a>
+		<!--<a href="/faq">Help</a>--> <a href="/wp-login.php?redirect_to=<?php print 'http://' . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'] ?>" class='account-button'>Log In</a>
 		<?php 
 	}
 }
