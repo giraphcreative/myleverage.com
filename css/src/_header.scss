@@ -331,13 +331,15 @@ header {
 
 			.account-button {
 				padding: 9px 45px 6px 12px;
-				background: $forest url(../img/icon-button-arrow.png) right center no-repeat;
+				background: $forest url(../img/icon-button-arrow-small.png) right center no-repeat;
 				color: white;
 				@include font-bold;
 				border: 3px solid white;
 				box-shadow: 4px 4px 10px lighten( $grey, 15% );
 				border-radius: 10px;
 				margin: 0 10px 10px 10px;
+				display: inline-block;
+				width: 43%;
 
 				&:hover {
 					background-color: lighten( $forest, 5% );
@@ -347,13 +349,15 @@ header {
 
 			.logout-button {
 				padding: 9px 45px 6px 12px;
-				background: darken( $grey, 30% ) url(../img/icon-button-arrow.png) right center no-repeat;
+				background: darken( $grey, 30% ) url(../img/icon-button-arrow-small.png) right center no-repeat;
 				color: white;
 				@include font-bold;
 				border: 3px solid white;
 				box-shadow: 4px 4px 10px lighten( $grey, 15% );
 				border-radius: 10px;
 				margin: 0 10px 10px 10px;
+				display: inline-block;
+				width: 43%;
 
 				&:hover {
 					background-color: darken( $grey, 25% );

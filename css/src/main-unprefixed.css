@@ -506,27 +506,31 @@ header {
         padding-top: 10px; }
       header .aux p.account-links .account-button {
         padding: 9px 45px 6px 12px;
-        background: #007940 url(../img/icon-button-arrow.png) right center no-repeat;
+        background: #007940 url(../img/icon-button-arrow-small.png) right center no-repeat;
         color: white;
         font-family: "Avenir Demi", sans-serif;
         font-weight: normal;
         border: 3px solid white;
         box-shadow: 4px 4px 10px #babbbd;
         border-radius: 10px;
-        margin: 0 10px 10px 10px; }
+        margin: 0 10px 10px 10px;
+        display: inline-block;
+        width: 43%; }
         header .aux p.account-links .account-button:hover {
           background-color: #00934d;
           text-decoration: none; }
       header .aux p.account-links .logout-button {
         padding: 9px 45px 6px 12px;
-        background: #47494b url(../img/icon-button-arrow.png) right center no-repeat;
+        background: #47494b url(../img/icon-button-arrow-small.png) right center no-repeat;
         color: white;
         font-family: "Avenir Demi", sans-serif;
         font-weight: normal;
         border: 3px solid white;
         box-shadow: 4px 4px 10px #babbbd;
         border-radius: 10px;
-        margin: 0 10px 10px 10px; }
+        margin: 0 10px 10px 10px;
+        display: inline-block;
+        width: 43%; }
         header .aux p.account-links .logout-button:hover {
           background-color: #545558;
           text-decoration: none; }
