@@ -501,7 +501,7 @@ header {
         border: 3px solid white;
         box-shadow: 4px 4px 10px #babbbd;
         border-radius: 10px;
-        margin-left: 20px; }
+        margin: 0 10px; }
 
 .large-title {
   padding: 30px 20px; }
