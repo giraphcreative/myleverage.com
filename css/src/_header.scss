@@ -213,8 +213,40 @@ header {
 
 			}
 
-			& > li:nth-child( 1 ), & > li:nth-child( 2 ), & > li:nth-child( 3 ), & > li:nth-child( 4 ), & > li:nth-child( 6 ), & > li:nth-child( 7 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a, &.current-menu-item > a, &.current-menu-ancestor > a { background: $forest; &:hover { background: lighten( $forest, 5% ); } } }
-			& > li:nth-child( 5 ) { & > ul.sub-menu, & > ul.sub-menu a,	&:hover a, &.open a, &.current-menu-item > a, &.current-menu-ancestor > a { background: $red; &:hover { background: lighten( $red, 5% ); } } }
+			& > li:nth-child( 1 ), & > li:nth-child( 2 ), & > li:nth-child( 3 ), & > li:nth-child( 4 ), & > li:nth-child( 6 ), & > li:nth-child( 7 ) { 
+				& > ul.sub-menu, & > ul.sub-menu a { 
+					background: lighten( $forest, 5% ); 
+
+					&:hover { 
+						background: lighten( $forest, 10% ); 
+					} 
+				}
+
+				&:hover a, &.open a, &.current-menu-item > a, &.current-menu-ancestor > a { 
+					background: $forest; 
+
+					&:hover { 
+						background: lighten( $forest, 5% ); 
+					} 
+				}
+			}
+			& > li:nth-child( 5 ) { 
+				& > ul.sub-menu, & > ul.sub-menu a { 
+					background: lighten( $red, 5% ); 
+
+					&:hover { 
+						background: lighten( $red, 10% ); 
+					} 
+				}
+
+				&:hover a, &.open a, &.current-menu-item > a, &.current-menu-ancestor > a { 
+					background: $red; 
+
+					&:hover { 
+						background: lighten( $red, 5% ); 
+					} 
+				} 
+			}
 		}
 	}
 
