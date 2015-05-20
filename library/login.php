@@ -49,6 +49,26 @@ function lscu_signon( $user, $username, $password ) {
 
 
 
+function login_form_shortcode( $atts, $content = null ) {
+ 	
+ 	$form = '';
+
+	if ( isset( $_REQUEST['redirect_to'] ) ) {
+		$redirect = $_REQUEST['redirect_to'];
+	} else {
+		$redirect = get_bloginfo( 'home' );
+	}
+ 
+	if ( !is_user_logged_in() ) {
+		$form = wp_login_form( array('echo' => false, 'redirect' => $redirect ) );
+	} 
+	return $form;
+
+}
+add_shortcode('login-form', 'login_form_shortcode');
+
+
+
 function infosight_authenticate() {
 
 	// let's redirect to infosight's login endpoint so that it can authenticate us on there as well.
