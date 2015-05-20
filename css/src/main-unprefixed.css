@@ -454,7 +454,7 @@ header {
     @media only screen and (min-width: 768px) {
       header .aux {
         position: absolute;
-        top: 60px;
+        top: 45px;
         right: 40px;
         width: 340px; } }
     header .aux .search {
@@ -497,7 +497,7 @@ header {
       @media only screen and (min-width: 768px) {
         header .aux p.account-links {
           display: block;
-          padding: 15px 0 0 0;
+          padding: 10px 0 0 0;
           font-size: .85em;
           text-align: center;
           color: #797b7f; } }

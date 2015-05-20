@@ -263,7 +263,7 @@ header {
 
 		@include respond-to( 768px ) {
 			position: absolute;
-			top: 60px;
+			top: 45px;
 			right: 40px;
 			width: 340px;
 		}
@@ -318,7 +318,7 @@ header {
 
 			@include respond-to( 768px ) {
 				display: block;
-				padding: 15px 0 0 0;
+				padding: 10px 0 0 0;
 				font-size: .85em;
 				text-align: center;
 				color: darken( $grey, 10% );
