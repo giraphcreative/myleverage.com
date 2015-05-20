@@ -71,6 +71,11 @@ jQuery(document).ready(function($){
 	}
 
 
+	$(".content label, .tribe-events-event-categories").each(function(){
+		$(this).html( $(this).html().replace(/LEVERAGE/g,'<em>LEVERAGE</em>') );
+	});
+
+
 	// remove annoying non-breaking spaces from twitter widget
 	if ( twitter_widget ) {
 		twitter_widget.find('.tweet-time').each(function(){
