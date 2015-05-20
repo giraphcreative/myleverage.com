@@ -32,7 +32,7 @@ get_header();
 				foreach ( $events as $event ) {
 					?>
 					<article>
-						<h4><a href="<?php print $event->guid ?>"><?php print $event->post_title ?></a></h4>
+						<h4><a href="<?php print $event->guid ?>" target="_blank"><?php print $event->post_title ?></a></h4>
 						<?php print date( 'n/j/Y', strtotime( $event->meta_value ) ); ?>
 					</article>
 					<?php
