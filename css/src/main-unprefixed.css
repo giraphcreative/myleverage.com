@@ -513,7 +513,7 @@ header {
         border: 3px solid white;
         box-shadow: 4px 4px 10px #babbbd;
         border-radius: 10px;
-        margin: 0 10px 10px 10px;
+        margin: 0 10px;
         display: inline-block;
         width: 43%; }
         header .aux p.account-links .account-button:hover {
@@ -528,7 +528,7 @@ header {
         border: 3px solid white;
         box-shadow: 4px 4px 10px #babbbd;
         border-radius: 10px;
-        margin: 0 10px 10px 10px;
+        margin: 0 10px;
         display: inline-block;
         width: 43%; }
         header .aux p.account-links .logout-button:hover {
