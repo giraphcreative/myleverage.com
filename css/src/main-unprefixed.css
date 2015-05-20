@@ -454,7 +454,7 @@ header {
     @media only screen and (min-width: 768px) {
       header .aux {
         position: absolute;
-        top: 80px;
+        top: 60px;
         right: 40px;
         width: 340px; } }
     header .aux .search {
@@ -500,10 +500,10 @@ header {
           padding: 15px 0 0 0;
           font-size: .85em;
           text-align: center;
-          color: #939598; }
-          header .aux p.account-links span {
-            color: #c7c8ca;
-            padding: 6px; } }
+          color: #797b7f; } }
+      header .aux p.account-links span.welcome {
+        display: block;
+        padding-top: 10px; }
       header .aux p.account-links .account-button {
         padding: 9px 45px 6px 12px;
         background: #007940 url(../img/icon-button-arrow.png) right center no-repeat;
@@ -513,7 +513,23 @@ header {
         border: 3px solid white;
         box-shadow: 4px 4px 10px #babbbd;
         border-radius: 10px;
-        margin: 0 10px; }
+        margin: 0 10px 10px 10px; }
+        header .aux p.account-links .account-button:hover {
+          background-color: #00934d;
+          text-decoration: none; }
+      header .aux p.account-links .logout-button {
+        padding: 9px 45px 6px 12px;
+        background: #47494b url(../img/icon-button-arrow.png) right center no-repeat;
+        color: white;
+        font-family: "Avenir Demi", sans-serif;
+        font-weight: normal;
+        border: 3px solid white;
+        box-shadow: 4px 4px 10px #babbbd;
+        border-radius: 10px;
+        margin: 0 10px 10px 10px; }
+        header .aux p.account-links .logout-button:hover {
+          background-color: #545558;
+          text-decoration: none; }
 
 .large-title {
   padding: 30px 20px; }

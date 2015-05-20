@@ -263,7 +263,7 @@ header {
 
 		@include respond-to( 768px ) {
 			position: absolute;
-			top: 80px;
+			top: 60px;
 			right: 40px;
 			width: 340px;
 		}
@@ -321,12 +321,12 @@ header {
 				padding: 15px 0 0 0;
 				font-size: .85em;
 				text-align: center;
-				color: $grey;
+				color: darken( $grey, 10% );
+			}
 
-				span {
-					color: lighten( $grey, 20% );
-					padding: 6px;
-				}
+			span.welcome {
+				display: block;
+				padding-top: 10px;
 			}
 
 			.account-button {
@@ -337,7 +337,28 @@ header {
 				border: 3px solid white;
 				box-shadow: 4px 4px 10px lighten( $grey, 15% );
 				border-radius: 10px;
-				margin: 0 10px;
+				margin: 0 10px 10px 10px;
+
+				&:hover {
+					background-color: lighten( $forest, 5% );
+					text-decoration: none;
+				}
+			}
+
+			.logout-button {
+				padding: 9px 45px 6px 12px;
+				background: darken( $grey, 30% ) url(../img/icon-button-arrow.png) right center no-repeat;
+				color: white;
+				@include font-bold;
+				border: 3px solid white;
+				box-shadow: 4px 4px 10px lighten( $grey, 15% );
+				border-radius: 10px;
+				margin: 0 10px 10px 10px;
+
+				&:hover {
+					background-color: darken( $grey, 25% );
+					text-decoration: none;
+				}
 			}
 		}
 	}
