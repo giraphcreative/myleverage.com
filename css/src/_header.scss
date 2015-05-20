@@ -215,10 +215,10 @@ header {
 
 			& > li:nth-child( 1 ), & > li:nth-child( 2 ), & > li:nth-child( 3 ), & > li:nth-child( 4 ), & > li:nth-child( 6 ), & > li:nth-child( 7 ) { 
 				& > ul.sub-menu, & > ul.sub-menu a { 
-					background: lighten( $forest, 5% ); 
+					background: lighten( $forest, 6% ); 
 
 					&:hover { 
-						background: lighten( $forest, 10% ); 
+						background: lighten( $forest, 9% ); 
 					} 
 				}
 
@@ -226,16 +226,16 @@ header {
 					background: $forest; 
 
 					&:hover { 
-						background: lighten( $forest, 5% ); 
+						background: lighten( $forest, 3% ); 
 					} 
 				}
 			}
 			& > li:nth-child( 5 ) { 
 				& > ul.sub-menu, & > ul.sub-menu a { 
-					background: lighten( $red, 5% ); 
+					background: lighten( $red, 6% ); 
 
 					&:hover { 
-						background: lighten( $red, 10% ); 
+						background: lighten( $red, 9% ); 
 					} 
 				}
 
@@ -243,7 +243,7 @@ header {
 					background: $red; 
 
 					&:hover { 
-						background: lighten( $red, 5% ); 
+						background: lighten( $red, 3% ); 
 					} 
 				} 
 			}
