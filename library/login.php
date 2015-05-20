@@ -15,7 +15,7 @@ function account_toolbox() {
 
 	if ( is_user_logged_in() ) { 
 		?>
-		Welcome, <?php print ( !empty( $current_user->user_firstname ) ? $current_user->user_firstname : $current_user->user_login ); ?> <!--<span>|</span> <a href="/faq">Help</a>--> <a href="/account" class='account-button'>My Account</a> <a href="/log-in/?authentication=logout">Logout</a>
+		Welcome, <?php print ( !empty( $current_user->user_firstname ) ? $current_user->user_firstname : $current_user->user_login ); ?> <!--<span>|</span> <a href="/faq">Help</a>--> <a href="/account" class='account-button'>My Account</a> <a href="/log-in/?action=logout">Logout</a>
 		<?php 
 	} else { 
 		?>
