@@ -64,11 +64,11 @@ function login_form_shortcode( $atts, $content = null ) {
 	}
 
 	$form = str_replace( get_bloginfo('home') . '/log-in/?redirect_to=', '', $form );
-	
+
 	return $form;
 
 }
-add_shortcode('login-form', 'login_form_shortcode');
+add_shortcode('lscu-login-form', 'login_form_shortcode');
 
 
 
