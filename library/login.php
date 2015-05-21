@@ -84,8 +84,7 @@ add_action('wp_login', 'infosight_authenticate');
 
 
 function lost_password_redirect( $user_info, $newpass ) {
-	wp_authenticate( $user_info->user_login, $newpass );
-    wp_redirect( home_url() ); 
+    wp_redirect( home_url() . '/log-in' ); 
     exit;
 }
 add_action( 'password_reset', 'lost_password_redirect' );
