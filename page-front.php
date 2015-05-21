@@ -49,7 +49,7 @@ get_header();
 				<div class="third-content">
 				<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('home-news')) : ?>[news widget]<?php endif; ?>
 				</div>
-				<button class="home-third-button link-news" data-url="/press"><span>All News</span></button>
+				<button class="home-third-button link-news" data-url="http://www.lscu.coop/category/leverage/"><span>All News</span></button>
 				<div class="clearfix"></div>
 			</div>
 
