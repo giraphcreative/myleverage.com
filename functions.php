@@ -16,6 +16,7 @@ include( "library/images.php" );
 
 // include our metaboxes library
 include( "library/metabox.php" );
+include( "library/metabox-theme.php" );
 
 
 // include widget library
