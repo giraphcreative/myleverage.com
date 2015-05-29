@@ -347,20 +347,26 @@ function pure_retrieve_password_message( $message, $key ){
 	global $wpdb;
 				
 	// -> Get the target username or e-mail from the post.
-	$Post_Login = htmlentities ( $_POST['user_login'] );
+	$user_login = htmlentities ( $_POST['user_login'] );
 	
-	// -> Get the required variables.	
-	$user_id = $wpdb -> get_results ( "SELECT ID FROM $wpdb->users WHERE (user_login='$Post_Login' OR user_email='$Post_Login') LIMIT 1" );
-		
+	// -> Get the required variables.
+	$user_id = $wpdb -> get_results ( "SELECT ID FROM $wpdb->users WHERE ( user_login='$user_login' OR user_email='$user_login' ) LIMIT 1;" );
+
+	$user_id = $user_id[0]->ID;
+
 	// -> Get the new user's ID.			
-	$user_data = new WP_User ( $user_id->ID );
+	$user_data = new WP_User( $user_id );
 			
     // get the message option from our metabox.
  	$message = pure_get_option( 'reset-email' );
 
+	// get the reset page from the db
+	$reset_page = get_post( pure_get_option( 'reset-page' ) );
+	$reset_url = get_permalink( $reset_page->ID );
+
     // replace shortcodes in the email message body.
     $message = str_replace( '[password-reset-url]' , $reset_url . "?action=rp&key=$key&login=" . rawurlencode( $user_data->user_login ), $message );
-    $message = str_replace( '[user-id]', $user_data->ID, $message );
+    $message = str_replace( '[user-id]', $user_id, $message );
     $message = str_replace( '[first-name]', $user_data->first_name, $message );
     $message = str_replace( '[last-name]', $user_data->last_name, $message );
     $message = str_replace( '[user-login]', $user_data->user_login, $message );
@@ -382,5 +388,13 @@ function pure_retrieve_password_message( $message, $key ){
 }
 add_filter( 'retrieve_password_message', 'pure_retrieve_password_message', 11, 2 );
 
+
+
+function email_mime_type () {
+	return 'text/html';
+
+}
+
+add_filter ( 'wp_mail_content_type', 'email_mime_type');		
 
 ?>
