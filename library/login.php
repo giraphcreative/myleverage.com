@@ -121,7 +121,7 @@ function empty_credential_error( $user, $username, $password ) {
 add_filter( 'authenticate', 'empty_credential_error', 30, 3 );
 
 
-
+/*
 // override new user notification
 function wp_new_user_notification ( $user_id, $pass = '' ) {
 	
@@ -174,6 +174,7 @@ function wp_new_user_notification ( $user_id, $pass = '' ) {
 	wp_mail ( $user_data->user_email, $title, $message );
 		
 }
+*/
 
 
 
