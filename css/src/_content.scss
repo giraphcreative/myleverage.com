@@ -37,6 +37,10 @@ body {
 	padding: 20px;
 }
 
+.breadcrumbs {
+	padding: 0 0 20px;
+}
+
 @include respond-to( 768px ) {
 	.quarter, .third, .half, .two-third, .three-quarter {
 		float: left;

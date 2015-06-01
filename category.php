@@ -29,8 +29,15 @@ $category_info = Taxonomy_MetaData::get( $taxonomy, $term_id );
 			<?php print !empty( $term->description ) ? apply_filters( 'the_content', $term->description ) : " "; ?>
 		</div>
 		<div class="three-quarter post-list">
-
-			<?php if ( have_posts() ) : 
+			<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+			    <?php 
+			    if ( function_exists( 'bcn_display' ) ) {
+			        bcn_display();
+			    }
+			    ?>
+			</div>
+			<?php 
+			if ( have_posts() ) : 
 			
 				// Start the Loop.
 				while ( have_posts() ) : the_post(); 

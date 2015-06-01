@@ -18,7 +18,15 @@ if ( empty( $color ) ) $color = 'forest';
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-generic') ) : ?><!-- no sidebar --><?php endif; ?>
 		</div>
 		<div class="three-quarter">
+			<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
+			    <?php 
+			    if ( function_exists( 'bcn_display' ) ) {
+			        bcn_display();
+			    }
+			    ?>
+			</div>
 			<?php 
+			// do post loop
 			if ( have_posts() ) :
 				while ( have_posts() ) : the_post(); 
 					the_content();

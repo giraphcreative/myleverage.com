@@ -988,6 +988,9 @@ body {
 .quarter, .third, .half, .two-third, .three-quarter {
   padding: 20px; }
 
+.breadcrumbs {
+  padding: 0 0 20px; }
+
 @media only screen and (min-width: 768px) {
   .quarter, .third, .half, .two-third, .three-quarter {
     float: left; }
