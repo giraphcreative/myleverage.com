@@ -921,7 +921,7 @@ header {
         .thumb-showcase .thumb-list .thumb .thumb-text {
           position: relative;
           z-index: 100;
-          min-height: 100px; } }
+          min-height: 120px; } }
     .thumb-showcase .thumb-list .thumb:after {
       clear: both; }
 .thumb-showcase button.thumb-nav {
