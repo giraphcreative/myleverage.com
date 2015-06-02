@@ -53,23 +53,26 @@ get_header();
 				// Start the Loop.
 				while ( have_posts() ) : the_post(); 
 					?>
-					<article>
-					<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-					<?php the_excerpt(); ?>
-					</article>
+			<article>
+			<h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+			<?php the_excerpt(); ?>
+			</article>
 					<?php
 				endwhile;
 
 				?>
-				<div class="pagination">
-					<?php pagination(); ?>
-				</div>
+			<div class="pagination">
+				<?php pagination(); ?>
+			</div>
 				<?php
 
 			else :
 				// If no content, include the "No posts found" template.
-				get_template_part( 'content', 'none' );
-
+				?>
+			<article>
+			<p>No search results were found matching your criteria. Please try again or <a href="/about/contact">get in touch with us</a> if you feel you reached this page in error.</p>
+			</article>
+				<?php
 			endif;
 			?>
 
