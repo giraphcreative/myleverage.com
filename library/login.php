@@ -53,21 +53,19 @@ function account_toolbox() {
 add_filter( 'authenticate', 'lscu_signon', 30, 3 );
 function lscu_signon( $user, $username, $password ) {
 
-	if ( isset( $_POST['log'] ) ) {
-		$creds = array(
-			'user_login' => $_POST['log'],
-			'user_password' => $_POST['log'] . "\n" . $_POST['pwd'],
-			'remember' => true
-		);
-		$user_check = get_user_by( 'login', $_POST['log'] );
-		
-		if ( $user_check->user_pass == md5( $_POST['log'] . "\n" . $_POST['pwd'] ) ) {
-			return $user_check;
-		}
+	$creds = array(
+		'user_login' => $username,
+		'user_password' => $username . "\n" . $password,
+		'remember' => true
+	);
+	$user_check = get_user_by( 'login', $username );
+	
+	if ( $user_check->user_pass == md5( $username . "\n" . $password ) ) {
+		return $user_check;
 	}
 
 	// return the user
-    return $user;
+    return $user_check;
 
 }
 
