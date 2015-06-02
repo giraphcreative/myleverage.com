@@ -81,10 +81,10 @@
 	.showcase-nav a {
 		position: absolute;
 		top: 50%;
-		margin-top: -40px;
+		margin-top: -25px;
 		cursor: pointer;
-		width: 50px;
-		height: 80px;
+		width: 25px;
+		height: 50px;
 		text-indent: -300px;
 		overflow: hidden;
 		opacity: .7;
@@ -96,6 +96,7 @@
 		&.previous {
 			left: 0;
 			background: url(../img/icon-arrow-left.png) right center no-repeat;
+			background-size: contain;
 			border-top-left-radius: 0;
 			border-bottom-left-radius: 0;
 		}
@@ -103,8 +104,23 @@
 		&.next {
 			right: 0;
 			background: url(../img/icon-arrow-right.png) left center no-repeat;
+			background-size: contain;
 			border-top-right-radius: 0;
 			border-bottom-right-radius: 0;
+		}
+
+		@include respond-to( 768px ) {
+			width: 50px;
+			height: 80px;
+			margin-top: -40px;
+		
+			&.previous {
+				left: 5px;
+			}
+
+			&.next {
+				right: 5px;
+			}
 		}
 	}
 }
