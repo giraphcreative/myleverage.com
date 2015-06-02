@@ -49,6 +49,16 @@ function account_toolbox() {
 
 
 
+// hide the admin toolbar for all users except administrators
+add_action('after_setup_theme', 'remove_admin_bar');
+function remove_admin_bar() {
+	if ( !current_user_can( 'administrator' ) && !is_admin() ) {
+		show_admin_bar( false );
+	}
+}
+
+
+
 // add a new password encryption schema that includes the username.
 add_filter( 'authenticate', 'lscu_signon', 30, 3 );
 function lscu_signon( $user, $username, $password ) {
