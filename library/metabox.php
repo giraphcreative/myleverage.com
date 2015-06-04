@@ -153,6 +153,17 @@ function page_metaboxes( $meta_boxes ) {
         'options' => $colors
     ) );
 
+    $thumb_showcase_metabox->add_group_field( $thumb_showcase_metabox_group, array(
+        'name' => 'Type',
+        'id'   => 'type',
+        'type' => 'select',
+        'default' => 'normal',
+        'options' => array(
+            'normal' => 'Normal Link',
+            'iframe' => 'Video/Map'
+        )
+    ) );
+
 
 
     // accordion metabox

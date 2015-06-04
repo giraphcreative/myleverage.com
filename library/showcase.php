@@ -66,7 +66,7 @@ function the_thumb_showcase() {
 			<div class="thumb-list">
 		<?php
 	   	foreach ( $thumbs as $thumb ) {
-	        ?><a href="<?php print $thumb['link'] ?>"><div class="thumb">
+	        ?><a href="<?php print $thumb['link'] ?>"<?php print ( $thumb['type'] == 'iframe' ? ' class="lightbox-iframe"' : '' ); ?>><div class="thumb">
 				<div class="thumb-icon">
 					<img src="<?php print $thumb['image']; ?>">
 				</div>
