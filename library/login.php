@@ -34,7 +34,7 @@ function account_toolbox() {
 	}
 
 	// if the user is logged in.
-	if ( is_user_logged_in() ) { 
+	if ( is_user_logged_in() ) {
 		?>
 		<a href="<?php print $account_url ?>" class='account-button'>My Account</a> <a href="<?php echo wp_logout_url( get_bloginfo( 'home' ) ) ?>" class="logout-button">Logout</a>
 		<span class='welcome'>Welcome, <?php print ( !empty( $current_user->user_firstname ) ? $current_user->user_firstname : $current_user->user_login ); ?></span>
@@ -269,7 +269,7 @@ function reset_form_shortcode( $atts, $content = null ) {
  		// if they're just arriving at this page, display a lost password form.
 	 	$form .= '<form name="lostpasswordform" id="lostpasswordform" action="' . get_home_url() . '/wp-login.php?action=lostpassword" method="post">
 			<p>
-				<label for="user_login">Username or E-mail:<br>
+				<label for="user_login">Username or Email:<br>
 				<input type="text" name="user_login" id="user_login" class="password-reset" value="" autocomplete="off"></label>
 			</p>
 			<input type="hidden" name="redirect_to" value="' . $reset_url . '?action=reset" />
