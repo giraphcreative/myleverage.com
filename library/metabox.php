@@ -61,7 +61,7 @@ function page_metaboxes( $meta_boxes ) {
     $showcase_metabox = new_cmb2_box( array(
         'id' => 'showcase_metabox',
         'title' => 'Showcase',
-        'object_types' => array( 'page', 'partner' ), // post type
+        'object_types' => array( 'page' ), // post type
         'context' => 'normal',
         'priority' => 'high',
     ) );
@@ -94,6 +94,38 @@ function page_metaboxes( $meta_boxes ) {
         'id'   => 'image',
         'type' => 'file',
         'preview_size' => array( 200, 80 )
+    ) );
+
+
+
+    // partner information
+    $partner_info = new_cmb2_box( array(
+        'id' => 'partner_info',
+        'title' => 'Partner Information',
+        'object_types' => array( 'partner' ), // post type
+        'context' => 'normal',
+        'priority' => 'high',
+        'show_names' => true, // Show field names on the left
+    ) );
+
+    $partner_info->add_field( array(
+        'name' => 'Logo',
+        'desc' => 'Set a partner logo image.',
+        'id' => CMB_PREFIX . 'partner_logo',
+        'type' => 'file',
+        'allow' => array( 'url', 'attachment' )
+    ) );
+
+    $partner_info->add_field( array(
+        'name' => 'Website',
+        'id' => CMB_PREFIX . 'partner_website',
+        'type' => 'text_url'
+    ) );
+
+    $partner_info->add_field( array(
+        'name' => 'Sort Order',
+        'id' => CMB_PREFIX . 'partner_sort',
+        'type' => 'text_small'
     ) );
 
 

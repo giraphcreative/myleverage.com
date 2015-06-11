@@ -10,6 +10,10 @@ include( "library/menus.php" );
 include( "library/scripts.php" );
 
 
+// post types
+include( "library/post-type/partner.php" );
+
+
 // an extra image manipulation function
 include( "library/images.php" );
 
