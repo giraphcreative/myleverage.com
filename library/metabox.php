@@ -125,7 +125,8 @@ function page_metaboxes( $meta_boxes ) {
     $partner_info->add_field( array(
         'name' => 'Sort Order',
         'id' => CMB_PREFIX . 'partner_sort',
-        'type' => 'text_small'
+        'type' => 'text_small',
+        'default' => '0'
     ) );
 
 
