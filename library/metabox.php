@@ -126,7 +126,7 @@ function page_metaboxes( $meta_boxes ) {
         'name' => 'Sort Order',
         'id' => CMB_PREFIX . 'partner_sort',
         'type' => 'text_small',
-        'default' => '0'
+        'default' => '99'
     ) );
 
 
