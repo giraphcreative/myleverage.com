@@ -7,6 +7,9 @@ jQuery(document).ready(function($){
 	$( '.showcase.footer' ).each(function(){
 		var showcase = $( this );
 
+		// set auto-rotate timer var so that it exists.
+		var auto_rotate_footer = 0;
+
 		// if it exists
 		if ( typeof( showcase ) !== 'undefined' ) {
 
@@ -99,6 +102,9 @@ jQuery(document).ready(function($){
 			// set showcase initial height when the first image is loaded.
 			setTimeout( function() {
 				showcase_height();
+
+				// once we're loaded up, set a timer to auto-rotate the slides.
+				auto_rotate_footer = setInterval( next_slide, 10000 );
 			}, 500 );
 
 			
@@ -117,6 +123,9 @@ jQuery(document).ready(function($){
 				} else {
 					next_slide();
 				}
+
+				// stop auto-rotation
+				clearInterval( auto_rotate_footer );
 			});
 
 			// move slides to left if they mouse over the previous nav
