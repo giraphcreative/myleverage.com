@@ -10,6 +10,9 @@ jQuery(document).ready(function($){
 		// set auto-rotate timer var so that it exists.
 		var auto_rotate = 0;
 
+		// count the slides
+		var slide_count = showcase.find( '.slide' ).size();
+
 		// if it exists
 		if ( typeof( showcase ) !== 'undefined' ) {
 
@@ -104,7 +107,9 @@ jQuery(document).ready(function($){
 				showcase_height();
 
 				// once we're loaded up, set a timer to auto-rotate the slides.
-				auto_rotate = setInterval( next_slide, 10000 );
+				if ( slide_count > 1 ) {
+					auto_rotate = setInterval( next_slide, 10000 );
+				}
 			}, 500 );
 
 			
@@ -125,7 +130,9 @@ jQuery(document).ready(function($){
 				}
 
 				// stop auto-rotation
-				clearInterval( auto_rotate );
+				if ( slide_count > 1 ) {
+					clearInterval( auto_rotate );
+				}
 			});
 
 			// move slides to left if they mouse over the previous nav
