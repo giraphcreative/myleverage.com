@@ -75,7 +75,7 @@ function lscu_signon( $user, $username, $password ) {
 	}
 
 	// return the user
-    return $user_check;
+    return $user;
 
 }
 
