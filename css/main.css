@@ -1025,6 +1025,7 @@ img.alignleft {
   float: left;
   margin: 0 15px 15px 0; }
 img.aligncenter {
+  display: block;
   margin: 0 auto; }
 
 .accordions-wide {
