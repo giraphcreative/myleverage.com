@@ -1007,6 +1007,8 @@ img.alignright {
 img.alignleft {
   float: left;
   margin: 0 15px 15px 0; }
+img.aligncenter {
+  margin: 0 auto; }
 
 .accordions-wide {
   padding: 0 20px; }
