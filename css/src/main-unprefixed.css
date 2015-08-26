@@ -101,29 +101,41 @@
 
 @font-face {
   font-family: 'Avenir';
-  src: url('fonts/avenir.eot?#iefix') format('embedded-opentype'), url('fonts/avenir.otf') format('opentype'), url('fonts/avenir.woff') format('woff'), url('fonts/avenir.ttf') format('truetype'), url('fonts/avenir.svg#avenir') format('svg');
+  src: url("fonts/avenir.eot?#iefix") format("embedded-opentype"), url("fonts/avenir.otf") format("opentype"), url("fonts/avenir.woff") format("woff"), url("fonts/avenir.ttf") format("truetype"), url("fonts/avenir.svg#avenir") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Avenir Italic';
-  src: url('fonts/avenir-it.eot?#iefix') format('embedded-opentype'), url('fonts/avenir-it.otf') format('opentype'), url('fonts/avenir-it.woff') format('woff'), url('fonts/avenir-it.ttf') format('truetype'), url('fonts/avenir-It.svg#avenir-it') format('svg');
+  src: url("fonts/avenir-it.eot?#iefix") format("embedded-opentype"), url("fonts/avenir-it.otf") format("opentype"), url("fonts/avenir-it.woff") format("woff"), url("fonts/avenir-it.ttf") format("truetype"), url("fonts/avenir-It.svg#avenir-it") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Avenir Demi Italic';
-  src: url('fonts/avenir-demi-it.eot?#iefix') format('embedded-opentype'), url('fonts/avenir-demi-it.otf') format('opentype'), url('fonts/avenir-demi-it.woff') format('woff'), url('fonts/avenir-demi-it.ttf') format('truetype'), url('fonts/avenir-demi-it.svg#avenir-demi-it') format('svg');
+  src: url("fonts/avenir-demi-it.eot?#iefix") format("embedded-opentype"), url("fonts/avenir-demi-it.otf") format("opentype"), url("fonts/avenir-demi-it.woff") format("woff"), url("fonts/avenir-demi-it.ttf") format("truetype"), url("fonts/avenir-demi-it.svg#avenir-demi-it") format("svg");
   font-weight: normal;
   font-style: normal; }
 
 @font-face {
   font-family: 'Avenir Demi';
-  src: url('fonts/avenir-demi.eot?#iefix') format('embedded-opentype'), url('fonts/avenir-demi.otf') format('opentype'), url('fonts/avenir-demi.woff') format('woff'), url('fonts/avenir-demi.ttf') format('truetype'), url('fonts/avenir-demi.svg#avenir-demi') format('svg');
+  src: url("fonts/avenir-demi.eot?#iefix") format("embedded-opentype"), url("fonts/avenir-demi.otf") format("opentype"), url("fonts/avenir-demi.woff") format("woff"), url("fonts/avenir-demi.ttf") format("truetype"), url("fonts/avenir-demi.svg#avenir-demi") format("svg");
   font-weight: normal;
   font-style: normal; }
 
-html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
@@ -132,7 +144,8 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   vertical-align: baseline; }
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
   display: block; }
 
 body {
@@ -144,7 +157,8 @@ ol, ul {
 blockquote, q {
   quotes: none; }
 
-blockquote:before, blockquote:after, q:before, q:after {
+blockquote:before, blockquote:after,
+q:before, q:after {
   content: '';
   content: none; }
 
@@ -220,12 +234,16 @@ input, textarea {
     padding: 3px 0; }
   .content-style ol.gform_fields, .half ol.gform_fields, .two-third ol.gform_fields, .three-quarter ol.gform_fields, .accordion .accordion-box .accordion-box-content ol.gform_fields, .content-style ul.gform_fields, .half ul.gform_fields, .two-third ul.gform_fields, .three-quarter ul.gform_fields, .accordion .accordion-box .accordion-box-content ul.gform_fields {
     padding: 5px 0; }
+
 .content-style ul, .half ul, .two-third ul, .three-quarter ul, .accordion .accordion-box .accordion-box-content ul {
   list-style-type: disc; }
+
 .content-style ol, .half ol, .two-third ol, .three-quarter ol, .accordion .accordion-box .accordion-box-content ol {
   list-style-type: decimal; }
+
 .content-style h1, .half h1, .two-third h1, .three-quarter h1, .accordion .accordion-box .accordion-box-content h1, .content-style h2, .half h2, .two-third h2, .three-quarter h2, .accordion .accordion-box .accordion-box-content h2, .content-style h3, .half h3, .two-third h3, .three-quarter h3, .accordion .accordion-box .accordion-box-content h3, .content-style h4, .half h4, .two-third h4, .three-quarter h4, .accordion .accordion-box .accordion-box-content h4, .content-style h5, .half h5, .two-third h5, .three-quarter h5, .accordion .accordion-box .accordion-box-content h5, .content-style h6, .half h6, .two-third h6, .three-quarter h6, .accordion .accordion-box .accordion-box-content h6 {
   padding: 10px 0 5px; }
+
 .content-style blockquote, .half blockquote, .two-third blockquote, .three-quarter blockquote, .accordion .accordion-box .accordion-box-content blockquote {
   padding: 10px 25px;
   font-family: "Avenir Italic", sans-serif;
@@ -235,11 +253,13 @@ input, textarea {
   color: #939598;
   border-left: 3px solid #d4d5d6;
   margin: 10px 0 10px 20px; }
+
 .content-style hr, .half hr, .two-third hr, .three-quarter hr, .accordion .accordion-box .accordion-box-content hr {
   border: 0;
   border-bottom: 1px solid #d4d5d6;
   padding: 0;
   margin: 25px 0; }
+
 .content-style button, .half button, .two-third button, .three-quarter button, .accordion .accordion-box .accordion-box-content button, .content-style input[type=submit], .half input[type=submit], .two-third input[type=submit], .three-quarter input[type=submit], .accordion .accordion-box .accordion-box-content input[type=submit], .content-style input[type=reset], .half input[type=reset], .two-third input[type=reset], .three-quarter input[type=reset], .accordion .accordion-box .accordion-box-content input[type=reset] {
   padding: 9px 45px 6px 12px;
   background: #007940 url(../img/icon-button-arrow.png) right center no-repeat;
@@ -560,7 +580,8 @@ header {
     position: absolute;
     right: 0;
     bottom: -20px; }
-    .large-title .large-title-icon .hex1, .large-title .large-title-icon .hex2 {
+    .large-title .large-title-icon .hex1,
+    .large-title .large-title-icon .hex2 {
       position: absolute;
       overflow: hidden;
       width: 42.4264068712px;
@@ -568,7 +589,8 @@ header {
       left: 5.6602540378px;
       background: inherit;
       transform: scaleY(0.5773502692) rotate(-45deg); }
-      .large-title .large-title-icon .hex1:after, .large-title .large-title-icon .hex2:after {
+      .large-title .large-title-icon .hex1:after,
+      .large-title .large-title-icon .hex2:after {
         /*counter rotate and un-scale the bg image*/
         content: "";
         position: absolute;
@@ -610,14 +632,15 @@ header {
         height: 51.9615242271px;
         margin-top: 30px;
         margin-bottom: 30px;
-        background-size: 141.9615242271px auto;
+        background-size: 141.961524227px auto;
         background-position: center center;
         border-left: solid 3px #fff;
         border-right: solid 3px #fff;
         /*cover up the box shadows */
         position: absolute;
         bottom: -30px; }
-        .large-title .large-title-icon .hex1, .large-title .large-title-icon .hex2 {
+        .large-title .large-title-icon .hex1,
+        .large-title .large-title-icon .hex2 {
           position: absolute;
           overflow: hidden;
           width: 63.6396103068px;
@@ -625,7 +648,8 @@ header {
           left: 9.9903810568px;
           background: inherit;
           transform: scaleY(0.5773502692) rotate(-45deg); }
-          .large-title .large-title-icon .hex1:after, .large-title .large-title-icon .hex2:after {
+          .large-title .large-title-icon .hex1:after,
+          .large-title .large-title-icon .hex2:after {
             /*counter rotate and un-scale the bg image*/
             content: "";
             position: absolute;
@@ -667,14 +691,15 @@ header {
         height: 69.2820323028px;
         margin-top: 40px;
         margin-bottom: 40px;
-        background-size: 189.2820323028px auto;
+        background-size: 189.282032303px auto;
         background-position: center center;
         border-left: solid 3px #fff;
         border-right: solid 3px #fff;
         /*cover up the box shadows */
         position: absolute;
         bottom: -40px; }
-        .large-title .large-title-icon .hex1, .large-title .large-title-icon .hex2 {
+        .large-title .large-title-icon .hex1,
+        .large-title .large-title-icon .hex2 {
           position: absolute;
           overflow: hidden;
           width: 84.8528137424px;
@@ -682,7 +707,8 @@ header {
           left: 14.3205080757px;
           background: inherit;
           transform: scaleY(0.5773502692) rotate(-45deg); }
-          .large-title .large-title-icon .hex1:after, .large-title .large-title-icon .hex2:after {
+          .large-title .large-title-icon .hex1:after,
+          .large-title .large-title-icon .hex2:after {
             /*counter rotate and un-scale the bg image*/
             content: "";
             position: absolute;
@@ -835,6 +861,7 @@ header {
 .thumb-showcase a:hover {
   text-decoration: none;
   opacity: 0.8; }
+
 .thumb-showcase .thumb-list {
   padding: 6px 0 0; }
   @media only screen and (min-width: 500px) {
@@ -919,8 +946,10 @@ header {
           min-height: 120px; } }
     .thumb-showcase .thumb-list .thumb:after {
       clear: both; }
+
 .thumb-showcase button.thumb-nav {
   display: none; }
+
 @media only screen and (min-width: 500px) {
   .thumb-showcase {
     margin: 0 20px;
@@ -1004,9 +1033,11 @@ body {
 img.alignright {
   float: right;
   margin: 0 0 15px 15px; }
+
 img.alignleft {
   float: left;
   margin: 0 15px 15px 0; }
+
 img.aligncenter {
   display: block;
   margin: 0 auto; }
@@ -1175,7 +1206,7 @@ img.aligncenter {
     text-align: center;
     padding: 10px; }
   .sidebar .widget.leverage .widget-title {
-    background-color: #007940; }
+    background-color: #2C5871; }
     .sidebar .widget.leverage .widget-title h4 {
       font-family: "Avenir Italic", sans-serif;
       font-weight: normal; }
@@ -1216,7 +1247,7 @@ img.aligncenter {
     .partner-showcase .partner-list img {
       display: inline-block;
       width: 100%;
-      filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale");
+      filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0'/></filter></svg>#grayscale");
       /* Firefox 10+, Firefox on Android */
       filter: gray;
       /* IE6-9 */
@@ -1225,7 +1256,7 @@ img.aligncenter {
       opacity: .6;
       transition: all 400ms ease-in-out; }
       .partner-showcase .partner-list img:hover {
-        filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0\'/></filter></svg>#grayscale");
+        filter: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg'><filter id='grayscale'><feColorMatrix type='matrix' values='1 0 0 0 0, 0 1 0 0 0, 0 0 1 0 0, 0 0 0 1 0'/></filter></svg>#grayscale");
         -webkit-filter: grayscale(0%);
         opacity: 1; }
       @media only screen and (min-width: 480px) {
