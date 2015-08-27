@@ -16,7 +16,6 @@ if ( empty( $color ) ) $color = 'forest';
 	<div id="content" class="wrap group content-two-column <?php print $color ?>" role="main">
 		<div class="quarter sidebar">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-generic') ) : ?><!-- no sidebar --><?php endif; ?>
-			<a href="http://www.lscu.coop/"><div class="widget leverage"><div class="widget-title"><h4>LSCU</h4></div></div></a>
 		</div>
 		<div class="three-quarter">
 			<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">
