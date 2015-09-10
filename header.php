@@ -17,6 +17,7 @@
 
 <?php wp_head(); ?>
 <link href="<?php bloginfo( "template_url" ) ?>/css/main.css" rel="stylesheet" type="text/css">
+<link href="<?php bloginfo( "template_url" ) ?>/css/print.css" rel="stylesheet" type="text/css" media="print">
 
 </head>
 <body <?php body_class(); ?>>

@@ -1,0 +1,20 @@
+body {
+	background-image: none;
+}
+nav, .aux, .sidebar, .large-title, .showcase, .thumb-showcase, .footer .column, .footer .social {
+	display: none;
+}
+.footer {
+	background: none;
+	border-top: 1px solid #666;
+}
+.footer .column.first {
+	display: block;
+	color: black !important;
+}
+.footer .column h3, .footer .column a {
+	color: black;
+}
+.accordion .accordion-box .accordion-box-content {
+	display: block !important;
+}
