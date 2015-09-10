@@ -402,7 +402,45 @@ function email_mime_type () {
 	return 'text/html';
 
 }
-
 add_filter ( 'wp_mail_content_type', 'email_mime_type');		
+
+
+
+// send email when user upgraded to member
+function user_role_update( $user_id, $new_role ) {
+    if ( $new_role == 'member' ) {
+        $user_info = get_userdata( $user_id );
+        $to = $user_info->user_email;
+
+	    // get the message option from our metabox.
+	 	$subject = pure_get_option( 'member-email-subject' );
+
+	    // get the message option from our metabox.
+	 	$message = pure_get_option( 'member-email' );
+
+	    // replace shortcodes in the email message body.
+	    $message = str_replace( '[user-id]', $user_id, $message );
+	    $message = str_replace( '[first-name]', $user_data->first_name, $message );
+	    $message = str_replace( '[last-name]', $user_data->last_name, $message );
+	    $message = str_replace( '[user-login]', $user_data->user_login, $message );
+	    $message = str_replace( '[email]', $user_data->user_email, $message );
+	    $message = str_replace( '[homepage]', get_home_url(), $message );
+	    $message = str_replace( '[admin-email]', get_option( 'admin_email' ), $message );
+	    $message = str_replace( '[date]', date( 'n/j/Y' ), $message );
+	    $message = str_replace( '[time]', date( 'g:i a' ), $message );
+		
+		// -> Add line breaks to the body.
+		$message = nl2br ( $message );
+		
+		// -> Strip out any slashes in the content.
+		$message = stripslashes ( $message );
+
+		// send email
+        wp_mail($to, $subject, $message);
+    }
+}
+add_action( 'set_user_role', 'user_role_update', 10, 2);
+
+
 
 ?>

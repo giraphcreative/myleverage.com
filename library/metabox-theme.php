@@ -165,6 +165,30 @@ Best regards,
 <strong>The Team</strong>"
 	    ) );
 
+	    $cmb->add_field( array(
+	        'name' => 'Member Email Subject',
+	        'id'   => 'member-email-subject',
+	        'desc' => 'Set a subject line for the new member email.',
+	        'type' => 'text_medium',
+	        'default' => "[Role Updated] Your account has been upgraded to 'Member'"
+	    ) );
+
+	    $cmb->add_field( array(
+	        'name' => 'Member Email',
+	        'id'   => 'member-email',
+	        'desc' => 'Set the contents of the new member email. This is sent when a user is changed to a member role. Use the following shortcodes to include user/site information:<br>[first-name], [last-name], [user-login], [email], <br>[login-url], [homepage], [admin-email], <br>[homepage], [date], [time], [user-id].',
+	        'type' => 'wysiwyg',
+	        'options' => array( 'textarea_rows' => 15 ),
+	        'default' => "Hello, [first-name]!
+
+Your account ([email]) has been set up as a Member on our site. Visit the site below and log in to see your new privileges.
+
+[homepage]
+
+Best regards,
+<strong>The Team</strong>"
+	    ) );
+
 	}
 
 	/**
