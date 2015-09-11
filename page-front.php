@@ -29,6 +29,8 @@ get_header();
 
 				$events = $wpdb->get_results( "SELECT * FROM `lscu_posts` `posts` LEFT JOIN `lscu_term_relationships` `termrel` ON posts.ID = termrel.object_id LEFT JOIN `lscu_term_taxonomy` `termtax` ON termtax.term_taxonomy_id = termrel.term_taxonomy_id LEFT JOIN `lscu_postmeta` `pm` ON posts.ID = pm.post_id WHERE posts.post_type='event' AND posts.post_status='publish' AND termtax.term_id = 144 AND pm.meta_key = '_p_event_start' ORDER BY `meta_value` ASC;" );
 
+				print "<!--" . print_r( $events, 1 ) . "-->";
+
 				foreach ( $events as $event ) {
 					?>
 					<article>
