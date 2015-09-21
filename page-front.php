@@ -40,7 +40,7 @@ get_header();
 
 				?>
 				</div>
-				<button class="home-third-button link-events" data-url="/events/month"><span>All Events</span></button>
+				<button class="home-third-button link-events" data-url="/events"><span>All Events</span></button>
 				<div class="clearfix"></div>
 			</div>
 
