@@ -13,3 +13,6 @@
 [submodule "css/lib/mathsass"]
 	path = css/lib/mathsass
 	url = git@github.com:terkel/mathsass.git
+[submodule "library/twitter-aggregator"]
+	path = library/twitter-aggregator
+	url = git@github.com:jpederson/wp-twitter-aggregator.git

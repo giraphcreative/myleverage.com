@@ -56,7 +56,26 @@ get_header();
 			<div class="third tweets">
 				<h2><span>Tweets</span></h2>
 				<div class="third-content">
-				<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('home-twitter')) : ?>[twitter widget]<?php endif; ?>
+				<?php 
+
+				/*
+				if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('home-twitter')) : ?>[twitter widget]<?php endif;
+				*/
+
+				// twitter aggregator args array
+				$twitter_aggregator_args = array(
+					'consumer_key' => "3H0lXZUGwyDmpd9b9patp6Bz5",
+					'consumer_secret' => "zGETVWIRYonPwU4lTuBaRX9MEyYaPejYFmbJGyrgh8XFRFzOtR",
+					'oauth_access_token' => "29196496-I6rK6vinfzTBTNHc3fK9cg2x2alwo3kLUQVMrfEye",
+					'oauth_access_token_secret' => "2w3f47FY3blPAWzZmz1EK9ZEgyiz1AX1nIlG3gSkcAq7S",
+					'usernames' => "leagueofsecus,MY_LEVERAGE,ALCreditUnions,FLCreditUnions",
+					'limit' => 30
+				);
+
+				// output twitter widget
+				twitter_aggregator_widget( $twitter_aggregator_args );
+
+				?>
 				</div>
 				<button class="home-third-button twitter" data-url="https://twitter.com/leagueofsecus"><span>Read More Tweets</span></button>
 				<div class="clearfix"></div>

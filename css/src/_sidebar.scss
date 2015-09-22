@@ -184,33 +184,31 @@
 }
 
 
-.widget_multi_twitter {
-	.tweet {
-		padding: 10px;
+.twitter-aggregator-tweet {
+	padding: 5px 5px 15px;
 
-		.twitter-avatar {
-			display: none;
-		}
+	.twitter-aggregator-tweet-profile-pic {
+		display: none;
+	}
 
-		.tweet-userName {
-			@include font-bold;
-			float: left;
-			color: darken( $grey, 10% );
-			padding: 4px 0;
-			line-height: 25px;
-		}
+	.twitter-aggregator-tweet-profile-name {
+		@include font-bold;
+		float: left;
+		color: darken( $grey, 10% );
+		padding: 4px 0;
+		line-height: 25px;
+	}
 
-		.tweet-time {
-			float: right;
-			font-size: .8em;
-			line-height: 25px;
-			color: lighten( $grey, 10% );
-			padding: 4px 0;
-		}
+	.twitter-aggregator-tweet-time {
+		float: right;
+		font-size: .8em;
+		line-height: 25px;
+		color: lighten( $grey, 10% );
+		padding: 4px 0;
+	}
 
-		.tweet-message {
-			font-size: .9em;
-		}
+	.twitter-aggregator-tweet-text {
+		clear: both;
+		font-size: .9em;
 	}
 }
-
