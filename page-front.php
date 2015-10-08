@@ -40,7 +40,7 @@ get_header();
 
 				?>
 				</div>
-				<button class="home-third-button link-events" data-url="/events"><span>All Events</span></button>
+				<a class="home-third-button link-events" href="http://www.lscu.coop/events/?event_category=144">All Events</a>
 				<div class="clearfix"></div>
 			</div>
 
@@ -49,7 +49,7 @@ get_header();
 				<div class="third-content">
 				<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('home-news')) : ?>[news widget]<?php endif; ?>
 				</div>
-				<button class="home-third-button link-news" data-url="http://www.lscu.coop/category/leverage/"><span>All News</span></button>
+				<a class="home-third-button link-news" href="http://www.lscu.coop/category/leverage/">All News</a>
 				<div class="clearfix"></div>
 			</div>
 
@@ -77,7 +77,7 @@ get_header();
 
 				?>
 				</div>
-				<button class="home-third-button twitter" data-url="https://twitter.com/leagueofsecus"><span>Read More Tweets</span></button>
+				<a class="home-third-button twitter" href="https://twitter.com/leagueofsecus">Read More Tweets</a>
 				<div class="clearfix"></div>
 			</div>
 

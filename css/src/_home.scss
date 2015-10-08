@@ -25,13 +25,13 @@ $icon-width: 70px;
 		&.events {
 			background-color: lighten( $navy, 50% );
 			.tribe-events-widget-link { display: none; }
-			h2, button { background-color: $navy; }
+			h2, .home-third-button { background-color: $navy; }
 			h2:before { background-image: url(../img/icon-events.png); }
 		}
 		
 		&.news {
 			background-color: lighten( $orange, 35% );
-			h2, button { background-color: $orange; }
+			h2, .home-third-button { background-color: $orange; }
 			h2:before { background-image: url(../img/icon-news.png); }
 			.widget-title { display: none; }
 			li { 
@@ -47,7 +47,7 @@ $icon-width: 70px;
 		
 		&.tweets {
 			background-color: lighten( $lime, 40% );
-			h2, button { background: $lime; }
+			h2, .home-third-button { background: $lime; }
 			h2:before { background-image: url(../img/icon-tweets.png); }
 			.third-content { padding-top: 15px; }
 			.widget-title { display: none; }
@@ -92,18 +92,20 @@ $icon-width: 70px;
 			overflow: auto;
 		}
 
-		button {
+		.home-third-button {
 			display: block;
 			width: 100%;
-			padding: 10px 25px 10px 10px;
+			padding: 13px 25px 12px 10px;
 			border: 0;
 			background: $grey;
 			text-align: center;
 			font-size: 15px;
+			line-height: 15px;
 			text-transform: uppercase;
 			color: white;
 			cursor: pointer;
 			border-top: 3px solid white;
+			text-decoration: none;
 		}
 	}
 }

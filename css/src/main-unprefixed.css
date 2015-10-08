@@ -1424,13 +1424,13 @@ footer {
       background-color: #b8d4e4; }
       .home-thirds .third.events .tribe-events-widget-link {
         display: none; }
-      .home-thirds .third.events h2, .home-thirds .third.events button {
+      .home-thirds .third.events h2, .home-thirds .third.events .home-third-button {
         background-color: #2C5871; }
       .home-thirds .third.events h2:before {
         background-image: url(../img/icon-events.png); }
     .home-thirds .third.news {
       background-color: #fee9cd; }
-      .home-thirds .third.news h2, .home-thirds .third.news button {
+      .home-thirds .third.news h2, .home-thirds .third.news .home-third-button {
         background-color: #F99B1F; }
       .home-thirds .third.news h2:before {
         background-image: url(../img/icon-news.png); }
@@ -1445,7 +1445,7 @@ footer {
           padding-bottom: 10px; }
     .home-thirds .third.tweets {
       background-color: #e0eed1; }
-      .home-thirds .third.tweets h2, .home-thirds .third.tweets button {
+      .home-thirds .third.tweets h2, .home-thirds .third.tweets .home-third-button {
         background: #7DB241; }
       .home-thirds .third.tweets h2:before {
         background-image: url(../img/icon-tweets.png); }
@@ -1483,18 +1483,20 @@ footer {
       padding: 10px 15px;
       height: 500px;
       overflow: auto; }
-    .home-thirds .third button {
+    .home-thirds .third .home-third-button {
       display: block;
       width: 100%;
-      padding: 10px 25px 10px 10px;
+      padding: 13px 25px 12px 10px;
       border: 0;
       background: #939598;
       text-align: center;
       font-size: 15px;
+      line-height: 15px;
       text-transform: uppercase;
       color: white;
       cursor: pointer;
-      border-top: 3px solid white; }
+      border-top: 3px solid white;
+      text-decoration: none; }
 
 /* Magnific Popup CSS */
 .mfp-bg {
