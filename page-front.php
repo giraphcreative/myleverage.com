@@ -30,6 +30,10 @@ get_header();
 				$events = $wpdb->get_results( "SELECT * FROM `lscu_posts` `posts` LEFT JOIN `lscu_term_relationships` `termrel` ON posts.ID = termrel.object_id LEFT JOIN `lscu_term_taxonomy` `termtax` ON termtax.term_taxonomy_id = termrel.term_taxonomy_id LEFT JOIN `lscu_postmeta` `pm` ON posts.ID = pm.post_id WHERE posts.post_type='event' AND posts.post_status='publish' AND termtax.term_id = 144 AND pm.meta_key = '_p_event_start' AND pm.meta_value>" . mktime() . " ORDER BY `meta_value` ASC;" );
 
 				foreach ( $events as $event ) {
+					$event_link = $wpdb->get_results( "SELECT * FROM `lscu_postmeta` WHERE post_id = " . $event->ID . " AND meta_key = '_p_event_website';" );
+					print "<!--";
+					print_r( $event_link );
+					print "-->";
 					?>
 					<article>
 						<h4><a href="<?php print $event->guid ?>" target="_blank"><?php print $event->post_title ?></a></h4>
