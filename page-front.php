@@ -31,12 +31,9 @@ get_header();
 
 				foreach ( $events as $event ) {
 					$event_link = $wpdb->get_results( "SELECT * FROM `lscu_postmeta` WHERE post_id = " . $event->ID . " AND meta_key = '_p_event_website';" );
-					print "<!--";
-					print_r( $event_link );
-					print "-->";
 					?>
 					<article>
-						<h4><a href="<?php print $event->guid ?>" target="_blank"><?php print $event->post_title ?></a></h4>
+						<h4><a href="<?php print ( !empty( $event_link[0]->meta_value ) ? $event_link[0]->meta_value : $event->guid ) ?>" target="_blank"><?php print $event->post_title ?></a></h4>
 						<?php print date( 'n/j/Y', $event->meta_value ); ?>
 					</article>
 					<?php
