@@ -19,15 +19,12 @@ get_header();
 			<div class="third events">
 				<h2><span>Events</span></h2>
 				<div class="third-content">
-				<!-- 
-				<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('home-events')) : ?>[events widget]<?php endif; ?>
-				-->
 				<?php
 				global $wpdb;
 
 				$wpdb->show_errors();
 
-				$events = $wpdb->get_results( "SELECT * FROM `lscu_posts` `posts` LEFT JOIN `lscu_term_relationships` `termrel` ON posts.ID = termrel.object_id LEFT JOIN `lscu_term_taxonomy` `termtax` ON termtax.term_taxonomy_id = termrel.term_taxonomy_id LEFT JOIN `lscu_postmeta` `pm` ON posts.ID = pm.post_id WHERE posts.post_type='event' AND posts.post_status='publish' AND termtax.term_id = 144 AND pm.meta_key = '_p_event_start' AND pm.meta_value>" . mktime() . " ORDER BY `meta_value` ASC;" );
+				$events = $wpdb->get_results( "SELECT * FROM `lscu_posts` `posts` LEFT JOIN `lscu_term_relationships` `termrel` ON posts.ID = termrel.object_id LEFT JOIN `lscu_term_taxonomy` `termtax` ON termtax.term_taxonomy_id = termrel.term_taxonomy_id LEFT JOIN `lscu_postmeta` `pm` ON posts.ID = pm.post_id WHERE posts.post_type='event' AND posts.post_status='publish' AND termtax.term_id = 144 AND pm.meta_key = '_p_event_start' AND pm.meta_value>=" . mktime( 0, 0, 0 ) . " ORDER BY `meta_value` ASC;" );
 
 				foreach ( $events as $event ) {
 					$event_link = $wpdb->get_results( "SELECT * FROM `lscu_postmeta` WHERE post_id = " . $event->ID . " AND meta_key = '_p_event_website';" );
@@ -58,10 +55,6 @@ get_header();
 				<h2><span>Tweets</span></h2>
 				<div class="third-content">
 				<?php 
-
-				/*
-				if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('home-twitter')) : ?>[twitter widget]<?php endif;
-				*/
 
 				// twitter aggregator args array
 				$twitter_aggregator_args = array(
