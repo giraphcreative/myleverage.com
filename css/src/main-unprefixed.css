@@ -1443,6 +1443,9 @@ footer {
           font-weight: normal;
           font-size: 1.2em;
           padding-bottom: 10px; }
+          .home-thirds .third.news li .rsswidget em {
+            font-family: "Avenir Demi Italic", sans-serif;
+            font-weight: normal; }
     .home-thirds .third.tweets {
       background-color: #e0eed1; }
       .home-thirds .third.tweets h2, .home-thirds .third.tweets .home-third-button {

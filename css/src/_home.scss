@@ -41,8 +41,13 @@ $icon-width: 70px;
 					@include font-bold;
 					font-size: 1.2em;
 					padding-bottom: 10px;
+
+					em {
+						@include font-bold-italic;
+					}
 				}
 			}
+
 		}
 		
 		&.tweets {
