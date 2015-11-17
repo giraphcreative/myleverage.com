@@ -72,7 +72,7 @@ jQuery(document).ready(function($){
 
 
 	// search and replace leverage so it's italicized.
-	$(".content label, .tribe-events-event-categories, .breadcrumbs, .search-results article").each(function(){
+	$(".content label, .tribe-events-event-categories, .breadcrumbs, .search-results article, .third.news").each(function(){
 		$(this).html( $(this).html().replace(/LEVERAGE/g,'<em>LEVERAGE</em>') );
 	});
 
