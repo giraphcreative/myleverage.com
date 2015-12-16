@@ -47,6 +47,12 @@ if ( empty( $color ) ) $color = 'forest';
 	</div>
 </footer><!-- #colophon -->
 
-<?php wp_footer(); ?>
+<?php 
+
+do_interstitial();
+
+wp_footer();
+
+?>
 </body>
 </html>
