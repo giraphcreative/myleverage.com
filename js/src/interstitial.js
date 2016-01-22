@@ -79,7 +79,7 @@ jQuery(document).ready(function($){
 				callbacks: {
 					// callback that gets called when the popup is loaded.
 					imageLoadComplete: function() {
-						var mfp_interstitial = $.magnificPopup.instance
+						var mfp_interstitial = $.magnificPopup.instance;
 						
 						// delay and hide interstitial after delay (if not 0)
 						if ( interstitial_delay != 0 ) {
@@ -88,8 +88,10 @@ jQuery(document).ready(function($){
 							}, ( parseInt( interstitial_delay ) * 1000 ));
 						}
 
+						console.log( mfp_interstitial );
+
 						// navigate when they click the content of the magnific popup.
-						mfp_interstitial.content.click(function(){
+						mfp_interstitial.content.find("figure").click(function(){
 							if ( interstitial_href.length != 0 ) {
 								location.href = interstitial_href;
 							}
@@ -99,7 +101,7 @@ jQuery(document).ready(function($){
 			}, 0 );
 
 			$.cookie(interstitial_cookie_key, 1, {
-				expires : 1           //expires in 10 days
+				expires : 1           //expires in 1 day
 			});
 
 		}
