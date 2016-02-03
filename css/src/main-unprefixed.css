@@ -1055,15 +1055,15 @@ body {
     width: 73%;
     margin: 0 1%; } }
 
-img.alignright {
+img.alignright, .wp-caption.alignright {
   float: right;
   margin: 0 0 15px 15px; }
 
-img.alignleft {
+img.alignleft, .wp-caption.alignleft {
   float: left;
   margin: 0 15px 15px 0; }
 
-img.aligncenter {
+img.aligncenter, .wp-caption.aligncenter {
   display: block;
   margin: 0 auto; }
 
@@ -1134,7 +1134,7 @@ img.aligncenter {
       background-color: #e1e2e3; }
 
 .gform_confirmation_message {
-  background: #c5ffe4;
+  background: #c6ffe4;
   border: 3px solid #007940;
   color: #007940;
   font-family: "Avenir Demi", sans-serif;

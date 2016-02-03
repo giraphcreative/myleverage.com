@@ -68,7 +68,7 @@ body {
 }
 
 
-img {
+img, .wp-caption {
 	&.alignright {
 		float: right;
 		margin: 0 0 15px 15px;
@@ -84,4 +84,5 @@ img {
 		margin: 0 auto;
 	}
 }
+
 

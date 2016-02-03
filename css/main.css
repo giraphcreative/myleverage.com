@@ -615,7 +615,6 @@ header {
       left: 5.6602540378px;
       background: inherit;
       -webkit-transform: scaleY(0.5773502692) rotate(-45deg);
-          -ms-transform: scaleY(0.5773502692) rotate(-45deg);
               transform: scaleY(0.5773502692) rotate(-45deg); }
       .large-title .large-title-icon .hex1:after,
       .large-title .large-title-icon .hex2:after {
@@ -628,7 +627,6 @@ header {
         top: 0;
         background: inherit;
         -webkit-transform: rotate(45deg) scaleY(1.7320508076);
-            -ms-transform: rotate(45deg) scaleY(1.7320508076);
                 transform: rotate(45deg) scaleY(1.7320508076); }
     .large-title .large-title-icon .hex1 {
       top: -21.2132034356px;
@@ -678,7 +676,6 @@ header {
           left: 9.9903810568px;
           background: inherit;
           -webkit-transform: scaleY(0.5773502692) rotate(-45deg);
-              -ms-transform: scaleY(0.5773502692) rotate(-45deg);
                   transform: scaleY(0.5773502692) rotate(-45deg); }
           .large-title .large-title-icon .hex1:after,
           .large-title .large-title-icon .hex2:after {
@@ -691,7 +688,6 @@ header {
             top: 0;
             background: inherit;
             -webkit-transform: rotate(45deg) scaleY(1.7320508076);
-                -ms-transform: rotate(45deg) scaleY(1.7320508076);
                     transform: rotate(45deg) scaleY(1.7320508076); }
         .large-title .large-title-icon .hex1 {
           top: -31.8198051534px;
@@ -741,7 +737,6 @@ header {
           left: 14.3205080757px;
           background: inherit;
           -webkit-transform: scaleY(0.5773502692) rotate(-45deg);
-              -ms-transform: scaleY(0.5773502692) rotate(-45deg);
                   transform: scaleY(0.5773502692) rotate(-45deg); }
           .large-title .large-title-icon .hex1:after,
           .large-title .large-title-icon .hex2:after {
@@ -754,7 +749,6 @@ header {
             top: 0;
             background: inherit;
             -webkit-transform: rotate(45deg) scaleY(1.7320508076);
-                -ms-transform: rotate(45deg) scaleY(1.7320508076);
                     transform: rotate(45deg) scaleY(1.7320508076); }
         .large-title .large-title-icon .hex1 {
           top: -42.4264068712px;
@@ -1072,15 +1066,15 @@ body {
     width: 73%;
     margin: 0 1%; } }
 
-img.alignright {
+img.alignright, .wp-caption.alignright {
   float: right;
   margin: 0 0 15px 15px; }
 
-img.alignleft {
+img.alignleft, .wp-caption.alignleft {
   float: left;
   margin: 0 15px 15px 0; }
 
-img.aligncenter {
+img.aligncenter, .wp-caption.aligncenter {
   display: block;
   margin: 0 auto; }
 
@@ -1125,7 +1119,6 @@ img.aligncenter {
             bottom: 10px; } }
     .accordion .accordion-box .accordion-box-title.open h4:before {
       -webkit-transform: rotate(180deg);
-          -ms-transform: rotate(180deg);
               transform: rotate(180deg); }
   .accordion .accordion-box .accordion-box-content {
     display: none;
@@ -1154,7 +1147,7 @@ img.aligncenter {
       background-color: #e1e2e3; }
 
 .gform_confirmation_message {
-  background: #c5ffe4;
+  background: #c6ffe4;
   border: 3px solid #007940;
   color: #007940;
   font-family: "Avenir Demi", sans-serif;
@@ -1221,7 +1214,6 @@ img.aligncenter {
     display: block; }
   .sidebar .widget.widget_nav_menu ul li.menu-item-has-children.open > a:before {
     -webkit-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
             transform: rotate(180deg); }
   .sidebar .widget.widget_nav_menu ul li ul li a {
     padding: 5px 10px 3px 25px; }
@@ -1881,16 +1873,13 @@ img.mfp-img {
 @media all and (max-width: 900px) {
   .mfp-arrow {
     -webkit-transform: scale(0.75);
-    -ms-transform: scale(0.75);
-        transform: scale(0.75); }
+    transform: scale(0.75); }
   .mfp-arrow-left {
     -webkit-transform-origin: 0;
-    -ms-transform-origin: 0;
-        transform-origin: 0; }
+    transform-origin: 0; }
   .mfp-arrow-right {
     -webkit-transform-origin: 100%;
-    -ms-transform-origin: 100%;
-        transform-origin: 100%; }
+    transform-origin: 100%; }
   .mfp-container {
     padding-left: 6px;
     padding-right: 6px; } }
