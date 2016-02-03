@@ -86,3 +86,14 @@ img, .wp-caption {
 }
 
 
+.wp-caption {
+	width: auto !important;
+
+	.wp-caption-text {
+		font-size: .85em;
+		color: $grey-dark;
+		background: lighten( $grey, 10% );
+	}
+}
+
+

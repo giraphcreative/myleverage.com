@@ -1067,6 +1067,13 @@ img.aligncenter, .wp-caption.aligncenter {
   display: block;
   margin: 0 auto; }
 
+.wp-caption {
+  width: auto !important; }
+  .wp-caption .wp-caption-text {
+    font-size: .85em;
+    color: #47494b;
+    background: #adafb1; }
+
 .accordions-wide {
   padding: 0 20px; }
 
