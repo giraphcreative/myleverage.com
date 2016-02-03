@@ -86,13 +86,22 @@ img, .wp-caption {
 }
 
 
+
 .wp-caption {
-	width: auto !important;
+	width: 300px !important;
+
+	img {
+		margin: 0 !important;
+		float: none !important;
+		display: block;
+	}
 
 	.wp-caption-text {
+		clear: both;
+		padding: 8px 10px;
 		font-size: .85em;
 		color: $grey-dark;
-		background: lighten( $grey, 10% );
+		background: lighten( $grey, 30% );
 	}
 }
 

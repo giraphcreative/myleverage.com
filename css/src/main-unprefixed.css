@@ -1068,11 +1068,17 @@ img.aligncenter, .wp-caption.aligncenter {
   margin: 0 auto; }
 
 .wp-caption {
-  width: auto !important; }
+  width: 300px !important; }
+  .wp-caption img {
+    margin: 0 !important;
+    float: none !important;
+    display: block; }
   .wp-caption .wp-caption-text {
+    clear: both;
+    padding: 8px 10px;
     font-size: .85em;
     color: #47494b;
-    background: #adafb1; }
+    background: #e1e2e3; }
 
 .accordions-wide {
   padding: 0 20px; }
