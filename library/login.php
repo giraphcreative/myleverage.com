@@ -443,4 +443,11 @@ add_action( 'set_user_role', 'user_role_update', 10, 2);
 
 
 
+function userid_shortcode() {
+    return get_current_user_id();
+}
+add_shortcode( 'userid', 'userid_shortcode' );
+
+
+
 ?>
