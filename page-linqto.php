@@ -38,7 +38,7 @@ if ( empty( $color ) ) $color = 'forest';
 			endif;
 			
 			?>
-			<iframe src='http://leverage.linqto.com/?user=<?php print get_current_user_id(); ?>' style="width: 100%; height: 900px;"></iframe>
+			<iframe src='http://leverage.linqto.com/?user=<?php print get_current_user_id(); ?>' style="width: 100%; height: 1200px;"></iframe>
 			<?php
 			the_accordion();
 			?>
