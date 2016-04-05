@@ -88,6 +88,7 @@
 				&.forest { border: 3px solid $forest; }
 				&.grey-light { border: 3px solid $grey; }
 				&.grey-dark { border: 3px solid $grey-dark; }
+				&.red { border: 3px solid $red; }
 
 				@include respond-to( 500px ) {
 					position: relative;

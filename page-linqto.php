@@ -39,10 +39,10 @@ if ( empty( $color ) ) $color = 'forest';
 			
 			if ( is_user_logged_in() ) {
 				?>
-			<iframe src='http://leverage.linqto.com/?user=<?php print get_current_user_id(); ?>' style="width: 100%; height: 1200px;"></iframe>
+			<iframe src='http://leverage.linqto.com/?user=<?php print get_current_user_id(); ?>' style="width: 100%; height: 1200px;"  allowtransparency="true"></iframe>
 				<?php
 			}
-			
+
 			the_accordion();
 			?>
 		</div>

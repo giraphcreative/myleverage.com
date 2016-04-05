@@ -964,6 +964,8 @@ header {
         border: 3px solid #939598; }
       .thumb-showcase .thumb-list .thumb .thumb-text.grey-dark {
         border: 3px solid #47494b; }
+      .thumb-showcase .thumb-list .thumb .thumb-text.red {
+        border: 3px solid #e22627; }
       @media only screen and (min-width: 500px) {
         .thumb-showcase .thumb-list .thumb .thumb-text {
           position: relative;
