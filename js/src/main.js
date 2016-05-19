@@ -96,10 +96,19 @@ jQuery(document).ready(function($){
 
 
 	// resize linqto iframe
-	$('iframe.auto-height').ready(function() {
-		console.log( 'resizing iframe.' );
-		$('iframe.auto-height').height( $('iframe.auto-height').contents().find("div.liquid-container").height() );
-    });
+	if ( matchMedia('only screen and ( max-width: 599px )').matches ) {
+		$('iframe.auto-height').height( '2930px' );
+	} else if ( matchMedia('only screen and ( min-width: 600px )').matches ) {
+		$('iframe.auto-height').height( '3630px' );
+	} else if ( matchMedia('only screen and ( min-width: 670px )').matches ) {
+		$('iframe.auto-height').height( '2430px' );
+	} else if ( matchMedia('only screen and ( min-width: 823px )').matches ) {
+		$('iframe.auto-height').height( '3630px' );
+	} else if ( matchMedia('only screen and ( min-width: 912px )').matches ) {
+		$('iframe.auto-height').height( '2430px' );
+	} else if ( matchMedia('only screen and ( min-width: 1172px )').matches ) {
+		$('iframe.auto-height').height( '1950px' );
+	}
 
 });
 
