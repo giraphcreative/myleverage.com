@@ -98,7 +98,7 @@ jQuery(document).ready(function($){
 	// resize linqto iframe
 	$('iframe.auto-height').ready(function() {
 		console.log( 'resizing iframe.' );
-		$('iframe.auto-height').height( $('iframe.auto-height div.liquid-container').height() );
+		$('iframe.auto-height').height( $('iframe.auto-height').contents().find("div.liquid-container").height() );
     });
 
 });
