@@ -114,6 +114,8 @@ jQuery(document).ready(function($){
 			$('iframe.auto-height').height( '3630px' );
 		} else if ( matchMedia('only screen and ( max-width: 599px )').matches ) {
 			$('iframe.auto-height').height( '2930px' );
+		} else {
+			$('iframe.auto-height').height( '2350px' );
 		}
 	}
 
