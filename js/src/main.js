@@ -100,13 +100,15 @@ jQuery(document).ready(function($){
 		$('iframe.auto-height').height( '2930px' );
 	} else if ( matchMedia('only screen and ( min-width: 600px )').matches ) {
 		$('iframe.auto-height').height( '3630px' );
-	} else if ( matchMedia('only screen and ( min-width: 670px )').matches ) {
+	} else if ( matchMedia('only screen and ( min-width: 655px )').matches ) {
 		$('iframe.auto-height').height( '2430px' );
+	} else if ( matchMedia('only screen and ( min-width: 768px )').matches ) {
+		$('iframe.auto-height').height( '2930px' );
 	} else if ( matchMedia('only screen and ( min-width: 823px )').matches ) {
 		$('iframe.auto-height').height( '3630px' );
-	} else if ( matchMedia('only screen and ( min-width: 912px )').matches ) {
+	} else if ( matchMedia('only screen and ( min-width: 892px )').matches ) {
 		$('iframe.auto-height').height( '2430px' );
-	} else if ( matchMedia('only screen and ( min-width: 1172px )').matches ) {
+	} else if ( matchMedia('only screen and ( min-width: 1152px )').matches ) {
 		$('iframe.auto-height').height( '1950px' );
 	}
 
