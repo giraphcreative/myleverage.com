@@ -98,6 +98,7 @@ jQuery(document).ready(function($){
 	// resize linqto iframe
 	$('iframe.auto-height').ready(function() {
 		$('iframe.auto-height').iframeAutoHeight();
+		console.log( 'resized iframe' );
     });
 
 });
