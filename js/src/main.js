@@ -94,5 +94,9 @@ jQuery(document).ready(function($){
 	// creep on links
 	$(".wrap a").creep();
 
+
+	// resize linqto iframe
+	$('iframe.auto-height').iframeAutoHeight();
+
 });
 
