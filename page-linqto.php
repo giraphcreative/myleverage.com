@@ -39,7 +39,7 @@ if ( empty( $color ) ) $color = 'forest';
 			
 			if ( is_user_logged_in() ) {
 				?>
-			<iframe class="auto-height" src='http://leverage.linqto.com/?user=<?php print get_current_user_id(); ?>&affiliateId=7' style="width: 100%; height: 1200px;"  allowtransparency="true"></iframe>
+			<iframe class="auto-height" src='http://leverage.linqto.com/?user=<?php print get_current_user_id(); ?>&affiliateId=7' style="width: 100%;"  allowtransparency="true"></iframe>
 				<?php
 			} else {
 				print "You must be logged in to view this content.";
