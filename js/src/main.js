@@ -112,7 +112,7 @@ jQuery(document).ready(function($){
 			$('iframe.auto-height').height( '2430px' );
 		} else if ( matchMedia('only screen and ( min-width: 600px )').matches ) {
 			$('iframe.auto-height').height( '3630px' );
-		} else if ( matchMedia('only screen and ( max-width: 599px )').matches ) {
+		} else if ( matchMedia('only screen and ( min-width: 320px )').matches ) {
 			$('iframe.auto-height').height( '2930px' );
 		} else {
 			$('iframe.auto-height').height( '2350px' );
