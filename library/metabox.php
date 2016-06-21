@@ -258,6 +258,12 @@ function page_metaboxes( $meta_boxes ) {
         'options' => array( 'textarea_rows' => 7 )
     ) );
 
+    $accordion_metabox->add_group_field( $accordion_metabox_group, array(
+        'name' => 'Hide this accordion',
+        'id'   => 'hide',
+        'type' => 'checkbox'
+    ) );
+
 
 
     // showcase metabox
