@@ -8,6 +8,19 @@ function lscu_login_stylesheet() {
 add_action( 'login_enqueue_scripts', 'lscu_login_stylesheet' );
 
 
+// redirect account registration page to the one on the live site.
+function redirect_account_pages() {
+
+	if ( $_SERVER['SCRIPT_NAME'] == "/wp-login.php" && $_SERVER['REQUEST_METHOD'] == 'GET' && isset( $_GET['action'] ) ) {
+		if ( $_GET['action'] == 'register' ) {
+			wp_redirect( '/account/register/' );
+			exit;
+		}
+	}
+
+}
+add_action( 'init', 'redirect_account_pages' );
+
 
 // display the my account/login links based on user state.
 function account_toolbox() {
