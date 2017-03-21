@@ -23,30 +23,17 @@
 <body <?php body_class(); ?>>
 
 <header>
-	<div class="account-mobile">
-		<?php account_toolbox() ?>
-	</div>
 
 	<div class="logo">
-		<a href="/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home">
-			<img src="<?php bloginfo( "template_url" ) ?>/img/logo.png" alt="<?php bloginfo( 'name' ); ?>">
-		</a>
+		<a href="/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"></a>
 	</div>
 	
 	<nav role="navigation">
-		<!--<div class="wrap">-->
-			<button class="menu-toggle"><i class="fa fa-bars"></i></button>
-			<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'nav-menu' ) ); ?>
-		<!--</div>-->
+		<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'nav-menu' ) ); ?>
 	</nav>
 
-	<div class="aux">
-		<div class="search">
-			<?php get_search_form(); ?>
-		</div>
-		<p class="account-links">
-			<?php account_toolbox() ?>
-		</p>
+	<div class="search">
+		<?php get_search_form(); ?>
 	</div>
 
 </header>

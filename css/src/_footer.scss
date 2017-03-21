@@ -1,17 +1,13 @@
 
 
 footer {
-	background-color: $forest;
+	background-color: $lime;
 	color: white;
 	padding: 20px;
 
 	@include clearfix;
 
 	.column {
-		&.first {
-			text-align: center;
-		}
-
 		@include respond-to( 768px ) {
 			float: left;
 			width: 30%;
@@ -40,7 +36,6 @@ footer {
 		font-size: 1.6em;
 		line-height: 1.2em;
 		padding-top: 20px;
-		text-align: center;
 		color: white;
 
 		@include respond-to( 768px ) {
@@ -62,10 +57,10 @@ footer {
 
 	.social {
 		padding: 10px 0;
-		text-align: center;
 
 		img {
-			max-width: 16.66%;
+			max-width: 22%;
+			margin-right: 3%;
 		}
 	}
 

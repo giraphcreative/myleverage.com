@@ -1,35 +1,15 @@
 
-
-.bg-sky { background-color: $sky; }
-.bg-teal { background-color: $teal; }
-.bg-teal-light { background-color: lighten( $teal, 7.5% ); }
-.bg-teal-lighter { background-color: lighten( $teal, 15% ); }
-.bg-teal-lightest { background-color: lighten( $teal, 22.5% ); }
-.bg-navy { background-color: $navy; }
-.bg-navy-light { background-color: lighten( $navy, 7.5% ); }
-.bg-yellow { background-color: $yellow; }
-.bg-yellow-light { background-color: lighten( $yellow, 5% ); }
-.bg-orange { background-color: $orange; }
-.bg-orange-light { background-color: lighten( $orange, 7.5% ); }
 .bg-lime { background-color: $lime; }
 .bg-lime-light { background-color: lighten( $lime, 7.5% ); }
 .bg-forest { background-color: $forest; }
 .bg-forest-light { background-color: lighten( $forest, 7.5% ); }
-.bg-red { background-color: $red; }
-.bg-red-light { background-color: lighten( $red, 7.5% ); }
 .bg-grey-light { background-color: $grey; }
 .bg-grey-light-light { background-color: lighten( $grey, 7.5% ); }
 .bg-grey-dark { background-color: darken( $grey, 30% ); }
 .bg-grey-dark-light { background-color: lighten( darken( $grey, 30% ), 7.5% ); }
 
-.text-sky { color: $sky; }
-.text-teal { color: $teal; }
-.text-navy { color: $navy; }
-.text-orange { color: $orange; }
 .text-lime { color: $lime; }
 .text-forest { color: $forest; }
-.text-yellow { color: $yellow; }
-.text-red { color: $red; }
 .text-grey-light { color: $grey; }
 .text-grey-dark { color: darken( $grey, 30% ); }
 

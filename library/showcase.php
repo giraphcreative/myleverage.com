@@ -66,20 +66,24 @@ function the_thumb_showcase() {
 			<div class="thumb-list">
 		<?php
 	   	foreach ( $thumbs as $thumb ) {
-	        ?><a href="<?php print $thumb['link'] ?>"<?php print ( $thumb['type'] == 'iframe' ? ' class="lightbox-iframe"' : '' ); ?>><div class="thumb">
-				<div class="thumb-icon">
-					<img src="<?php print $thumb['image']; ?>">
-				</div>
-				<div class="thumb-text <?php print $thumb['color'] ?>">
-					<h3><?php print $thumb['title'] ?></h3>
-					<p><?php print $thumb['subtitle'] ?></p>
+	        ?><div class="thumb">
+	        	<div class="thumb-inner">
+					<div class="thumb-icon">
+						<img src="<?php print $thumb['image']; ?>">
+					</div>
+					<div class="thumb-text <?php print $thumb['color'] ?>">
+						<h3><?php print $thumb['title'] ?></h3>
+						<p><?php print $thumb['subtitle'] ?></p>
+					</div>
+					<div class="thumb-buttons">
+						<?php if ( isset( $thumb['button-1-text'] ) && isset( $thumb['button-1-link'] ) ) { ?><a href="<?php print $thumb['button-1-link'] ?>"><?php print $thumb['button-1-text'] ?></a><?php } ?>
+						<?php if ( isset( $thumb['button-2-text'] ) && isset( $thumb['button-2-link'] ) ) { ?><a href="<?php print $thumb['button-2-link'] ?>"><?php print $thumb['button-2-text'] ?></a><?php } ?>
+					</div>
 				</div>
 			</div></a><?php
 	    }
 	    ?>
 			</div>
-			<button class="thumb-nav previous">Previous</button>
-			<button class="thumb-nav next">Next</button>
 		</div>
 	</div>
 		<?php

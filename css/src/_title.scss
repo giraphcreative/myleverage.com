@@ -2,52 +2,28 @@
 
 .large-title {
 	padding: 30px 20px;
-	@include respond-to( 768px ) { padding: 40px 20px; }
-	@include respond-to( 900px ) { padding: 80px 20px; }
-
-	.wrap {
-		position: relative;
-	}	
-
-	.large-title-icon {
-		@include hexagon( 60px, white, 3px );
-		position: absolute;
-		right: 0;
-		bottom: -20px;
-
-		@include respond-to( 768px ) { 
-			@include hexagon( 90px, white, 3px );
-			position: absolute;
-			bottom: -30px;
-		}
-
-		@include respond-to( 900px ) { 
-			@include hexagon( 120px, white, 3px );
-			position: absolute;
-			bottom: -40px;
-		}
+	@include respond-to( $bp-s ) { padding: 40px 20px; }
+	@include respond-to( $bp-m ) { 
+		padding: 80px 20px;
+		margin-bottom: 10px;
 	}
 
 	.large-title-text {
-		margin-right: 30px;
-
 		h1 {
+			@include font;
 			color: white;
 			line-height: 1.1em;
 			font-size: 20px;
 			border-bottom: 3px solid white;
 			text-transform: uppercase;
-			padding-right: 30px;
 			margin-bottom: -10px;
 
 			@include respond-to( 768px ) {
 				font-size: 35px;
-				padding-right: 80px;
 			}
 
 			@include respond-to( 900px ) {
 				font-size: 45px;
-				padding-right: 120px;
 				margin-bottom: -20px;
 			}
 		}

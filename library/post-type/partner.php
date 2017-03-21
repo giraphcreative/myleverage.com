@@ -15,7 +15,7 @@ function leverage_partner_post_type() {
 		// let's now add all the options for this post type
 		array( 
 			'labels' => array(
-				'name' => __( 'Partner', 'ptheme' ), /* This is the Title of the Group */
+				'name' => __( 'Partners', 'ptheme' ), /* This is the Title of the Group */
 				'singular_name' => __( 'Partner', 'ptheme' ), /* This is the individual type */
 				'all_items' => __( 'All Partners', 'ptheme' ), /* the all items menu item */
 				'add_new' => __( 'Add New', 'ptheme' ), /* The add new menu item */
@@ -36,7 +36,7 @@ function leverage_partner_post_type() {
 			'show_ui' => true,
 			'query_var' => true,
 			'menu_position' => 8, /* this is what order you want it to appear in on the left hand side menu */ 
-			'menu_icon' => get_stylesheet_directory_uri() . '/img/icon-admin-partner.png', /* the icon for the custom post type menu */
+			'menu_icon' => 'dashicons-groups', /* the icon for the custom post type menu */
 			'rewrite'	=> array( 
 				'slug' => 'partner', 
 				'with_front' => false 

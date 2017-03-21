@@ -1,8 +1,24 @@
 
 
+body.login {
+	background: #939598;
+}
+
+body.login #nav a, body.login #backtoblog a {
+	color: white;
+}
+
+body.login #nav a:hover, body.login #backtoblog a:hover {
+	color: #ddd;
+}
+
 .login h1 a {
 	background: url('../img/logo.png') center center no-repeat;
 	background-size: contain;
 	width: 100%;
 }
 
+.login #wp-submit, .login #wp-submit:hover {
+	border: 1px solid #939598;
+	background: #7DB241;
+}

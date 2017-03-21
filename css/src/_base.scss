@@ -54,7 +54,7 @@ strong em, em strong, h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
 }
 
 a {
-	color: $navy;
+	color: $forest;
 	text-decoration: none;
 	transition: opacity 400ms ease-in-out;
 
@@ -123,17 +123,11 @@ input, textarea {
 
 
 h1, h2, h3, h4, h5, h6 {
-	color: $navy;
+	color: $forest;
 
-	.teal & { color: $teal; }
 	.forest & { color: $forest; }
-	.green & { color: $green; }
-	.orange & { color: $orange; }
 	.grey &, .grey-light & { color: $grey; }
 	.lime & { color: $lime; }
-	.navy & { color: $navy; }
-	.red & { color: $red; }
-	.yellow & { color: $yellow; }
 }
 
 

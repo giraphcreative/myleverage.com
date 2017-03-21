@@ -18,15 +18,16 @@ if ( empty( $color ) ) $color = 'forest';
 
 </section>
 
-<footer class="footer bg-<?php print $color ?>">
+<footer class="footer">
 	<div class="wrap">
 		<div class="column first">
 			<h3>Connect With Us</h3>
-			<p class="address">22 Inverness Cntr Pky, #200<br>
-				Birmingham, Alabama 35242</p>
-			<p class="address">3692 Coolidge Court<br>
-				Tallahassee, Florida 32311</p>
-			<p><a href="tel:8662310545">866.231.0545</a></p>
+			<p class="address">
+				3692 Coolidge Court<br />
+				Tallahassee, Florida 32311<br />
+				22 Inverness Cntr Pky, #200<br />
+				Birmingham, Alabama<br />
+				866.231.0545</p>
 			<div class="social">
 				<a href="https://twitter.com/LeagueofSECUs" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-twitter.png"></a><a href="https://www.facebook.com/LeagueofSoutheasternCreditUnions?ref=hl" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png"></a><a href="https://www.linkedin.com/company/1007350?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1428961608364%2Ctas%3Amy+leverage" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-linkedin.png"></a><a href="https://www.youtube.com/user/LeagueofSECUs" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-youtube.png"></a>
 			</div>

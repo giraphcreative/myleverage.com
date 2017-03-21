@@ -265,62 +265,7 @@ function page_metaboxes( $meta_boxes ) {
     ) );
 
 
-
-    // showcase metabox
-    $showcase_footer_metabox = new_cmb2_box( array(
-        'id' => 'showcase_footer_metabox',
-        'title' => 'Footer Showcase',
-        'object_types' => array( 'page' ), // post type
-        'context' => 'normal',
-        'priority' => 'high',
-    ) );
-
-    $showcase_footer_metabox_group = $showcase_footer_metabox->add_field( array(
-        'id' => CMB_PREFIX . 'showcase_footer',
-        'type' => 'group',
-        'options' => array(
-            'add_button' => __('Add Slide', 'cmb2'),
-            'remove_button' => __('Remove Slide', 'cmb2'),
-            'group_title'   => __( 'Slide {#}', 'cmb' ), // since version 1.1.4, {#} gets replaced by row number
-            'sortable' => true, // beta
-        )
-    ) );
-
-    $showcase_footer_metabox->add_group_field( $showcase_footer_metabox_group, array(
-        'name' => 'Title',
-        'id'   => 'title',
-        'type' => 'text',
-    ) );
-
-    $showcase_footer_metabox->add_group_field( $showcase_footer_metabox_group, array(
-        'name' => 'Icon',
-        'id'   => 'icon',
-        'type' => 'file',
-        'preview_size' => array( 40, 40 )
-    ) );
-
-    $showcase_footer_metabox->add_group_field( $showcase_footer_metabox_group, array(
-        'name' => 'Link',
-        'id'   => 'link',
-        'type' => 'text',
-    ) );
-
-    $showcase_footer_metabox->add_group_field( $showcase_footer_metabox_group, array(
-        'name' => 'Image/Video',
-        'id'   => 'image',
-        'type' => 'file',
-        'preview_size' => array( 200, 80 )
-    ) );
-
-    $showcase_footer_metabox->add_group_field( $showcase_footer_metabox_group, array(
-        'name' => 'Color',
-        'id'   => 'color',
-        'type' => 'select',
-        'default' => 'navy',
-        'options' => $colors
-    ) );
-
-
+    
     // interstitial metabox
     $interstitial_metabox = new_cmb2_box( array(
         'id' => 'interstitial_metabox',
