@@ -69,7 +69,7 @@ if ( isset( $_REQUEST['event_category'] ) && $_REQUEST['event_category']!=0 ) {
 			?>
 			</div>
 		</div>
-		<hr />
+		<hr class="group" />
 		<div class="group third">
 			<div class="fb-page" data-href="https://www.facebook.com/LeagueofSoutheasternCreditUnions" data-tabs="timeline" data-width="300px" data-height="500px" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="false"><blockquote cite="https://www.facebook.com/LeagueofSoutheasternCreditUnions" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/LeagueofSoutheasternCreditUnions">League of Southeastern Credit Unions (LSCU)</a></blockquote></div>
 		</div>
