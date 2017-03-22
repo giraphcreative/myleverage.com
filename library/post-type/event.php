@@ -44,7 +44,7 @@ function lscu_events() {
 			'show_ui' => true,
 			'query_var' => true,
 			'menu_position' => 8, /* this is what order you want it to appear in on the left hand side menu */ 
-			'menu_icon' => get_stylesheet_directory_uri() . '/img/icon-admin-event.png', /* the icon for the custom post type menu */
+			'menu_icon' => 'dashicons-calendar-alt', /* the icon for the custom post type menu */
 			'rewrite'	=> array( 
 				'slug' => 'event', 
 				'with_front' => false 
