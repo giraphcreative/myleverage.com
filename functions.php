@@ -12,6 +12,7 @@ include( "library/scripts.php" );
 
 // post types
 include( "library/post-type/partner.php" );
+include( "library/post-type/event.php" );
 
 
 // an extra image manipulation function
@@ -79,6 +80,11 @@ function pagination($prev = '&laquo;', $next = '&raquo;') {
     echo paginate_links( $pagination );
 }
 
+
+function wpdocs_custom_excerpt_length( $length ) {
+    return 20;
+}
+add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
 
 ?>

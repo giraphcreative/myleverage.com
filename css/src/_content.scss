@@ -5,16 +5,22 @@
 }
 
 .content-narrow {
+	@include clearfix;
+
 	padding: 40px 20px;
 	max-width: 900px;
 	margin: 0 auto;
 }
 
 .content-wide {
+	@include clearfix;
+
 	padding: 40px 20px;
 }
 
 .content-two-column {
+	@include clearfix;
+
 	@include respond-to( 768px ) {
 		padding: 30px 0;
 	}
@@ -39,6 +45,11 @@
 @include respond-to( 768px ) {
 	.quarter, .third, .half, .two-third, .three-quarter {
 		float: left;
+	}
+
+	.half { 
+		width: 48%;
+		margin: 0 1%;
 	}
 
 	.quarter {
@@ -98,6 +109,37 @@ img, .wp-caption {
 		color: $grey-dark;
 		background: lighten( $grey, 30% );
 	}
+}
+
+.post-list {
+	padding: 20px 0;
+
+
+	.entry {
+		border-top: 1px solid lighten( $grey, 35% );
+		padding: 20px 0;
+
+		h5 {
+			@include font;
+			font-size: 1em;
+			line-height: 1.4em;
+		}
+
+		p {
+			padding: 5px 0;
+			font-size: .85em;
+		}
+	}
+}
+
+.quiet {
+	text-style: italic;
+	color: lighten( $grey, 10% );
+}
+
+
+.fb-page iframe {
+	max-width: 100% !important;
 }
 
 
