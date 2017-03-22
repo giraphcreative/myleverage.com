@@ -172,23 +172,23 @@ input, textarea {
   font-family: "Avenir", sans-serif;
   font-weight: normal; }
 
-.content-style ol, .half ol, .two-third ol, .three-quarter ol, .quarter ol, .third ol, .accordion .accordion-box .accordion-box-content ol, .event-info ol, .content-style ul, .half ul, .two-third ul, .three-quarter ul, .quarter ul, .third ul, .accordion .accordion-box .accordion-box-content ul, .event-info ul {
+.content-style ol, .half ol, .two-third ol, .three-quarter ol, .event-info ol, .content-style ul, .half ul, .two-third ul, .three-quarter ul, .event-info ul {
   padding: 5px 0 5px 35px; }
-  .content-style ol li, .half ol li, .two-third ol li, .three-quarter ol li, .quarter ol li, .third ol li, .accordion .accordion-box .accordion-box-content ol li, .event-info ol li, .content-style ul li, .half ul li, .two-third ul li, .three-quarter ul li, .quarter ul li, .third ul li, .accordion .accordion-box .accordion-box-content ul li, .event-info ul li {
+  .content-style ol li, .half ol li, .two-third ol li, .three-quarter ol li, .event-info ol li, .content-style ul li, .half ul li, .two-third ul li, .three-quarter ul li, .event-info ul li {
     padding: 3px 0; }
-  .content-style ol.gform_fields, .half ol.gform_fields, .two-third ol.gform_fields, .three-quarter ol.gform_fields, .quarter ol.gform_fields, .third ol.gform_fields, .accordion .accordion-box .accordion-box-content ol.gform_fields, .event-info ol.gform_fields, .content-style ul.gform_fields, .half ul.gform_fields, .two-third ul.gform_fields, .three-quarter ul.gform_fields, .quarter ul.gform_fields, .third ul.gform_fields, .accordion .accordion-box .accordion-box-content ul.gform_fields, .event-info ul.gform_fields {
+  .content-style ol.gform_fields, .half ol.gform_fields, .two-third ol.gform_fields, .three-quarter ol.gform_fields, .event-info ol.gform_fields, .content-style ul.gform_fields, .half ul.gform_fields, .two-third ul.gform_fields, .three-quarter ul.gform_fields, .event-info ul.gform_fields {
     padding: 5px 0; }
 
-.content-style ul, .half ul, .two-third ul, .three-quarter ul, .quarter ul, .third ul, .accordion .accordion-box .accordion-box-content ul, .event-info ul {
+.content-style ul, .half ul, .two-third ul, .three-quarter ul, .event-info ul {
   list-style-type: disc; }
 
-.content-style ol, .half ol, .two-third ol, .three-quarter ol, .quarter ol, .third ol, .accordion .accordion-box .accordion-box-content ol, .event-info ol {
+.content-style ol, .half ol, .two-third ol, .three-quarter ol, .event-info ol {
   list-style-type: decimal; }
 
-.content-style h1, .half h1, .two-third h1, .three-quarter h1, .quarter h1, .third h1, .accordion .accordion-box .accordion-box-content h1, .event-info h1, .content-style h2, .half h2, .two-third h2, .three-quarter h2, .quarter h2, .third h2, .accordion .accordion-box .accordion-box-content h2, .event-info h2, .content-style h3, .half h3, .two-third h3, .three-quarter h3, .quarter h3, .third h3, .accordion .accordion-box .accordion-box-content h3, .event-info h3, .content-style h4, .half h4, .two-third h4, .three-quarter h4, .quarter h4, .third h4, .accordion .accordion-box .accordion-box-content h4, .event-info h4, .content-style h5, .half h5, .two-third h5, .three-quarter h5, .quarter h5, .third h5, .accordion .accordion-box .accordion-box-content h5, .event-info h5, .content-style h6, .half h6, .two-third h6, .three-quarter h6, .quarter h6, .third h6, .accordion .accordion-box .accordion-box-content h6, .event-info h6 {
+.content-style h1, .half h1, .two-third h1, .three-quarter h1, .event-info h1, .content-style h2, .half h2, .two-third h2, .three-quarter h2, .event-info h2, .content-style h3, .half h3, .two-third h3, .three-quarter h3, .event-info h3, .content-style h4, .half h4, .two-third h4, .three-quarter h4, .event-info h4, .content-style h5, .half h5, .two-third h5, .three-quarter h5, .event-info h5, .content-style h6, .half h6, .two-third h6, .three-quarter h6, .event-info h6 {
   padding: 10px 0 5px; }
 
-.content-style blockquote, .half blockquote, .two-third blockquote, .three-quarter blockquote, .quarter blockquote, .third blockquote, .accordion .accordion-box .accordion-box-content blockquote, .event-info blockquote {
+.content-style blockquote, .half blockquote, .two-third blockquote, .three-quarter blockquote, .event-info blockquote {
   padding: 10px 25px;
   font-family: "Avenir Italic", sans-serif;
   font-weight: normal;
@@ -198,13 +198,13 @@ input, textarea {
   border-left: 3px solid #d4d5d6;
   margin: 10px 0 10px 20px; }
 
-.content-style hr, .half hr, .two-third hr, .three-quarter hr, .quarter hr, .third hr, .accordion .accordion-box .accordion-box-content hr, .event-info hr {
+.content-style hr, .half hr, .two-third hr, .three-quarter hr, .event-info hr {
   border: 0;
   border-bottom: 1px solid #d4d5d6;
   padding: 0;
   margin: 25px 0; }
 
-.content-style button, .half button, .two-third button, .three-quarter button, .quarter button, .third button, .accordion .accordion-box .accordion-box-content button, .event-info button, .content-style input[type=submit], .half input[type=submit], .two-third input[type=submit], .three-quarter input[type=submit], .quarter input[type=submit], .third input[type=submit], .accordion .accordion-box .accordion-box-content input[type=submit], .event-info input[type=submit], .content-style input[type=reset], .half input[type=reset], .two-third input[type=reset], .three-quarter input[type=reset], .quarter input[type=reset], .third input[type=reset], .accordion .accordion-box .accordion-box-content input[type=reset], .event-info input[type=reset] {
+.content-style button, .half button, .two-third button, .three-quarter button, .event-info button, .content-style input[type=submit], .half input[type=submit], .two-third input[type=submit], .three-quarter input[type=submit], .event-info input[type=submit], .content-style input[type=reset], .half input[type=reset], .two-third input[type=reset], .three-quarter input[type=reset], .event-info input[type=reset] {
   padding: 9px 45px 6px 12px;
   background: #007934 url(../img/icon-button-arrow.png) right center no-repeat;
   color: white;
@@ -661,6 +661,9 @@ header {
 .quarter, .third, .half, .two-third, .three-quarter {
   padding: 20px; }
 
+.half, .two-third, .three-quarter {
+  padding: 20px; }
+
 .breadcrumbs {
   padding: 0 0 20px; }
 
@@ -728,64 +731,6 @@ img.aligncenter, .wp-caption.aligncenter {
 
 .fb-page iframe {
   max-width: 100% !important; }
-
-.accordions-wide {
-  padding: 0 20px; }
-
-.accordion {
-  padding: 30px 0 6px; }
-  .accordion .accordion-box .accordion-box-title {
-    position: relative;
-    background-size: cover;
-    cursor: pointer;
-    padding: 10px 40px 15px 15px; }
-    @media only screen and (min-width: 768px) {
-      .accordion .accordion-box .accordion-box-title {
-        padding: 15px 60px 25px 15px; } }
-    .accordion .accordion-box .accordion-box-title h4 {
-      font-family: "Avenir Demi", sans-serif;
-      font-weight: normal;
-      font-size: 18px;
-      line-height: 22px;
-      font-style: normal;
-      color: white;
-      text-transform: uppercase;
-      padding: 10px 10px 5px;
-      border-bottom: 4px solid white; }
-      .accordion .accordion-box .accordion-box-title h4:before {
-        position: absolute;
-        right: 10px;
-        bottom: 10px;
-        width: 40px;
-        height: 40px;
-        content: '';
-        background: url(../img/icon-accordion-arrow.png) center center no-repeat;
-        background-size: contain;
-        -webkit-transition: -webkit-transform 600ms ease-in-out;
-                transition: transform 600ms ease-in-out; }
-        @media only screen and (min-width: 768px) {
-          .accordion .accordion-box .accordion-box-title h4:before {
-            width: 60px;
-            height: 60px;
-            bottom: 10px; } }
-    .accordion .accordion-box .accordion-box-title.open h4:before {
-      -webkit-transform: rotate(180deg);
-              transform: rotate(180deg); }
-  .accordion .accordion-box .accordion-box-content {
-    display: none;
-    padding: 20px; }
-    .accordion .accordion-box .accordion-box-content .wrap {
-      max-width: 1180px; }
-  .accordion .accordion-box.open .accordion-box-content {
-    display: block; }
-  .accordion .accordion-box {
-    margin-top: 6px; }
-    .accordion .accordion-box.bg-lime .accordion-box-content, .accordion .accordion-box.bg-lime-light .accordion-box-content {
-      background-color: #f9fcf6; }
-    .accordion .accordion-box.bg-forest .accordion-box-content, .accordion .accordion-box.bg-forest-light .accordion-box-content {
-      background-color: #dfffed; }
-    .accordion .accordion-box.bg-grey-light .accordion-box-content, .accordion .accordion-box.bg-grey-dark .accordion-box-content, .accordion .accordion-box.bg-grey-light-light .accordion-box-content, .accordion .accordion-box.bg-grey-dark-light .accordion-box-content {
-      background-color: #e1e2e3; }
 
 .gform_confirmation_message {
   background: #c6ffde;
@@ -901,7 +846,8 @@ img.aligncenter, .wp-caption.aligncenter {
   font-size: 15px; }
   .sidebar .widget .widget-title {
     position: relative;
-    padding: 10px; }
+    padding: 10px;
+    background: #939598; }
     .sidebar .widget .widget-title h4 {
       font-family: "Avenir", sans-serif;
       font-weight: normal;
@@ -910,16 +856,6 @@ img.aligncenter, .wp-caption.aligncenter {
       text-transform: uppercase;
       font-size: 1.1em;
       padding-right: 15px; }
-    .sidebar .widget .widget-title:before {
-      content: '';
-      position: absolute;
-      width: 44px;
-      height: 44px;
-      margin-top: -22px;
-      right: 5px;
-      top: 50%;
-      background: center center no-repeat;
-      background-size: contain; }
   .sidebar .widget.widget_nav_menu ul li a {
     display: block;
     padding: 5px 10px 3px;

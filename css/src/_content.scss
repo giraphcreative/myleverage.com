@@ -35,6 +35,10 @@
 }
 
 .quarter, .third, .half, .two-third, .three-quarter {
+	padding: 20px;
+}
+
+.half, .two-third, .three-quarter {
 	@extend .content-style;
 	padding: 20px;
 }

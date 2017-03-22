@@ -66,12 +66,6 @@ jQuery(document).ready(function($){
 
 	// fluid width videos that maintain aspect ratio
 	$( '.content' ).fitVids();
-	
-
-	// sidebar title background colors.
-	if ( sidebar && large_title ) {
-		sidebar.find( '.widget:not(.leverage) .widget-title' ).css( 'background-color', large_title.css( 'background-color' ) );
-	}
 
 
 	// search and replace leverage so it's italicized.

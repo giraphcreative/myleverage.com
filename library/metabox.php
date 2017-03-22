@@ -357,7 +357,8 @@ function page_metaboxes( $meta_boxes ) {
     // accordion metabox
     $accordion_metabox = new_cmb2_box( array(
         'id' => 'accordion_metabox',
-        'title' => 'Accordions',
+        'title' => 'Boxes',
+        'desc' => 'Boxes of content that alternate colors between white and grey.',
         'object_types' => array( 'page' ), // post type
         'context' => 'normal',
         'priority' => 'high',
@@ -369,7 +370,7 @@ function page_metaboxes( $meta_boxes ) {
         'options' => array(
             'add_button' => __('Add Box', 'cmb'),
             'remove_button' => __('Remove Box', 'cmb'),
-            'group_title'   => __( 'Accordion Box {#}', 'cmb' ), // since version 1.1.4, {#} gets replaced by row number
+            'group_title'   => __( 'Content Box {#}', 'cmb' ), // since version 1.1.4, {#} gets replaced by row number
             'sortable' => true, // beta
         )
     ) );
@@ -378,45 +379,15 @@ function page_metaboxes( $meta_boxes ) {
         'name' => 'Title',
         'id'   => 'title',
         'type' => 'text',
-    ) );
-
-    $accordion_metabox->add_group_field( $accordion_metabox_group, array(
-        'name' => 'Icon',
-        'id'   => 'icon',
-        'type' => 'file',
-        'preview_size' => array( 30, 30 )
-    ) );
-
-    $accordion_metabox->add_group_field( $accordion_metabox_group, array(
-        'name' => 'Color',
-        'id'   => 'color',
-        'type' => 'select',
-        'default' => 'navy',
-        'options' => $colors
-    ) );
-
-    $accordion_metabox->add_group_field( $accordion_metabox_group, array(
-        'name' => 'Default State',
-        'id'   => 'state',
-        'type' => 'select',
-        'default' => 'closed',
-        'options' => array(
-            'closed' => 'Closed',
-            'open' => 'Open',
-        )
+        'sanitization_cb' => false
     ) );
 
     $accordion_metabox->add_group_field( $accordion_metabox_group, array(
         'name' => 'Content',
         'id'   => 'content',
         'type' => 'wysiwyg',
+        'show_names' => false,
         'options' => array( 'textarea_rows' => 7 )
-    ) );
-
-    $accordion_metabox->add_group_field( $accordion_metabox_group, array(
-        'name' => 'Hide this accordion',
-        'id'   => 'hide',
-        'type' => 'checkbox'
     ) );
 
 
