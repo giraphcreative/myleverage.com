@@ -46,6 +46,11 @@ header {
 			right: 77%;
 			bottom: 0;
 		}
+
+		@include respond-to( $bp-xl ) {
+			left: 20px;
+			right: 70%;
+		}
 	}
 
 	@include respond-to( $bp-s ) {
@@ -68,6 +73,11 @@ header {
 			right: 20%;
 			top: 0;
 			border-top: 0;
+		}
+
+		@include respond-to( $bp-l ) {
+			left: 30%;
+			right: 20%;
 		}
 
 		ul.nav-menu {

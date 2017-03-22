@@ -166,12 +166,6 @@ function page_metaboxes( $meta_boxes ) {
     ) );
 
     $thumb_showcase_metabox->add_group_field( $thumb_showcase_metabox_group, array(
-        'name' => 'Link',
-        'id'   => 'link',
-        'type' => 'text',
-    ) );
-
-    $thumb_showcase_metabox->add_group_field( $thumb_showcase_metabox_group, array(
         'name' => 'Image/Video',
         'id'   => 'image',
         'type' => 'file',
@@ -179,22 +173,27 @@ function page_metaboxes( $meta_boxes ) {
     ) );
 
     $thumb_showcase_metabox->add_group_field( $thumb_showcase_metabox_group, array(
-        'name' => 'Color',
-        'id'   => 'color',
-        'type' => 'select',
-        'default' => 'navy',
-        'options' => $colors
+        'name' => 'Button #1 Text',
+        'id'   => 'button-1-text',
+        'type' => 'text',
     ) );
 
     $thumb_showcase_metabox->add_group_field( $thumb_showcase_metabox_group, array(
-        'name' => 'Type',
-        'id'   => 'type',
-        'type' => 'select',
-        'default' => 'normal',
-        'options' => array(
-            'normal' => 'Normal Link',
-            'iframe' => 'Video/Map'
-        )
+        'name' => 'Button #1 Link',
+        'id'   => 'button-1-link',
+        'type' => 'text',
+    ) );
+
+    $thumb_showcase_metabox->add_group_field( $thumb_showcase_metabox_group, array(
+        'name' => 'Button #2 Text',
+        'id'   => 'button-2-text',
+        'type' => 'text',
+    ) );
+
+    $thumb_showcase_metabox->add_group_field( $thumb_showcase_metabox_group, array(
+        'name' => 'Button #2 Link',
+        'id'   => 'button-2-link',
+        'type' => 'text',
     ) );
 
 

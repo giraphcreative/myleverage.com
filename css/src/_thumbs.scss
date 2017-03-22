@@ -1,4 +1,101 @@
 
 
+.thumbs {
+	@include clearfix;
+	padding: 20px 10px;
 
+	@include respond-to( $bp-l ) {
+		padding: 30px 15px;
+	}
+
+	.thumb-container {
+		margin-bottom: 20px;
+
+		@include respond-to( $bp-m ) {
+			float: left;
+			width: 50%;
+			padding: 10px;
+			margin-bottom: 0;
+		}
+
+		@include respond-to( $bp-l ) {
+			padding: 20px;
+		}
+	}
+	
+	.thumb {
+		padding: 10px;
+		background: lighten( $grey, 30% );
+
+		.thumb-inner {
+			padding: 20px;
+			border: 2px solid $forest;
+
+			@include respond-to( $bp-m ) {
+				min-height: 200px;
+			}
+		}
+
+		.thumb-icon {
+			width: 20%;
+			margin-right: 5%;
+			float: left;
+		}
+
+		.thumb-text {
+			width: 75%;
+			float: left;
+		}
+
+		h5 {
+			@include font;
+			font-size: 1.1em;
+			text-transform: uppercase;
+
+			@include respond-to( $bp-m ) {
+				font-size: 1.3em;
+			}
+		}
+
+		p {
+			font-size: .85em;
+		}
+
+		.thumb-buttons {
+			padding: 10px 0 0;
+			@include clearfix;
+
+			a {
+				float: left;
+				text-decoration: none;
+				border: 2px solid $grey-dark;
+				text-transform: uppercase;
+				padding: 8px 27px 5px 10px;
+				margin: 0 5px 5px 0;
+				font-size: .95em;
+				background: transparent url(../img/thumb-button-arrow.png) right center no-repeat;
+				transition: background-color 400ms ease-in-out;
+
+				&:hover {
+					background-color: white;
+				}
+
+				@include respond-to( $bp-m ) {
+					margin: 0 0 5px;
+				}
+
+				@include respond-to( $bp-l ) {
+					padding: 8px 35px 5px 20px;
+					letter-spacing: 1px;
+				}
+			}
+
+			.button2 {
+				@include respond-to( $bp-s ) {
+					float: right;
+				}
+			}
+		}
+	}
+}
 

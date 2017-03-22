@@ -61,31 +61,31 @@ function the_thumb_showcase() {
 	$thumbs = get_cmb_value( 'thumb_showcase' );
 	if ( !empty( $thumbs[0]['title'] ) ) {
 		?>
-	<div class="thumb-showcase">
 		<div class="thumbs">
-			<div class="thumb-list">
 		<?php
-	   	foreach ( $thumbs as $thumb ) {
-	        ?><div class="thumb">
-	        	<div class="thumb-inner">
-					<div class="thumb-icon">
-						<img src="<?php print $thumb['image']; ?>">
-					</div>
-					<div class="thumb-text <?php print $thumb['color'] ?>">
-						<h3><?php print $thumb['title'] ?></h3>
-						<p><?php print $thumb['subtitle'] ?></p>
-					</div>
-					<div class="thumb-buttons">
-						<?php if ( isset( $thumb['button-1-text'] ) && isset( $thumb['button-1-link'] ) ) { ?><a href="<?php print $thumb['button-1-link'] ?>"><?php print $thumb['button-1-text'] ?></a><?php } ?>
-						<?php if ( isset( $thumb['button-2-text'] ) && isset( $thumb['button-2-link'] ) ) { ?><a href="<?php print $thumb['button-2-link'] ?>"><?php print $thumb['button-2-text'] ?></a><?php } ?>
-					</div>
+		foreach ( $thumbs as $thumb ) {
+		    ?>
+	<div class="thumb-container">
+		<div class="thumb">
+	    	<div class="thumb-inner">
+				<div class="thumb-icon">
+					<img src="<?php print $thumb['image']; ?>">
 				</div>
-			</div></a><?php
-	    }
-	    ?>
+				<div class="thumb-text <?php print $thumb['color'] ?>">
+					<h5><?php print $thumb['title'] ?></h5>
+					<p><?php print $thumb['subtitle'] ?></p>
+				</div>
+				<div class="thumb-buttons">
+					<?php if ( isset( $thumb['button-1-text'] ) && isset( $thumb['button-1-link'] ) ) { ?><a href="<?php print $thumb['button-1-link'] ?>" class="button1"><?php print $thumb['button-1-text'] ?></a><?php } ?>
+					<?php if ( isset( $thumb['button-2-text'] ) && isset( $thumb['button-2-link'] ) ) { ?><a href="<?php print $thumb['button-2-link'] ?>" class="button2"><?php print $thumb['button-2-text'] ?></a><?php } ?>
+				</div>
 			</div>
 		</div>
 	</div>
+			<?php
+		}
+		?>
+		</div>
 		<?php
 	}
 }

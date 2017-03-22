@@ -260,6 +260,10 @@ header {
         top: 5px;
         right: 77%;
         bottom: 0; } }
+    @media only screen and (min-width: 1220px) {
+      header .logo {
+        left: 20px;
+        right: 70%; } }
   @media only screen and (min-width: 600px) {
     header {
       position: relative; } }
@@ -278,6 +282,10 @@ header {
         right: 20%;
         top: 0;
         border-top: 0; } }
+    @media only screen and (min-width: 1024px) {
+      header nav {
+        left: 30%;
+        right: 20%; } }
     header nav ul.nav-menu {
       background: #939598;
       z-index: 1000;
@@ -528,6 +536,85 @@ header {
           left: 5px; }
         .showcase .showcase-nav a.next {
           right: 5px; } }
+
+.thumbs {
+  zoom: 1;
+  padding: 20px 10px; }
+  .thumbs:before, .thumbs:after {
+    content: "";
+    display: table; }
+  .thumbs, .thumbs:before, .thumbs:after {
+    clear: both; }
+  @media only screen and (min-width: 1024px) {
+    .thumbs {
+      padding: 30px 15px; } }
+  .thumbs .thumb-container {
+    margin-bottom: 20px; }
+    @media only screen and (min-width: 768px) {
+      .thumbs .thumb-container {
+        float: left;
+        width: 50%;
+        padding: 10px;
+        margin-bottom: 0; } }
+    @media only screen and (min-width: 1024px) {
+      .thumbs .thumb-container {
+        padding: 20px; } }
+  .thumbs .thumb {
+    padding: 10px;
+    background: #e1e2e3; }
+    .thumbs .thumb .thumb-inner {
+      padding: 20px;
+      border: 2px solid #007934; }
+      @media only screen and (min-width: 768px) {
+        .thumbs .thumb .thumb-inner {
+          min-height: 200px; } }
+    .thumbs .thumb .thumb-icon {
+      width: 20%;
+      margin-right: 5%;
+      float: left; }
+    .thumbs .thumb .thumb-text {
+      width: 75%;
+      float: left; }
+    .thumbs .thumb h5 {
+      font-family: "Avenir", sans-serif;
+      font-weight: normal;
+      font-size: 1.1em;
+      text-transform: uppercase; }
+      @media only screen and (min-width: 768px) {
+        .thumbs .thumb h5 {
+          font-size: 1.3em; } }
+    .thumbs .thumb p {
+      font-size: .85em; }
+    .thumbs .thumb .thumb-buttons {
+      padding: 10px 0 0;
+      zoom: 1; }
+      .thumbs .thumb .thumb-buttons:before, .thumbs .thumb .thumb-buttons:after {
+        content: "";
+        display: table; }
+      .thumbs .thumb .thumb-buttons, .thumbs .thumb .thumb-buttons:before, .thumbs .thumb .thumb-buttons:after {
+        clear: both; }
+      .thumbs .thumb .thumb-buttons a {
+        float: left;
+        text-decoration: none;
+        border: 2px solid #47494b;
+        text-transform: uppercase;
+        padding: 8px 27px 5px 10px;
+        margin: 0 5px 5px 0;
+        font-size: .95em;
+        background: transparent url(../img/thumb-button-arrow.png) right center no-repeat;
+        transition: background-color 400ms ease-in-out; }
+        .thumbs .thumb .thumb-buttons a:hover {
+          background-color: white; }
+        @media only screen and (min-width: 768px) {
+          .thumbs .thumb .thumb-buttons a {
+            margin: 0 0 5px; } }
+        @media only screen and (min-width: 1024px) {
+          .thumbs .thumb .thumb-buttons a {
+            padding: 8px 35px 5px 20px;
+            letter-spacing: 1px; } }
+      @media only screen and (min-width: 600px) {
+        .thumbs .thumb .thumb-buttons .button2 {
+          float: right; } }
 
 .wrap {
   max-width: 1220px;
