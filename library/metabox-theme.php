@@ -133,62 +133,6 @@ class pure_admin {
 			'options' => $all_pages
 		) );
 
-	    $cmb->add_field( array(
-	        'name' => 'Welcome Email',
-	        'id'   => 'welcome-email',
-	        'desc' => 'Set the contents of the welcome email. Use the following shortcodes to include user/site information:<br>[first-name], [last-name], [user-login], [email], <br>[login-url], [homepage], [admin-email], <br>[date], [time], [user-id].',
-	        'type' => 'wysiwyg',
-	        'options' => array( 'textarea_rows' => 15 ),
-	        'default' => "Welcome, [first-name]!
-
-Your account has been created - your user name is [user-login]. Thanks for registering!
-
-Best regards,
-<strong>The Team</strong>"
-	    ) );
-
-	    $cmb->add_field( array(
-	        'name' => 'Password Reset Email',
-	        'id'   => 'reset-email',
-	        'desc' => 'Set the contents of the welcome email. Use the following shortcodes to include user/site information:<br>[first-name], [last-name], [user-login], [email], <br>[password-reset-url], [homepage], [admin-email], <br>[date], [time], [user-id].',
-	        'type' => 'wysiwyg',
-	        'options' => array( 'textarea_rows' => 15 ),
-	        'default' => "Hello [first-name],
-
-We received a password reset request from LSCU for your user account ([user-login]). To complete the password reset, click the link below to have a new password sent to you.
-
-[password-reset-url]
-
-If you didn't request this password reset, please disregard this email - no further action is required to maintain your account security.
-
-Best regards,
-<strong>The Team</strong>"
-	    ) );
-
-	    $cmb->add_field( array(
-	        'name' => 'Member Email Subject',
-	        'id'   => 'member-email-subject',
-	        'desc' => 'Set a subject line for the new member email.',
-	        'type' => 'text_medium',
-	        'default' => "[Role Updated] Your account has been upgraded to 'Member'"
-	    ) );
-
-	    $cmb->add_field( array(
-	        'name' => 'Member Email',
-	        'id'   => 'member-email',
-	        'desc' => 'Set the contents of the new member email. This is sent when a user is changed to a member role. Use the following shortcodes to include user/site information:<br>[first-name], [last-name], [user-login], [email], <br>[login-url], [homepage], [admin-email], <br>[homepage], [date], [time], [user-id].',
-	        'type' => 'wysiwyg',
-	        'options' => array( 'textarea_rows' => 15 ),
-	        'default' => "Hello, [first-name]!
-
-Your account ([email]) has been set up as a Member on our site. Visit the site below and log in to see your new privileges.
-
-[homepage]
-
-Best regards,
-<strong>The Team</strong>"
-	    ) );
-
 	}
 
 	/**

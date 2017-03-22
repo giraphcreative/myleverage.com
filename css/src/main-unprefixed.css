@@ -229,8 +229,8 @@ header {
   margin-bottom: 10px; }
   @media only screen and (min-width: 600px) {
     header {
-      height: 190px; } }
-  @media only screen and (min-width: 600px) {
+      height: 160px; } }
+  @media only screen and (min-width: 1024px) {
     header {
       height: 100px; } }
   header .logo {
@@ -256,9 +256,9 @@ header {
         bottom: 105px; } }
     @media only screen and (min-width: 1024px) {
       header .logo {
-        left: 5px;
+        left: 10px;
         top: 5px;
-        right: 77%;
+        right: 75%;
         bottom: 0; } }
     @media only screen and (min-width: 1220px) {
       header .logo {
@@ -379,7 +379,7 @@ header {
         position: absolute;
         right: 0;
         top: 0;
-        bottom: 90px;
+        bottom: 60px;
         left: 50%;
         padding: 30px 10px; } }
     @media only screen and (min-width: 1024px) {

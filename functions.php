@@ -87,4 +87,10 @@ function wpdocs_custom_excerpt_length( $length ) {
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
 
+function remove_user_menu(){
+	remove_menu_page( 'users.php' );
+}
+add_action( 'admin_menu', 'remove_user_menu' );
+
+
 ?>
