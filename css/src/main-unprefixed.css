@@ -221,7 +221,7 @@ input, textarea {
     text-decoration: none; }
 
 .btn-arrow {
-  background: #e1e2e3 url(../img/thumb-button-arrow.png) right center no-repeat;
+  background: #939598 url(../img/thumb-button-arrow.png) right center no-repeat;
   text-decoration: none;
   border: 2px solid #47494b;
   text-transform: uppercase;
@@ -231,7 +231,7 @@ input, textarea {
   transition: background-color 400ms ease-in-out; }
   @media only screen and (min-width: 1024px) {
     .btn-arrow {
-      padding: 8px 35px 5px 20px;
+      padding: 10px 35px 7px 20px;
       letter-spacing: 1px; } }
   .btn-arrow:hover {
     background-color: white;

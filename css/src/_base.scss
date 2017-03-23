@@ -134,7 +134,7 @@ input, textarea {
 
 
 .btn-arrow {
-	background: lighten( $grey, 30% ) url(../img/thumb-button-arrow.png) right center no-repeat;
+	background: $grey url(../img/thumb-button-arrow.png) right center no-repeat;
 	text-decoration: none;
 	border: 2px solid $grey-dark;
 	text-transform: uppercase;
@@ -144,7 +144,7 @@ input, textarea {
 	transition: background-color 400ms ease-in-out;
 
 	@include respond-to( $bp-l ) {
-		padding: 8px 35px 5px 20px;
+		padding: 10px 35px 7px 20px;
 		letter-spacing: 1px;
 	}
 
