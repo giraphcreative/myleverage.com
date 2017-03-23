@@ -994,11 +994,11 @@ img.aligncenter, .wp-caption.aligncenter {
       transition: all 400ms ease-in-out;
       opacity: 1; }
       .partner-showcase .partner-list img:hover {
-        opacity: .9; }
+        opacity: .8; }
       @media only screen and (min-width: 480px) {
         .partner-showcase .partner-list img {
           width: 50%; } }
-      @media only screen and (min-width: 600px) {
+      @media only screen and (min-width: 768px) {
         .partner-showcase .partner-list img {
           width: 33.33%; } }
       @media only screen and (min-width: 1024px) {

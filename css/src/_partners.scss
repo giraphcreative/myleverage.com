@@ -18,14 +18,14 @@
 			opacity: 1;				
 			
 			&:hover {
-				opacity: .9;
+				opacity: .8;
 			}
 
 			@include respond-to( 480px ) {
 				width: 50%;
 			}
 
-			@include respond-to( $bp-s ) {
+			@include respond-to( $bp-m ) {
 				width: 33.33%;
 			}
 
