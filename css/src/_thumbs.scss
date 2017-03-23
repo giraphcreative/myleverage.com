@@ -51,6 +51,7 @@
 			@include font;
 			font-size: 1.1em;
 			text-transform: uppercase;
+			color: $forest;
 
 			@include respond-to( $bp-m ) {
 				font-size: 1.3em;

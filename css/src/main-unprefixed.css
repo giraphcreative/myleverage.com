@@ -608,7 +608,8 @@ header {
       font-family: "Avenir", sans-serif;
       font-weight: normal;
       font-size: 1.1em;
-      text-transform: uppercase; }
+      text-transform: uppercase;
+      color: #007934; }
       @media only screen and (min-width: 768px) {
         .thumbs .thumb h5 {
           font-size: 1.3em; } }
