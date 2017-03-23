@@ -110,14 +110,20 @@ input, textarea {
 		margin: 25px 0;
 	}
 
-	button, input[type=submit], input[type=reset] {
-		padding: 9px 45px 6px 12px;
-		background: $forest url(../img/icon-button-arrow.png) right center no-repeat;
-		color: white;
-		@include font-bold;
-		border: 3px solid white;
-		box-shadow: 4px 4px 10px lighten( $grey, 15% );
-		border-radius: 10px;
+	button, input[type=submit], input[type=reset], .btn {
+		background: lighten( $grey, 30% ) url(../img/thumb-button-arrow.png) right center no-repeat;
+		text-decoration: none;
+		border: 2px solid $grey-dark;
+		text-transform: uppercase;
+		padding: 8px 27px 5px 10px;
+		margin: 0 5px 5px 0;
+		font-size: .95em;
+		background: transparent url(../img/thumb-button-arrow.png) right center no-repeat;
+		transition: background-color 400ms ease-in-out;
+
+		&:hover {
+			background-color: white;
+		}
 	}
 }
 

@@ -203,15 +203,18 @@ input, textarea {
   padding: 0;
   margin: 25px 0; }
 
-.content-style button, .half button, .two-third button, .three-quarter button, .event-info button, .content-style input[type=submit], .half input[type=submit], .two-third input[type=submit], .three-quarter input[type=submit], .event-info input[type=submit], .content-style input[type=reset], .half input[type=reset], .two-third input[type=reset], .three-quarter input[type=reset], .event-info input[type=reset] {
-  padding: 9px 45px 6px 12px;
-  background: #007934 url(../img/icon-button-arrow.png) right center no-repeat;
-  color: white;
-  font-family: "Avenir Demi", sans-serif;
-  font-weight: normal;
-  border: 3px solid white;
-  box-shadow: 4px 4px 10px #babbbd;
-  border-radius: 10px; }
+.content-style button, .half button, .two-third button, .three-quarter button, .event-info button, .content-style input[type=submit], .half input[type=submit], .two-third input[type=submit], .three-quarter input[type=submit], .event-info input[type=submit], .content-style input[type=reset], .half input[type=reset], .two-third input[type=reset], .three-quarter input[type=reset], .event-info input[type=reset], .content-style .btn, .half .btn, .two-third .btn, .three-quarter .btn, .event-info .btn {
+  background: #e1e2e3 url(../img/thumb-button-arrow.png) right center no-repeat;
+  text-decoration: none;
+  border: 2px solid #47494b;
+  text-transform: uppercase;
+  padding: 8px 27px 5px 10px;
+  margin: 0 5px 5px 0;
+  font-size: .95em;
+  background: transparent url(../img/thumb-button-arrow.png) right center no-repeat;
+  transition: background-color 400ms ease-in-out; }
+  .content-style button:hover, .half button:hover, .two-third button:hover, .three-quarter button:hover, .event-info button:hover, .content-style input[type=submit]:hover, .half input[type=submit]:hover, .two-third input[type=submit]:hover, .three-quarter input[type=submit]:hover, .event-info input[type=submit]:hover, .content-style input[type=reset]:hover, .half input[type=reset]:hover, .two-third input[type=reset]:hover, .three-quarter input[type=reset]:hover, .event-info input[type=reset]:hover, .content-style .btn:hover, .half .btn:hover, .two-third .btn:hover, .three-quarter .btn:hover, .event-info .btn:hover {
+    background-color: white; }
 
 h1, h2, h3, h4, h5, h6 {
   color: #939598; }
