@@ -78,7 +78,7 @@ function the_partner_logos() {
 		while ( $the_query->have_posts() ) : $the_query->the_post();
 			// make sure there are logo and website set before displaying.
 			if ( has_cmb_value( 'partner_website' ) && has_cmb_value( 'partner_logo' ) ) {
-				?><a href="<?php show_cmb_value( 'partner_website' ); ?>" target="_blank"><img src="<?php show_cmb_value( 'partner_logo' ) ?>"></a><?php 
+				?><a href="<?php show_cmb_value( 'partner_website' ); ?>" target="_blank"><img src="<?php show_cmb_value( 'partner_logo' ) ?>" class="bg-<?php show_cmb_value('partner_color') ?>"></a><?php 
 			}
 		endwhile;
 	}

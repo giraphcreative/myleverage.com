@@ -2,7 +2,11 @@
 
 .large-title {
 	padding: 30px 20px;
-	@include respond-to( $bp-s ) { padding: 40px 20px; }
+
+	@include respond-to( $bp-s ) { 
+		padding: 40px 20px; 
+	}
+
 	@include respond-to( $bp-m ) { 
 		padding: 80px 20px;
 		margin-bottom: 10px;
@@ -18,13 +22,17 @@
 			text-transform: uppercase;
 			margin-bottom: -10px;
 
-			@include respond-to( 768px ) {
+			@include respond-to( $bp-s ) {
+				padding-left: 10px;
+			}
+
+			@include respond-to( $bp-m ) {
 				font-size: 35px;
 			}
 
-			@include respond-to( 900px ) {
+			@include respond-to( $bp-l ) {
 				font-size: 45px;
-				margin-bottom: -20px;
+				padding-left: 30px;
 			}
 		}
 	}

@@ -110,7 +110,7 @@ function page_metaboxes( $meta_boxes ) {
 
     $partner_info->add_field( array(
         'name' => 'Logo',
-        'desc' => 'Set a partner logo image.',
+        'desc' => 'Set a partner logo image. Include the background color in the image, and make sure the image measures 300x140 pixels.',
         'id' => CMB_PREFIX . 'partner_logo',
         'type' => 'file',
         'allow' => array( 'url', 'attachment' )
