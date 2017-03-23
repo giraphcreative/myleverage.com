@@ -1,0 +1,18 @@
+
+
+// content box styles
+.box {
+	padding: 20px;
+
+	@include respond-to( $bp-s ) {
+		padding: 20px 30px;
+	}
+
+	@include respond-to( $bp-l ) {
+		padding: 30px 40px;
+	}
+
+	&.odd {
+		background: lighten( $grey, 35% );
+	}
+}

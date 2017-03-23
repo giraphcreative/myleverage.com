@@ -14,7 +14,8 @@ if ( empty( $color ) ) $color = 'forest';
 	<?php the_thumb_showcase(); ?>
 
 	<div id="content" class="wrap group content-two-column <?php print $color ?>" role="main">
-		<div class="two-third">
+		<div class="two-third page">
+			<div class="box even">
 			<?php 
 			// do post loop
 			if ( have_posts() ) :
@@ -22,9 +23,9 @@ if ( empty( $color ) ) $color = 'forest';
 					the_content();
 				endwhile;
 			endif;
-			
-			the_accordion();
 			?>
+			</div>
+			<?php the_boxes(); ?>
 		</div>
 		<div class="third sidebar">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-generic') ) : ?><!-- no sidebar --><?php endif; ?>

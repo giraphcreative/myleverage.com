@@ -43,11 +43,11 @@
 	padding: 20px;
 }
 
-.breadcrumbs {
-	padding: 0 0 20px;
+.two-third.page {
+	padding: 0;
 }
 
-@include respond-to( 768px ) {
+@include respond-to( $bp-m ) {
 	.quarter, .third, .half, .two-third, .three-quarter {
 		float: left;
 	}
@@ -70,6 +70,11 @@
 	.two-third {
 		width: 65%;
 		margin: 0 1%;
+
+		&.page {
+			margin: 0 2% 0 0;
+			padding: 0;
+		}
 	}
 
 	.three-quarter {

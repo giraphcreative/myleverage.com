@@ -32,7 +32,7 @@ include( "library/login.php" );
 // include quote metaboxes/functions
 include( "library/title.php" );
 include( "library/showcase.php" );
-include( "library/accordion.php" );
+include( "library/boxes.php" );
 
 
 // widgets

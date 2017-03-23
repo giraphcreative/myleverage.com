@@ -214,13 +214,7 @@ input, textarea {
   border-radius: 10px; }
 
 h1, h2, h3, h4, h5, h6 {
-  color: #007934; }
-  .forest h1, .forest h2, .forest h3, .forest h4, .forest h5, .forest h6 {
-    color: #007934; }
-  .grey h1, .grey-light h1, .grey h2, .grey-light h2, .grey h3, .grey-light h3, .grey h4, .grey-light h4, .grey h5, .grey-light h5, .grey h6, .grey-light h6 {
-    color: #939598; }
-  .lime h1, .lime h2, .lime h3, .lime h4, .lime h5, .lime h6 {
-    color: #7DB241; }
+  color: #939598; }
 
 header {
   position: relative;
@@ -664,8 +658,8 @@ header {
 .half, .two-third, .three-quarter {
   padding: 20px; }
 
-.breadcrumbs {
-  padding: 0 0 20px; }
+.two-third.page {
+  padding: 0; }
 
 @media only screen and (min-width: 768px) {
   .quarter, .third, .half, .two-third, .three-quarter {
@@ -682,6 +676,9 @@ header {
   .two-third {
     width: 65%;
     margin: 0 1%; }
+    .two-third.page {
+      margin: 0 2% 0 0;
+      padding: 0; }
   .three-quarter {
     width: 73%;
     margin: 0 1%; } }
@@ -731,6 +728,17 @@ img.aligncenter, .wp-caption.aligncenter {
 
 .fb-page iframe {
   max-width: 100% !important; }
+
+.box {
+  padding: 20px; }
+  @media only screen and (min-width: 600px) {
+    .box {
+      padding: 20px 30px; } }
+  @media only screen and (min-width: 1024px) {
+    .box {
+      padding: 30px 40px; } }
+  .box.odd {
+    background: #eeefef; }
 
 .gform_confirmation_message {
   background: #c6ffde;
