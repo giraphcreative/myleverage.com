@@ -110,7 +110,7 @@ input, textarea {
 		margin: 25px 0;
 	}
 
-	button, input[type=submit], input[type=reset], .btn {
+	button, input[type=submit], input[type=reset] {
 		background: lighten( $grey, 30% ) url(../img/thumb-button-arrow.png) right center no-repeat;
 		text-decoration: none;
 		border: 2px solid $grey-dark;
@@ -124,6 +124,23 @@ input, textarea {
 		&:hover {
 			background-color: white;
 		}
+	}
+}
+
+
+.btn-arrow {
+	background: lighten( $grey, 30% ) url(../img/thumb-button-arrow.png) right center no-repeat;
+	text-decoration: none;
+	border: 2px solid $grey-dark;
+	text-transform: uppercase;
+	padding: 8px 27px 5px 10px;
+	margin: 0 5px 5px 0;
+	font-size: .95em;
+	background: transparent url(../img/thumb-button-arrow.png) right center no-repeat;
+	transition: background-color 400ms ease-in-out;
+
+	&:hover {
+		background-color: white;
 	}
 }
 
