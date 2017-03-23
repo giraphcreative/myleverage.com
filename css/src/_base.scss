@@ -118,11 +118,16 @@ input, textarea {
 		padding: 8px 27px 5px 10px;
 		margin: 0 5px 5px 0;
 		font-size: .95em;
-		background: transparent url(../img/thumb-button-arrow.png) right center no-repeat;
 		transition: background-color 400ms ease-in-out;
+
+		@include respond-to( $bp-l ) {
+			padding: 8px 35px 5px 20px;
+			letter-spacing: 1px;
+		}
 
 		&:hover {
 			background-color: white;
+			text-decoration: none;
 		}
 	}
 }
@@ -136,11 +141,16 @@ input, textarea {
 	padding: 8px 27px 5px 10px;
 	margin: 0 5px 5px 0;
 	font-size: .95em;
-	background: transparent url(../img/thumb-button-arrow.png) right center no-repeat;
 	transition: background-color 400ms ease-in-out;
+
+	@include respond-to( $bp-l ) {
+		padding: 8px 35px 5px 20px;
+		letter-spacing: 1px;
+	}
 
 	&:hover {
 		background-color: white;
+		text-decoration: none;
 	}
 }
 
