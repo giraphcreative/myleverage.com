@@ -232,8 +232,8 @@ input, textarea {
   padding: 8px 27px 5px 10px;
   margin: 0 5px 5px 0;
   font-size: .95em;
-  -webkit-transition: background-color 400ms ease-in-out;
-          transition: background-color 400ms ease-in-out;
+  -webkit-transition: all 400ms ease-in-out;
+          transition: all 400ms ease-in-out;
   color: white; }
   @media only screen and (min-width: 1024px) {
     .btn-arrow {
