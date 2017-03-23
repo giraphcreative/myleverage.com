@@ -40,21 +40,6 @@ function page_metaboxes( $meta_boxes ) {
         'sanitization_cb' => false
     ) );
 
-    $title_metabox->add_field( array(
-        'name' => 'Icon',
-        'id'   => CMB_PREFIX . 'large-title-icon',
-        'type' => 'file',
-        'preview_size' => array( 30, 30 )
-    ) );
-
-    $title_metabox->add_field( array(
-        'name' => 'Color',
-        'id'   => CMB_PREFIX . 'large-title-color',
-        'type' => 'select',
-        'default' => 'navy',
-        'options' => $colors
-    ) );
-
 
 
     // showcase metabox
