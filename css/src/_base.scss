@@ -141,10 +141,11 @@ input, textarea {
 	border: 2px solid $grey-dark;
 	text-transform: uppercase;
 	padding: 8px 27px 5px 10px;
-	margin: 8px 5px 10px 0;
+	margin: 10px 5px 10px 0;
 	font-size: .95em;
 	transition: all 400ms ease-in-out;
 	color: white;
+	display: inline-block;
 
 	@include respond-to( $bp-l ) {
 		padding: 10px 35px 7px 20px;
