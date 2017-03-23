@@ -213,13 +213,15 @@ input, textarea {
   margin: 0 5px 5px 0;
   font-size: .95em;
   -webkit-transition: background-color 400ms ease-in-out;
-          transition: background-color 400ms ease-in-out; }
+          transition: background-color 400ms ease-in-out;
+  color: white; }
   @media only screen and (min-width: 1024px) {
     .content-style button, .half button, .two-third button, .three-quarter button, .event-info button, .content-style input[type=submit], .half input[type=submit], .two-third input[type=submit], .three-quarter input[type=submit], .event-info input[type=submit], .content-style input[type=reset], .half input[type=reset], .two-third input[type=reset], .three-quarter input[type=reset], .event-info input[type=reset] {
-      padding: 8px 35px 5px 20px;
+      padding: 10px 35px 7px 20px;
       letter-spacing: 1px; } }
   .content-style button:hover, .half button:hover, .two-third button:hover, .three-quarter button:hover, .event-info button:hover, .content-style input[type=submit]:hover, .half input[type=submit]:hover, .two-third input[type=submit]:hover, .three-quarter input[type=submit]:hover, .event-info input[type=submit]:hover, .content-style input[type=reset]:hover, .half input[type=reset]:hover, .two-third input[type=reset]:hover, .three-quarter input[type=reset]:hover, .event-info input[type=reset]:hover {
     background-color: white;
+    color: #939598;
     text-decoration: none; }
 
 .btn-arrow {
@@ -231,13 +233,15 @@ input, textarea {
   margin: 0 5px 5px 0;
   font-size: .95em;
   -webkit-transition: background-color 400ms ease-in-out;
-          transition: background-color 400ms ease-in-out; }
+          transition: background-color 400ms ease-in-out;
+  color: white; }
   @media only screen and (min-width: 1024px) {
     .btn-arrow {
       padding: 10px 35px 7px 20px;
       letter-spacing: 1px; } }
   .btn-arrow:hover {
     background-color: white;
+    color: #939598;
     text-decoration: none; }
 
 h1, h2, h3, h4, h5, h6 {
