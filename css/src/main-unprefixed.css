@@ -334,7 +334,7 @@ header {
           header nav ul.nav-menu > li ul.sub-menu {
             position: absolute;
             left: 0;
-            top: 50px;
+            top: 60px;
             width: 100%;
             z-index: 10;
             background: #007934;
@@ -344,6 +344,9 @@ header {
               display: table; }
             header nav ul.nav-menu > li ul.sub-menu, header nav ul.nav-menu > li ul.sub-menu:before, header nav ul.nav-menu > li ul.sub-menu:after {
               clear: both; } }
+        @media only screen and (min-width: 1024px) {
+          header nav ul.nav-menu > li ul.sub-menu {
+            top: 100px; } }
         header nav ul.nav-menu > li ul.sub-menu li {
           position: relative; }
           @media only screen and (min-width: 600px) {
@@ -356,12 +359,13 @@ header {
             display: block;
             height: auto;
             width: 100%;
-            border-top: 1px solid white; }
+            border-top: 1px solid white;
+            line-height: 1.2em; }
             @media only screen and (min-width: 600px) {
               header nav ul.nav-menu > li ul.sub-menu li a {
                 padding: 8px 12px; }
                 header nav ul.nav-menu > li ul.sub-menu li a:hover {
-                  background: #007934; } }
+                  background: #00933f; } }
           header nav ul.nav-menu > li ul.sub-menu li ul.sub-menu {
             display: none;
             left: 100%;

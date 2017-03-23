@@ -136,11 +136,15 @@ header {
 					@include respond-to( 600px ) {
 						position: absolute;
 						left: 0;
-						top: 50px;
+						top: 60px;
 						width: 100%;
 						z-index: 10;
 						background: $forest;
 						@include clearfix;
+					}
+
+					@include respond-to( $bp-l ) {
+						top: 100px;
 					}
 
 					li {
@@ -158,14 +162,16 @@ header {
 							height: auto;
 							width: 100%;
 							border-top: 1px solid white;
+							line-height: 1.2em;
 
 							@include respond-to( $bp-s ) {
 								padding: 8px 12px;
 
 								&:hover {
-									background: $forest;
+									background: lighten( $forest, 5% );
 								}
 							}
+
 						}
 
 						ul.sub-menu {
