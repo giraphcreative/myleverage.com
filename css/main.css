@@ -352,9 +352,6 @@ header {
         display: block; }
       header nav ul.nav-menu > li ul.sub-menu {
         display: none;
-        border: 1px solid white;
-        border-left: 0;
-        border-top: 0;
         margin-bottom: 3px; }
         @media only screen and (min-width: 600px) {
           header nav ul.nav-menu > li ul.sub-menu {
@@ -385,7 +382,7 @@ header {
             display: block;
             height: auto;
             width: 100%;
-            border-top: 1px solid white;
+            border-top: 1px solid rgba(255, 255, 255, 0.4);
             line-height: 1.2em; }
             @media only screen and (min-width: 600px) {
               header nav ul.nav-menu > li ul.sub-menu li a {

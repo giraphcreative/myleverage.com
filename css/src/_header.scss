@@ -128,9 +128,6 @@ header {
 
 				ul.sub-menu {
 					display: none;
-					border: 1px solid white;
-					border-left: 0;
-					border-top: 0;
 					margin-bottom: 3px;
 
 					@include respond-to( 600px ) {
@@ -161,7 +158,7 @@ header {
 							display: block;
 							height: auto;
 							width: 100%;
-							border-top: 1px solid white;
+							border-top: 1px solid rgba( white, .4 );
 							line-height: 1.2em;
 
 							@include respond-to( $bp-s ) {

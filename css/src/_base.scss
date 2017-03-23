@@ -119,7 +119,7 @@ input, textarea {
 		margin: 0 5px 5px 0;
 		font-size: .95em;
 		transition: background-color 400ms ease-in-out;
-	color: white;
+		color: white;
 
 		@include respond-to( $bp-l ) {
 			padding: 10px 35px 7px 20px;
