@@ -890,12 +890,12 @@ img.aligncenter, .wp-caption.aligncenter {
 
 .sidebar .widget {
   padding: 10px 0;
-  margin-bottom: 20px;
-  font-size: 15px; }
+  margin-bottom: 20px; }
   .sidebar .widget .widget-title {
     position: relative;
     padding: 10px;
-    background: #939598; }
+    background: #939598;
+    margin-bottom: 15px; }
     .sidebar .widget .widget-title h4 {
       font-family: "Avenir", sans-serif;
       font-weight: normal;
@@ -906,13 +906,10 @@ img.aligncenter, .wp-caption.aligncenter {
       padding-right: 15px; }
   .sidebar .widget.widget_nav_menu ul li a {
     display: block;
-    padding: 5px 10px 3px;
-    border-bottom: 1px solid #c7c8ca;
-    text-transform: uppercase;
+    padding: 4px 8px 1px;
     -webkit-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
             transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     color: #47494b;
-    font-size: .9em;
     text-decoration: none;
     position: relative; }
     .sidebar .widget.widget_nav_menu ul li a:hover {

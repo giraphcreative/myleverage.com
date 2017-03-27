@@ -4,12 +4,12 @@
 	.widget {
 		padding: 10px 0;
 		margin-bottom: 20px;
-		font-size: 15px;
 
 		.widget-title {
 			position: relative;
 			padding: 10px;
 			background: $grey;
+			margin-bottom: 15px;
 
 			h4 {
 				@include font;
@@ -26,12 +26,9 @@
 				li {
 					a {
 						display: block;
-						padding: 5px 10px 3px;
-						border-bottom: 1px solid lighten( $grey, 20% );
-						text-transform: uppercase;
+						padding: 4px 8px 1px;
 						transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
 						color: $grey-dark;
-						font-size: .9em;
 						text-decoration: none;
 						position: relative;
 	
