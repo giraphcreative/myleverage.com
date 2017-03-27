@@ -101,30 +101,8 @@
 		}
 
 		&.widget_text {
-			.widget-title:before {
-				margin-top: -24px;
-			}
 			.textwidget {
-				padding: 15px;
-			}
-		}
-
-		&.tribe-events-list-widget {
-			ol {
-				padding: 10px;
-				li {
-					padding: 10px 0;
-					margin-bottom: 0;
-
-					h4 {
-						font-size: 1.2em;
-					}
-				}
-			}
-
-			p.tribe-events-widget-link {
-				text-align: center;
-				padding: 10px;
+				padding: 4px 8px 1px;
 			}
 		}
 

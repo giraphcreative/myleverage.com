@@ -937,20 +937,8 @@ img.aligncenter, .wp-caption.aligncenter {
       float: left;
       margin: 5px 15px 10px;
       border: 1px solid #939598; }
-  .sidebar .widget.widget_text .widget-title:before {
-    margin-top: -24px; }
   .sidebar .widget.widget_text .textwidget {
-    padding: 15px; }
-  .sidebar .widget.tribe-events-list-widget ol {
-    padding: 10px; }
-    .sidebar .widget.tribe-events-list-widget ol li {
-      padding: 10px 0;
-      margin-bottom: 0; }
-      .sidebar .widget.tribe-events-list-widget ol li h4 {
-        font-size: 1.2em; }
-  .sidebar .widget.tribe-events-list-widget p.tribe-events-widget-link {
-    text-align: center;
-    padding: 10px; }
+    padding: 4px 8px 1px; }
   .sidebar .widget.leverage .widget-title h4 {
     font-family: "Avenir Italic", sans-serif;
     font-weight: normal; }
