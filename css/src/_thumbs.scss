@@ -56,6 +56,10 @@
 			@include respond-to( $bp-m ) {
 				font-size: 1.3em;
 			}
+
+			@include respond-to( $bp-l ) {
+				padding-top: 10px;
+			}
 		}
 
 		p {
