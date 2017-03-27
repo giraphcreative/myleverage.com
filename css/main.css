@@ -620,6 +620,7 @@ header {
         .thumbs .thumb h5 {
           padding-top: 10px; } }
     .thumbs .thumb p {
+      color: #007934;
       font-size: .85em; }
     .thumbs .thumb .thumb-buttons {
       padding: 10px 0 0;
