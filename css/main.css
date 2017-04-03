@@ -317,7 +317,7 @@ header {
         bottom: 0; } }
     @media only screen and (min-width: 1024px) {
       header nav {
-        left: 25%;
+        left: 22%;
         right: 20%;
         top: 0;
         border-top: 0; }
@@ -376,7 +376,9 @@ header {
         display: block; }
       header nav ul.nav-menu > li ul.sub-menu {
         display: none;
-        margin-bottom: 3px; }
+        margin-bottom: 3px;
+        -webkit-transition: 400ms all ease-in-out;
+                transition: 400ms all ease-in-out; }
         @media only screen and (min-width: 600px) {
           header nav ul.nav-menu > li ul.sub-menu {
             position: absolute;
@@ -482,9 +484,11 @@ header {
         height: 50px;
         right: 85%; }
       header.scrolled nav {
-        left: 18%; }
+        left: 17%; }
         header.scrolled nav ul.nav-menu > li a {
           line-height: 60px; }
+        header.scrolled nav ul.nav-menu > li ul.sub-menu {
+          top: 60px; }
       header.scrolled .search {
         padding: 10px 15px; } }
 

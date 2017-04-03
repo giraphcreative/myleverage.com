@@ -83,7 +83,7 @@ header {
 		}
 
 		@include respond-to( $bp-l ) {
-			left: 25%;
+			left: 22%;
 			right: 20%;
 			top: 0;
 			border-top: 0;
@@ -100,7 +100,6 @@ header {
 			@include clearfix;
 
 			& > li {
-
 
 				@include respond-to( $bp-s ) {
 					position: relative;
@@ -161,6 +160,7 @@ header {
 				ul.sub-menu {
 					display: none;
 					margin-bottom: 3px;
+					transition: 400ms all ease-in-out;
 
 					@include respond-to( 600px ) {
 						position: absolute;
@@ -299,10 +299,18 @@ header {
 			}
 
 			nav {
-				left: 18%;
+				left: 17%;
 
-				ul.nav-menu > li a {
-					line-height: 60px;
+				ul.nav-menu {
+					& > li {
+						a {
+							line-height: 60px;
+						}
+
+						ul.sub-menu {
+							top: 60px;
+						}
+					}
 				}
 			}
 
