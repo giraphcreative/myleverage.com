@@ -18,7 +18,7 @@ jQuery(document).ready(function($){
 
 	$(document).on('scroll', function() {
 		if ( matchMedia('only screen and ( min-width: 1024px )').matches ) {
-			if( $( this ).scrollTop() >= 20 ) {
+			if( $( this ).scrollTop() >= 50 ) {
 				$( 'header' ).addClass( 'scrolled' );
 			} else {
 				$( 'header' ).removeClass( 'scrolled' );

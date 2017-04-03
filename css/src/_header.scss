@@ -12,8 +12,18 @@ header {
 	position: relative;
 	padding: 30px 0 0;
 	background: $grey;
-	margin-bottom: 10px;
 	transition: 400ms all ease-in-out;
+
+	&:after {
+		content: " ";
+		position: absolute;
+		bottom: -10px;
+		left: 0;
+		right: 0;
+		height: 10px;
+		background-color: white;
+		transition: 400ms all ease-in-out;
+	}
 
 	@include respond-to( $bp-s ) {
 		height: 140px;
@@ -292,6 +302,11 @@ header {
 	&.scrolled {
 		@include respond-to( $bp-l ) {
 			height: 60px;
+
+			&:after {
+				height: 5px;
+				bottom: -5px;
+			}
 
 			.logo {
 				height: 50px;
