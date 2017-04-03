@@ -1,18 +1,35 @@
 
 
+body {
+	@include respond-to( $bp-l ) {
+		margin-top: 90px;
+	}
+}
+
+
 
 header {
 	position: relative;
 	padding: 30px 0 0;
 	background: $grey;
 	margin-bottom: 10px;
+	transition: 400ms all ease-in-out;
 
 	@include respond-to( $bp-s ) {
-		height: 160px;
+		height: 140px;
 	}
 
 	@include respond-to( $bp-l ) {
-		height: 100px;
+		height: 80px;
+		position: fixed;
+		top: 0;
+		left: 0;
+		right: 0;
+		z-index: 2000;
+
+		body.admin-bar & {
+			top: 32px;
+		}
 	}
 
 	.logo {
@@ -21,7 +38,7 @@ header {
 		text-align: center;
 		background: url(../img/logo.png) center center no-repeat;
 		background-size: contain;
-		height: 90px;
+		height: 70px;
 
 		a {
 			position: absolute;
@@ -43,18 +60,13 @@ header {
 		@include respond-to( $bp-l ) {
 			left: 10px;
 			top: 5px;
-			right: 75%;
+			right: 80%;
 			bottom: 0;
 		}
 
 		@include respond-to( $bp-xl ) {
 			left: 20px;
-			right: 70%;
 		}
-	}
-
-	@include respond-to( $bp-s ) {
-		position: relative;
 	}
 
 	nav {
@@ -63,7 +75,7 @@ header {
 		@include respond-to( $bp-s ) {
 			position: absolute;
 			left: 0;
-			top: 100px;
+			top: 80px;
 			right: 0;
 			bottom: 0;
 		}
@@ -76,7 +88,7 @@ header {
 		}
 
 		@include respond-to( $bp-l ) {
-			left: 30%;
+			left: 23%;
 			right: 20%;
 		}
 
@@ -112,7 +124,7 @@ header {
 					}
 
 					@include respond-to( $bp-l ) {
-						line-height: 100px;
+						line-height: 80px;
 					}
 				}
 
@@ -134,14 +146,14 @@ header {
 						position: absolute;
 						left: 0;
 						top: 60px;
-						width: 100%;
+						width: 260px;
 						z-index: 10;
 						background: $forest;
 						@include clearfix;
 					}
 
 					@include respond-to( $bp-l ) {
-						top: 100px;
+						top: 80px;
 					}
 
 					li {
@@ -154,12 +166,13 @@ header {
 						}
 
 						a {
-							padding: 7px 5px;
+							padding: 7px 10px;
 							display: block;
 							height: auto;
 							width: 100%;
 							border-top: 1px solid rgba( white, .4 );
 							line-height: 1.2em;
+							text-align: left;
 
 							@include respond-to( $bp-s ) {
 								padding: 8px 12px;
@@ -201,11 +214,11 @@ header {
 			top: 0;
 			bottom: 60px;
 			left: 50%;
-			padding: 30px 10px;
+			padding: 20px 10px;
 		}
 
 		@include respond-to( $bp-l ) {
-			padding: 30px 15px;
+			padding: 20px 15px;
 			left: 80%;
 			bottom: 0;
 		}
@@ -222,8 +235,9 @@ header {
 			border-right: 0;
 			background: white;
 			padding: 5px 25px 0 15px;
-			font-size: 15px;
+			font-size: 12px;
 			line-height: 30px;
+			text-transform: uppercase;
 
 			@include respond-to( 768px ) {
 				border: 2px solid $grey;

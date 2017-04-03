@@ -245,24 +245,36 @@ input, textarea {
 h1, h2, h3, h4, h5, h6 {
   color: #939598; }
 
+@media only screen and (min-width: 1024px) {
+  body {
+    margin-top: 90px; } }
+
 header {
   position: relative;
   padding: 30px 0 0;
   background: #939598;
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  transition: 400ms all ease-in-out; }
   @media only screen and (min-width: 600px) {
     header {
-      height: 160px; } }
+      height: 140px; } }
   @media only screen and (min-width: 1024px) {
     header {
-      height: 100px; } }
+      height: 80px;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      z-index: 2000; }
+      body.admin-bar header {
+        top: 32px; } }
   header .logo {
     position: relative;
     margin: 5px 10px;
     text-align: center;
     background: url(../img/logo.png) center center no-repeat;
     background-size: contain;
-    height: 90px; }
+    height: 70px; }
     header .logo a {
       position: absolute;
       top: 0;
@@ -281,22 +293,18 @@ header {
       header .logo {
         left: 10px;
         top: 5px;
-        right: 75%;
+        right: 80%;
         bottom: 0; } }
     @media only screen and (min-width: 1220px) {
       header .logo {
-        left: 20px;
-        right: 70%; } }
-  @media only screen and (min-width: 600px) {
-    header {
-      position: relative; } }
+        left: 20px; } }
   header nav {
     border-top: 1px solid rgba(255, 255, 255, 0.4); }
     @media only screen and (min-width: 600px) {
       header nav {
         position: absolute;
         left: 0;
-        top: 100px;
+        top: 80px;
         right: 0;
         bottom: 0; } }
     @media only screen and (min-width: 1024px) {
@@ -307,7 +315,7 @@ header {
         border-top: 0; } }
     @media only screen and (min-width: 1024px) {
       header nav {
-        left: 30%;
+        left: 23%;
         right: 20%; } }
     header nav ul.nav-menu {
       background: #939598;
@@ -342,7 +350,7 @@ header {
             padding: 0; } }
         @media only screen and (min-width: 1024px) {
           header nav ul.nav-menu > li a {
-            line-height: 100px; } }
+            line-height: 80px; } }
       header nav ul.nav-menu > li:hover a, header nav ul.nav-menu > li.open a {
         background: #007934; }
       header nav ul.nav-menu > li:hover ul.sub-menu, header nav ul.nav-menu > li.open ul.sub-menu {
@@ -355,7 +363,7 @@ header {
             position: absolute;
             left: 0;
             top: 60px;
-            width: 100%;
+            width: 260px;
             z-index: 10;
             background: #007934;
             zoom: 1; }
@@ -366,7 +374,7 @@ header {
               clear: both; } }
         @media only screen and (min-width: 1024px) {
           header nav ul.nav-menu > li ul.sub-menu {
-            top: 100px; } }
+            top: 80px; } }
         header nav ul.nav-menu > li ul.sub-menu li {
           position: relative; }
           @media only screen and (min-width: 600px) {
@@ -375,12 +383,13 @@ header {
               display: block;
               width: auto; } }
           header nav ul.nav-menu > li ul.sub-menu li a {
-            padding: 7px 5px;
+            padding: 7px 10px;
             display: block;
             height: auto;
             width: 100%;
             border-top: 1px solid rgba(255, 255, 255, 0.4);
-            line-height: 1.2em; }
+            line-height: 1.2em;
+            text-align: left; }
             @media only screen and (min-width: 600px) {
               header nav ul.nav-menu > li ul.sub-menu li a {
                 padding: 8px 12px; }
@@ -405,10 +414,10 @@ header {
         top: 0;
         bottom: 60px;
         left: 50%;
-        padding: 30px 10px; } }
+        padding: 20px 10px; } }
     @media only screen and (min-width: 1024px) {
       header .search {
-        padding: 30px 15px;
+        padding: 20px 15px;
         left: 80%;
         bottom: 0; } }
     header .search form {
@@ -421,8 +430,9 @@ header {
       border-right: 0;
       background: white;
       padding: 5px 25px 0 15px;
-      font-size: 15px;
-      line-height: 30px; }
+      font-size: 12px;
+      line-height: 30px;
+      text-transform: uppercase; }
       @media only screen and (min-width: 768px) {
         header .search input[type=text] {
           border: 2px solid #939598; } }
