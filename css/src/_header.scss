@@ -159,7 +159,7 @@ header {
 
 				&:hover, &.open {
 					a {
-						background: $lime;
+						background: lighten( $grey, 10% );
 					}
 
 					ul.sub-menu {
@@ -178,7 +178,7 @@ header {
 						top: 60px;
 						width: 260px;
 						z-index: 10;
-						background: $lime;
+						background: lighten( $grey, 10% );
 						@include clearfix;
 					}
 
