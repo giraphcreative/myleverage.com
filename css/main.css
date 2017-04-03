@@ -278,7 +278,9 @@ header {
     text-align: center;
     background: url(../img/logo.png) center center no-repeat;
     background-size: contain;
-    height: 70px; }
+    height: 70px;
+    -webkit-transition: 400ms all ease-in-out;
+            transition: 400ms all ease-in-out; }
     header .logo a {
       position: absolute;
       top: 0;
@@ -303,7 +305,9 @@ header {
       header .logo {
         left: 20px; } }
   header nav {
-    border-top: 1px solid rgba(255, 255, 255, 0.4); }
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    -webkit-transition: 400ms all ease-in-out;
+            transition: 400ms all ease-in-out; }
     @media only screen and (min-width: 600px) {
       header nav {
         position: absolute;
@@ -316,11 +320,9 @@ header {
         left: 25%;
         right: 20%;
         top: 0;
-        border-top: 0; } }
-    @media only screen and (min-width: 1024px) {
-      header nav {
-        left: 23%;
-        right: 20%; } }
+        border-top: 0; }
+        header.scrolled header nav {
+          left: 18%; } }
     header nav ul.nav-menu {
       background: #939598;
       z-index: 1000;
@@ -336,6 +338,17 @@ header {
           position: relative;
           float: left;
           width: 25%; } }
+      header nav ul.nav-menu > li.current_page_item > a {
+        position: relative; }
+        header nav ul.nav-menu > li.current_page_item > a:after {
+          content: ' ';
+          position: absolute;
+          bottom: 0;
+          right: 0;
+          left: 0;
+          height: 8px;
+          background: #7DB241;
+          border-top: 1px solid rgba(255, 255, 255, 0.3); }
       header nav ul.nav-menu > li a {
         display: block;
         font-family: "Avenir", sans-serif;
@@ -347,7 +360,9 @@ header {
         color: white;
         text-decoration: none;
         text-transform: uppercase;
-        text-align: center; }
+        text-align: center;
+        -webkit-transition: 400ms all ease-in-out;
+                transition: 400ms all ease-in-out; }
         @media only screen and (min-width: 600px) {
           header nav ul.nav-menu > li a {
             line-height: 60px;
@@ -386,8 +401,14 @@ header {
               float: none;
               display: block;
               width: auto; } }
+          header nav ul.nav-menu > li ul.sub-menu li.current_page_item > a {
+            border-left: 8px solid #7DB241;
+            padding-left: 7px; }
+            @media only screen and (min-width: 600px) {
+              header nav ul.nav-menu > li ul.sub-menu li.current_page_item > a {
+                padding-left: 10px; } }
           header nav ul.nav-menu > li ul.sub-menu li a {
-            padding: 7px 10px;
+            padding: 7px 15px;
             display: block;
             height: auto;
             width: 100%;
@@ -396,7 +417,7 @@ header {
             text-align: left; }
             @media only screen and (min-width: 600px) {
               header nav ul.nav-menu > li ul.sub-menu li a {
-                padding: 8px 12px; }
+                padding: 8px 18px; }
                 header nav ul.nav-menu > li ul.sub-menu li a:hover {
                   background: #00933f; } }
           header nav ul.nav-menu > li ul.sub-menu li ul.sub-menu {
@@ -410,7 +431,9 @@ header {
   header .search {
     position: relative;
     padding: 10px;
-    background: #7DB241; }
+    background: #7DB241;
+    -webkit-transition: 400ms all ease-in-out;
+            transition: 400ms all ease-in-out; }
     @media only screen and (min-width: 600px) {
       header .search {
         position: absolute;
@@ -452,6 +475,18 @@ header {
       text-indent: -400px;
       cursor: pointer;
       margin-top: -25px; }
+  @media only screen and (min-width: 1024px) {
+    header.scrolled {
+      height: 60px; }
+      header.scrolled .logo {
+        height: 50px;
+        right: 85%; }
+      header.scrolled nav {
+        left: 18%; }
+        header.scrolled nav ul.nav-menu > li a {
+          line-height: 60px; }
+      header.scrolled .search {
+        padding: 10px 15px; } }
 
 .large-title {
   padding: 30px 20px; }

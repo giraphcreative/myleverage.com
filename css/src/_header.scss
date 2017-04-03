@@ -39,6 +39,7 @@ header {
 		background: url(../img/logo.png) center center no-repeat;
 		background-size: contain;
 		height: 70px;
+		transition: 400ms all ease-in-out;
 
 		a {
 			position: absolute;
@@ -71,6 +72,7 @@ header {
 
 	nav {
 		border-top: 1px solid rgba( white, .4 );
+		transition: 400ms all ease-in-out;
 
 		@include respond-to( $bp-s ) {
 			position: absolute;
@@ -85,11 +87,10 @@ header {
 			right: 20%;
 			top: 0;
 			border-top: 0;
-		}
 
-		@include respond-to( $bp-l ) {
-			left: 23%;
-			right: 20%;
+			header.scrolled & {
+				left: 18%;
+			}
 		}
 
 		ul.nav-menu {
@@ -100,10 +101,26 @@ header {
 
 			& > li {
 
+
 				@include respond-to( $bp-s ) {
 					position: relative;
 					float: left;
 					width: 25%;
+				}
+
+				&.current_page_item > a {
+					position: relative;
+
+					&:after {
+						content: ' ';
+						position: absolute;
+						bottom: 0;
+						right: 0;
+						left: 0;
+						height: 8px;
+						background: $lime;
+						border-top: 1px solid rgba( white, .3 );
+					}
 				}
 
 				a {
@@ -117,10 +134,13 @@ header {
 					text-decoration: none;
 					text-transform: uppercase;
 					text-align: center;
+					transition: 400ms all ease-in-out;
+
 
 					@include respond-to( $bp-s ) {
 						line-height: 60px;
 						padding: 0;
+
 					}
 
 					@include respond-to( $bp-l ) {
@@ -165,8 +185,17 @@ header {
 							width: auto;
 						}
 
+						&.current_page_item > a {
+							border-left: 8px solid $lime;
+							padding-left: 7px;
+
+							@include respond-to( $bp-s ) {
+								padding-left: 10px;
+							}
+						}
+
 						a {
-							padding: 7px 10px;
+							padding: 7px 15px;
 							display: block;
 							height: auto;
 							width: 100%;
@@ -175,7 +204,7 @@ header {
 							text-align: left;
 
 							@include respond-to( $bp-s ) {
-								padding: 8px 12px;
+								padding: 8px 18px;
 
 								&:hover {
 									background: lighten( $forest, 5% );
@@ -207,6 +236,7 @@ header {
 		position: relative;
 		padding: 10px;
 		background: $lime;
+		transition: 400ms all ease-in-out;
 
 		@include respond-to( $bp-s ) {
 			position: absolute;
@@ -258,5 +288,29 @@ header {
 			margin-top: -25px;
 		}
 	}
+
+	&.scrolled {
+		@include respond-to( $bp-l ) {
+			height: 60px;
+
+			.logo {
+				height: 50px;
+				right: 85%;
+			}
+
+			nav {
+				left: 18%;
+
+				ul.nav-menu > li a {
+					line-height: 60px;
+				}
+			}
+
+			.search {
+				padding: 10px 15px;
+			}
+		}
+	}
 }
+
 

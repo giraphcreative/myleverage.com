@@ -5,7 +5,6 @@
 
 // onload responsive footer and menu stuff
 jQuery(document).ready(function($){
-
 	// select some things we'll use to make things responsive
 	var menu = $( 'header nav' ),
 		menu_toggle = menu.find( 'button.menu-toggle' ),
@@ -16,6 +15,18 @@ jQuery(document).ready(function($){
 		left_menu = $( '.sidebar .menu' ),
 		twitter_widget = $( '.widget_multi_twitter' );
 
+
+	$(document).on('scroll', function() {
+		if ( matchMedia('only screen and ( min-width: 1024px )').matches ) {
+			if( $( this ).scrollTop() >= 10 ) {
+				$( 'header' ).addClass( 'scrolled' );
+			} else {
+				$( 'header' ).removeClass( 'scrolled' );
+			}
+		} else {
+			$( 'header' ).removeClass( 'scrolled' );
+		}
+	})
 
 	// remove height and width from images inside
 	fluid_images.removeAttr( 'width' ).removeAttr( 'height' );
