@@ -227,7 +227,7 @@ header {
 							width: auto;
 						}
 
-						&.current_page_item > a {
+						&.current_page_item > a, &.current-page-parent > a {
 							border-left: 8px solid darken( $grey, 10% );
 							padding-left: 7px;
 
