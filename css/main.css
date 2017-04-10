@@ -1,26 +1,17 @@
 .bg-lime {
   background-color: #7DB241; }
 
-.bg-lime-light {
-  background-color: #90c257; }
-
 .bg-forest {
   background-color: #007934; }
 
-.bg-forest-light {
-  background-color: #009f44; }
-
 .bg-grey-light {
-  background-color: #939598; }
+  background-color: #e1e1e1; }
 
-.bg-grey-light-light {
-  background-color: #a7a8ab; }
+.bg-grey {
+  background-color: #939598; }
 
 .bg-grey-dark {
   background-color: #47494b; }
-
-.bg-grey-dark-light {
-  background-color: #5a5c5e; }
 
 .text-lime {
   color: #7DB241; }
@@ -29,6 +20,9 @@
   color: #007934; }
 
 .text-grey-light {
+  color: #e1e1e1; }
+
+.text-grey {
   color: #939598; }
 
 .text-grey-dark {
@@ -199,12 +193,12 @@ input, textarea {
   font-size: 1.2em;
   line-height: 1.5em;
   color: #939598;
-  border-left: 3px solid #d4d5d6;
+  border-left: 3px solid #e1e1e1;
   margin: 10px 0 10px 20px; }
 
 .content-style hr, .half hr, .two-third hr, .three-quarter hr, .event-info hr {
   border: 0;
-  border-bottom: 1px solid #d4d5d6;
+  border-bottom: 1px solid #e1e1e1;
   padding: 0;
   margin: 25px 0; }
 
@@ -934,12 +928,12 @@ img.aligncenter, .wp-caption.aligncenter {
     padding: 8px 10px;
     font-size: .85em;
     color: #47494b;
-    background: #e1e2e3; }
+    background: #e1e1e1; }
 
 .post-list {
   padding: 20px 0; }
   .post-list .entry {
-    border-top: 1px solid #eeefef;
+    border-top: 1px solid #e1e1e1;
     padding: 20px 0; }
     .post-list .entry h5 {
       font-family: "Avenir", sans-serif;
@@ -966,7 +960,7 @@ img.aligncenter, .wp-caption.aligncenter {
     .box {
       padding: 30px 40px; } }
   .box.odd {
-    background: #eeefef; }
+    background: #e1e1e1; }
 
 a.parallax-link:hover {
   text-decoration: none; }
@@ -1022,7 +1016,7 @@ a.parallax-link:hover {
       padding: 60px 250px; } }
 
 .gform_confirmation_message {
-  background: #c6ffde;
+  background: #e1e1e1;
   border: 3px solid #007934;
   color: #007934;
   font-family: "Avenir Demi", sans-serif;
@@ -1054,24 +1048,24 @@ a.parallax-link:hover {
       font-size: 2.2em; } }
 
 .calendar {
-  border-top: 1px solid #babbbd;
-  border-left: 1px solid #babbbd;
+  border-top: 1px solid #e1e1e1;
+  border-left: 1px solid #e1e1e1;
   width: 100%; }
   .calendar td {
     width: 14.58%;
     padding: 4px;
     text-align: center;
-    border-right: 1px solid #babbbd;
-    border-bottom: 1px solid #babbbd; }
+    border-right: 1px solid #e1e1e1;
+    border-bottom: 1px solid #e1e1e1; }
     .calendar td.calendar-day-head {
-      background: #c7c8ca; }
+      background: #e1e1e1; }
       .calendar td.calendar-day-head span {
         display: none; }
         @media only screen and (min-width: 768px) {
           .calendar td.calendar-day-head span {
             display: inline; } }
     .calendar td.calendar-day:hover {
-      background: #e1e2e3; }
+      background: #e1e1e1; }
     .calendar td .day-events {
       display: none; }
       @media only screen and (min-width: 768px) {
@@ -1086,7 +1080,7 @@ a.parallax-link:hover {
         font-size: 13px; }
       .calendar td .day-events .event {
         padding: 7px 0;
-        border-top: 1px solid #c7c8ca; }
+        border-top: 1px solid #e1e1e1; }
       .calendar td .day-events .event-title {
         line-height: 20px; }
 
@@ -1114,7 +1108,7 @@ a.parallax-link:hover {
   @media only screen and (min-width: 768px) {
     .event-info {
       padding: 0 20px;
-      border-left: 4px solid #d4d5d6; } }
+      border-left: 4px solid #e1e1e1; } }
   .event-info label {
     font-family: "Avenir Demi", sans-serif;
     font-weight: normal; }
@@ -1219,7 +1213,7 @@ a.parallax-link:hover {
 .partner-showcase {
   position: relative;
   padding: 20px 50px;
-  background: #f6f6f7;
+  background: #e1e1e1;
   border-bottom: 10px solid white; }
   .partner-showcase .partner-list {
     overflow: hidden;

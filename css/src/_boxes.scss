@@ -13,6 +13,6 @@
 	}
 
 	&.odd {
-		background: lighten( $grey, 35% );
+		background: $grey-light;
 	}
 }

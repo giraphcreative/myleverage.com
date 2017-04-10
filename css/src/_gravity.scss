@@ -1,7 +1,7 @@
 
 
 .gform_confirmation_message {
-	background: lighten( $forest, 65% );
+	background: $grey-light;
 	border: 3px solid $forest;
 	color: $forest;
 	@include font-bold;

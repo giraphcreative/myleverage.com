@@ -36,19 +36,19 @@
 
 
 .calendar {
-	border-top: 1px solid lighten( $grey, 15% );
-	border-left: 1px solid lighten( $grey, 15% );
+	border-top: 1px solid $grey-light;
+	border-left: 1px solid $grey-light;
 	width: 100%;
 
 	td {
 		width: 14.58%;
 		padding: 4px;
 		text-align: center;
-		border-right: 1px solid lighten( $grey, 15% );
-		border-bottom: 1px solid lighten( $grey, 15% );
+		border-right: 1px solid $grey-light;
+		border-bottom: 1px solid $grey-light;
 
 		&.calendar-day-head {
-			background: lighten( $grey, 20% );
+			background: $grey-light;
 
 			span {
 				display: none;
@@ -60,7 +60,7 @@
 		}
 
 		&.calendar-day:hover {
-			background: lighten( $grey, 30% );
+			background: $grey-light;
 		}
 
 		.day-events {
@@ -82,7 +82,7 @@
 			
 			.event {
 				padding: 7px 0;
-				border-top: 1px solid lighten( $grey, 20% );
+				border-top: 1px solid $grey-light;
 			}
 
 			.event-title {
@@ -127,7 +127,7 @@
 	
 	@include respond-to( 768px ) {
 		padding: 0 20px;
-		border-left: 4px solid lighten( $grey, 25% );
+		border-left: 4px solid $grey-light;
 	}
 
 	label {
