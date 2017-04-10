@@ -12,26 +12,24 @@ function the_showcase() {
 		<?php
 		$count = 0;
 		foreach ( $slides as $key => $slide ) {
-			if ( !empty( $slide["image"] ) ) {
+			if ( !empty( $slide["image-small"] ) && !empty( $slide["image-large"] ) ) {
 
 				// store the title and subtitle
 				$title = ( isset( $slide["title"] ) ? $slide["title"] : '' );
 				$subtitle = ( isset( $slide["subtitle"] ) ? $slide["subtitle"] : '' );
 				$link = ( isset( $slide["link"] ) ? $slide["link"] : '' );
 
-				// check if it's an image or video
-				if ( p_is_image( $slide["image"] ) ) {
-					// it's an image, so resize it and generate an img tag.
-					$image = '<img src="' . $slide["image"] . '" alt="' . ( !empty( $slide['title'] ) ? $slide['title'] : '' ) . '">';
-				} else {
-					// it's a video, so oEmbed that stuffs, yo
-					$image = apply_filter( 'the_content', $slide["image"] );
-				}
-
 				?>
 			<div class="slide<?php print ( $key == 0 ? ' visible' : '' ); ?>">
 				<?php if ( !empty( $link ) ) { ?><a href="<?php print $link ?>" class="<?php print ( stristr( $link, 'vimeo' ) || stristr( $link, 'youtube' ) || stristr( $link, 'google.com/maps' ) ? 'lightbox-iframe' : '' ) ?>"><?php } ?>
-				<?php print $image; ?>
+				<img src="<?php print $slide["image-small"]; ?>" class="small">
+				<img src="<?php print $slide["image-large"]; ?>" class="large">
+				<?php if ( !empty( $title ) || !empty( $subtitle ) ) { ?>
+				<div class="slide-content">
+					<?php if ( !empty( $title ) ) { ?><h3><?php print $title ?></h3><?php } ?>
+					<?php if ( !empty( $subtitle ) ) { ?><p><?php print $subtitle ?></p><?php } ?>
+				</div>
+				<?php } ?>
 				<?php if ( !empty( $link ) ) { ?></a><?php } ?>
 			</div>
 				<?php

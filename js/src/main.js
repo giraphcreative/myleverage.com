@@ -7,8 +7,8 @@
 jQuery(document).ready(function($){
 	// select some things we'll use to make things responsive
 	var menu = $( 'header nav' ),
-		menu_toggle = menu.find( 'button.menu-toggle' ),
-		menu_ul = menu.find( '.nav-menu' ),
+		menu_toggle = $( 'button.menu-toggle' ),
+		menu_ul = $( 'header nav' ),
 		fluid_images = $( '.content-area img, .site-content img' ),
 		sidebar = $( '.sidebar' ),
 		large_title = $( '.large-title' ),
@@ -27,6 +27,7 @@ jQuery(document).ready(function($){
 			$( 'header' ).removeClass( 'scrolled' );
 		}
 	})
+
 
 	// remove height and width from images inside
 	fluid_images.removeAttr( 'width' ).removeAttr( 'height' );

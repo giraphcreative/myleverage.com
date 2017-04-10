@@ -4,7 +4,7 @@
 jQuery(document).ready(function($){
 
 	// grab the showcase
-	$( '.showcase:not(.footer)' ).each(function(){
+	$( '.showcase' ).each(function(){
 		var showcase = $( this );
 
 		// set auto-rotate timer var so that it exists.
@@ -42,7 +42,7 @@ jQuery(document).ready(function($){
 
 				// wait a second and mimic infinite looping
 				setTimeout(function(){
-					current_slide.attr( 'class', 'slide hide-left' );
+					current_slide.attr( 'class', 'slide' );
 				}, 400 );
 
 				// refresh showcase height
@@ -64,7 +64,7 @@ jQuery(document).ready(function($){
 				}
 
 				// switch the slides
-				current_slide.attr( 'class', 'slide hide-left' );
+				current_slide.attr( 'class', 'slide' );
 				next_slide.attr( 'class', 'slide visible' );
 
 				// wait a second and mimic infinite looping
@@ -87,18 +87,13 @@ jQuery(document).ready(function($){
 			// function to resize the showcase div 
 			// to match the image/video size
 			var showcase_height = function(){
-				var current_slide = get_current_slide(),
-					current_slide_img = current_slide.find( 'img' );
-				if ( showcase.find( '.slide-wrapper' ).length ) {
-					var slide_wrapper_margin = showcase.find( '.slide-wrapper' ).css( 'margin-top' ).replace( 'px', '' ) * 2;
+				var current_slide = get_current_slide();
+				if ( matchMedia('only screen and ( min-width: 768px )').matches ) {
+					current_slide_img = current_slide.find( 'img.large' );
 				} else {
-					var slide_wrapper_margin = 0;
+					current_slide_img = current_slide.find( 'img.small' );
 				}
-				if ( $( window ).width() >= 768 ) {				
-					showcase.height( current_slide_img.height() + slide_wrapper_margin );
-				} else {
-					showcase.height( current_slide.height() );
-				}
+				showcase.height( current_slide.height() );
 			};
 
 

@@ -44,7 +44,7 @@ header {
 
 	.logo {
 		position: relative;
-		margin: 5px 10px;
+		margin: 5px 60px 10px 5px;
 		text-align: center;
 		background: url(../img/logo.png) center center no-repeat;
 		background-size: contain;
@@ -80,11 +80,34 @@ header {
 		}
 	}
 
+	button {
+		position: absolute;
+		right: 5px;
+		top: 40px;
+		width: 40px;
+		height: 40px;
+		border: 0;
+		padding: 0;
+		background: white;
+		color: black;
+		background: url(../img/icon-menu.png) center center no-repeat;
+
+		body.admin-bar & {
+			top: 60px;
+		}
+
+		@include respond-to( $bp-s ) {
+			display: none;
+		}
+	}
+
 	nav {
 		border-top: 1px solid rgba( white, .4 );
 		transition: 400ms all ease-in-out;
+		display: none;
 
 		@include respond-to( $bp-s ) {
+			display: block;
 			position: absolute;
 			left: 0;
 			top: 80px;
@@ -117,25 +140,29 @@ header {
 					width: 25%;
 				}
 
-				&.current_page_item > a {
+				&.current_page_item > a, &.current-page-parent > a {
 					position: relative;
+					padding: 22px 15px 14px;
+					
+					@include respond-to( $bp-s ) {
+						padding: 0 18px;
+					}
 
 					&:after {
 						content: ' ';
 						position: absolute;
-						bottom: 0;
+						top: 0;
 						right: 0;
 						left: 0;
 						height: 8px;
-						background: $lime;
-						border-top: 1px solid rgba( white, .3 );
+						background: darken( $grey, 10% );
 					}
 				}
 
 				a {
 					display: block;
 					@include font;
-					padding: 14px 2px;
+					padding: 14px 15px;
 					font-size: 12px;
 					line-height: 15px;
 					width: 100%;
@@ -145,25 +172,30 @@ header {
 					text-align: center;
 					transition: 400ms all ease-in-out;
 
-
 					@include respond-to( $bp-s ) {
 						line-height: 60px;
-						padding: 0;
+						padding: 0 18px;
 
 					}
 
 					@include respond-to( $bp-l ) {
 						line-height: 80px;
 					}
+
+					&:hover {
+						background: $lime;
+					}
 				}
 
 				&:hover, &.open {
 					a {
-						background: lighten( $grey, 10% );
+						background: lighten( $grey, 5% );
 					}
-
-					ul.sub-menu {
-						display: block;
+					
+					@include respond-to( $bp-s ) {
+						ul.sub-menu {
+							display: block;
+						}
 					}
 				}
 
@@ -172,13 +204,13 @@ header {
 					margin-bottom: 3px;
 					transition: 400ms all ease-in-out;
 
-					@include respond-to( 600px ) {
+					@include respond-to( $bp-s ) {
 						position: absolute;
 						left: 0;
-						top: 60px;
-						width: 260px;
+						top: 59px;
+						right: 0;
+						//width: 260px;
 						z-index: 10;
-						background: lighten( $grey, 10% );
 						@include clearfix;
 					}
 
@@ -196,11 +228,24 @@ header {
 						}
 
 						&.current_page_item > a {
-							border-left: 8px solid $lime;
+							border-left: 8px solid darken( $grey, 10% );
 							padding-left: 7px;
 
 							@include respond-to( $bp-s ) {
 								padding-left: 10px;
+							}
+						}
+
+						&.menu-item-has-children > a {
+							&:before {
+								content: '>';
+								position: absolute;
+								right: 3px;
+								top: 50%;
+								margin-top: -8px;
+								height: 10px;
+								width: 10px;
+								transform: scale( .6, 1.5 );
 							}
 						}
 
@@ -209,15 +254,19 @@ header {
 							display: block;
 							height: auto;
 							width: 100%;
-							border-top: 1px solid rgba( white, .4 );
 							line-height: 1.2em;
-							text-align: left;
+							text-align: center;
+							opacity: .95;
+							transition: 300ms all ease-in-out;
+							background: lighten( $grey, 5% );
 
 							@include respond-to( $bp-s ) {
-								padding: 8px 18px;
+								padding: 10px 18px;
+								text-align: left;
 
 								&:hover {
-									background: lighten( $forest, 5% );
+									background: darken( $grey, 10% );
+									opacity: 1;
 								}
 							}
 
@@ -225,15 +274,20 @@ header {
 
 						ul.sub-menu {
 							display: none;
-							left: 100%;
-							top: 0;
-							width: 100%;
-							border-left: 1px solid white;
+
+							@include respond-to( $bp-s ) {
+								left: 100%;
+								top: 0;
+								width: 100%;
+								border-left: 1px solid lighten( $grey, 15% );
+							}
 						}
 
 						&:hover, &.open {
-							ul.sub-menu {
-								display: block;
+							@include respond-to( $bp-s ) {
+								ul.sub-menu {
+									display: block;
+								}
 							}
 						}
 					}

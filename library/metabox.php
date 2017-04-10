@@ -69,14 +69,29 @@ function page_metaboxes( $meta_boxes ) {
     ) );
 
     $showcase_metabox->add_group_field( $showcase_metabox_group, array(
+        'name' => 'Subtitle',
+        'id'   => 'subtitle',
+        'type' => 'text',
+    ) );
+
+    $showcase_metabox->add_group_field( $showcase_metabox_group, array(
         'name' => 'Link',
         'id'   => 'link',
         'type' => 'text',
     ) );
 
     $showcase_metabox->add_group_field( $showcase_metabox_group, array(
-        'name' => 'Image/Video',
-        'id'   => 'image',
+        'name' => 'Image (Small)',
+        'desc' => 'Upload an image intended for screens smaller than 600 pixels wide.',
+        'id'   => 'image-small',
+        'type' => 'file',
+        'preview_size' => array( 200, 200 )
+    ) );
+
+    $showcase_metabox->add_group_field( $showcase_metabox_group, array(
+        'name' => 'Image (Large)',
+        'desc' => 'Upload an image intended for screens larger than 600 pixels wide.',
+        'id'   => 'image-large',
         'type' => 'file',
         'preview_size' => array( 200, 80 )
     ) );

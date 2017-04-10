@@ -35,6 +35,8 @@
 	<div class="logo">
 		<a href="/" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"></a>
 	</div>
+
+	<button class="menu-toggle"></button>
 	
 	<nav role="navigation">
 		<?php wp_nav_menu( array( 'theme_location' => 'main-menu', 'menu_class' => 'nav-menu' ) ); ?>
