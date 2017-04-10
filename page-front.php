@@ -16,6 +16,8 @@ get_header();
 
 	</div>
 
+	<?php the_parallax(); ?>
+
 	<div class="partner-showcase">
 		<div class="partner-list">
 			<?php the_partner_logos(); ?>

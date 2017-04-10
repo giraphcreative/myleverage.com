@@ -33,6 +33,7 @@ include( "library/login.php" );
 include( "library/title.php" );
 include( "library/showcase.php" );
 include( "library/boxes.php" );
+include( "library/parallax.php" );
 
 
 // widgets

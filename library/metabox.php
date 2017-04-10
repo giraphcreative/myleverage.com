@@ -419,6 +419,22 @@ function page_metaboxes( $meta_boxes ) {
     ) );
 
     $parallax_metabox->add_field( array(
+        'name' => 'Link',
+        'desc' => 'Enter a URL to which the parallax box should link.',
+        'id'   => CMB_PREFIX . 'parallax-link',
+        'type' => 'text',
+        'sanitization_cb' => false
+    ) );
+
+    $parallax_metabox->add_field( array(
+        'name' => 'Button Text',
+        'desc' => 'Enter text for the button.',
+        'id'   => CMB_PREFIX . 'parallax-button',
+        'type' => 'text',
+        'sanitization_cb' => false
+    ) );
+
+    $parallax_metabox->add_field( array(
         'name' => 'Background',
         'desc' => 'Select a background image.',
         'id'   => CMB_PREFIX . 'parallax-image',

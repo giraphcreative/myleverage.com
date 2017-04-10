@@ -31,6 +31,9 @@ if ( empty( $color ) ) $color = 'forest';
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-generic') ) : ?><!-- no sidebar --><?php endif; ?>
 		</div>
 	</div><!-- #content -->
+
+	<?php the_parallax(); ?>
+
 <?php
 
 get_footer();

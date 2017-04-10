@@ -1,0 +1,67 @@
+
+
+a.parallax-link:hover {
+	text-decoration: none;
+}
+
+.parallax {
+	padding: 20px;
+	text-shadow: 0 0 20px rgba( black, .8 );
+	background-attachment: fixed;
+	background-size: cover;
+	text-align: center;
+	margin-bottom: 10px;
+
+	h2, h3, h4, h5, h6, p, li {
+		color: white;
+	}
+
+	h2, h3, h4, h5, h6, p {
+		padding: 8px 0;
+	}
+
+	h2 {
+		@include font;
+		text-transform: uppercase;
+		font-size: 2.8em;
+	}
+
+	h3 {
+		@include font;
+		font-size: 2.2em;
+	}
+
+	button {
+		background-color: transparent;
+		border: 2px solid white;
+		transition: 300ms background-color ease-in-out;
+		color: white;
+		@include font;
+		text-transform: uppercase;
+		font-size: 1.6em;
+		padding: 8px 12px 5px;
+
+		@include respond-to( $bp-s ) {
+			padding: 13px 18px 10px;
+		}
+	}
+
+	&:hover {
+		button {
+			background: $lime;
+		}
+	}
+
+	@include respond-to( $bp-s ) {
+		padding: 30px 80px;
+	}
+
+	@include respond-to( $bp-m ) {
+		padding: 40px 100px;
+	}
+
+	@include respond-to( $bp-l ) {
+		padding: 50px 150px;
+	}
+}
+

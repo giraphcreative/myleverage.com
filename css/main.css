@@ -1023,6 +1023,55 @@ img.aligncenter, .wp-caption.aligncenter {
   .box.odd {
     background: #eeefef; }
 
+a.parallax-link:hover {
+  text-decoration: none; }
+
+.parallax {
+  padding: 20px;
+  text-shadow: 0 0 20px rgba(0, 0, 0, 0.8);
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  margin-bottom: 10px; }
+  .parallax h2, .parallax h3, .parallax h4, .parallax h5, .parallax h6, .parallax p, .parallax li {
+    color: white; }
+  .parallax h2, .parallax h3, .parallax h4, .parallax h5, .parallax h6, .parallax p {
+    padding: 8px 0; }
+  .parallax h2 {
+    font-family: "Avenir", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 2.8em; }
+  .parallax h3 {
+    font-family: "Avenir", sans-serif;
+    font-weight: normal;
+    font-size: 2.2em; }
+  .parallax button {
+    background-color: transparent;
+    border: 2px solid white;
+    -webkit-transition: 300ms background-color ease-in-out;
+            transition: 300ms background-color ease-in-out;
+    color: white;
+    font-family: "Avenir", sans-serif;
+    font-weight: normal;
+    text-transform: uppercase;
+    font-size: 1.6em;
+    padding: 8px 12px 5px; }
+    @media only screen and (min-width: 600px) {
+      .parallax button {
+        padding: 13px 18px 10px; } }
+  .parallax:hover button {
+    background: #7DB241; }
+  @media only screen and (min-width: 600px) {
+    .parallax {
+      padding: 30px 80px; } }
+  @media only screen and (min-width: 768px) {
+    .parallax {
+      padding: 40px 100px; } }
+  @media only screen and (min-width: 1024px) {
+    .parallax {
+      padding: 50px 150px; } }
+
 .gform_confirmation_message {
   background: #c6ffde;
   border: 3px solid #007934;
