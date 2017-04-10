@@ -40,11 +40,6 @@ jQuery(document).ready(function($){
 				current_slide.attr( 'class', 'slide' );
 				prev_slide.attr( 'class', 'slide visible' );
 
-				// wait a second and mimic infinite looping
-				setTimeout(function(){
-					current_slide.attr( 'class', 'slide' );
-				}, 400 );
-
 				// refresh showcase height
 				showcase_height();
 
@@ -67,13 +62,32 @@ jQuery(document).ready(function($){
 				current_slide.attr( 'class', 'slide' );
 				next_slide.attr( 'class', 'slide visible' );
 
-				// wait a second and mimic infinite looping
-				setTimeout(function(){
-					current_slide.attr( 'class', 'slide' );
-				}, 400 );
-
 				// refresh showcase height
 				showcase_height();
+
+			};
+			
+
+			// function to switch to the next side.
+			var go_to_slide = function( num ) {
+
+				// get the current slide
+				var current_slide = get_current_slide();
+
+				// if it's the same as the current slide, don't do anything
+				if ( current_slide.data('slide-number') != num ) {
+
+					// get next slide object
+					var next_slide = current_slide.siblings( ".slide[data-slide-number='"+num+"']" );
+
+					// switch the slides
+					current_slide.attr( 'class', 'slide' );
+					next_slide.attr( 'class', 'slide visible' );
+
+					// refresh showcase height
+					showcase_height();
+
+				}
 
 			};
 
@@ -118,11 +132,16 @@ jQuery(document).ready(function($){
 
 			// next/previous click
 			showcase.find( '.showcase-nav a' ).click(function(){
+				/*
 				if ( $(this).hasClass( 'previous' ) ) {
 					prev_slide();
 				} else {
 					next_slide();
 				}
+				*/
+
+				var slide_number = $(this).data('slide-number');
+				go_to_slide( slide_number );
 
 				// stop auto-rotation
 				if ( slide_count > 1 ) {

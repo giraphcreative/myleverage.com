@@ -400,6 +400,33 @@ function page_metaboxes( $meta_boxes ) {
     ) );
 
 
+
+    // showcase metabox
+    $parallax_metabox = new_cmb2_box( array(
+        'id' => 'parallax_metabox',
+        'title' => 'Parallax Box',
+        'object_types' => array( 'page' ), // post type
+        'context' => 'normal',
+        'priority' => 'high',
+    ));
+
+    $parallax_metabox->add_field( array(
+        'name' => 'Content',
+        'desc' => 'Enter content for the parallax box.',
+        'id'   => CMB_PREFIX . 'parallax-text',
+        'type' => 'wysiwyg',
+        'sanitization_cb' => false
+    ) );
+
+    $parallax_metabox->add_field( array(
+        'name' => 'Background',
+        'desc' => 'Select a background image.',
+        'id'   => CMB_PREFIX . 'parallax-image',
+        'type' => 'file',
+        'preview_size' => array( 200, 100 )
+    ) );
+
+
     
     // interstitial metabox
     $interstitial_metabox = new_cmb2_box( array(

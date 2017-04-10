@@ -602,7 +602,66 @@ header {
   -webkit-transition: height 400ms ease-in-out;
           transition: height 400ms ease-in-out;
   z-index: 0;
-  border-bottom: 10px solid #7DB241; }
+  border-bottom: 10px solid #7DB241;
+  /*
+	// OLD NEXT/PREV BUTTONS
+	.showcase-nav a {
+		position: absolute;
+		top: 10%;
+		cursor: pointer;
+		width: 25px;
+		height: 50px;
+		text-indent: -300px;
+		overflow: hidden;
+		opacity: .7;
+		transition: 400ms all ease-in-out;
+
+		&:hover {
+			opacity: 1;
+		}
+
+		&.previous {
+			left: 10px;
+			background: url(../img/icon-arrow-left.png) right center no-repeat;
+			background-size: contain;
+			border-top-left-radius: 0;
+			border-bottom-left-radius: 0;
+		}
+
+		&.next {
+			right: 10px;
+			background: url(../img/icon-arrow-right.png) left center no-repeat;
+			background-size: contain;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
+		}
+
+		@include respond-to( 480px ) {
+			width: 50px;
+			height: 80px;
+		
+			&.previous {
+				left: 20px;
+			}
+
+			&.next {
+				right: 20px;
+			}
+		}
+
+		@include respond-to( 1024px ) {
+			&.previous {
+				top: 40px;
+				left: 30px;
+			}
+
+			&.next {
+				top: 40px;
+				right: 30px;
+			}
+		}
+	}
+	*/ }
   @media only screen and (min-width: 768px) {
     .showcase {
       border-bottom: 0; } }
@@ -711,46 +770,34 @@ header {
         .showcase .slide p {
           font-size: 20px;
           line-height: 30px; } }
-  .showcase .showcase-nav a {
+  .showcase .showcase-nav {
     position: absolute;
-    top: 10%;
-    cursor: pointer;
-    width: 25px;
-    height: 50px;
-    text-indent: -300px;
-    overflow: hidden;
-    opacity: .7;
-    -webkit-transition: 400ms all ease-in-out;
-            transition: 400ms all ease-in-out; }
-    .showcase .showcase-nav a:hover {
-      opacity: 1; }
-    .showcase .showcase-nav a.previous {
-      left: 10px;
-      background: url(../img/icon-arrow-left.png) right center no-repeat;
-      background-size: contain;
-      border-top-left-radius: 0;
-      border-bottom-left-radius: 0; }
-    .showcase .showcase-nav a.next {
-      right: 10px;
-      background: url(../img/icon-arrow-right.png) left center no-repeat;
-      background-size: contain;
-      border-top-right-radius: 0;
-      border-bottom-right-radius: 0; }
-    @media only screen and (min-width: 480px) {
-      .showcase .showcase-nav a {
-        width: 50px;
-        height: 80px; }
-        .showcase .showcase-nav a.previous {
-          left: 20px; }
-        .showcase .showcase-nav a.next {
-          right: 20px; } }
-    @media only screen and (min-width: 1024px) {
-      .showcase .showcase-nav a.previous {
-        top: 40px;
-        left: 30px; }
-      .showcase .showcase-nav a.next {
-        top: 40px;
-        right: 30px; } }
+    top: 5px;
+    left: 0;
+    right: 0;
+    text-align: center; }
+    @media only screen and (min-width: 768px) {
+      .showcase .showcase-nav {
+        top: auto;
+        left: auto;
+        right: 5%;
+        bottom: 10%; } }
+    .showcase .showcase-nav a {
+      display: inline-block;
+      color: transparent;
+      width: 15px;
+      height: 15px;
+      text-indent: -100px;
+      overflow: hidden;
+      background: rgba(255, 255, 255, 0.6);
+      border-radius: 50%;
+      margin: 0 2px;
+      border: 2px solid rgba(0, 121, 52, 0.3);
+      cursor: pointer;
+      -webkit-transition: 300ms all ease-in-out;
+              transition: 300ms all ease-in-out; }
+      .showcase .showcase-nav a:hover {
+        background: rgba(255, 255, 255, 0.9); }
 
 .thumbs {
   zoom: 1;
@@ -802,9 +849,15 @@ header {
       @media only screen and (min-width: 1024px) {
         .thumbs .thumb h5 {
           padding-top: 10px; } }
+      @media only screen and (min-width: 1220px) {
+        .thumbs .thumb h5 {
+          font-size: 1.5em; } }
     .thumbs .thumb p {
       color: #007934;
       font-size: .85em; }
+      @media only screen and (min-width: 1220px) {
+        .thumbs .thumb p {
+          font-size: 1em; } }
     .thumbs .thumb .thumb-buttons {
       padding: 10px 0 0;
       zoom: 1; }

@@ -60,11 +60,19 @@
 			@include respond-to( $bp-l ) {
 				padding-top: 10px;
 			}
+
+			@include respond-to( $bp-xl ) {
+				font-size: 1.5em;
+			}
 		}
 
 		p {
 			color: $forest;
 			font-size: .85em;
+
+			@include respond-to( $bp-xl ) {
+				font-size: 1em;
+			}
 		}
 
 		.thumb-buttons {

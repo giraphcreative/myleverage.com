@@ -20,7 +20,7 @@ function the_showcase() {
 				$link = ( isset( $slide["link"] ) ? $slide["link"] : '' );
 
 				?>
-			<div class="slide<?php print ( $key == 0 ? ' visible' : '' ); ?>">
+			<div class="slide<?php print ( $key == 0 ? ' visible' : '' ); ?>" data-slide-number="<?php print $count+1; ?>">
 				<?php if ( !empty( $link ) ) { ?><a href="<?php print $link ?>" class="<?php print ( stristr( $link, 'vimeo' ) || stristr( $link, 'youtube' ) || stristr( $link, 'google.com/maps' ) ? 'lightbox-iframe' : '' ) ?>"><?php } ?>
 				<img src="<?php print $slide["image-small"]; ?>" class="small">
 				<img src="<?php print $slide["image-large"]; ?>" class="large">
@@ -37,11 +37,20 @@ function the_showcase() {
 			}
 		}
 
-		if ( $count > 1 ) { 
+		if ( $count > 1 ) {
 			?>
 			<div class="showcase-nav">
+				<!--
 				<a class="previous">Previous</a>
 				<a class="next">Next</a>
+				-->
+				<?php 
+				$n = 1;
+				while( $n <= $count ) {
+					print "<a data-slide-number='$n'>$n</a>";
+					$n++;
+				}
+				?>
 			</div>
 			<?php
 		}
