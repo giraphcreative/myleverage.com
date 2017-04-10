@@ -40,6 +40,8 @@ jQuery(document).ready(function($){
 				current_slide.attr( 'class', 'slide' );
 				prev_slide.attr( 'class', 'slide visible' );
 
+				showcase_nav_current( prev_slide.data('slide-number') );
+
 				// refresh showcase height
 				showcase_height();
 
@@ -62,6 +64,8 @@ jQuery(document).ready(function($){
 				current_slide.attr( 'class', 'slide' );
 				next_slide.attr( 'class', 'slide visible' );
 
+				showcase_nav_current( next_slide.data('slide-number') );
+
 				// refresh showcase height
 				showcase_height();
 
@@ -83,6 +87,8 @@ jQuery(document).ready(function($){
 					// switch the slides
 					current_slide.attr( 'class', 'slide' );
 					next_slide.attr( 'class', 'slide visible' );
+
+					showcase_nav_current( num );
 
 					// refresh showcase height
 					showcase_height();
@@ -109,6 +115,16 @@ jQuery(document).ready(function($){
 				}
 				showcase.height( current_slide.height() );
 			};
+
+
+			// update the showcase nav button 'current' status
+			var showcase_nav_current = function( num ) {
+
+				$('.showcase-nav a').removeClass( 'current' );
+				$(".showcase-nav a[data-slide-number='"+num+"']").addClass( 'current' );
+
+			}
+
 
 
 			// set showcase initial height when the first image is loaded.
@@ -142,6 +158,7 @@ jQuery(document).ready(function($){
 
 				var slide_number = $(this).data('slide-number');
 				go_to_slide( slide_number );
+
 
 				// stop auto-rotation
 				if ( slide_count > 1 ) {

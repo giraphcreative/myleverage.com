@@ -237,9 +237,18 @@
 			cursor: pointer;
 			transition: 300ms all ease-in-out;
 
+			&.current {
+				background: rgba( white, .9 );
+			}
+
 			&:hover {
 				background: rgba( white, .9 );
+			}
 
+			@include respond-to( 768px ) {
+				height: 25px;
+				width: 25px;
+				margin: 0 4px;
 			}
 		}
 	}
