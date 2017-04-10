@@ -91,7 +91,7 @@ function page_metaboxes( $meta_boxes ) {
 
     $showcase_metabox->add_group_field( $showcase_metabox_group, array(
         'name' => 'Image (Small)',
-        'desc' => 'Upload an image intended for screens smaller than 600 pixels wide.',
+        'desc' => 'Upload an image intended for smaller screens. Suggested: 800x600.',
         'id'   => 'image-small',
         'type' => 'file',
         'preview_size' => array( 200, 200 )
@@ -99,7 +99,7 @@ function page_metaboxes( $meta_boxes ) {
 
     $showcase_metabox->add_group_field( $showcase_metabox_group, array(
         'name' => 'Image (Large)',
-        'desc' => 'Upload an image intended for screens larger than 600 pixels wide.',
+        'desc' => 'Upload an image intended for larger screens. Suggested: 1440x500.',
         'id'   => 'image-large',
         'type' => 'file',
         'preview_size' => array( 200, 80 )
