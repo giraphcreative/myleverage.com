@@ -89,6 +89,7 @@
 				font-size: .95em;
 				background: transparent url(../img/thumb-button-arrow.png) right center no-repeat;
 				transition: background-color 400ms ease-in-out;
+				color: $grey-dark;
 
 				&:hover {
 					background-color: white;

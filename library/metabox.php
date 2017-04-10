@@ -43,7 +43,7 @@ function page_metaboxes( $meta_boxes ) {
 
     $title_metabox->add_field( array(
         'name' => 'Icon',
-        'desc' => 'Select an icon (80x80 pixels).',
+        'desc' => 'Select an icon (60x60 pixels).',
         'id'   => CMB_PREFIX . 'large-title-icon',
         'type' => 'file',
         'preview_size' => array( 80, 80 )

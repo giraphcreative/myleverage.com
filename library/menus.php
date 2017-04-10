@@ -4,7 +4,8 @@
 // register a couple nav menus
 register_nav_menus( array(
 	'main-menu' => 'Main Menu',
-	'footer' => 'Footer',
+	'footer-one' => 'Footer (Column 1)',
+	'footer-two' => 'Footer (Column 2)',
 ) );
 
 

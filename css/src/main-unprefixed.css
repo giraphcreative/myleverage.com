@@ -169,7 +169,11 @@ a {
 
 input, textarea {
   font-family: "Avenir", sans-serif;
-  font-weight: normal; }
+  font-weight: normal;
+  padding: 9px 12px 6px;
+  border: 2px solid #939598;
+  font-size: 15px;
+  line-height: 15px; }
 
 .content-style ol, .half ol, .two-third ol, .three-quarter ol, .event-info ol, .content-style ul, .half ul, .two-third ul, .three-quarter ul, .event-info ul {
   padding: 5px 0 5px 35px; }
@@ -212,14 +216,14 @@ input, textarea {
   margin: 0 5px 5px 0;
   font-size: .95em;
   transition: background-color 400ms ease-in-out;
-  color: white; }
+  color: #47494b;
+  cursor: pointer; }
   @media only screen and (min-width: 1024px) {
     .content-style button, .half button, .two-third button, .three-quarter button, .event-info button, .content-style input[type=submit], .half input[type=submit], .two-third input[type=submit], .three-quarter input[type=submit], .event-info input[type=submit], .content-style input[type=reset], .half input[type=reset], .two-third input[type=reset], .three-quarter input[type=reset], .event-info input[type=reset] {
       padding: 10px 35px 7px 20px;
       letter-spacing: 1px; } }
   .content-style button:hover, .half button:hover, .two-third button:hover, .three-quarter button:hover, .event-info button:hover, .content-style input[type=submit]:hover, .half input[type=submit]:hover, .two-third input[type=submit]:hover, .three-quarter input[type=submit]:hover, .event-info input[type=submit]:hover, .content-style input[type=reset]:hover, .half input[type=reset]:hover, .two-third input[type=reset]:hover, .three-quarter input[type=reset]:hover, .event-info input[type=reset]:hover {
     background-color: white;
-    color: #939598;
     text-decoration: none; }
 
 .btn-arrow {
@@ -232,7 +236,8 @@ input, textarea {
   font-size: .95em;
   transition: all 400ms ease-in-out;
   color: white;
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
   @media only screen and (min-width: 1024px) {
     .btn-arrow {
       padding: 10px 35px 7px 20px;
@@ -554,10 +559,10 @@ header {
         width: 40px; } }
     @media only screen and (min-width: 768px) {
       .large-title .large-title-icon {
-        width: 55px; } }
+        width: 50px; } }
     @media only screen and (min-width: 1024px) {
       .large-title .large-title-icon {
-        width: 70px; } }
+        width: 60px; } }
   .large-title .large-title-text h1 {
     font-family: "Avenir", sans-serif;
     font-weight: normal;
@@ -703,7 +708,7 @@ header {
           bottom: 10%;
           right: 0;
           width: 80%;
-          transition: 1000ms left ease-in-out;
+          transition: 1500ms left ease-in-out;
           border: 2px solid rgba(0, 121, 52, 0.5);
           border-left: 0;
           padding: 15px 20px; } }
@@ -740,7 +745,7 @@ header {
           line-height: 55px; } }
     .showcase .slide p {
       padding: 0;
-      color: #7DB241;
+      color: #007934;
       padding-top: 5px;
       text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
       font-size: 14px;
@@ -755,7 +760,7 @@ header {
           line-height: 30px; } }
   .showcase .showcase-nav {
     position: absolute;
-    top: 5px;
+    top: 15px;
     left: 0;
     right: 0;
     text-align: center; }
@@ -784,8 +789,8 @@ header {
         background: rgba(255, 255, 255, 0.9); }
       @media only screen and (min-width: 768px) {
         .showcase .showcase-nav a {
-          height: 25px;
-          width: 25px;
+          height: 20px;
+          width: 20px;
           margin: 0 4px; } }
 
 .thumbs {
@@ -864,7 +869,8 @@ header {
         margin: 0 5px 5px 0;
         font-size: .95em;
         background: transparent url(../img/thumb-button-arrow.png) right center no-repeat;
-        transition: background-color 400ms ease-in-out; }
+        transition: background-color 400ms ease-in-out;
+        color: #47494b; }
         .thumbs .thumb .thumb-buttons a:hover {
           background-color: white; }
         @media only screen and (min-width: 768px) {
@@ -1022,7 +1028,8 @@ a.parallax-link:hover {
     font-family: "Avenir", sans-serif;
     font-weight: normal;
     text-transform: uppercase;
-    font-size: 2.8em; }
+    font-size: 2.8em;
+    color: white; }
   .parallax h3 {
     font-family: "Avenir", sans-serif;
     font-weight: normal;
@@ -1051,6 +1058,9 @@ a.parallax-link:hover {
   @media only screen and (min-width: 1024px) {
     .parallax {
       padding: 50px 150px; } }
+  @media only screen and (min-width: 1220px) {
+    .parallax {
+      padding: 60px 250px; } }
 
 .gform_confirmation_message {
   background: #c6ffde;
@@ -1297,78 +1307,85 @@ a.parallax-link:hover {
       right: 0;
       background: url(../img/icon-arrow-right.png) center center no-repeat; }
 
+.subscribe {
+  padding: 20px;
+  background: #e1e1e1;
+  text-align: center; }
+  .subscribe label {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #898b8e; }
+  .subscribe input[type=text] {
+    width: 220px;
+    display: block;
+    margin: 0 auto; }
+    @media only screen and (min-width: 600px) {
+      .subscribe input[type=text] {
+        margin: 0 0 0 5px;
+        display: inline-block; } }
+
 footer {
   background-color: #7DB241;
   color: white;
   padding: 20px;
-  zoom: 1; }
+  zoom: 1;
+  font-size: 1em;
+  line-height: 1.7em; }
   footer:before, footer:after {
     content: "";
     display: table; }
   footer, footer:before, footer:after {
     clear: both; }
-  @media only screen and (min-width: 768px) {
-    footer .column {
-      float: left;
-      width: 30%;
-      border-left: 6px solid white;
-      min-height: 300px;
-      padding: 15px 25px; }
-      footer .column.first {
-        width: 40%;
-        border-left: 0; } }
+  @media only screen and (min-width: 600px) {
+    footer {
+      padding: 30px; } }
+  @media only screen and (min-width: 1024px) {
+    footer {
+      padding: 40px; } }
   @media only screen and (min-width: 1220px) {
-    footer .column .address {
-      float: left;
-      width: 50%;
-      padding: 20px 0; } }
+    footer {
+      padding: 40px 80px; } }
+  footer .column {
+    padding-bottom: 20px; }
+    @media only screen and (min-width: 768px) {
+      footer .column {
+        float: left;
+        width: 50%; } }
+    @media only screen and (min-width: 1024px) {
+      footer .column {
+        width: 55%; }
+        footer .column.first {
+          width: 45%; } }
+    footer .column .sub-column {
+      text-align: center; }
+      @media only screen and (min-width: 1024px) {
+        footer .column .sub-column {
+          float: left;
+          width: 50%;
+          padding: 0 0 0 10px;
+          text-align: left; }
+          footer .column .sub-column.first {
+            padding: 0 10px 0 0;
+            text-align: right; } }
   footer h3 {
     font-family: "Avenir", sans-serif;
     font-weight: normal;
     text-transform: uppercase;
     font-size: 1.6em;
     line-height: 1.2em;
-    padding-top: 20px;
-    color: white; }
-    @media only screen and (min-width: 768px) {
-      footer h3 {
-        text-align: inherit; } }
+    padding: 0 0 10px;
+    color: white;
+    text-align: center; }
   footer a {
     color: white;
     text-decoration: none; }
-  footer nav ul {
-    list-style-type: disc;
-    padding: 10px 20px; }
+  footer ul li a {
+    display: block; }
   footer .social {
-    padding: 10px 0; }
+    padding: 10px 0;
+    text-align: center; }
     footer .social img {
-      max-width: 22%;
       margin-right: 3%; }
-  footer .subscribe {
-    position: relative;
-    padding: 10px 0; }
-    footer .subscribe input[type=text] {
-      display: block;
-      right: 26px;
-      left: 0;
-      width: 100%;
-      border: 2px solid #939598;
-      background: white;
-      padding: 0 25px 0 15px;
-      font-size: 15px;
-      line-height: 28px; }
-    footer .subscribe input[type=submit] {
-      position: absolute;
-      top: 50%;
-      right: 10px;
-      bottom: 0;
-      width: 50px;
-      height: 50px;
-      border: 0;
-      background: url(../img/icon-subscribe.png) center center no-repeat;
-      text-indent: -400px;
-      cursor: pointer;
-      margin-top: -25px; }
 
 /* Magnific Popup CSS */
 .mfp-bg {

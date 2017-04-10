@@ -24,6 +24,7 @@ a.parallax-link:hover {
 		@include font;
 		text-transform: uppercase;
 		font-size: 2.8em;
+		color: white;
 	}
 
 	h3 {
@@ -62,6 +63,10 @@ a.parallax-link:hover {
 
 	@include respond-to( $bp-l ) {
 		padding: 50px 150px;
+	}
+
+	@include respond-to( $bp-xl ) {
+		padding: 60px 250px;
 	}
 }
 

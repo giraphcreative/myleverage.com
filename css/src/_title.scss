@@ -27,11 +27,11 @@
 		}
 
 		@include respond-to( $bp-m ) {
-			width: 55px;
+			width: 50px;
 		}
 
 		@include respond-to( $bp-l ) {
-			width: 70px;
+			width: 60px;
 		}
 	}
 

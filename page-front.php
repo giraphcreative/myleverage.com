@@ -11,10 +11,11 @@ get_header();
 	<?php the_showcase(); ?>
 
 	<div class="wrap group">
-
 		<?php the_thumb_showcase(); ?>
-
 	</div>
+
+	<div style="text-align: center;"><a href="/products">View all products &gt;</a></div>
+	<p>&nbsp;</p>
 
 	<?php the_parallax(); ?>
 
