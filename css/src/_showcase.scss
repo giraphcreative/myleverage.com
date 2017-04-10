@@ -19,7 +19,7 @@
 		left: 0;
 		right: 0;
 		opacity: 0;
-		transition: 800ms opacity ease-in-out;
+		transition: 700ms opacity ease-in-out;
 		pointer-events: none;
 
 		&.visible {
@@ -70,7 +70,6 @@
 			border-top: 2px solid rgba( $forest, .5 );
 			padding: 10px 20px;
 			pointer-events: none;
-			transition: 400ms all ease-in-out;
 
 			@include respond-to( 480px ) {
 				padding: 15px 25px;
@@ -81,7 +80,7 @@
 				bottom: 10%;
 				right: 0;
 				width: 80%;
-				transition: 1500ms left ease-in-out;
+				transition: 1300ms left ease-in-out;
 				border: 2px solid rgba( $forest, .5 );
 				border-left: 0;
 				padding: 15px 20px;
@@ -148,66 +147,6 @@
 		}
 
 	}
-	
-	/*
-	// OLD NEXT/PREV BUTTONS
-	.showcase-nav a {
-		position: absolute;
-		top: 10%;
-		cursor: pointer;
-		width: 25px;
-		height: 50px;
-		text-indent: -300px;
-		overflow: hidden;
-		opacity: .7;
-		transition: 400ms all ease-in-out;
-
-		&:hover {
-			opacity: 1;
-		}
-
-		&.previous {
-			left: 10px;
-			background: url(../img/icon-arrow-left.png) right center no-repeat;
-			background-size: contain;
-			border-top-left-radius: 0;
-			border-bottom-left-radius: 0;
-		}
-
-		&.next {
-			right: 10px;
-			background: url(../img/icon-arrow-right.png) left center no-repeat;
-			background-size: contain;
-			border-top-right-radius: 0;
-			border-bottom-right-radius: 0;
-		}
-
-		@include respond-to( 480px ) {
-			width: 50px;
-			height: 80px;
-		
-			&.previous {
-				left: 20px;
-			}
-
-			&.next {
-				right: 20px;
-			}
-		}
-
-		@include respond-to( 1024px ) {
-			&.previous {
-				top: 40px;
-				left: 30px;
-			}
-
-			&.next {
-				top: 40px;
-				right: 30px;
-			}
-		}
-	}
-	*/
 
 	.showcase-nav {
 		position: absolute;

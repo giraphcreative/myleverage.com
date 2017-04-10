@@ -2,10 +2,10 @@
 
 .thumbs {
 	@include clearfix;
-	padding: 20px 10px;
+	padding: 20px 10px 0;
 
 	@include respond-to( $bp-l ) {
-		padding: 30px 15px;
+		padding: 30px 15px 0;
 	}
 
 	.thumb-container {

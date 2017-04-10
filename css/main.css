@@ -607,66 +607,7 @@ header {
   -webkit-transition: height 400ms ease-in-out;
           transition: height 400ms ease-in-out;
   z-index: 0;
-  border-bottom: 10px solid #7DB241;
-  /*
-	// OLD NEXT/PREV BUTTONS
-	.showcase-nav a {
-		position: absolute;
-		top: 10%;
-		cursor: pointer;
-		width: 25px;
-		height: 50px;
-		text-indent: -300px;
-		overflow: hidden;
-		opacity: .7;
-		transition: 400ms all ease-in-out;
-
-		&:hover {
-			opacity: 1;
-		}
-
-		&.previous {
-			left: 10px;
-			background: url(../img/icon-arrow-left.png) right center no-repeat;
-			background-size: contain;
-			border-top-left-radius: 0;
-			border-bottom-left-radius: 0;
-		}
-
-		&.next {
-			right: 10px;
-			background: url(../img/icon-arrow-right.png) left center no-repeat;
-			background-size: contain;
-			border-top-right-radius: 0;
-			border-bottom-right-radius: 0;
-		}
-
-		@include respond-to( 480px ) {
-			width: 50px;
-			height: 80px;
-		
-			&.previous {
-				left: 20px;
-			}
-
-			&.next {
-				right: 20px;
-			}
-		}
-
-		@include respond-to( 1024px ) {
-			&.previous {
-				top: 40px;
-				left: 30px;
-			}
-
-			&.next {
-				top: 40px;
-				right: 30px;
-			}
-		}
-	}
-	*/ }
+  border-bottom: 10px solid #7DB241; }
   @media only screen and (min-width: 768px) {
     .showcase {
       border-bottom: 0; } }
@@ -676,8 +617,8 @@ header {
     left: 0;
     right: 0;
     opacity: 0;
-    -webkit-transition: 800ms opacity ease-in-out;
-            transition: 800ms opacity ease-in-out;
+    -webkit-transition: 700ms opacity ease-in-out;
+            transition: 700ms opacity ease-in-out;
     pointer-events: none; }
     .showcase .slide.visible {
       opacity: 1;
@@ -712,9 +653,7 @@ header {
       background: rgba(255, 255, 255, 0.8);
       border-top: 2px solid rgba(0, 121, 52, 0.5);
       padding: 10px 20px;
-      pointer-events: none;
-      -webkit-transition: 400ms all ease-in-out;
-              transition: 400ms all ease-in-out; }
+      pointer-events: none; }
       @media only screen and (min-width: 480px) {
         .showcase .slide .slide-content {
           padding: 15px 25px; } }
@@ -724,8 +663,8 @@ header {
           bottom: 10%;
           right: 0;
           width: 80%;
-          -webkit-transition: 1500ms left ease-in-out;
-                  transition: 1500ms left ease-in-out;
+          -webkit-transition: 1300ms left ease-in-out;
+                  transition: 1300ms left ease-in-out;
           border: 2px solid rgba(0, 121, 52, 0.5);
           border-left: 0;
           padding: 15px 20px; } }
@@ -813,7 +752,7 @@ header {
 
 .thumbs {
   zoom: 1;
-  padding: 20px 10px; }
+  padding: 20px 10px 0; }
   .thumbs:before, .thumbs:after {
     content: "";
     display: table; }
@@ -821,7 +760,7 @@ header {
     clear: both; }
   @media only screen and (min-width: 1024px) {
     .thumbs {
-      padding: 30px 15px; } }
+      padding: 30px 15px 0; } }
   .thumbs .thumb-container {
     margin-bottom: 20px; }
     @media only screen and (min-width: 768px) {

@@ -14,8 +14,16 @@ get_header();
 		<?php the_thumb_showcase(); ?>
 	</div>
 
-	<div style="text-align: center;"><a href="/products">View all products &gt;</a></div>
-	<p>&nbsp;</p>
+	<div class="wrap">
+		<div class="content-wide">
+			<?php 
+			if ( have_posts() ) {
+				the_post();
+				the_content(); 
+			}
+			?>
+		</div>
+	</div>
 
 	<?php the_parallax(); ?>
 
