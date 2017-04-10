@@ -35,9 +35,18 @@ function page_metaboxes( $meta_boxes ) {
 
     $title_metabox->add_field( array(
         'name' => 'Title',
+        'desc' => 'Enter a title.',
         'id'   => CMB_PREFIX . 'large-title',
         'type' => 'text',
         'sanitization_cb' => false
+    ) );
+
+    $title_metabox->add_field( array(
+        'name' => 'Icon',
+        'desc' => 'Select an icon (80x80 pixels).',
+        'id'   => CMB_PREFIX . 'large-title-icon',
+        'type' => 'file',
+        'preview_size' => array( 80, 80 )
     ) );
 
 

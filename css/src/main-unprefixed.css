@@ -537,11 +537,27 @@ header {
   padding: 30px 20px; }
   @media only screen and (min-width: 600px) {
     .large-title {
-      padding: 40px 20px; } }
+      padding: 45px 20px 35px; } }
   @media only screen and (min-width: 768px) {
     .large-title {
-      padding: 80px 20px;
+      padding: 85px 20px 75px;
       margin-bottom: 10px; } }
+  .large-title .wrap {
+    position: relative; }
+  .large-title .large-title-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 25px; }
+    @media only screen and (min-width: 600px) {
+      .large-title .large-title-icon {
+        width: 40px; } }
+    @media only screen and (min-width: 768px) {
+      .large-title .large-title-icon {
+        width: 55px; } }
+    @media only screen and (min-width: 1024px) {
+      .large-title .large-title-icon {
+        width: 70px; } }
   .large-title .large-title-text h1 {
     font-family: "Avenir", sans-serif;
     font-weight: normal;
@@ -550,17 +566,21 @@ header {
     font-size: 20px;
     border-bottom: 3px solid white;
     text-transform: uppercase;
-    margin-bottom: -10px; }
+    margin-bottom: -10px;
+    padding-right: 25px; }
     @media only screen and (min-width: 600px) {
       .large-title .large-title-text h1 {
-        padding-left: 10px; } }
+        padding-left: 10px;
+        padding-right: 50px; } }
     @media only screen and (min-width: 768px) {
       .large-title .large-title-text h1 {
-        font-size: 35px; } }
+        font-size: 35px;
+        padding-right: 65px; } }
     @media only screen and (min-width: 1024px) {
       .large-title .large-title-text h1 {
         font-size: 45px;
-        padding-left: 30px; } }
+        padding-left: 30px;
+        padding-right: 80px; } }
 
 .showcase {
   position: relative;

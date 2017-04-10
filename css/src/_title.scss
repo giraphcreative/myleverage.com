@@ -4,12 +4,35 @@
 	padding: 30px 20px;
 
 	@include respond-to( $bp-s ) { 
-		padding: 40px 20px; 
+		padding: 45px 20px 35px; 
 	}
 
 	@include respond-to( $bp-m ) { 
-		padding: 80px 20px;
+		padding: 85px 20px 75px;
 		margin-bottom: 10px;
+	}
+
+	.wrap {
+		position: relative;
+	}
+
+	.large-title-icon {
+		position: absolute;
+		right: 0;
+		bottom: 0;
+		width: 25px;
+
+		@include respond-to( $bp-s ) {
+			width: 40px;
+		}
+
+		@include respond-to( $bp-m ) {
+			width: 55px;
+		}
+
+		@include respond-to( $bp-l ) {
+			width: 70px;
+		}
 	}
 
 	.large-title-text {
@@ -21,18 +44,22 @@
 			border-bottom: 3px solid white;
 			text-transform: uppercase;
 			margin-bottom: -10px;
+			padding-right: 25px;
 
 			@include respond-to( $bp-s ) {
 				padding-left: 10px;
+				padding-right: 50px;
 			}
 
 			@include respond-to( $bp-m ) {
 				font-size: 35px;
+				padding-right: 65px;
 			}
 
 			@include respond-to( $bp-l ) {
 				font-size: 45px;
 				padding-left: 30px;
+				padding-right: 80px;
 			}
 		}
 	}
