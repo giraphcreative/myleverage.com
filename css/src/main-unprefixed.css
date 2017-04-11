@@ -1259,10 +1259,10 @@ a.parallax-link:hover {
         margin: 0 0 0 5px;
         display: inline-block; } }
   .subscribe input[type=submit].btn-arrow {
-    background-color: white;
-    color: #47494b; }
+    background-color: #7DB241;
+    color: white; }
     .subscribe input[type=submit].btn-arrow:hover {
-      background-color: #939598;
+      background-color: #8abe4e;
       color: white; }
 
 footer {

@@ -25,11 +25,11 @@
 	}
 
 	input[type=submit].btn-arrow {
-		background-color: white;
-		color: $grey-dark;
+		background-color: $lime;
+		color: white;
 
 		&:hover {
-			background-color: $grey;
+			background-color: lighten( $lime, 5% );
 			color: white;
 		}
 	}
