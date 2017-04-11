@@ -1244,7 +1244,8 @@ a.parallax-link:hover {
 .subscribe {
   padding: 20px;
   background: #939598;
-  text-align: center; }
+  text-align: center;
+  border-bottom: 10px solid white; }
   .subscribe label {
     text-transform: uppercase;
     letter-spacing: 1px;
