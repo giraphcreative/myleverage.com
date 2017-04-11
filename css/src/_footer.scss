@@ -17,6 +17,7 @@
 		width: 220px;
 		display: block;
 		margin: 0 auto;
+		border: 2px solid $grey-dark;
 
 		@include respond-to( $bp-s ) {
 			margin: 0 0 0 5px;
