@@ -1282,6 +1282,12 @@ a.parallax-link:hover {
       .subscribe input[type=text] {
         margin: 0 0 0 5px;
         display: inline-block; } }
+  .subscribe input[type=submit].btn-arrow {
+    background-color: white;
+    color: #47494b; }
+    .subscribe input[type=submit].btn-arrow:hover {
+      background-color: #939598;
+      color: white; }
 
 footer {
   background-color: #7DB241;

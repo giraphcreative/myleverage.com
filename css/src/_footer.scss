@@ -23,6 +23,16 @@
 			display: inline-block;
 		}
 	}
+
+	input[type=submit].btn-arrow {
+		background-color: white;
+		color: $grey-dark;
+
+		&:hover {
+			background-color: $grey;
+			color: white;
+		}
+	}
 }
 
 
