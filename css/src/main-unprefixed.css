@@ -1243,12 +1243,12 @@ a.parallax-link:hover {
 
 .subscribe {
   padding: 20px;
-  background: #e1e1e1;
+  background: #939598;
   text-align: center; }
   .subscribe label {
     text-transform: uppercase;
     letter-spacing: 1px;
-    color: #898b8e; }
+    color: white; }
   .subscribe input[type=text] {
     width: 220px;
     display: block;

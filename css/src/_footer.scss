@@ -3,13 +3,13 @@
 
 .subscribe {
 	padding: 20px;
-	background: $grey-light;
+	background: $grey;
 	text-align: center;
 
 	label {
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		color: darken( $grey, 4% );
+		color: white;
 	}
 
 	input[type=text] {
