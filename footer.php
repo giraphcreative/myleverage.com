@@ -19,7 +19,7 @@ if ( empty( $color ) ) $color = 'forest';
 </section>
 
 <div class="subscribe">
-	<form name="subscribe" action="/subscribe/" method="get">
+	<form name="subscribe" action="/about-us/subscribe/" method="get">
 		<label>Subscribe: <input type="text" name="email" placeholder="johnsmith@mycu.com" /></label>
 		<input type="submit" class="btn-arrow" value="Subscribe" />
 	</form>
