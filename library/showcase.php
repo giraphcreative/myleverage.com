@@ -37,7 +37,7 @@ function the_showcase() {
 			}
 		}
 
-		if ( count( $slides ) > 1 ) {
+		if ( $count > 1 ) {
 			?>
 			<div class="showcase-nav">
 				<!--
@@ -46,7 +46,7 @@ function the_showcase() {
 				-->
 				<?php 
 				$n = 1;
-				while( $n <= count( $slides ) ) {
+				while ( $n <= $count ) {
 					print "<a data-slide-number='$n'" . ( $n == 1 ? ' class="current"' : '' ) . ">$n</a>";
 					$n++;
 				}
