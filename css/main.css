@@ -966,16 +966,18 @@ img.aligncenter, .wp-caption.aligncenter {
     .box {
       padding: 30px 40px; } }
   .box.odd {
-    position: relative;
     background: #e1e1e1; }
-    .box.odd:before {
-      content: '';
-      position: absolute;
-      left: -1000px;
-      top: 0;
-      bottom: 0;
-      right: 100%;
-      background: #e1e1e1; }
+    @media only screen and (min-width: 1024px) {
+      .box.odd {
+        position: relative; }
+        .box.odd:before {
+          content: '';
+          position: absolute;
+          left: -1000px;
+          top: 0;
+          bottom: 0;
+          right: 100%;
+          background: #e1e1e1; } }
 
 a.parallax-link:hover {
   text-decoration: none; }

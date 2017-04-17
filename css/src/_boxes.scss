@@ -13,17 +13,20 @@
 	}
 
 	&.odd {
-		position: relative;
 		background: $grey-light;
-
-		&:before {
-			content: '';
-			position: absolute;
-			left: -1000px;
-			top: 0;
-			bottom: 0;
-			right: 100%;
-			background: $grey-light;
+		
+		@include respond-to( 1024px ) {
+			position: relative;
+			
+			&:before {
+				content: '';
+				position: absolute;
+				left: -1000px;
+				top: 0;
+				bottom: 0;
+				right: 100%;
+				background: $grey-light;
+			}
 		}
 	}
 }
