@@ -917,6 +917,12 @@ img.aligncenter, .wp-caption.aligncenter {
   display: block;
   margin: 0 auto; }
 
+.text-right {
+  text-align: right; }
+
+.text-center {
+  text-align: center; }
+
 .wp-caption {
   width: 300px !important; }
   .wp-caption img {
@@ -1285,6 +1291,7 @@ a.parallax-link:hover {
         display: inline-block; } }
   .subscribe input[type=submit].btn-arrow {
     background-color: #7DB241;
+    background-image: url(../img/thumb-button-arrow-white.png);
     color: white; }
     .subscribe input[type=submit].btn-arrow:hover {
       background-color: #8abe4e;
