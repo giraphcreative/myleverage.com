@@ -15,7 +15,7 @@
 	&.odd {
 		background: $grey-light;
 		
-		@include respond-to( 1024px ) {
+		@include respond-to( $bp-l ) {
 			position: relative;
 			
 			&:before {
