@@ -86,7 +86,7 @@ function lscu_signon( $user, $username, $password ) {
 	if ( $user_check->user_pass == md5( $username . "\n" . $password ) ) {
 
 		// set a non-secure user auth token.
-		wp_set_auth_cookie( $user_check->ID, 1, 0 );
+		// wp_set_auth_cookie( $user_check->ID, 1, 0 );
 
 		return $user_check;
 	}
