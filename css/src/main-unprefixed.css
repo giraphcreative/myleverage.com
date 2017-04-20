@@ -390,7 +390,8 @@ header {
             padding: 0 18px; } }
         @media only screen and (min-width: 1024px) {
           header nav ul.nav-menu > li a {
-            line-height: 80px; } }
+            line-height: 80px;
+            padding: 0; } }
         header nav ul.nav-menu > li a:hover {
           background: #7DB241; }
       header nav ul.nav-menu > li:hover a, header nav ul.nav-menu > li.open a {

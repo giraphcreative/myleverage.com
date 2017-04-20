@@ -180,6 +180,7 @@ header {
 
 					@include respond-to( $bp-l ) {
 						line-height: 80px;
+						padding: 0;
 					}
 
 					&:hover {
