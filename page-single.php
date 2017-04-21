@@ -1,7 +1,7 @@
 <?php
 
 /*
-Template Name: Single Column
+Template Name: Page - No Sidebar
 */
 
 get_header();
