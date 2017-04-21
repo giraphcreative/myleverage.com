@@ -860,6 +860,9 @@ header {
     display: table; }
   .content-wide, .content-wide:before, .content-wide:after {
     clear: both; }
+  @media only screen and (min-width: 768px) {
+    .content-wide {
+      padding: 40px; } }
 
 .content-two-column {
   zoom: 1; }

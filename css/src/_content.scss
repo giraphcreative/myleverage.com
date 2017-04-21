@@ -16,6 +16,10 @@
 	@include clearfix;
 
 	padding: 40px 20px;
+
+	@include respond-to( $bp-m ) {
+		padding: 40px;
+	}
 }
 
 .content-two-column {
