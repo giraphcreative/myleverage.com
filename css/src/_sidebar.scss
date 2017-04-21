@@ -67,6 +67,10 @@
 						}
 					}
 
+					&.current_page_item a {
+						background-color: $grey-light;
+					}
+
 					ul {
 						li {
 							a {

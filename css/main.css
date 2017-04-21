@@ -968,17 +968,6 @@ img.aligncenter, .wp-caption.aligncenter {
       padding: 30px 40px; } }
   .box.odd {
     background: #e1e1e1; }
-    @media only screen and (min-width: 1024px) {
-      .box.odd {
-        position: relative; }
-        .box.odd:before {
-          content: '';
-          position: absolute;
-          left: -1000px;
-          top: 0;
-          bottom: 0;
-          right: 100%;
-          background: #e1e1e1; } }
 
 a.parallax-link:hover {
   text-decoration: none; }
@@ -1187,6 +1176,8 @@ a.parallax-link:hover {
   .sidebar .widget.widget_nav_menu ul li.menu-item-has-children.open > a:before {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg); }
+  .sidebar .widget.widget_nav_menu ul li.current_page_item a {
+    background-color: #e1e1e1; }
   .sidebar .widget.widget_nav_menu ul li ul li a {
     padding: 5px 10px 3px 25px; }
   .sidebar .widget.widget_nav_menu ul li ul li ul li a {

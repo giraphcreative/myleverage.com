@@ -14,19 +14,5 @@
 
 	&.odd {
 		background: $grey-light;
-		
-		@include respond-to( $bp-l ) {
-			position: relative;
-			
-			&:before {
-				content: '';
-				position: absolute;
-				left: -1000px;
-				top: 0;
-				bottom: 0;
-				right: 100%;
-				background: $grey-light;
-			}
-		}
 	}
 }
