@@ -82,16 +82,13 @@ function pagination($prev = '&laquo;', $next = '&raquo;') {
 }
 
 
+
+// set a custom excerpt length.
 function wpdocs_custom_excerpt_length( $length ) {
     return 20;
 }
 add_filter( 'excerpt_length', 'wpdocs_custom_excerpt_length', 999 );
 
-
-function remove_user_menu(){
-	remove_menu_page( 'users.php' );
-}
-add_action( 'admin_menu', 'remove_user_menu' );
 
 
 ?>
