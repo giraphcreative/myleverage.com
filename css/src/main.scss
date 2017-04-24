@@ -3,6 +3,8 @@
 // set colors
 $lime: #7DB241;
 $forest: #007934;
+$blue: #295cb0;
+$red: #b91313;
 $grey-light: #e1e1e1;
 $grey: #939598;
 $grey-dark: darken( $grey, 30% );
@@ -48,6 +50,7 @@ $bp-xl: 1220px;
 @import "parallax";
 @import "gravity";
 @import "events";
+@import "notification";
 
 
 // sidebar styles

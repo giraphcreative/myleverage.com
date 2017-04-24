@@ -111,27 +111,33 @@ class pure_admin {
 
 		// Set our CMB2 fields
 		$cmb->add_field( array(
-			'name' => 'Login Page',
-			'id' => 'login-page',
-			'type' => 'select',
-			'options' => $all_pages
+			'name' => 'Notification Bar Enabled',
+			'id' => 'notification-enabled',
+			'type' => 'checkbox',
+			'default' => false
 		) );
 
 		// Set our CMB2 fields
 		$cmb->add_field( array(
-			'name' => 'Reset Password Page',
-			'id' => 'reset-page',
+			'name' => 'Notification Bar Color',
+			'id' => 'notification-color',
 			'type' => 'select',
-			'options' => $all_pages
+			'options' => array(
+				'lime' => 'Lime',
+				'forest' => 'Forest',
+				'red' => 'Red',
+				'blue' => 'Blue'
+			),
 		) );
 
-		// Set our CMB2 fields
-		$cmb->add_field( array(
-			'name' => 'My Account Page',
-			'id' => 'account-page',
-			'type' => 'select',
-			'options' => $all_pages
-		) );
+	    $cmb->add_field( array(
+	        'name' => 'Notification Bar Content',
+	        'id'   => 'notification-content',
+	        'desc' => 'Set the contents of the notification bar that can be displayed at the top of each page.',
+	        'type' => 'wysiwyg',
+	        'options' => array( 'textarea_rows' => 15 ),
+	        'default' => ""
+	    ) );
 
 	}
 

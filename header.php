@@ -30,6 +30,8 @@
   fjs.parentNode.insertBefore(js, fjs);
 }(document, 'script', 'facebook-jssdk'));</script>
 
+<?php notification_bar() ?>
+
 <header>
 
 	<div class="logo">

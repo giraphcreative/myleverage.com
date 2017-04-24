@@ -1,12 +1,16 @@
 
 .bg-lime { background-color: $lime; }
 .bg-forest { background-color: $forest; }
+.bg-blue { background-color: $blue; }
+.bg-red { background-color: $red; }
 .bg-grey-light { background-color: $grey-light; }
 .bg-grey { background-color: $grey; }
 .bg-grey-dark { background-color: $grey-dark; }
 
 .text-lime { color: $lime; }
 .text-forest { color: $forest; }
+.text-blue { color: $blue; }
+.text-red { color: $red; }
 .text-grey-light { color: $grey-light; }
 .text-grey { color: $grey; }
 .text-grey-dark { color: darken( $grey, 30% ); }
