@@ -35,6 +35,7 @@ include( "library/showcase.php" );
 include( "library/boxes.php" );
 include( "library/parallax.php" );
 include( "library/notification.php" );
+include( "library/shades.php" );
 
 
 // widgets

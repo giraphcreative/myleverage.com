@@ -849,6 +849,61 @@ header {
         .thumbs .thumb .thumb-buttons .button2 {
           float: right; } }
 
+.shades {
+  zoom: 1;
+  padding: 0 20px 30px; }
+  .shades:before, .shades:after {
+    content: "";
+    display: table; }
+  .shades, .shades:before, .shades:after {
+    clear: both; }
+  .shades .shade {
+    margin-bottom: 20px;
+    background: #e1e2e3; }
+    .shades .shade h5 {
+      font-family: "Avenir", sans-serif;
+      font-weight: normal;
+      font-size: 1.1em;
+      text-transform: uppercase;
+      color: white;
+      background: #007934;
+      padding: 15px 0;
+      text-align: center; }
+    .shades .shade .shade-inner {
+      padding: 20px;
+      background: url(../img/bg-shade.png) center center no-repeat;
+      background-size: cover; }
+      .shades .shade .shade-inner img {
+        margin: 10px auto;
+        display: block; }
+      @media only screen and (min-width: 600px) {
+        .shades .shade .shade-inner {
+          min-height: 250px; } }
+      .shades .shade .shade-inner p {
+        padding: 10px 0;
+        color: #939598;
+        text-align: center; }
+        @media only screen and (min-width: 1220px) {
+          .shades .shade .shade-inner p {
+            font-size: 1em; } }
+    @media only screen and (min-width: 600px) {
+      .shades .shade {
+        float: left;
+        width: 46%;
+        margin: 10px 2%; } }
+    @media only screen and (min-width: 768px) {
+      .shades .shade {
+        width: 31%;
+        margin: 10px 1%; } }
+    @media only screen and (min-width: 1024px) {
+      .shades .shade {
+        width: 23%;
+        margin: 10px 1%; } }
+    @media only screen and (min-width: 1220px) {
+      .shades .shade {
+        width: 18%;
+        margin: 10px 1%; } }
+
 .wrap {
   max-width: 1220px;
   margin: 0 auto; }

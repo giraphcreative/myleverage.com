@@ -30,7 +30,12 @@ if ( empty( $color ) ) $color = 'forest';
 		?>
 		</div>
 		<?php the_boxes(); ?>
+
 	</div><!-- #content -->
+
+	<div class="shades">
+		<?php the_shade_showcase() ?>
+	</div>
 
 	<?php the_parallax(); ?>
 

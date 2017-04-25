@@ -219,6 +219,59 @@ function page_metaboxes( $meta_boxes ) {
 
 
 
+
+
+
+    // thumb showcase metabox
+    $shade_showcase_metabox = new_cmb2_box( array(
+        'id' => 'shade_showcase_metabox',
+        'title' => 'The Shades',
+        'object_types' => array( 'page' ), // post type
+        'context' => 'normal',
+        'priority' => 'high',
+    ) );
+
+    $shade_showcase_metabox_group = $shade_showcase_metabox->add_field( array(
+        'id' => CMB_PREFIX . 'shade_showcase',
+        'type' => 'group',
+        'options' => array(
+            'add_button' => __('Add Shade', 'cmb2'),
+            'remove_button' => __('Remove Shade', 'cmb2'),
+            'group_title'   => __( 'Shade {#}', 'cmb' ), // since version 1.1.4, {#} gets replaced by row number
+            'sortable' => true, // beta
+        )
+    ) );
+
+    $shade_showcase_metabox->add_group_field( $shade_showcase_metabox_group, array(
+        'name' => 'Title',
+        'id'   => 'title',
+        'type' => 'text',
+        'sanitization_cb' => false
+    ) );
+
+    $shade_showcase_metabox->add_group_field( $shade_showcase_metabox_group, array(
+        'name' => 'Image/Video',
+        'id'   => 'image',
+        'type' => 'file',
+        'preview_size' => array( 200, 100 )
+    ) );
+
+    $shade_showcase_metabox->add_group_field( $shade_showcase_metabox_group, array(
+        'name' => 'Subtitle',
+        'id'   => 'subtitle',
+        'type' => 'wysiwyg',
+        'sanitization_cb' => false
+    ) );
+
+    $shade_showcase_metabox->add_group_field( $shade_showcase_metabox_group, array(
+        'name' => 'Link',
+        'id'   => 'link',
+        'type' => 'text',
+    ) );
+
+
+
+
     // event metabox
     $event_metabox = new_cmb2_box( array(
         'id' => 'event_metabox',
