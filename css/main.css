@@ -1283,8 +1283,8 @@ a.parallax-link:hover {
     -webkit-transition: text-indent 400ms ease-in-out;
             transition: text-indent 400ms ease-in-out;
     background-color: white;
-    padding: 4px 2px;
-    height: 168px;
+    padding: 6px 3px;
+    height: 172px;
     position: relative; }
     .partner-showcase .partner-list .partner {
       display: inline-block;
@@ -1298,7 +1298,7 @@ a.parallax-link:hover {
         top: 0;
         left: 0;
         bottom: 0;
-        width: 2px;
+        width: 3px;
         background: white; }
       .partner-showcase .partner-list .partner:after {
         content: '';
@@ -1306,7 +1306,7 @@ a.parallax-link:hover {
         top: 0;
         right: 0;
         bottom: 0;
-        width: 2px;
+        width: 3px;
         background: white; }
       @media only screen and (min-width: 480px) {
         .partner-showcase .partner-list .partner {
