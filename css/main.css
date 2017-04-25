@@ -1274,7 +1274,8 @@ a.parallax-link:hover {
 .partner-showcase {
   position: relative;
   padding: 20px 60px;
-  background: #e1e1e1; }
+  background: #e1e1e1;
+  margin-bottom: 10px; }
   .partner-showcase .partner-list {
     overflow: hidden;
     white-space: nowrap;
@@ -1282,7 +1283,7 @@ a.parallax-link:hover {
             transition: text-indent 400ms ease-in-out;
     background-color: white;
     padding: 4px 2px;
-    height: 128px; }
+    height: 148px; }
     .partner-showcase .partner-list .partner {
       display: inline-block;
       position: relative;
@@ -1322,11 +1323,11 @@ a.parallax-link:hover {
         opacity: .5;
         -webkit-transition: all 400ms ease-in-out;
                 transition: all 400ms ease-in-out;
-        height: 90px;
+        height: 100px;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
-        margin: 15px 25px; }
+        margin: 20px 25px; }
       .partner-showcase .partner-list .partner:hover a {
         opacity: 1; }
       .partner-showcase .partner-list .partner.bg-grey-light {

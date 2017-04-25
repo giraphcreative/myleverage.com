@@ -4,6 +4,7 @@
 	position: relative;
 	padding: 20px 60px;
 	background: $grey-light;
+	margin-bottom: 10px;
 
 	.partner-list {
 		overflow: hidden;
@@ -11,7 +12,7 @@
 		transition: text-indent 400ms ease-in-out;
 		background-color: white;
 		padding: 4px 2px;
-		height: 128px;
+		height: 148px;
 
 		.partner {
 			display: inline-block;
@@ -59,11 +60,11 @@
 				display: block;
 				opacity: .5;				
 				transition: all 400ms ease-in-out;
-				height: 90px;
+				height: 100px;
 				background-position: center center;
 				background-repeat: no-repeat;
 				background-size: contain;
-				margin: 15px 25px;
+				margin: 20px 25px;
 			}
 
 			&:hover a {
