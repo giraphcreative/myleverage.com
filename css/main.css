@@ -376,13 +376,13 @@ header {
           position: relative;
           float: left;
           width: 25%; } }
-      header nav ul.nav-menu > li.current_page_item > a, header nav ul.nav-menu > li.current-page-parent > a {
+      header nav ul.nav-menu > li.current_page_item > a, header nav ul.nav-menu > li.current-page-parent > a, header nav ul.nav-menu > li.current-menu-ancestor > a, header nav ul.nav-menu > li.current-page-ancestor > a {
         position: relative;
         padding: 22px 15px 14px; }
         @media only screen and (min-width: 600px) {
-          header nav ul.nav-menu > li.current_page_item > a, header nav ul.nav-menu > li.current-page-parent > a {
+          header nav ul.nav-menu > li.current_page_item > a, header nav ul.nav-menu > li.current-page-parent > a, header nav ul.nav-menu > li.current-menu-ancestor > a, header nav ul.nav-menu > li.current-page-ancestor > a {
             padding: 0 18px; } }
-        header nav ul.nav-menu > li.current_page_item > a:after, header nav ul.nav-menu > li.current-page-parent > a:after {
+        header nav ul.nav-menu > li.current_page_item > a:after, header nav ul.nav-menu > li.current-page-parent > a:after, header nav ul.nav-menu > li.current-menu-ancestor > a:after, header nav ul.nav-menu > li.current-page-ancestor > a:after {
           content: ' ';
           position: absolute;
           top: 0;

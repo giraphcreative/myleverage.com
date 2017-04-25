@@ -140,7 +140,7 @@ header {
 					width: 25%;
 				}
 
-				&.current_page_item > a, &.current-page-parent > a {
+				&.current_page_item > a, &.current-page-parent > a, &.current-menu-ancestor > a, &.current-page-ancestor > a {
 					position: relative;
 					padding: 22px 15px 14px;
 					
