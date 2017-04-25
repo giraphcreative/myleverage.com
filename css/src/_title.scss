@@ -28,10 +28,12 @@
 
 		@include respond-to( $bp-m ) {
 			width: 50px;
+			right: 30px;
 		}
 
 		@include respond-to( $bp-l ) {
 			width: 60px;
+			right: 40px;
 		}
 	}
 
@@ -44,7 +46,7 @@
 			border-bottom: 3px solid white;
 			text-transform: uppercase;
 			margin-bottom: -10px;
-			padding-right: 25px;
+			padding-right: 20px;
 
 			@include respond-to( $bp-s ) {
 				padding-left: 10px;
@@ -53,13 +55,14 @@
 
 			@include respond-to( $bp-m ) {
 				font-size: 35px;
-				padding-right: 65px;
+				padding-left: 20px;
+				padding-right: 80px;
 			}
 
 			@include respond-to( $bp-l ) {
 				font-size: 45px;
-				padding-left: 30px;
-				padding-right: 80px;
+				padding-left: 40px;
+				padding-right: 100px;
 			}
 		}
 	}
