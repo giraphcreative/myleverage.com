@@ -67,6 +67,7 @@ function the_partner_logos() {
 		'posts_per_page' => -1,
 		'post_type' => 'partner',
 		'orderby' => 'meta_value_num',
+		'order' =>'ASC',
 		'meta_key' => '_p_partner_sort'
 	);
 
@@ -75,12 +76,24 @@ function the_partner_logos() {
 
 	// loop through the partners
 	if ( $the_query->have_posts() ) { 
+		?>
+	<div class="partner-showcase">
+		<div class="partner-list">
+		<?php
 		while ( $the_query->have_posts() ) : $the_query->the_post();
+			$color = has_cmb_value( 'partner_color' ) ? get_cmb_value( 'partner_color' ) : 'grey-light';
+
 			// make sure there are logo and website set before displaying.
 			if ( has_cmb_value( 'partner_website' ) && has_cmb_value( 'partner_logo' ) ) {
-				?><a href="<?php show_cmb_value( 'partner_website' ); ?>" target="_blank"><img src="<?php show_cmb_value( 'partner_logo' ) ?>" class="bg-<?php show_cmb_value('partner_color') ?>"></a><?php 
+				?><div class="partner bg-<?php print $color ?>"><a href="<?php show_cmb_value( 'partner_website' ); ?>" target="_blank" style="background-image: url(<?php show_cmb_value( 'partner_logo' ) ?>);"></a></div><?php 
 			}
 		endwhile;
+		?>
+		</div>
+		<button class="partner-nav previous">Previous</button>
+		<button class="partner-nav next">Next</button>
+	</div>
+		<?php
 	}
 
 	// Restore global post data stomped by the_post().

@@ -138,6 +138,18 @@ function page_metaboxes( $meta_boxes ) {
         'default' => '99'
     ) );
 
+    $partner_info->add_field( array(
+        'name' => 'Color',
+        'id' => CMB_PREFIX . 'partner_color',
+        'type' => 'select',
+        'options' => array(
+            'grey-light' => 'Light Grey',
+            'grey-dark' => 'Dark Grey',
+            'lime' => 'Lime',
+            'forest' => 'Forest',
+        )
+    ) );
+
 
 
     // thumb showcase metabox

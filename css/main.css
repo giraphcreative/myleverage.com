@@ -1273,45 +1273,86 @@ a.parallax-link:hover {
 
 .partner-showcase {
   position: relative;
-  padding: 20px 50px;
-  background: #e1e1e1;
-  border-bottom: 10px solid white; }
+  padding: 20px 60px;
+  background: #e1e1e1; }
   .partner-showcase .partner-list {
     overflow: hidden;
     white-space: nowrap;
-    -webkit-transition: text-indent 700ms ease-in-out;
-            transition: text-indent 700ms ease-in-out; }
-    .partner-showcase .partner-list img {
+    -webkit-transition: text-indent 400ms ease-in-out;
+            transition: text-indent 400ms ease-in-out;
+    background-color: white;
+    padding: 4px 2px;
+    height: 128px; }
+    .partner-showcase .partner-list .partner {
       display: inline-block;
+      position: relative;
       width: 100%;
-      -webkit-transition: all 400ms ease-in-out;
-              transition: all 400ms ease-in-out;
-      opacity: 1; }
-      .partner-showcase .partner-list img:hover {
-        opacity: .8; }
+      -webkit-transition: 400ms all ease-in-out;
+              transition: 400ms all ease-in-out; }
+      .partner-showcase .partner-list .partner:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        width: 2px;
+        background: white; }
+      .partner-showcase .partner-list .partner:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 2px;
+        background: white; }
       @media only screen and (min-width: 480px) {
-        .partner-showcase .partner-list img {
+        .partner-showcase .partner-list .partner {
           width: 50%; } }
       @media only screen and (min-width: 768px) {
-        .partner-showcase .partner-list img {
+        .partner-showcase .partner-list .partner {
           width: 33.33%; } }
       @media only screen and (min-width: 1024px) {
-        .partner-showcase .partner-list img {
+        .partner-showcase .partner-list .partner {
           width: 25%; } }
       @media only screen and (min-width: 1220px) {
-        .partner-showcase .partner-list img {
+        .partner-showcase .partner-list .partner {
           width: 20%; } }
+      .partner-showcase .partner-list .partner a {
+        display: block;
+        opacity: .5;
+        -webkit-transition: all 400ms ease-in-out;
+                transition: all 400ms ease-in-out;
+        height: 90px;
+        background-position: center center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin: 15px 25px; }
+      .partner-showcase .partner-list .partner:hover a {
+        opacity: 1; }
+      .partner-showcase .partner-list .partner.bg-grey-light {
+        background-color: #c8c8c8; }
+        .partner-showcase .partner-list .partner.bg-grey-light:hover {
+          background-color: #d4d4d4; }
+      .partner-showcase .partner-list .partner.bg-grey-dark {
+        background-color: #939598; }
+        .partner-showcase .partner-list .partner.bg-grey-dark:hover {
+          background-color: #a8a9ac; }
+      .partner-showcase .partner-list .partner.bg-lime:hover {
+        background-color: #91c259; }
+      .partner-showcase .partner-list .partner.bg-forest:hover {
+        background-color: #006029; }
   .partner-showcase button.partner-nav {
     display: block;
-    background: white;
     position: absolute;
     bottom: 0;
     top: 0;
-    width: 50px;
+    width: 30px;
     text-indent: -500px;
     overflow: hidden;
     border: 0;
-    cursor: pointer; }
+    cursor: pointer;
+    -webkit-transition: 400ms all ease-in-out;
+            transition: 400ms all ease-in-out; }
     .partner-showcase button.partner-nav:disabled {
       opacity: .5;
       cursor: default; }
@@ -1320,11 +1361,13 @@ a.parallax-link:hover {
     .partner-showcase button.partner-nav:focus {
       outline: 0; }
     .partner-showcase button.partner-nav.previous {
-      left: 0;
-      background: url(../img/icon-arrow-left.png) center center no-repeat; }
+      left: 15px;
+      background: url(../img/icon-arrow-left.png) center center no-repeat;
+      background-size: contain; }
     .partner-showcase button.partner-nav.next {
-      right: 0;
-      background: url(../img/icon-arrow-right.png) center center no-repeat; }
+      right: 15px;
+      background: url(../img/icon-arrow-right.png) center center no-repeat;
+      background-size: contain; }
 
 .subscribe {
   padding: 20px;

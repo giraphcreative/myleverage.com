@@ -6,9 +6,7 @@ Template Name: Page - Home
 
 get_header();
 
-?>
-		
-	<?php the_showcase(); ?>
+	the_showcase(); ?>
 
 	<div class="wrap group">
 		<?php the_thumb_showcase(); ?>
@@ -24,18 +22,11 @@ get_header();
 			?>
 		</div>
 	</div>
+	<?php 
 
-	<?php the_parallax(); ?>
+	the_parallax(); 
 
-	<div class="partner-showcase">
-		<div class="partner-list">
-			<?php the_partner_logos(); ?>
-		</div>
-		<button class="partner-nav previous">Previous</button>
-		<button class="partner-nav next">Next</button>
-	</div>
-
-<?php 
+	the_partner_logos();
 
 get_footer();
 

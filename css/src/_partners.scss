@@ -2,23 +2,41 @@
 
 .partner-showcase {
 	position: relative;
-	padding: 20px 50px;
+	padding: 20px 60px;
 	background: $grey-light;
-	border-bottom: 10px solid white;
 
 	.partner-list {
 		overflow: hidden;
 		white-space: nowrap;
-		transition: text-indent 700ms ease-in-out;
-		
-		img {
+		transition: text-indent 400ms ease-in-out;
+		background-color: white;
+		padding: 4px 2px;
+		height: 128px;
+
+		.partner {
 			display: inline-block;
+			position: relative;
 			width: 100%;
-			transition: all 400ms ease-in-out;
-			opacity: 1;				
-			
-			&:hover {
-				opacity: .8;
+			transition: 400ms all ease-in-out;
+
+			&:before {
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				bottom: 0;
+				width: 2px;
+				background: white;
+			}
+
+			&:after {
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				bottom: 0;
+				width: 2px;
+				background: white;
 			}
 
 			@include respond-to( 480px ) {
@@ -36,20 +54,59 @@
 			@include respond-to( $bp-xl ) {
 				width: 20%;
 			}
+			
+			a {
+				display: block;
+				opacity: .5;				
+				transition: all 400ms ease-in-out;
+				height: 90px;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-size: contain;
+				margin: 15px 25px;
+			}
+
+			&:hover a {
+				opacity: 1;
+			}
+
+			&.bg-grey-light {
+				background-color: darken( $grey-light, 10% );
+
+				&:hover {
+					background-color: darken( $grey-light, 5% );
+				}
+			}
+
+			&.bg-grey-dark {
+				background-color: $grey;
+
+				&:hover {
+					background-color: lighten( $grey, 8% );
+				}
+			}
+
+			&.bg-lime:hover {
+				background-color: lighten( $lime, 8% );
+			}
+
+			&.bg-forest:hover {
+				background-color: darken( $forest, 5% );
+			}
 		}
 	}
 
 	button.partner-nav {
 		display: block;
-		background: white;
 		position: absolute;
 		bottom: 0;
 		top: 0;
-		width: 50px;
+		width: 30px;
 		text-indent: -500px;
 		overflow: hidden;
 		border: 0;
 		cursor: pointer;
+		transition: 400ms all ease-in-out;
 
 		&:disabled {
 			opacity: .5;
@@ -65,13 +122,15 @@
 		}
 
 		&.previous {
-			left: 0;
+			left: 15px;
 			background: url(../img/icon-arrow-left.png) center center no-repeat;
+			background-size: contain;
 		}
 
 		&.next {
-			right: 0;
+			right: 15px;
 			background: url(../img/icon-arrow-right.png) center center no-repeat;
+			background-size: contain;
 		}
 	}
 }
