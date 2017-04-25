@@ -1260,7 +1260,7 @@ a.parallax-link:hover {
     transition: text-indent 400ms ease-in-out;
     background-color: white;
     padding: 6px 3px;
-    height: 172px;
+    height: 152px;
     position: relative; }
     .partner-showcase .partner-list .partner {
       display: inline-block;
@@ -1299,7 +1299,7 @@ a.parallax-link:hover {
         display: block;
         opacity: .5;
         transition: all 400ms ease-in-out;
-        height: 110px;
+        height: 90px;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
