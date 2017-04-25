@@ -671,8 +671,9 @@ header {
         .showcase .slide .slide-content {
           left: -100%;
           bottom: 10%;
-          right: 0;
-          width: 80%;
+          right: auto;
+          width: auto;
+          max-width: 80%;
           -webkit-transition: 1300ms left ease-in-out;
                   transition: 1300ms left ease-in-out;
           border: 2px solid rgba(0, 121, 52, 0.5);
@@ -681,13 +682,13 @@ header {
       @media only screen and (min-width: 1024px) {
         .showcase .slide .slide-content {
           padding: 20px 30px;
-          width: 65%; } }
+          max-width: 65%; } }
       @media only screen and (min-width: 1220px) {
         .showcase .slide .slide-content {
-          width: 60%; } }
+          max-width: 60%; } }
       @media only screen and (min-width: 1440px) {
         .showcase .slide .slide-content {
-          width: 50%; } }
+          max-width: 50%; } }
     .showcase .slide h3 {
       font-family: "Avenir Demi", sans-serif;
       font-weight: normal;
@@ -695,6 +696,7 @@ header {
       color: #47494b;
       text-transform: uppercase;
       text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
       font-size: 18px;
       line-height: 25px; }
       @media only screen and (min-width: 480px) {
@@ -704,7 +706,8 @@ header {
       @media only screen and (min-width: 768px) {
         .showcase .slide h3 {
           font-size: 35px;
-          line-height: 45px; } }
+          line-height: 45px;
+          text-align: left; } }
       @media only screen and (min-width: 1220px) {
         .showcase .slide h3 {
           font-size: 43px;
@@ -714,16 +717,27 @@ header {
       color: #007934;
       padding-top: 5px;
       text-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+      text-align: center;
       font-size: 14px;
       line-height: 22px; }
       @media only screen and (min-width: 480px) {
         .showcase .slide p {
           font-size: 17px;
           line-height: 24px; } }
+      @media only screen and (min-width: 768px) {
+        .showcase .slide p {
+          text-align: left; } }
       @media only screen and (min-width: 800px) {
         .showcase .slide p {
           font-size: 20px;
           line-height: 30px; } }
+    .showcase .slide .learn-more {
+      font-size: 1em;
+      text-transform: uppercase;
+      color: #939598; }
+      @media only screen and (min-width: 768px) {
+        .showcase .slide .learn-more {
+          text-align: right; } }
   .showcase .showcase-nav {
     position: absolute;
     top: 15px;

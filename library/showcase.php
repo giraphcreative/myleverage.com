@@ -28,7 +28,7 @@ function the_showcase() {
 				<div class="slide-content">
 					<?php if ( !empty( $title ) ) { ?><h3><?php print $title ?></h3><?php } ?>
 					<?php if ( !empty( $subtitle ) ) { ?><p><?php print $subtitle ?></p><?php } ?>
-					<p>Learn more &gt;</p>
+					<p class="learn-more">Learn more &gt;</p>
 				</div>
 				<?php } ?>
 				<?php if ( !empty( $link ) ) { ?></a><?php } ?>

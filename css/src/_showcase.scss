@@ -78,8 +78,9 @@
 			@include respond-to( 768px ) {
 				left: -100%;
 				bottom: 10%;
-				right: 0;
-				width: 80%;
+				right: auto;
+				width: auto;
+				max-width: 80%;
 				transition: 1300ms left ease-in-out;
 				border: 2px solid rgba( $forest, .5 );
 				border-left: 0;
@@ -88,15 +89,15 @@
 
 			@include respond-to( 1024px ) {
 				padding: 20px 30px;
-				width: 65%;
+				max-width: 65%;
 			}
 
 			@include respond-to( 1220px ) {
-				width: 60%;
+				max-width: 60%;
 			}
 
 			@include respond-to( 1440px ) {
-				width: 50%;
+				max-width: 50%;
 			}
 		}
 		
@@ -106,6 +107,7 @@
 			color: $grey-dark;
 			text-transform: uppercase;
 			text-shadow: 0 0 20px rgba( black, .2 );
+			text-align: center;
 
 			font-size: 18px;
 			line-height: 25px;
@@ -118,6 +120,7 @@
 			@include respond-to( 768px ) {
 				font-size: 35px; 
 				line-height: 45px;
+				text-align: left;
 			}
 
 			@include respond-to( 1220px ) {
@@ -131,6 +134,7 @@
 			color: $forest;
 			padding-top: 5px;
 			text-shadow: 0 0 20px rgba( black, .2 );
+			text-align: center;
 
 			font-size: 14px;
 			line-height: 22px;
@@ -140,9 +144,23 @@
 				line-height: 24px;
 			}
 
+			@include respond-to( $bp-m ) {
+				text-align: left;
+			}
+
 			@include respond-to( 800px ) {
 				font-size: 20px; 
 				line-height: 30px;
+			}
+		}
+
+		.learn-more {
+			font-size: 1em;
+			text-transform: uppercase;
+			color: $grey;
+
+			@include respond-to( $bp-m ) {
+				text-align: right;
 			}
 		}
 
