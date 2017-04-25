@@ -81,7 +81,7 @@ jQuery(document).ready(function($){
 
 
 	// search and replace leverage so it's italicized.
-	$("header nav, .sidebar .widget, .showcase, .thumbs").each(function(){
+	$("header nav, .sidebar .widget, .slide-content, .thumbs").each(function(){
 		$(this).html( $(this).html().replace(/Leverage/g,'<em>LEVERAGE</em>') );
 	});
 
@@ -99,11 +99,6 @@ jQuery(document).ready(function($){
 		window.location.href = $( this ).attr( 'data-url' );
 	});
 
-
-	/*
-	var is_product_page = window.location.href.indexOf('/products/') > 0 ? true : false;
-	console.log( is_product_page );
-	*/
 
 	
 	// creep on links
