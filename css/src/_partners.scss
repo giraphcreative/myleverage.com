@@ -1,10 +1,19 @@
 
 
 .partner-showcase {
+	transition: 400ms all ease-in-out;
 	position: relative;
 	padding: 20px 60px;
 	background: $grey-light;
 	margin-bottom: 10px;
+
+	@include respond-to( $bp-m ) {
+		padding: 30px 60px;
+	}
+
+	@include respond-to( $bp-l ) {
+		padding: 40px 60px;
+	}
 
 	.partner-list {
 		overflow: hidden;

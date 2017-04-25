@@ -1250,10 +1250,17 @@ a.parallax-link:hover {
     font-size: .9em; }
 
 .partner-showcase {
+  transition: 400ms all ease-in-out;
   position: relative;
   padding: 20px 60px;
   background: #e1e1e1;
   margin-bottom: 10px; }
+  @media only screen and (min-width: 768px) {
+    .partner-showcase {
+      padding: 30px 60px; } }
+  @media only screen and (min-width: 1024px) {
+    .partner-showcase {
+      padding: 40px 60px; } }
   .partner-showcase .partner-list {
     overflow: hidden;
     white-space: nowrap;
