@@ -851,14 +851,20 @@ header {
 
 .shades {
   zoom: 1;
-  padding: 0 20px 30px; }
+  padding: 20px 0; }
   .shades:before, .shades:after {
     content: "";
     display: table; }
   .shades, .shades:before, .shades:after {
     clear: both; }
+  @media only screen and (min-width: 768px) {
+    .shades {
+      padding: 30px 0; } }
+  @media only screen and (min-width: 1024px) {
+    .shades {
+      padding: 40px 0; } }
   .shades .shade {
-    margin-bottom: 20px;
+    border-bottom: 2px solid white;
     background: #e1e2e3; }
     .shades .shade h5 {
       font-family: "Avenir", sans-serif;
@@ -876,7 +882,7 @@ header {
       .shades .shade .shade-inner img {
         margin: 10px auto;
         display: block; }
-      @media only screen and (min-width: 600px) {
+      @media only screen and (min-width: 480px) {
         .shades .shade .shade-inner {
           min-height: 250px; } }
       .shades .shade .shade-inner p {
@@ -886,23 +892,28 @@ header {
         @media only screen and (min-width: 1220px) {
           .shades .shade .shade-inner p {
             font-size: 1em; } }
-    @media only screen and (min-width: 600px) {
+    @media only screen and (min-width: 480px) {
       .shades .shade {
         float: left;
-        width: 46%;
-        margin: 10px 2%; } }
+        width: 50%;
+        border-right: 2px solid white; } }
     @media only screen and (min-width: 768px) {
       .shades .shade {
-        width: 31%;
-        margin: 10px 1%; } }
+        width: 33.3333%; } }
+    @media only screen and (min-width: 860px) {
+      .shades .shade {
+        width: 25%; } }
     @media only screen and (min-width: 1024px) {
       .shades .shade {
-        width: 23%;
-        margin: 10px 1%; } }
+        width: 20%; } }
     @media only screen and (min-width: 1220px) {
       .shades .shade {
-        width: 18%;
-        margin: 10px 1%; } }
+        width: 18%; } }
+    @media only screen and (min-width: 1220px) {
+      .shades .shade {
+        width: 16.6666%; }
+        .shades .shade h5 {
+          font-size: .8em; } }
 
 .wrap {
   max-width: 1220px;

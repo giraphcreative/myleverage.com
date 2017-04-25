@@ -13,7 +13,7 @@ function the_shade_showcase() {
 		foreach ( $shades as $shade ) {
 		    ?>
 	<div class="shade-container">
-		<?php if ( isset( $shade['link'] ) ) { ?><a href="<?php print $thumb['link'] ?>"><?php } ?>
+		<?php if ( isset( $shade['link'] ) ) { ?><a href="<?php print $shade['link'] ?>"><?php } ?>
 		<div class="shade">
 			<h5><?php print $shade['title'] ?></h5>
 	    	<div class="shade-inner">

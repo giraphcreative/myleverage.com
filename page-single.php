@@ -20,6 +20,7 @@ if ( empty( $color ) ) $color = 'forest';
 	</div>
 
 	<div id="content" class="wrap group content-wide <?php print $color ?>" role="main">
+		
 		<?php 
 		// do post loop
 		if ( have_posts() ) :
@@ -28,14 +29,14 @@ if ( empty( $color ) ) $color = 'forest';
 			endwhile;
 		endif;
 		?>
-		</div>
+
 		<?php the_boxes(); ?>
 
-	</div><!-- #content -->
+		<div class="group">
+			<?php the_shade_showcase(); ?>
+		</div>
 
-	<div class="shades">
-		<?php the_shade_showcase() ?>
-	</div>
+	</div><!-- #content -->
 
 	<?php the_parallax(); ?>
 

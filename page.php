@@ -32,7 +32,8 @@ if ( empty( $color ) ) $color = 'forest';
 		<div class="third sidebar">
 			<?php if ( !function_exists('dynamic_sidebar') || !dynamic_sidebar('sidebar-generic') ) : ?><!-- no sidebar --><?php endif; ?>
 		</div>
-		<div class="group shades">
+		
+		<div class="group">
 			<?php the_shade_showcase() ?>
 		</div>
 	</div><!-- #content -->

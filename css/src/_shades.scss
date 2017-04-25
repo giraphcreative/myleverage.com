@@ -2,10 +2,18 @@
 
 .shades {
 	@include clearfix;
-	padding: 0 20px 30px;
+	padding: 20px 0;
+
+	@include respond-to( $bp-m ) {
+		padding: 30px 0;
+	}
+
+	@include respond-to( $bp-l ) {
+		padding: 40px 0;
+	}
 	
 	.shade {
-		margin-bottom: 20px;
+		border-bottom: 2px solid white;
 		background: lighten( $grey, 30% );
 
 		h5 {
@@ -28,7 +36,7 @@
 				display: block;
 			}
 
-			@include respond-to( $bp-s ) {
+			@include respond-to( 480px ) {
 				min-height: 250px;
 			}
 
@@ -43,25 +51,34 @@
 			}
 		}
 
-		@include respond-to( $bp-s ) {
+		@include respond-to( 480px ) {
 			float: left;
-			width: 46%;
-			margin: 10px 2%;
+			width: 50%;
+			border-right: 2px solid white;
 		}
 
 		@include respond-to( $bp-m ) {
-			width: 31%;
-			margin: 10px 1%;
+			width: 33.3333%;
+		}
+
+		@include respond-to( 860px ) {
+			width: 25%;
 		}
 
 		@include respond-to( $bp-l ) {
-			width: 23%;
-			margin: 10px 1%;
+			width: 20%;
 		}
 
 		@include respond-to( $bp-xl ) {
 			width: 18%;
-			margin: 10px 1%;
+		}
+
+		@include respond-to( 1220px ) {
+			width: 16.6666%;
+
+			h5 {
+				font-size: .8em;
+			}
 		}
 	}
 }
