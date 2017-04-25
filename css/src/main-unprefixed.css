@@ -718,7 +718,8 @@ header {
     .showcase .slide .learn-more {
       font-size: 1em;
       text-transform: uppercase;
-      color: #939598; }
+      color: #939598;
+      letter-spacing: 1px; }
       @media only screen and (min-width: 768px) {
         .showcase .slide .learn-more {
           text-align: right; } }
@@ -1259,7 +1260,8 @@ a.parallax-link:hover {
     transition: text-indent 400ms ease-in-out;
     background-color: white;
     padding: 4px 2px;
-    height: 148px; }
+    height: 148px;
+    position: relative; }
     .partner-showcase .partner-list .partner {
       display: inline-block;
       position: relative;

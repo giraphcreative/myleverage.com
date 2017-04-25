@@ -158,6 +158,7 @@
 			font-size: 1em;
 			text-transform: uppercase;
 			color: $grey;
+			letter-spacing: 1px;
 
 			@include respond-to( $bp-m ) {
 				text-align: right;
