@@ -26,7 +26,7 @@ jQuery(document).ready(function($){
 		} else {
 			$( 'header' ).removeClass( 'scrolled' );
 		}
-	})
+	});
 
 
 	// remove height and width from images inside
@@ -81,8 +81,8 @@ jQuery(document).ready(function($){
 
 
 	// search and replace leverage so it's italicized.
-	$(".content label, .tribe-events-event-categories, .breadcrumbs, .search-results article, .third.news").each(function(){
-		$(this).html( $(this).html().replace(/LEVERAGE/g,'<em>LEVERAGE</em>') );
+	$("nav a, .content-wide, .content-two-column, .showcase").each(function(){
+		$(this).html( $(this).html().replace(/Leverage/g,'<em>LEVERAGE</em>') );
 	});
 
 
