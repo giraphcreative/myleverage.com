@@ -1299,11 +1299,11 @@ a.parallax-link:hover {
         display: block;
         opacity: .5;
         transition: all 400ms ease-in-out;
-        height: 120px;
+        height: 110px;
         background-position: center center;
         background-repeat: no-repeat;
         background-size: contain;
-        margin: 20px 25px; }
+        margin: 25px 25px; }
       .partner-showcase .partner-list .partner:hover a {
         opacity: 1; }
       .partner-showcase .partner-list .partner.bg-grey-light {
