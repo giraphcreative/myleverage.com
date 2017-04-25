@@ -98,7 +98,13 @@ jQuery(document).ready(function($){
 	$( 'button[data-url]' ).click(function(){
 		window.location.href = $( this ).attr( 'data-url' );
 	});
-	
+
+
+	/*
+	var is_product_page = window.location.href.indexOf('/products/') > 0 ? true : false;
+	console.log( is_product_page );
+	*/
+
 	
 	// creep on links
 	$(".wrap a").creep();

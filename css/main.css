@@ -447,11 +447,11 @@ header {
               float: none;
               display: block;
               width: auto; } }
-          header nav ul.nav-menu > li ul.sub-menu li.current_page_item > a, header nav ul.nav-menu > li ul.sub-menu li.current-page-parent > a {
+          header nav ul.nav-menu > li ul.sub-menu li.current_page_item > a, header nav ul.nav-menu > li ul.sub-menu li.current-page-parent > a, header nav ul.nav-menu > li ul.sub-menu li.current-menu-ancestor > a, header nav ul.nav-menu > li ul.sub-menu li.current-page-ancestor > a {
             border-left: 8px solid #797b7f;
             padding-left: 7px; }
             @media only screen and (min-width: 600px) {
-              header nav ul.nav-menu > li ul.sub-menu li.current_page_item > a, header nav ul.nav-menu > li ul.sub-menu li.current-page-parent > a {
+              header nav ul.nav-menu > li ul.sub-menu li.current_page_item > a, header nav ul.nav-menu > li ul.sub-menu li.current-page-parent > a, header nav ul.nav-menu > li ul.sub-menu li.current-menu-ancestor > a, header nav ul.nav-menu > li ul.sub-menu li.current-page-ancestor > a {
                 padding-left: 10px; } }
           header nav ul.nav-menu > li ul.sub-menu li.menu-item-has-children > a:before {
             content: '>';
