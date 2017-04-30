@@ -12,7 +12,7 @@ jQuery(document).ready(function($){
 		fluid_images = $( '.content-area img, .site-content img' ),
 		sidebar = $( '.sidebar' ),
 		large_title = $( '.large-title' ),
-		left_menu = $( '.sidebar .menu' ),
+		left_menu = $( '.sidebar ul.menu' ),
 		twitter_widget = $( '.widget_multi_twitter' );
 
 
@@ -57,14 +57,15 @@ jQuery(document).ready(function($){
 
 
 	// left menu toggling.
-	left_menu.find( 'li.menu-item-has-children > a' ).click(function( event ){
+	$( '.sidebar ul.menu a' ).click(function( e ){
 		var menu_item = $( this ).parent( 'li' );
-		event.preventDefault();
+		console.log( 'gets here' );
+		console.log( menu_item );
+		e.preventDefault();
 		if ( !menu_item.hasClass( 'open' ) ) {
-			event.preventDefault();
 			menu_item.addClass( 'open' );
 		} else {
-			location.href = $( this ).attr( 'href' );
+			// location.href = $( this ).attr( 'href' );
 		}
 	});
 

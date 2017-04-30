@@ -895,25 +895,19 @@ header {
     @media only screen and (min-width: 480px) {
       .shades .shade {
         float: left;
-        width: 50%;
+        width: 48%;
+        margin: 5px 1%;
         border-right: 2px solid white; } }
     @media only screen and (min-width: 768px) {
       .shades .shade {
-        width: 33.3333%; } }
-    @media only screen and (min-width: 860px) {
-      .shades .shade {
-        width: 25%; } }
+        width: 32.3333%;
+        margin: 5px 0.5%; } }
     @media only screen and (min-width: 1024px) {
       .shades .shade {
-        width: 20%; } }
+        width: 24%; } }
     @media only screen and (min-width: 1220px) {
       .shades .shade {
-        width: 18%; } }
-    @media only screen and (min-width: 1220px) {
-      .shades .shade {
-        width: 16.6666%; }
-        .shades .shade h5 {
-          font-size: .8em; } }
+        width: 19%; } }
 
 .wrap {
   max-width: 1220px;
