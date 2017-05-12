@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<!--[if IE ]><html class="ie-legacy" <?php language_attributes(); ?>><![endif]-->
-<!--[if !IE ]><!--><html <?php language_attributes(); ?>><!--<![endif]-->
+<!--[if IE]><html class="ie-legacy" <?php language_attributes(); ?>><![endif]-->
+<!--[if !(IE)]><!--><html <?php language_attributes(); ?>><!--<![endif]-->
 <head>
 <meta charset="<?php bloginfo( 'charset' ); ?>" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
