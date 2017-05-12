@@ -26,6 +26,7 @@ get_header();
 
 	<div class="wrap group content-two-column" role="main">
 		<div class="two-third post-list">
+			<div class="box even">
 			<?php 
 
 			if ( have_posts() ) : 
@@ -55,7 +56,7 @@ get_header();
 				<?php
 			endif;
 			?>
-
+			</div>
 		</div>	
 		<div class="third sidebar">
 			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('search-sidebar')) : ?>[blog-sidebar]<?php endif; ?>

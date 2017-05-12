@@ -15,7 +15,7 @@ if ( empty( $color ) ) $color = 'forest';
 		<?php the_thumb_showcase(); ?>
 	</div>
 
-	<div id="content" class="wrap group content-two-column <?php print $color ?>" role="main">
+	<div id="content" class="wrap group content-two-column" role="main">
 		<div class="two-third page">
 			<div class="box even">
 			<?php 
