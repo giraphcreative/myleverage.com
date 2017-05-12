@@ -7,20 +7,11 @@ get_header();
 
 ?>
 	<?php if ( is_search() ) { ?>
-	<div class="large-title bg-forest">
+	<div class="large-title bg-lime">
 		<div class="wrap">
-			<div class="large-title-icon bg-forest" style="background-image: url(/wp-content/themes/leverage/img/hero-search.jpg);">
-				<div class="hex1"></div>
-				<div class="hex2"></div>
-			</div>
 			<div class="large-title-text">
 				<h1>Search: <?php print strip_tags( $_REQUEST['s'] ); ?></h1>
 			</div>
-		</div>
-	</div>
-	<div class="showcase">
-		<div class="slide visible">
-			<img src="/wp-content/themes/leverage/img/hero-search.jpg">
 		</div>
 	</div>
 	<?php } else { ?>
@@ -35,7 +26,7 @@ get_header();
 
 	<div class="wrap group content-two-column" role="main">
 		<div class="quarter sidebar">
-			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('blog-sidebar')) : ?>[blog-sidebar]<?php endif; ?>
+			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('search-sidebar')) : ?>[blog-sidebar]<?php endif; ?>
 		</div>
 		<div class="three-quarter post-list">
 			<?php 
