@@ -869,7 +869,7 @@ header {
     .shades .shade h5 {
       font-family: "Avenir", sans-serif;
       font-weight: normal;
-      font-size: 1.1em;
+      font-size: 1em;
       text-transform: uppercase;
       color: white;
       background: #007934;
@@ -888,16 +888,16 @@ header {
       .shades .shade .shade-inner p {
         padding: 10px 0;
         color: #939598;
-        text-align: center; }
-        @media only screen and (min-width: 1220px) {
-          .shades .shade .shade-inner p {
-            font-size: 1em; } }
+        text-align: center;
+        font-size: 0.9em; }
     @media only screen and (min-width: 480px) {
       .shades .shade {
         float: left;
         width: 48%;
         margin: 5px 1%;
-        border-right: 2px solid white; } }
+        border-right: 2px solid white; }
+        .shades .shade:nth-child(3), .shades .shade:nth-child(5), .shades .shade:nth-child(7), .shades .shade:nth-child(9), .shades .shade:nth-child(11), .shades .shade:nth-child(13), .shades .shade:nth-child(15), .shades .shade:nth-child(17), .shades .shade:nth-child(19), .shades .shade:nth-child(21), .shades .shade:nth-child(23), .shades .shade:nth-child(25), .shades .shade:nth-child(27), .shades .shade:nth-child(29), .shades .shade:nth-child(31), .shades .shade:nth-child(33), .shades .shade:nth-child(35) {
+          clear: left; } }
     @media only screen and (min-width: 768px) {
       .shades .shade {
         width: 32.3333%;

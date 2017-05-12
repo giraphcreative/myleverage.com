@@ -14,7 +14,7 @@ get_header();
 				<div class="hex2"></div>
 			</div>
 			<div class="large-title-text">
-				<h1>Search: <?php print $_REQUEST['s']; ?></h1>
+				<h1>Search: <?php print strip_tags( $_REQUEST['s'] ); ?></h1>
 			</div>
 		</div>
 	</div>
