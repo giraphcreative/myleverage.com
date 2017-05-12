@@ -25,10 +25,7 @@ get_header();
 	<?php } ?>
 
 	<div class="wrap group content-two-column" role="main">
-		<div class="quarter sidebar">
-			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('search-sidebar')) : ?>[blog-sidebar]<?php endif; ?>
-		</div>
-		<div class="three-quarter post-list">
+		<div class="two-third post-list">
 			<?php 
 
 			if ( have_posts() ) : 
@@ -60,6 +57,9 @@ get_header();
 			?>
 
 		</div>	
+		<div class="third sidebar">
+			<?php if (!function_exists('dynamic_sidebar') || !dynamic_sidebar('search-sidebar')) : ?>[blog-sidebar]<?php endif; ?>
+		</div>
 	</div><!-- #primary -->
 
 
