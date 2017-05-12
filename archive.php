@@ -6,13 +6,8 @@
 get_header(); 
 
 ?>
-	<div class="large-title bg-<?php show_cmb_value( 'large-title-color' ) ?>">
+	<div class="large-title bg-lime">
 		<div class="wrap">
-			<?php if ( has_cmb_value( 'large-title-icon' ) ) { ?>
-			<div class="large-title-icon bg-<?php show_cmb_value( 'large-title-color' ) ?>">
-				<img src="<?php show_cmb_value( 'large-title-icon' ) ?>">
-			</div>
-			<?php } ?>
 			<div class="large-title-text">
 				<h1><?php single_cat_title(); ?></h1>
 			</div>
@@ -21,8 +16,8 @@ get_header();
 
 	<section id="primary" class="content-area wrap group" role="main">
 
-		<?php if ( have_posts() ) : ?>
-		<?php
+		<?php 
+		if ( have_posts() ) :
 		
 			// Start the Loop.
 			while ( have_posts() ) : the_post(); 
