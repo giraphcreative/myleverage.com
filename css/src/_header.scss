@@ -337,6 +337,10 @@ header {
 			@include respond-to( 768px ) {
 				border: 2px solid $grey;
 			}
+
+			@include ie10() {
+				height: 35px;
+			}
 		}
 
 		input[type=submit] {

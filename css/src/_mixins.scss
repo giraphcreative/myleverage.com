@@ -6,6 +6,20 @@
     @media only screen and (min-width: $breakpoint) { @content; }
 }
 
+// all IE 8 and below
+@mixin ie8() {
+	@media \0screen\,screen\9 { @content; }
+}
+
+// all IE 10 and above
+@mixin ie10() {
+	@media all and (-ms-high-contrast: none), (-ms-high-contrast: active) { @content; }
+}
+
+// edge browsers
+@mixin edge() {
+	@supports (-ms-accelerator:true) { @content; }
+}
 
 // Clearfix mixin
 @mixin clearfix {

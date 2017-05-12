@@ -515,6 +515,9 @@ header {
       @media only screen and (min-width: 768px) {
         header .search input[type=text] {
           border: 2px solid #939598; } }
+      @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
+        header .search input[type=text] {
+          height: 35px; } }
     header .search input[type=submit] {
       position: absolute;
       top: 50%;
@@ -901,13 +904,25 @@ header {
     @media only screen and (min-width: 768px) {
       .shades .shade {
         width: 32.3333%;
-        margin: 5px 0.5%; } }
+        margin: 5px 0.5%; }
+        .shades .shade:nth-child(3), .shades .shade:nth-child(5), .shades .shade:nth-child(7), .shades .shade:nth-child(9), .shades .shade:nth-child(11), .shades .shade:nth-child(13), .shades .shade:nth-child(15), .shades .shade:nth-child(17), .shades .shade:nth-child(19), .shades .shade:nth-child(21), .shades .shade:nth-child(23), .shades .shade:nth-child(25), .shades .shade:nth-child(27), .shades .shade:nth-child(29), .shades .shade:nth-child(31), .shades .shade:nth-child(33), .shades .shade:nth-child(35) {
+          clear: none; }
+        .shades .shade:nth-child(4), .shades .shade:nth-child(7), .shades .shade:nth-child(10), .shades .shade:nth-child(13), .shades .shade:nth-child(15), .shades .shade:nth-child(18), .shades .shade:nth-child(21), .shades .shade:nth-child(24), .shades .shade:nth-child(27), .shades .shade:nth-child(30), .shades .shade:nth-child(33), .shades .shade:nth-child(36), .shades .shade:nth-child(39) {
+          clear: left; } }
     @media only screen and (min-width: 1024px) {
       .shades .shade {
-        width: 24%; } }
+        width: 24%; }
+        .shades .shade:nth-child(4), .shades .shade:nth-child(7), .shades .shade:nth-child(10), .shades .shade:nth-child(13), .shades .shade:nth-child(15), .shades .shade:nth-child(18), .shades .shade:nth-child(21), .shades .shade:nth-child(24), .shades .shade:nth-child(27), .shades .shade:nth-child(30), .shades .shade:nth-child(33), .shades .shade:nth-child(36), .shades .shade:nth-child(39) {
+          clear: none; }
+        .shades .shade:nth-child(5), .shades .shade:nth-child(9), .shades .shade:nth-child(13), .shades .shade:nth-child(17), .shades .shade:nth-child(21), .shades .shade:nth-child(25), .shades .shade:nth-child(29), .shades .shade:nth-child(33), .shades .shade:nth-child(37), .shades .shade:nth-child(41) {
+          clear: left; } }
     @media only screen and (min-width: 1220px) {
       .shades .shade {
-        width: 19%; } }
+        width: 19%; }
+        .shades .shade:nth-child(5), .shades .shade:nth-child(9), .shades .shade:nth-child(13), .shades .shade:nth-child(17), .shades .shade:nth-child(21), .shades .shade:nth-child(25), .shades .shade:nth-child(29), .shades .shade:nth-child(33), .shades .shade:nth-child(37), .shades .shade:nth-child(41) {
+          clear: none; }
+        .shades .shade:nth-child(6), .shades .shade:nth-child(11), .shades .shade:nth-child(16), .shades .shade:nth-child(21), .shades .shade:nth-child(26), .shades .shade:nth-child(31), .shades .shade:nth-child(36), .shades .shade:nth-child(41) {
+          clear: left; } }
 
 .wrap {
   max-width: 1220px;
