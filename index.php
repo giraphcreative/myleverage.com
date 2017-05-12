@@ -50,9 +50,7 @@ get_header();
 			else :
 				// If no content, include the "No posts found" template.
 				?>
-			<article>
 			<p>No search results were found matching your criteria. Please try again or <a href="/about/contact">get in touch with us</a> if you feel you reached this page in error.</p>
-			</article>
 				<?php
 			endif;
 			?>
