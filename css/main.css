@@ -529,7 +529,7 @@ header {
           border: 2px solid #939598; } }
       @media all and (-ms-high-contrast: none), (-ms-high-contrast: active) {
         header .search input[type=text] {
-          height: 50px; } }
+          height: 40px; } }
     header .search input[type=submit] {
       position: absolute;
       top: 50%;
