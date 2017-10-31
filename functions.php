@@ -5,6 +5,14 @@
 define( "CMB_PREFIX", "_p_" );
 
 
+$server = $_SERVER['HTTP_HOST'];
+if ( $server == 'lev.giraphprojects.com' ) {
+    wp_redirect( 'http://myleverage.com' . $_SERVER['REQUEST_URI'] );
+    exit;
+}
+
+
+
 // include some theme-related things
 include( "library/menus.php" );
 include( "library/scripts.php" );
