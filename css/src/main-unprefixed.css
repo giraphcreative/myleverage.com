@@ -1502,6 +1502,9 @@ footer {
     text-align: center; }
     footer .social img {
       margin-right: 3%; }
+  footer .links .half ul {
+    list-style-type: none;
+    padding: 0; }
 
 /* Magnific Popup CSS */
 .mfp-bg {
