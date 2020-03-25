@@ -30,12 +30,18 @@ if ( empty( $color ) ) $color = 'forest';
 			<h3>Connect With Us</h3>
 			<div class="sub-column first">
 				3692 Coolidge Court<br />
-				Tallahassee, Florida 32311
+				Tallahassee, Florida 32311<br>
+				6705 Sugarloaf Pky, #200<br>
+				Duluth, Georgia
 			</div>
-			<div class="sub-column">
+			<div class="sub-column text-center">
 				22 Inverness Cntr Pky, #200<br />
 				Birmingham, Alabama<br />
 				866.231.0545</p>
+			</div>
+			<div class="sub-column">
+				6705 Sugarloaf Pky, #200<br>
+				Duluth, Georgia
 			</div>
 			<div class="social">
 				<a href="https://twitter.com/LeagueofSECUs" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-twitter.png"></a><a href="https://www.facebook.com/LeagueofSoutheasternCreditUnions?ref=hl" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png"></a><a href="https://www.linkedin.com/company/1007350?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1428961608364%2Ctas%3Amy+leverage" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-linkedin.png"></a><a href="https://www.youtube.com/user/LeagueofSECUs" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-youtube.png"></a>

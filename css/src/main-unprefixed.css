@@ -1389,7 +1389,7 @@ a.parallax-link:hover {
       .partner-showcase .partner-list .partner:hover a {
         opacity: 1; }
       .partner-showcase .partner-list .partner.bg-grey-light {
-        background-color: #c8c8c8; }
+        background-color: #c8c7c7; }
         .partner-showcase .partner-list .partner.bg-grey-light:hover {
           background-color: #d4d4d4; }
       .partner-showcase .partner-list .partner.bg-grey-dark {
@@ -1490,7 +1490,7 @@ footer {
       @media only screen and (min-width: 1024px) {
         footer .column .sub-column {
           float: left;
-          width: 50%;
+          width: 32%;
           padding: 0 0 0 10px;
           text-align: left; }
           footer .column .sub-column.first {
@@ -1693,7 +1693,7 @@ button::-moz-focus-inner {
   padding: 0;
   width: 90px;
   height: 110px;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 .mfp-arrow:active {
   margin-top: -54px; }

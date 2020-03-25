@@ -169,8 +169,7 @@ strong em, em strong, h1 em, h2 em, h3 em, h4 em, h5 em, h6 em {
 a {
   color: #007934;
   text-decoration: none;
-  -webkit-transition: opacity 400ms ease-in-out;
-          transition: opacity 400ms ease-in-out; }
+  transition: opacity 400ms ease-in-out; }
   a:hover {
     text-decoration: underline; }
 
@@ -222,8 +221,7 @@ input, textarea {
   padding: 8px 27px 5px 10px;
   margin: 0 5px 5px 0;
   font-size: .95em;
-  -webkit-transition: background-color 400ms ease-in-out;
-          transition: background-color 400ms ease-in-out;
+  transition: background-color 400ms ease-in-out;
   color: #47494b;
   cursor: pointer; }
   @media only screen and (min-width: 1024px) {
@@ -242,8 +240,7 @@ input, textarea {
   padding: 8px 27px 5px 10px;
   margin: 7px 5px 7px 0;
   font-size: .95em;
-  -webkit-transition: all 400ms ease-in-out;
-          transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
   color: white;
   display: inline-block;
   cursor: pointer; }
@@ -267,8 +264,7 @@ header {
   position: relative;
   padding: 30px 0 0;
   background: #939598;
-  -webkit-transition: 400ms all ease-in-out;
-          transition: 400ms all ease-in-out; }
+  transition: 400ms all ease-in-out; }
   header:after {
     content: " ";
     position: absolute;
@@ -277,8 +273,7 @@ header {
     right: 0;
     height: 10px;
     background-color: white;
-    -webkit-transition: 400ms all ease-in-out;
-            transition: 400ms all ease-in-out; }
+    transition: 400ms all ease-in-out; }
   @media only screen and (min-width: 600px) {
     header {
       height: 140px; } }
@@ -299,8 +294,7 @@ header {
     background: url(../img/logo.png) center center no-repeat;
     background-size: contain;
     height: 70px;
-    -webkit-transition: 400ms all ease-in-out;
-            transition: 400ms all ease-in-out; }
+    transition: 400ms all ease-in-out; }
     header .logo a {
       position: absolute;
       top: 0;
@@ -342,8 +336,7 @@ header {
         display: none; } }
   header nav {
     border-top: 1px solid rgba(255, 255, 255, 0.4);
-    -webkit-transition: 400ms all ease-in-out;
-            transition: 400ms all ease-in-out;
+    transition: 400ms all ease-in-out;
     display: none; }
     @media only screen and (min-width: 600px) {
       header nav {
@@ -402,8 +395,7 @@ header {
         text-decoration: none;
         text-transform: uppercase;
         text-align: center;
-        -webkit-transition: 400ms all ease-in-out;
-                transition: 400ms all ease-in-out; }
+        transition: 400ms all ease-in-out; }
         @media only screen and (min-width: 600px) {
           header nav ul.nav-menu > li a {
             line-height: 60px;
@@ -422,8 +414,7 @@ header {
       header nav ul.nav-menu > li ul.sub-menu {
         display: none;
         margin-bottom: 3px;
-        -webkit-transition: 400ms all ease-in-out;
-                transition: 400ms all ease-in-out; }
+        transition: 400ms all ease-in-out; }
         @media only screen and (min-width: 600px) {
           header nav ul.nav-menu > li ul.sub-menu {
             position: absolute;
@@ -461,8 +452,7 @@ header {
             margin-top: -8px;
             height: 10px;
             width: 10px;
-            -webkit-transform: scale(0.6, 1.5);
-                    transform: scale(0.6, 1.5); }
+            transform: scale(0.6, 1.5); }
           header nav ul.nav-menu > li ul.sub-menu li a {
             padding: 7px 15px;
             display: block;
@@ -471,8 +461,7 @@ header {
             line-height: 1.2em;
             text-align: center;
             opacity: .95;
-            -webkit-transition: 300ms all ease-in-out;
-                    transition: 300ms all ease-in-out;
+            transition: 300ms all ease-in-out;
             background: #a0a2a4; }
             @media only screen and (min-width: 600px) {
               header nav ul.nav-menu > li ul.sub-menu li a {
@@ -496,8 +485,7 @@ header {
     position: relative;
     padding: 10px;
     background: #7DB241;
-    -webkit-transition: 400ms all ease-in-out;
-            transition: 400ms all ease-in-out; }
+    transition: 400ms all ease-in-out; }
     @media only screen and (min-width: 600px) {
       header .search {
         position: absolute;
@@ -617,8 +605,7 @@ header {
   overflow: hidden;
   background: #939598;
   height: 0;
-  -webkit-transition: height 400ms ease-in-out;
-          transition: height 400ms ease-in-out;
+  transition: height 400ms ease-in-out;
   z-index: 0;
   border-bottom: 10px solid #7DB241; }
   @media only screen and (min-width: 768px) {
@@ -630,8 +617,7 @@ header {
     left: 0;
     right: 0;
     opacity: 0;
-    -webkit-transition: 700ms opacity ease-in-out;
-            transition: 700ms opacity ease-in-out;
+    transition: 700ms opacity ease-in-out;
     pointer-events: none; }
     .showcase .slide.visible {
       opacity: 1;
@@ -661,8 +647,7 @@ header {
       bottom: -100%;
       left: 0;
       right: 0;
-      -webkit-transition: 1000ms bottom ease-in-out;
-              transition: 1000ms bottom ease-in-out;
+      transition: 1000ms bottom ease-in-out;
       background: rgba(255, 255, 255, 0.8);
       border-top: 2px solid rgba(0, 121, 52, 0.5);
       padding: 10px 20px;
@@ -677,8 +662,7 @@ header {
           right: auto;
           width: auto;
           max-width: 80%;
-          -webkit-transition: 1300ms left ease-in-out;
-                  transition: 1300ms left ease-in-out;
+          transition: 1300ms left ease-in-out;
           border: 2px solid rgba(0, 121, 52, 0.5);
           border-left: 0;
           padding: 15px 20px; } }
@@ -766,8 +750,7 @@ header {
       margin: 0 2px;
       border: 2px solid rgba(0, 121, 52, 0.3);
       cursor: pointer;
-      -webkit-transition: 300ms all ease-in-out;
-              transition: 300ms all ease-in-out; }
+      transition: 300ms all ease-in-out; }
       .showcase .showcase-nav a.current {
         background: rgba(255, 255, 255, 0.9); }
       .showcase .showcase-nav a:hover {
@@ -854,8 +837,7 @@ header {
         margin: 0 5px 5px 0;
         font-size: .95em;
         background: transparent url(../img/thumb-button-arrow.png) right center no-repeat;
-        -webkit-transition: background-color 400ms ease-in-out;
-                transition: background-color 400ms ease-in-out;
+        transition: background-color 400ms ease-in-out;
         color: #47494b; }
         .thumbs .thumb .thumb-buttons a:hover {
           background-color: white; }
@@ -1104,8 +1086,7 @@ a.parallax-link:hover {
   .parallax button {
     background-color: transparent;
     border: 2px solid white;
-    -webkit-transition: 300ms background-color ease-in-out;
-            transition: 300ms background-color ease-in-out;
+    transition: 300ms background-color ease-in-out;
     color: white;
     font-family: "Avenir", sans-serif;
     font-weight: normal;
@@ -1251,8 +1232,7 @@ a.parallax-link:hover {
     color: white;
     float: right;
     margin: 0 0 0 15px;
-    -webkit-transition: 300ms opacity ease-in-out;
-            transition: 300ms opacity ease-in-out;
+    transition: 300ms opacity ease-in-out;
     opacity: .5; }
     .notification-bar .close:hover {
       opacity: 1;
@@ -1277,8 +1257,7 @@ a.parallax-link:hover {
   .sidebar .widget.widget_nav_menu ul li a {
     display: block;
     padding: 4px 8px 1px;
-    -webkit-transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
-            transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
+    transition: background-color 300ms ease-in-out, color 300ms ease-in-out;
     color: #47494b;
     text-decoration: none;
     position: relative; }
@@ -1297,13 +1276,11 @@ a.parallax-link:hover {
     width: 20px;
     background: url(../img/icon-arrow-down-small.png) center center no-repeat;
     background-size: contain;
-    -webkit-transition: -webkit-transform 500ms ease-in-out;
-            transition: transform 500ms ease-in-out; }
+    transition: transform 500ms ease-in-out; }
   .sidebar .widget.widget_nav_menu ul li.menu-item-has-children.open > ul {
     display: block; }
   .sidebar .widget.widget_nav_menu ul li.menu-item-has-children.open > a:before {
-    -webkit-transform: rotate(180deg);
-            transform: rotate(180deg); }
+    transform: rotate(180deg); }
   .sidebar .widget.widget_nav_menu ul li.current_page_item a {
     background-color: #e1e1e1; }
   .sidebar .widget.widget_nav_menu ul li ul li a {
@@ -1348,8 +1325,7 @@ a.parallax-link:hover {
     font-size: .9em; }
 
 .partner-showcase {
-  -webkit-transition: 400ms all ease-in-out;
-          transition: 400ms all ease-in-out;
+  transition: 400ms all ease-in-out;
   position: relative;
   padding: 20px 60px;
   background: #e1e1e1;
@@ -1363,8 +1339,7 @@ a.parallax-link:hover {
   .partner-showcase .partner-list {
     overflow: hidden;
     white-space: nowrap;
-    -webkit-transition: text-indent 400ms ease-in-out;
-            transition: text-indent 400ms ease-in-out;
+    transition: text-indent 400ms ease-in-out;
     background-color: white;
     padding: 6px 3px;
     height: 152px;
@@ -1373,8 +1348,7 @@ a.parallax-link:hover {
       display: inline-block;
       position: relative;
       width: 100%;
-      -webkit-transition: 400ms all ease-in-out;
-              transition: 400ms all ease-in-out; }
+      transition: 400ms all ease-in-out; }
       .partner-showcase .partner-list .partner:before {
         content: '';
         position: absolute;
@@ -1406,8 +1380,7 @@ a.parallax-link:hover {
       .partner-showcase .partner-list .partner a {
         display: block;
         opacity: .5;
-        -webkit-transition: all 400ms ease-in-out;
-                transition: all 400ms ease-in-out;
+        transition: all 400ms ease-in-out;
         height: 90px;
         background-position: center center;
         background-repeat: no-repeat;
@@ -1416,7 +1389,7 @@ a.parallax-link:hover {
       .partner-showcase .partner-list .partner:hover a {
         opacity: 1; }
       .partner-showcase .partner-list .partner.bg-grey-light {
-        background-color: #c8c8c8; }
+        background-color: #c8c7c7; }
         .partner-showcase .partner-list .partner.bg-grey-light:hover {
           background-color: #d4d4d4; }
       .partner-showcase .partner-list .partner.bg-grey-dark {
@@ -1437,8 +1410,7 @@ a.parallax-link:hover {
     overflow: hidden;
     border: 0;
     cursor: pointer;
-    -webkit-transition: 400ms all ease-in-out;
-            transition: 400ms all ease-in-out; }
+    transition: 400ms all ease-in-out; }
     .partner-showcase button.partner-nav:disabled {
       opacity: .5;
       cursor: default; }
@@ -1518,7 +1490,7 @@ footer {
       @media only screen and (min-width: 1024px) {
         footer .column .sub-column {
           float: left;
-          width: 50%;
+          width: 32%;
           padding: 0 0 0 10px;
           text-align: left; }
           footer .column .sub-column.first {
@@ -1602,12 +1574,10 @@ footer {
   cursor: progress; }
 
 .mfp-zoom-out-cur, .mfp-zoom-out-cur .mfp-image-holder .mfp-close {
-  cursor: -webkit-zoom-out;
   cursor: zoom-out; }
 
 .mfp-zoom {
   cursor: pointer;
-  cursor: -webkit-zoom-in;
   cursor: zoom-in; }
 
 .mfp-auto-cursor .mfp-content {
@@ -1717,7 +1687,7 @@ button::-moz-focus-inner {
   padding: 0;
   width: 90px;
   height: 110px;
-  -webkit-tap-highlight-color: transparent; }
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0); }
 
 .mfp-arrow:active {
   margin-top: -54px; }
@@ -1897,13 +1867,10 @@ img.mfp-img {
 
 @media all and (max-width: 900px) {
   .mfp-arrow {
-    -webkit-transform: scale(0.75);
     transform: scale(0.75); }
   .mfp-arrow-left {
-    -webkit-transform-origin: 0;
     transform-origin: 0; }
   .mfp-arrow-right {
-    -webkit-transform-origin: 100%;
     transform-origin: 100%; }
   .mfp-container {
     padding-left: 6px;
