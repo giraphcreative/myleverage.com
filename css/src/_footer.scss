@@ -94,11 +94,13 @@ footer {
 		}
 	}
 
-	.links .half {
+	.half {
 		@include respond-to( 768px ) {
 			padding: 20px 5px;
 		}
+	}
 
+	.links .half {
 		ul {
 			list-style-type: none;
 			padding: 0;
