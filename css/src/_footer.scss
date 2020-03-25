@@ -58,39 +58,6 @@ footer {
 	@include respond-to( $bp-xl ) {
 		padding: 40px 80px;
 	}
-
-	.column {
-		padding-bottom: 20px;
-
-		@include respond-to( 768px ) {
-			float: left;
-			width: 50%;
-		}
-
-		@include respond-to( 1024px ) {
-			width: 55%;
-
-			&.first {
-				width: 45%;
-			}
-		}
-
-		.sub-column {
-			text-align: center;
-
-			@include respond-to( 1024px ) {
-				float: left;
-				width: 32%;
-				padding: 0 0 0 10px;
-				text-align: left;
-
-				&.first {
-					padding: 0 10px 0 0;
-					text-align: right;
-				}
-			}
-		}
-	}
 	
 	h3 {
 		@include font;

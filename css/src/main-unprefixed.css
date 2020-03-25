@@ -1027,6 +1027,15 @@ img.aligncenter, .wp-caption.aligncenter {
     color: #47494b;
     background: #e1e1e1; }
 
+.text-center {
+  text-align: center; }
+
+.text-right {
+  text-align: right; }
+
+.text-left {
+  text-align: left; }
+
 .post-list {
   padding: 20px 0; }
   .post-list .entry {
@@ -1474,28 +1483,6 @@ footer {
   @media only screen and (min-width: 1220px) {
     footer {
       padding: 40px 80px; } }
-  footer .column {
-    padding-bottom: 20px; }
-    @media only screen and (min-width: 768px) {
-      footer .column {
-        float: left;
-        width: 50%; } }
-    @media only screen and (min-width: 1024px) {
-      footer .column {
-        width: 55%; }
-        footer .column.first {
-          width: 45%; } }
-    footer .column .sub-column {
-      text-align: center; }
-      @media only screen and (min-width: 1024px) {
-        footer .column .sub-column {
-          float: left;
-          width: 32%;
-          padding: 0 0 0 10px;
-          text-align: left; }
-          footer .column .sub-column.first {
-            padding: 0 10px 0 0;
-            text-align: right; } }
   footer h3 {
     font-family: "Avenir", sans-serif;
     font-weight: normal;
