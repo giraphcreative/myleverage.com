@@ -31,8 +31,6 @@ if ( empty( $color ) ) $color = 'forest';
 			<div class="column third text-right first">
 				3692 Coolidge Court<br />
 				Tallahassee, Florida 32311<br>
-				6705 Sugarloaf Pky, #200<br>
-				Duluth, Georgia
 			</div>
 			<div class="third text-center">
 				22 Inverness Cntr Pky, #200<br />
@@ -43,7 +41,7 @@ if ( empty( $color ) ) $color = 'forest';
 				6705 Sugarloaf Pky, #200<br>
 				Duluth, Georgia
 			</div>
-			<div class="social">
+			<div class="social group">
 				<a href="https://twitter.com/LeagueofSECUs" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-twitter.png"></a><a href="https://www.facebook.com/LeagueofSoutheasternCreditUnions?ref=hl" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-facebook.png"></a><a href="https://www.linkedin.com/company/1007350?trk=tyah&trkInfo=clickedVertical%3Acompany%2Cidx%3A1-1-1%2CtarId%3A1428961608364%2Ctas%3Amy+leverage" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-linkedin.png"></a><a href="https://www.youtube.com/user/LeagueofSECUs" target="_blank"><img src="<?php bloginfo( 'template_url' ); ?>/img/social-youtube.png"></a>
 			</div>
 		</div>
