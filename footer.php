@@ -47,7 +47,7 @@ if ( empty( $color ) ) $color = 'forest';
 		</div>
 		<div class="third links">
 			<h3>Links</h3>
-			<div class="half first">
+			<div class="half first text-right">
 				<?php wp_nav_menu( array( 'theme_location' => 'footer-one' ) ); ?>	
 			</div>
 			<div class="half">
