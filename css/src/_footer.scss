@@ -94,9 +94,15 @@ footer {
 		}
 	}
 
-	.links .half ul {
-		list-style-type: none;
-		padding: 0;
+	.links .half {
+		@include respond-to( 768px ) {
+			padding: 20px 5px;
+		}
+
+		ul {
+			list-style-type: none;
+			padding: 0;
+		}
 	}
 }
 

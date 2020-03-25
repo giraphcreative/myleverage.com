@@ -1502,6 +1502,9 @@ footer {
     text-align: center; }
     footer .social img {
       margin-right: 3%; }
+  @media only screen and (min-width: 768px) {
+    footer .links .half {
+      padding: 20px 5px; } }
   footer .links .half ul {
     list-style-type: none;
     padding: 0; }
